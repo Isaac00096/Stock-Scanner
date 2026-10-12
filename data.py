@@ -14,6 +14,17 @@ import config
 COLS = ["Open", "High", "Low", "Close", "Volume"]
 
 
+def _drop_unfinished_day(df: pd.DataFrame) -> pd.DataFrame:
+    """During US trading hours Yahoo returns today's bar while it's still forming. Signals must
+    only use completed daily closes, so drop today's bar until 16:15 New York time."""
+    if df.empty:
+        return df
+    now = pd.Timestamp.now(tz="America/New_York")
+    if df.index[-1].date() == now.date() and (now.hour, now.minute) < (16, 15):
+        return df.iloc[:-1]
+    return df
+
+
 def _clean(df: pd.DataFrame) -> pd.DataFrame:
     if df is None or df.empty:
         return pd.DataFrame()
@@ -29,7 +40,7 @@ def _clean(df: pd.DataFrame) -> pd.DataFrame:
     df = df[~df.index.duplicated(keep="last")].sort_index()
     if getattr(df.index, "tz", None) is not None:
         df.index = df.index.tz_localize(None)
-    return df
+    return _drop_unfinished_day(df)
 
 
 def iter_daily(tickers: list[str], period: str, csv_dir: str | None = None):
