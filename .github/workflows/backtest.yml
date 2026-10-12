@@ -1,0 +1,38 @@
+name: Backtest Setup
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: "Ticker to backtest"
+        default: "H"
+        required: true
+      interval:
+        description: "Bar size: 5m (~60 days history) or 1m (~30 days)"
+        default: "5m"
+        required: true
+        type: choice
+        options: ["5m", "1m"]
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python backtest.py --ticker "${{ inputs.ticker }}" --interval "${{ inputs.interval }}"
+      - name: Commit report
+        run: |
+          git config user.name "nyse-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase
+          git add docs/backtest.html docs/backtest_trades.csv
+          git diff --quiet --cached || git commit -m "Backtest ${{ inputs.ticker }} (${{ inputs.interval }})"
+          git push

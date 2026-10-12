@@ -1,0 +1,29 @@
+name: Weekly Setup Validation
+
+on:
+  schedule:
+    - cron: "0 12 * * 6"     # Saturdays 12:00 UTC
+  workflow_dispatch: {}       # run manually from the Actions tab (do this once first!)
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python validate.py
+      - name: Commit results
+        run: |
+          git config user.name "nyse-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase
+          git add docs/setups.json docs/validation.html
+          git diff --quiet --cached || git commit -m "Weekly validation: $(date -u +'%Y-%m-%d')"
+          git push
