@@ -32,7 +32,8 @@ OOS_YEARS = 3               # most recent N years held out as the unseen "out-of
 # A setup is only "validated" if, on the out-of-sample period, it has:
 MIN_TRADES_OOS = 100        # at least this many trades
 MIN_TSTAT = 2.0             # a t-statistic at least this high (guards against luck)
-# ...plus: positive average return, beats the baseline, and was also positive in-sample.
+MIN_EDGE_TSTAT = 2.0        # must beat random entries by a margin unlikely to be luck
+# ...plus: positive average return, and was also positive in-sample.
 
 COST_PCT_PER_SIDE = 0.05    # spread + slippage per side, in %
 BASELINE_SAMPLES_PER_TICKER = 40   # random entries per ticker for the "no-signal" baseline

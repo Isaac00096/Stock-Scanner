@@ -95,4 +95,13 @@ def stats(returns: list[float]) -> dict:
         "median": float(np.median(r)),
         "profit_factor": float(gains / losses) if losses > 0 else None,
         "tstat": float(r.mean() / (sd / math.sqrt(n))) if sd > 0 else 0.0,
+        "sd": float(sd),
     }
+
+
+def edge_tstat(sig: dict, base: dict) -> float:
+    """How confidently the setup's average return beats random entries (Welch t-statistic)."""
+    if not sig.get("n") or not base.get("n") or sig["n"] < 2 or base["n"] < 2:
+        return 0.0
+    se = math.sqrt(sig["sd"] ** 2 / sig["n"] + base["sd"] ** 2 / base["n"])
+    return float((sig["avg"] - base["avg"]) / se) if se > 0 else 0.0

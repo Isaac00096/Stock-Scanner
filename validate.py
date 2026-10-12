@@ -48,8 +48,11 @@ def judge(is_s: dict, oos_s: dict, base_s: dict) -> tuple[str, list[str]]:
     reasons = []
     if oos_s["avg"] <= 0:
         reasons.append("loses money out-of-sample after costs")
-    if base_s.get("n") and oos_s["avg"] <= base_s["avg"]:
-        reasons.append("doesn't beat random entries")
+    edge_t = engine.edge_tstat(oos_s, base_s)
+    oos_s["edge"] = oos_s["avg"] - base_s.get("avg", 0.0)
+    oos_s["edge_t"] = edge_t
+    if base_s.get("n") and edge_t < config.MIN_EDGE_TSTAT:
+        reasons.append(f"edge over random entries ({oos_s['edge']:+.2f}%/trade) isn't clearly real (t {edge_t:.1f}, need {config.MIN_EDGE_TSTAT})")
     if is_s.get("n", 0) == 0 or is_s["avg"] <= 0:
         reasons.append("wasn't profitable in-sample either")
     if oos_s["tstat"] < config.MIN_TSTAT:
@@ -75,7 +78,7 @@ def render(result: dict, path: str) -> None:
             f"<tr><td><b>{html.escape(r['label'])}</b><div class='muted small'>{html.escape(r['description'])}</div></td>"
             f"<td>{r['direction']}</td><td><span class='st {r['status']}'>{r['status']}</span></td>"
             f"<td>{o.get('n', 0)}</td><td>{win}</td><td>{f(o.get('avg'), '%')}</td>"
-            f"<td>{f(b.get('avg'), '%')}</td><td>{f(o.get('tstat'), '', 1)}</td><td>{f(i.get('avg'), '%')}</td>"
+            f"<td>{f(b.get('avg'), '%')}</td><td>{f(o.get('edge'), '%')} <span class='muted'>(t {f(o.get('edge_t'), '', 1)})</span></td><td>{f(o.get('tstat'), '', 1)}</td><td>{f(i.get('avg'), '%')}</td>"
             f"<td class='small'>{html.escape(notes)}</td></tr>")
 
     page = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
@@ -101,7 +104,7 @@ Only <b>validated</b> setups appear on the daily dashboard. Returns are per trad
 <br><br><span class="muted">Caveats: tested only on stocks listed today (delisted losers are missing, which flatters results);
 trades across many stocks on the same day move together, so the t-stat is optimistic. Past results don't guarantee future ones.</span></div>
 <div class="wrap"><table><tr><th>Setup</th><th>Dir</th><th>Status</th><th>OOS trades</th><th>OOS win rate</th>
-<th>OOS avg/trade</th><th>Baseline avg</th><th>t-stat</th><th>In-sample avg</th><th>Notes</th></tr>{''.join(rows)}</table></div>
+<th>OOS avg/trade</th><th>Baseline avg</th><th>Edge vs random</th><th>t-stat</th><th>In-sample avg</th><th>Notes</th></tr>{''.join(rows)}</table></div>
 </body></html>"""
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(page)
