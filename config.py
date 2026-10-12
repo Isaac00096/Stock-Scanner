@@ -25,7 +25,7 @@ SHOW_UNVALIDATED = False    # also show setups that haven't passed validation (c
 
 # ---- Validation (weekly) ----
 VALIDATION_PERIOD = "10y"   # history used to test every setup
-VALIDATION_SAMPLE_SIZE = 500   # random NYSE tickers to test on (None = all; slower)
+VALIDATION_SAMPLE_SIZE = None  # None = every liquid NYSE stock (more trades, clearer verdicts); or a number to sample
 VALIDATION_SEED = 42        # keeps the sample the same week to week
 OOS_YEARS = 3               # most recent N years held out as the unseen "out-of-sample" test
 
@@ -33,6 +33,9 @@ OOS_YEARS = 3               # most recent N years held out as the unseen "out-of
 MIN_TRADES_OOS = 100        # at least this many trades
 MIN_TSTAT = 2.0             # a t-statistic at least this high (guards against luck)
 MIN_EDGE_TSTAT = 2.0        # must beat random entries by a margin unlikely to be luck
+# "Paper trade only" tier: passes every other check, and beats random entries,
+# but not yet by a clearly significant margin. Shown on the dashboard for practice, never as validated.
+WATCHLIST_EDGE_TSTAT = 1.0
 # ...plus: positive average return, and was also positive in-sample.
 
 COST_PCT_PER_SIDE = 0.05    # spread + slippage per side, in %

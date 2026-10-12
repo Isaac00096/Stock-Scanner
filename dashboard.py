@@ -28,14 +28,15 @@ def _tgt(h):
 
 def _ticker(h):
     url = f"https://www.tradingview.com/chart/?symbol={html.escape(h['ticker'])}"
-    badge = "" if h["status"] == "validated" else f" <span class='st'>{h['status']}</span>"
+    label = {"watchlist": "paper trade only"}.get(h["status"], h["status"])
+    badge = "" if h["status"] == "validated" else f" <span class='st'>{label}</span>"
     return (f"<td class='tk'><a href='{url}' target='_blank' rel='noopener'>{html.escape(h['ticker'])}</a></td>",
             badge)
 
 
 def _limit_table(rows):
     out = []
-    for h in sorted(rows, key=lambda h: h.get("distance_pct", 99)):
+    for h in sorted(rows, key=lambda h: (h["status"] != "validated", h.get("distance_pct", 99))):
         tk, badge = _ticker(h)
         o = h["oos"]
         out.append(
@@ -51,7 +52,7 @@ def _limit_table(rows):
 
 def _open_table(rows):
     out = []
-    for h in sorted(rows, key=lambda h: -(h["oos"].get("avg") or -99)):
+    for h in sorted(rows, key=lambda h: (h["status"] != "validated", -(h["oos"].get("avg") or -99))):
         tk, badge = _ticker(h)
         o = h["oos"]
         out.append(
@@ -66,6 +67,7 @@ def _open_table(rows):
 
 
 def render(hits, scanned, errors, as_of, validation, validated_names, out_path):
+    hits = sorted(hits, key=lambda h: h["status"] != "validated")
     limit_rows = [h for h in hits if h.get("kind") == "limit"]
     open_rows = [h for h in hits if h.get("kind") != "limit"]
 
@@ -75,7 +77,8 @@ def render(hits, scanned, errors, as_of, validation, validated_names, out_path):
                   "<div class='empty'>No validated setups triggered on the latest close.</div>")
 
     if validation:
-        vline = (f"{len(validated_names)} of {len(validation['setups'])} setups validated "
+        n_watch = sum(v["status"] == "watchlist" for v in validation["setups"].values())
+        vline = (f"{len(validated_names)} of {len(validation['setups'])} setups validated, {n_watch} on the paper-trade watchlist "
                  f"(last validated {html.escape(validation['generated'])}) · <a href='validation.html'>see all setups →</a>"
                  " · <a href='rules.html'>trading rules</a>")
     else:
@@ -101,6 +104,9 @@ def render(hits, scanned, errors, as_of, validation, validated_names, out_path):
 <h1>Morning Scan</h1>
 <div class="sub">Based on the close of {date} · {scanned} liquid tickers scanned · {len(limit_rows)} limit order(s) · {len(open_rows)} open signal(s)</div>
 <div class="sub">{vline}</div>
+
+<div class="lead" style="margin-top:14px">Rows marked <span class='st'>paper trade only</span> come from setups that beat
+random entries in testing, but not yet convincingly. Practise them on your demo account and log them in your journal; don't use real money on them.</div>
 
 <h2>Limit orders for the next session</h2>
 <div class="lead">Place a <b>day</b> buy limit order at the price shown before the US open (15:30 SA time).

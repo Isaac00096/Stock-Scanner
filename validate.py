@@ -51,13 +51,19 @@ def judge(is_s: dict, oos_s: dict, base_s: dict) -> tuple[str, list[str]]:
     edge_t = engine.edge_tstat(oos_s, base_s)
     oos_s["edge"] = oos_s["avg"] - base_s.get("avg", 0.0)
     oos_s["edge_t"] = edge_t
-    if base_s.get("n") and edge_t < config.MIN_EDGE_TSTAT:
+    edge_short = base_s.get("n") and edge_t < config.MIN_EDGE_TSTAT
+    if edge_short:
         reasons.append(f"edge over random entries ({oos_s['edge']:+.2f}%/trade) isn't clearly real (t {edge_t:.1f}, need {config.MIN_EDGE_TSTAT})")
     if is_s.get("n", 0) == 0 or is_s["avg"] <= 0:
         reasons.append("wasn't profitable in-sample either")
     if oos_s["tstat"] < config.MIN_TSTAT:
         reasons.append(f"t-stat {oos_s['tstat']:.1f} below {config.MIN_TSTAT} (could be luck)")
-    return ("validated", []) if not reasons else ("failed", reasons)
+    if not reasons:
+        return "validated", []
+    # near-miss: the edge test is the only thing it failed, and it still beats random entries
+    if len(reasons) == 1 and edge_short and edge_t >= config.WATCHLIST_EDGE_TSTAT:
+        return "watchlist", reasons
+    return "failed", reasons
 
 
 def f(v, suffix="", d=2):
@@ -67,7 +73,7 @@ def f(v, suffix="", d=2):
 
 
 def render(result: dict, path: str) -> None:
-    order = {"validated": 0, "failed": 1, "insufficient": 2}
+    order = {"validated": 0, "watchlist": 1, "failed": 2, "insufficient": 3}
     rows = []
     for name, r in sorted(result["setups"].items(),
                           key=lambda kv: (order[kv[1]["status"]], -(kv[1]["oos"].get("avg") or -99))):
@@ -92,7 +98,8 @@ def render(result: dict, path: str) -> None:
  th{{color:#9098a8;font-size:12px;text-transform:uppercase}}
  .st{{padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600}}
  .validated{{background:rgba(47,191,113,.15);color:#2fbf71}} .failed{{background:rgba(229,72,77,.15);color:#e5484d}}
- .insufficient{{background:rgba(214,169,74,.15);color:#d6a94a}}
+ .insufficient{{background:rgba(144,152,168,.15);color:#9098a8}}
+ .watchlist{{background:rgba(214,169,74,.15);color:#d6a94a}}
 </style></head><body>
 <h1>Setup Validation</h1>
 <div class="muted">Generated {result['generated']} · {result['tickers_tested']} tickers · {result['start']} → {result['end']} ·
@@ -100,7 +107,8 @@ out-of-sample from {result['split_date']} · <a href="index.html">← dashboard<
 <div class="box"><b>How to read this.</b> Every setup is tested on older data (in-sample), then on the most recent
 {config.OOS_YEARS} years (out-of-sample), which is the number that counts. "Win rate" is how often past trades made money,
 with the 95% confidence range in brackets. "Baseline" is the same trade entered on random days; a setup has to beat it.
-Only <b>validated</b> setups appear on the daily dashboard. Returns are per trade, after {config.COST_PCT_PER_SIDE}% cost per side.
+Only <b>validated</b> setups appear on the daily dashboard as trade signals. <b>Watchlist</b> setups
+beat random entries but not yet convincingly; they appear marked "paper trade only". Returns are per trade, after {config.COST_PCT_PER_SIDE}% cost per side.
 <br><br><span class="muted">Caveats: tested only on stocks listed today (delisted losers are missing, which flatters results);
 trades across many stocks on the same day move together, so the t-stat is optimistic. Past results don't guarantee future ones.</span></div>
 <div class="wrap"><table><tr><th>Setup</th><th>Dir</th><th>Status</th><th>OOS trades</th><th>OOS win rate</th>
@@ -177,7 +185,8 @@ def main():
     with open(os.path.join(config.OUTPUT_DIR, config.SETUPS_JSON), "w") as fh:
         json.dump(result, fh, indent=1)
     render(result, os.path.join(config.OUTPUT_DIR, config.VALIDATION_FILE))
-    print(f"Done. {sum(r['status'] == 'validated' for r in out.values())} setup(s) validated.")
+    print(f"Done. {sum(r['status'] == 'validated' for r in out.values())} setup(s) validated, "
+          f"{sum(r['status'] == 'watchlist' for r in out.values())} on the paper-trade watchlist.")
 
 
 if __name__ == "__main__":

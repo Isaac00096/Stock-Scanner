@@ -60,7 +60,7 @@ def main():
                 continue
             st = vstats.get(s.name, {})
             status = st.get("status", "unvalidated")
-            if status != "validated" and not config.SHOW_UNVALIDATED:
+            if status not in ("validated", "watchlist") and not config.SHOW_UNVALIDATED:
                 continue
             px, a = float(last["Close"]), float(last["ATR14"])
             sign = 1 if s.direction == "long" else -1
