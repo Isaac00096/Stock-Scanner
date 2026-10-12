@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "nyse-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
-          git pull --rebase
           git add docs/backtest.html docs/backtest_trades.csv
           git diff --quiet --cached || git commit -m "Backtest ${{ inputs.ticker }} (${{ inputs.interval }})"
+          git pull --rebase origin main
           git push
