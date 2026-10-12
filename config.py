@@ -5,7 +5,15 @@ Edit values here — no need to touch the other files.
 
 # ---- Universe ----
 WATCHLIST_SOURCE = "NYSE"   # "NYSE" (full list, fetched each run) or "CUSTOM"
-CUSTOM_WATCHLIST = []       # used if WATCHLIST_SOURCE == "CUSTOM"
+# Used if WATCHLIST_SOURCE == "CUSTOM", and as a backup if every online ticker source fails.
+CUSTOM_WATCHLIST = [
+    "JPM", "BAC", "WFC", "C", "GS", "MS", "V", "MA", "AXP", "BRK-B",
+    "JNJ", "PFE", "MRK", "ABBV", "LLY", "UNH", "ABT", "TMO", "CVS", "BMY",
+    "XOM", "CVX", "COP", "SLB", "OXY", "KO", "PEP", "PG", "WMT", "HD",
+    "LOW", "MCD", "NKE", "DIS", "TGT", "CAT", "DE", "GE", "HON", "BA",
+    "LMT", "RTX", "UPS", "FDX", "IBM", "ORCL", "CRM", "T", "VZ", "F",
+    "GM", "H", "MAR", "HLT", "CCL", "DAL", "UBER", "SHOP", "SPGI", "BLK",
+]
 
 # Liquidity filters (set to None to disable)
 MIN_PRICE = 5.0
