@@ -10,14 +10,27 @@ import pandas as pd
 from setups import Setup
 
 
-def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: float) -> list[dict]:
+def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: float,
+             levels: pd.DataFrame | None = None) -> list[dict]:
     """
-    Enter at the next day's open after each signal. Exit on stop, target, or
-    after max_hold days. One open trade per setup per ticker at a time.
-    If a bar touches both stop and target, the stop is assumed first (conservative).
+    Simulates one setup on one ticker. One open trade at a time.
+
+    Entry (decided at the close of signal day s, executed on day e = s + 1):
+      - market setups: buy at day e's open.
+      - limit setups (levels["limit"] set): a day order at the limit price. Filled only if
+        day e trades through it (low <= limit for longs), at the limit, or at the open if
+        the stock opens beyond it. Unfilled orders simply expire.
+    Exits: stop, target, or the close of the max_hold-th day.
+      Stop/target come from levels["stop"]/["target"] when given, otherwise ATR multiples
+      around the fill price.
+    Conservative assumptions: if a bar touches both stop and target, the stop counts;
+    on a limit order's fill day the target is ignored (the high may have come before the fill).
     """
     o, h, l, c = (ind[k].to_numpy(float) for k in ("Open", "High", "Low", "Close"))
     atr = ind["ATR14"].to_numpy(float)
+    lim = levels["limit"].to_numpy(float) if levels is not None and "limit" in levels else None
+    lv_stop = levels["stop"].to_numpy(float) if levels is not None and "stop" in levels else None
+    lv_tgt = levels["target"].to_numpy(float) if levels is not None and "target" in levels else None
     dates = ind.index
     n = len(ind)
     is_long = setup.direction == "long"
@@ -27,37 +40,60 @@ def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: floa
         e = s + 1
         if s < next_free or e >= n:
             continue
-        a, entry = atr[s], o[e]
-        if not (np.isfinite(a) and a > 0 and np.isfinite(entry) and entry > 0):
+        a = atr[s]
+        if not (np.isfinite(a) and a > 0 and np.isfinite(o[e]) and o[e] > 0):
             continue
-        if is_long:
-            stop, target = entry - setup.stop_atr * a, entry + setup.target_atr * a
+
+        limit_fill = lim is not None
+        if limit_fill:
+            L = lim[s]
+            if not (np.isfinite(L) and L > 0):
+                continue
+            if is_long:
+                if l[e] > L:
+                    continue                      # never traded down to the limit: no fill
+                entry = min(o[e], L)
+            else:
+                if h[e] < L:
+                    continue
+                entry = max(o[e], L)
         else:
-            stop, target = entry + setup.stop_atr * a, entry - setup.target_atr * a
+            entry = o[e]
+
+        stop = lv_stop[s] if lv_stop is not None and np.isfinite(lv_stop[s]) else (
+            entry - setup.stop_atr * a if is_long else entry + setup.stop_atr * a)
+        target = lv_tgt[s] if lv_tgt is not None and np.isfinite(lv_tgt[s]) else (
+            entry + setup.target_atr * a if is_long else entry - setup.target_atr * a)
 
         last = e + setup.max_hold - 1
         if last >= n:
             break  # trade would still be open at the end of the data
         exit_px, reason, j = None, "time", last
-        for j in range(e, last + 1):
-            if is_long:
-                if j > e and o[j] <= stop:
-                    exit_px, reason = o[j], "stop"; break
-                if l[j] <= stop:
-                    exit_px, reason = stop, "stop"; break
-                if j > e and o[j] >= target:
-                    exit_px, reason = o[j], "target"; break
-                if h[j] >= target:
-                    exit_px, reason = target, "target"; break
-            else:
-                if j > e and o[j] >= stop:
-                    exit_px, reason = o[j], "stop"; break
-                if h[j] >= stop:
-                    exit_px, reason = stop, "stop"; break
-                if j > e and o[j] <= target:
-                    exit_px, reason = o[j], "target"; break
-                if l[j] <= target:
-                    exit_px, reason = target, "target"; break
+        # filled already beyond the stop (e.g. a gap): out at the fill price
+        if (is_long and entry <= stop) or (not is_long and entry >= stop):
+            exit_px, reason, j = entry, "stop", e
+        else:
+            for j in range(e, last + 1):
+                first = j == e
+                tgt_ok = not (first and limit_fill)
+                if is_long:
+                    if not first and o[j] <= stop:
+                        exit_px, reason = o[j], "stop"; break
+                    if l[j] <= stop:
+                        exit_px, reason = stop, "stop"; break
+                    if not first and o[j] >= target:
+                        exit_px, reason = o[j], "target"; break
+                    if tgt_ok and h[j] >= target:
+                        exit_px, reason = target, "target"; break
+                else:
+                    if not first and o[j] >= stop:
+                        exit_px, reason = o[j], "stop"; break
+                    if h[j] >= stop:
+                        exit_px, reason = stop, "stop"; break
+                    if not first and o[j] <= target:
+                        exit_px, reason = o[j], "target"; break
+                    if tgt_ok and l[j] <= target:
+                        exit_px, reason = target, "target"; break
         if exit_px is None:
             exit_px, j = c[last], last
 

@@ -11,7 +11,9 @@ To add a setup: write its signal function and append a Setup(...) to SETUPS.
 """
 
 from dataclasses import dataclass
-from typing import Callable
+from typing import Callable, Optional
+
+import numpy as np
 
 import pandas as pd
 
@@ -26,6 +28,13 @@ class Setup:
     stop_atr: float = 1.5
     target_atr: float = 2.5
     max_hold: int = 10
+    # Limit-order setups: returns a DataFrame with "limit" (and optionally "stop"/"target")
+    # computed at each close. The order is placed for the next session only.
+    levels: Optional[Callable[[pd.DataFrame], pd.DataFrame]] = None
+
+    @property
+    def is_limit(self) -> bool:
+        return self.levels is not None
 
 
 def cross_above(a, b) -> pd.Series:
@@ -44,6 +53,37 @@ def _close_near_high(d):
 
 def _close_near_low(d):
     return (d.High - d.Close) >= 0.75 * (d.High - d.Low)
+
+
+# ---------- Limit-order setups (orders placed after the close, filled only if price comes to you) ----------
+def _rsi2_limit_price(d):
+    """Price at which tomorrow's RSI(2) would drop below 10 (solved from Wilder's averages)."""
+    drop = (9 * d.RSI2_G - d.RSI2_L).clip(lower=0.01 * d.ATR14)
+    return d.Close - drop
+
+
+def _rsi2_limit_levels(d):
+    return pd.DataFrame({"limit": _rsi2_limit_price(d)}, index=d.index)
+
+
+def _rsi2_limit_signal(d):
+    p = _rsi2_limit_price(d)
+    return (d.Close > d.SMA200) & (d.RSI2 >= 10) & ((d.Close - p) <= 2 * d.ATR14)
+
+
+def _fib_levels(level_col):
+    def f(d):
+        return pd.DataFrame({"limit": d[level_col],
+                             "stop": d.FIB_786 - 0.25 * d.ATR14,
+                             "target": d.SW_HI}, index=d.index)
+    return f
+
+
+def _fib_signal(level_col):
+    def f(d):
+        lv = d[level_col]
+        return (d.Close > d.SMA200) & lv.notna() & (d.Close > lv) & ((d.Close - lv) <= 2 * d.ATR14)
+    return f
 
 
 SETUPS = [
@@ -97,6 +137,17 @@ SETUPS = [
     Setup("volume_spike_red", "Volume Spike (bearish)", "short",
           lambda d: (d.Volume > 2.5 * d.VOL_AVG20) & (d.Close < d.Open) & _close_near_low(d),
           "Volume over 2.5x average, red candle closing near its low"),
+
+    # ---------- Limit orders: placed tonight, filled only if price dips to the level ----------
+    Setup("rsi2_pullback_limit", "RSI(2) Pullback — limit order", "long", _rsi2_limit_signal,
+          "Uptrend stock; buy limit at the price where RSI(2) would drop below 10", 2.0, 1.5, 5,
+          levels=_rsi2_limit_levels),
+    Setup("fib_618_limit", "Fibonacci 61.8% — limit order", "long", _fib_signal("FIB_618"),
+          "Uptrend stock pulling back from a fresh swing high; buy limit at the 61.8% retracement, "
+          "stop just below 78.6%, target the swing high", 0, 0, 20, levels=_fib_levels("FIB_618")),
+    Setup("fib_500_limit", "Fibonacci 50% — limit order", "long", _fib_signal("FIB_500"),
+          "Uptrend stock pulling back from a fresh swing high; buy limit at the 50% retracement, "
+          "stop just below 78.6%, target the swing high", 0, 0, 20, levels=_fib_levels("FIB_500")),
 ]
 
 BY_NAME = {s.name: s for s in SETUPS}
@@ -106,3 +157,7 @@ def signals(ind: pd.DataFrame, setup: Setup) -> pd.Series:
     """Signal series, only where all indicators are warmed up."""
     ready = ind["SMA200"].notna() & ind["ATR14"].notna() & ind["VOL_AVG20"].notna()
     return (setup.signal(ind) & ready).fillna(False).astype(bool)
+
+
+def levels(ind: pd.DataFrame, setup: Setup) -> Optional[pd.DataFrame]:
+    return setup.levels(ind) if setup.levels else None

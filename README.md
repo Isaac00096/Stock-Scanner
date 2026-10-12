@@ -21,6 +21,15 @@ it has 100+ trades, makes money after costs, beats random entries with the same
 exits, was also profitable on the older data, and has a t-stat of 2+.
 All of these are adjustable in `config.py`.
 
+## Limit-order setups
+
+Some setups don't enter at the open. After each close, the scanner calculates a **buy limit
+price** (e.g. the exact price where RSI(2) would drop below 10, or a Fibonacci 50% / 61.8%
+retracement of a fresh up-swing). The dashboard lists these under **Limit orders for the next
+session**: place a day order at that price before the US open; if the price dips to it you're
+filled, otherwise it expires. They are backtested the same way, filled only if the day's low
+actually reached the limit, and judged against random limit orders.
+
 ## Cloud setup (GitHub, free)
 
 1. Upload all files to your GitHub repo, keeping the `.github/workflows/` folder.

@@ -17,7 +17,7 @@ import dashboard
 import data
 import indicators
 import universe
-from setups import SETUPS, signals
+from setups import SETUPS, levels, signals
 
 
 def load_validation() -> dict | None:
@@ -63,12 +63,23 @@ def main():
                 continue
             px, a = float(last["Close"]), float(last["ATR14"])
             sign = 1 if s.direction == "long" else -1
-            hits.append({
-                "ticker": ticker, "price": px, "setup": s.label, "direction": s.direction,
-                "status": status, "oos": st.get("oos", {}),
-                "stop": px - sign * s.stop_atr * a, "target": px + sign * s.target_atr * a,
-                "max_hold": s.max_hold,
-            })
+            hit = {"ticker": ticker, "price": px, "setup": s.label, "direction": s.direction,
+                   "status": status, "oos": st.get("oos", {}), "max_hold": s.max_hold,
+                   "kind": "limit" if s.is_limit else "open"}
+            if s.is_limit:
+                lv = levels(ind, s).iloc[-1]
+                entry = float(lv["limit"])
+                stop = lv.get("stop", float("nan"))
+                target = lv.get("target", float("nan"))
+                hit["entry"] = entry
+                hit["stop"] = float(stop) if stop == stop else entry - sign * s.stop_atr * a
+                hit["target"] = float(target) if target == target else entry + sign * s.target_atr * a
+                hit["distance_pct"] = (px - entry) / px * 100
+            else:
+                hit["entry"] = px
+                hit["stop"] = px - sign * s.stop_atr * a
+                hit["target"] = px + sign * s.target_atr * a
+            hits.append(hit)
 
     validated_names = [v["label"] for v in vstats.values() if v["status"] == "validated"]
     os.makedirs(config.OUTPUT_DIR, exist_ok=True)

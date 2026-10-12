@@ -31,7 +31,7 @@ import data
 import engine
 import indicators
 import universe
-from setups import SETUPS, signals
+from setups import SETUPS, levels, signals
 
 
 def pick_tickers(csv_dir: str | None) -> list[str]:
@@ -135,11 +135,19 @@ def main():
         ind = indicators.compute_all(df)
         ready = np.flatnonzero((ind["SMA200"].notna() & ind["ATR14"].notna()).to_numpy())
         for s in SETUPS:
-            trades[s.name] += engine.simulate(ind, signals(ind, s).to_numpy(), s, config.COST_PCT_PER_SIDE)
-            if len(ready):
+            lv = levels(ind, s)
+            trades[s.name] += engine.simulate(ind, signals(ind, s).to_numpy(), s,
+                                              config.COST_PCT_PER_SIDE, lv)
+            # baseline: same entry/exit mechanics on random days. For limit setups, only days
+            # where the same kind of order could have been placed (level below the close).
+            pool = ready
+            if lv is not None:
+                placeable = (lv["limit"].notna() & (lv["limit"] < ind["Close"])).to_numpy()
+                pool = np.intersect1d(ready, np.flatnonzero(placeable))
+            if len(pool):
                 mask = np.zeros(len(ind), bool)
-                mask[rng.choice(ready, min(config.BASELINE_SAMPLES_PER_TICKER, len(ready)), replace=False)] = True
-                base[s.name] += engine.simulate(ind, mask, s, config.COST_PCT_PER_SIDE)
+                mask[rng.choice(pool, min(config.BASELINE_SAMPLES_PER_TICKER, len(pool)), replace=False)] = True
+                base[s.name] += engine.simulate(ind, mask, s, config.COST_PCT_PER_SIDE, lv)
 
     if tested == 0:
         raise SystemExit("ERROR: no tickers had usable data.")
@@ -153,6 +161,7 @@ def main():
         status, reasons = judge(is_s, oos_s, b_s)
         out[s.name] = {"label": s.label, "direction": s.direction, "description": s.description,
                        "stop_atr": s.stop_atr, "target_atr": s.target_atr, "max_hold": s.max_hold,
+                       "entry": "limit" if s.is_limit else "next open",
                        "status": status, "reasons": reasons,
                        "in_sample": is_s, "oos": oos_s, "baseline_oos": b_s}
         print(f"  {s.label:32s} {status:12s} OOS n={oos_s.get('n', 0)}")
