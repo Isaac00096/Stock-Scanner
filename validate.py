@@ -31,7 +31,7 @@ import data
 import engine
 import indicators
 import universe
-from setups import SETUPS, levels, signals
+from setups import SETUPS, exit_mask, levels, signals
 
 
 def pick_tickers(csv_dir: str | None) -> list[str]:
@@ -126,28 +126,32 @@ def main():
     rng = np.random.default_rng(config.VALIDATION_SEED)
     tested, start, end = 0, None, None
 
+    market = data.load_market(config.VALIDATION_PERIOD, args.csv_dir)
     for ticker, df in data.iter_daily(tickers, config.VALIDATION_PERIOD, args.csv_dir):
         if df.empty or len(df) < 300 or not data.liquid(df):
             continue
         tested += 1
         start = min(start, df.index[0]) if start is not None else df.index[0]
         end = max(end, df.index[-1]) if end is not None else df.index[-1]
-        ind = indicators.compute_all(df)
+        ind = indicators.compute_all(df, market)
         ready = np.flatnonzero((ind["SMA200"].notna() & ind["ATR14"].notna()).to_numpy())
         for s in SETUPS:
-            lv = levels(ind, s)
+            lv, xm = levels(ind, s), exit_mask(ind, s)
             trades[s.name] += engine.simulate(ind, signals(ind, s).to_numpy(), s,
-                                              config.COST_PCT_PER_SIDE, lv)
+                                              config.COST_PCT_PER_SIDE, lv, xm)
             # baseline: same entry/exit mechanics on random days. For limit setups, only days
             # where the same kind of order could have been placed (level below the close).
             pool = ready
             if lv is not None:
-                placeable = (lv["limit"].notna() & (lv["limit"] < ind["Close"])).to_numpy()
-                pool = np.intersect1d(ready, np.flatnonzero(placeable))
+                # random days where the setup's levels exist (and a limit would sit below the close)
+                placeable = lv.notna().all(axis=1)
+                if "limit" in lv:
+                    placeable &= lv["limit"] < ind["Close"]
+                pool = np.intersect1d(ready, np.flatnonzero(placeable.to_numpy()))
             if len(pool):
                 mask = np.zeros(len(ind), bool)
                 mask[rng.choice(pool, min(config.BASELINE_SAMPLES_PER_TICKER, len(pool)), replace=False)] = True
-                base[s.name] += engine.simulate(ind, mask, s, config.COST_PCT_PER_SIDE, lv)
+                base[s.name] += engine.simulate(ind, mask, s, config.COST_PCT_PER_SIDE, lv, xm)
 
     if tested == 0:
         raise SystemExit("ERROR: no tickers had usable data.")

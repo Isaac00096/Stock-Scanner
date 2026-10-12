@@ -78,3 +78,12 @@ def liquid(df: pd.DataFrame) -> bool:
 
 def csv_tickers(csv_dir: str) -> list[str]:
     return sorted(f[:-4] for f in os.listdir(csv_dir) if f.endswith(".csv"))
+
+
+def load_market(period: str, csv_dir: str | None = None) -> pd.Series | None:
+    """S&P 500 proxy (SPY) closes, for 'better-than-market' comparisons. None if unavailable."""
+    for _, df in iter_daily(["SPY"], period, csv_dir):
+        if not df.empty:
+            return df["Close"]
+    print("Note: market data (SPY) unavailable; 'market leaders' setups will not trigger.")
+    return None

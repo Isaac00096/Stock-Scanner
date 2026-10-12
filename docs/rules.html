@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Trading Rules</title>
+<style>
+ :root{--bg:#0f1117;--panel:#171a23;--border:#262b38;--text:#e8e9ed;--muted:#9098a8;--green:#2fbf71;--amber:#d6a94a;--blue:#8fb4ff}
+ body{margin:0;padding:28px 18px 60px;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.55}
+ main{max-width:760px} h1{font-size:23px;margin:0 0 4px} h2{font-size:17px;margin:32px 0 10px}
+ a{color:var(--blue)} .muted{color:var(--muted)} .small{font-size:13px}
+ ol{padding-left:22px} li{margin:9px 0} b{color:#fff}
+ .box{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin:14px 0}
+ .warn{border-left:4px solid var(--amber)} .ok{border-left:4px solid var(--green)}
+ table{border-collapse:collapse;width:100%;font-size:14px} td{padding:8px 6px;border-bottom:1px solid var(--border);vertical-align:top}
+ td:first-child{color:var(--muted);white-space:nowrap;padding-right:14px}
+</style></head><body><main>
+<h1>Trading Rules</h1>
+<div class="muted small">Based on H.M. Gartley, <i>Profits in the Stock Market</i> (1935), mainly the summary chapter,
+adapted to a small CFD account. <a href="index.html">← dashboard</a> · <a href="validation.html">setup results</a></div>
+
+<div class="box warn"><b>Gartley's first rule: prove it on paper before using real money.</b><br>
+He treats paper trading as a required step and expects learning to take many months of spare-time practice,
+roughly a year and a half in his view. Our minimum: paper trade the dashboard signals on a demo account and
+log every trade in the journal until you have 30+ trades whose results match the validation page.</div>
+
+<h2>Before any trade</h2>
+<ol>
+<li><b>Pick one timeframe and stick to it.</b> Gartley's advice for someone with another job: trade the
+<b>intermediate trend</b> (moves lasting weeks to months), not short swings. Chasing small moves while busy
+elsewhere is, in his words, fatal to the capital account. That's why the dashboard uses daily charts and
+overnight limit orders, not the opening rush.</li>
+<li><b>Check the trend first.</b> Major trend: is the stock above its 200-day average? Intermediate: above its
+25-day average (3-day lead)? Only then look for a buying spot.</li>
+<li><b>Trade the leaders.</b> Buy stocks doing better than the market (the "market leaders only" setups),
+in groups that are leading. Avoid one-off popular stocks.</li>
+<li><b>Avoid the "dogs" and the sleepers.</b> Skip erratic stocks under $10 (the scanner already does) and
+slow-moving defensive stocks. Moderately priced, actively traded stocks of sound companies are best.</li>
+<li><b>Only take trades worth the risk.</b> A 1-to-1 trade (risk R10 to make R10) is gambling to Gartley.
+His guide: don't risk 10% unless about 30% looks possible, roughly 3 to 1. Check the stop and target on
+the dashboard before placing an order.</li>
+<li><b>Only act on a tested setup.</b> He warns against trusting the newest tool you've learned before
+testing it. Use only setups marked <span style="color:var(--green)">validated</span>.</li>
+</ol>
+
+<h2>Managing money</h2>
+<ol>
+<li><b>Never trade with more than half of your total savings.</b></li>
+<li><b>Don't borrow (no margin).</b> Gartley avoided margin except in rare high-conviction moments.
+Trade Nation's 20:1 leverage <i>is</i> margin, so size each position as if there were no leverage:
+the position's full value should not be more than your account.</li>
+<li><b>Spread the risk.</b> Even a small account should hold 3–5 positions, not one. 5–10 is ideal.</li>
+<li><b>Cut losses while they're small.</b> Letting losses grow is the mark of an amateur. Always set the
+stop. Never hold a losing trade hoping to "get out even", and never take a long shot to win back a loss.</li>
+<li><b>Let winners run, but bank part of them.</b> Once a trade is up about 20%, lock in half to
+two-thirds of the profit (sell part, or move the stop up).</li>
+<li><b>Keep a reserve.</b> Put aside a fifth to a third of every good profit, and don't dip into it
+after losing streaks.</li>
+</ol>
+
+<h2>Realistic expectations</h2>
+<table>
+<tr><td>Yearly goal</td><td>18–24% a year on the money traded, without borrowing. More in good years, less in lean ones.
+<span class="muted">On R100, that's about R20 a year: this account is for learning, not income.</span></td></tr>
+<tr><td>Win rate</td><td>Being right <b>60%</b> of the time was his goal, not 80–100%. Profits come from
+small losses and bigger wins.</td></tr>
+<tr><td>Trades</td><td>For an intermediate-trend trader: a handful of well-chosen positions, not daily activity.</td></tr>
+</table>
+
+<h2>Discipline</h2>
+<ol>
+<li><b>Every trade is an act of reason.</b> A hasty trade is usually an emotional one.</li>
+<li><b>Keep your own counsel.</b> Learn facts from anyone, but don't take tips or give them.</li>
+<li><b>Be patient.</b> There will always be another opportunity; don't dwell on missed ones.</li>
+<li><b>Expect to be wrong often.</b> Don't let a day or two of bad action shake a well-reasoned position,
+but respect the stop.</li>
+</ol>
+
+<h2>Gartley's methods in this tool</h2>
+<div class="box ok small">
+<b>222 buying spot</b> (Ch. VIII): he claimed it works about 8 times in 10 — tested as two setups (limit order and "on the turn").<br>
+<b>Breakout above a previous top</b> (Ch. VIII): he found about 7 in 10 led to a worthwhile move — tested with a volume condition.<br>
+<b>25-day moving average with a 3-day lead</b> (Ch. XI): his best result in tests on 1919–1933 data — tested on all stocks, and on market leaders only.<br>
+<b>Better-than-market stocks</b> (Ch. XVII): used as a filter on the "market leaders only" setups.<br><br>
+<span class="muted">His win rates came from 1930s market averages. The <a href="validation.html">validation page</a>
+shows how each method holds up on the last 10 years of NYSE stocks, including the recent 3 years it was never tuned on.</span>
+</div>
+<p class="muted small" style="margin-top:28px">A summary in our own words for personal study, not a substitute for the book. Not financial advice.</p>
+</main></body></html>

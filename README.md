@@ -21,6 +21,14 @@ it has 100+ trades, makes money after costs, beats random entries with the same
 exits, was also profitable on the older data, and has a t-stat of 2+.
 All of these are adjustable in `config.py`.
 
+## Gartley framework
+
+Setups and rules from H.M. Gartley, *Profits in the Stock Market* (1935): the "222" buying spot
+(limit-order and confirmation versions), breakouts above a previous intermediate top, his 25-day
+moving average with a 3-day lead, and a "better-than-market" filter (3-month return vs SPY).
+Each is validated like every other setup. His money-management and discipline rules are
+summarised on `docs/rules.html`, linked from the dashboard.
+
 ## Limit-order setups
 
 Some setups don't enter at the open. After each close, the scanner calculates a **buy limit

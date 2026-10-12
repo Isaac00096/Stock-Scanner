@@ -11,7 +11,7 @@ from setups import Setup
 
 
 def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: float,
-             levels: pd.DataFrame | None = None) -> list[dict]:
+             levels: pd.DataFrame | None = None, exit_mask: np.ndarray | None = None) -> list[dict]:
     """
     Simulates one setup on one ticker. One open trade at a time.
 
@@ -60,10 +60,19 @@ def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: floa
         else:
             entry = o[e]
 
-        stop = lv_stop[s] if lv_stop is not None and np.isfinite(lv_stop[s]) else (
-            entry - setup.stop_atr * a if is_long else entry + setup.stop_atr * a)
-        target = lv_tgt[s] if lv_tgt is not None and np.isfinite(lv_tgt[s]) else (
-            entry + setup.target_atr * a if is_long else entry - setup.target_atr * a)
+        sgn = 1 if is_long else -1
+        if lv_stop is not None and np.isfinite(lv_stop[s]):
+            stop = lv_stop[s]
+        elif setup.stop_pct is not None:
+            stop = entry * (1 - sgn * setup.stop_pct)
+        else:
+            stop = entry - sgn * setup.stop_atr * a
+        if lv_tgt is not None and np.isfinite(lv_tgt[s]):
+            target = lv_tgt[s]
+        elif setup.target_pct is not None:
+            target = entry * (1 + sgn * setup.target_pct)
+        else:
+            target = entry + sgn * setup.target_atr * a
 
         last = e + setup.max_hold - 1
         if last >= n:
@@ -94,6 +103,10 @@ def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: floa
                         exit_px, reason = o[j], "target"; break
                     if tgt_ok and l[j] <= target:
                         exit_px, reason = target, "target"; break
+                # rule-based exit decided at this close, executed at the next open
+                if exit_mask is not None and exit_mask[j] and j < last:
+                    exit_px, reason, j = o[j + 1], "exit rule", j + 1
+                    break
         if exit_px is None:
             exit_px, j = c[last], last
 

@@ -31,10 +31,17 @@ class Setup:
     # Limit-order setups: returns a DataFrame with "limit" (and optionally "stop"/"target")
     # computed at each close. The order is placed for the next session only.
     levels: Optional[Callable[[pd.DataFrame], pd.DataFrame]] = None
+    # Optional exit rule evaluated at each close; when true, the trade is closed at the next open.
+    exit_signal: Optional[Callable[[pd.DataFrame], pd.Series]] = None
+    # Optional stop/target as a fraction of the fill price (e.g. 0.15 = 15%); override ATR multiples.
+    stop_pct: Optional[float] = None
+    target_pct: Optional[float] = None
+
+    entry_type: str = "open"          # "open" = next day's open, "limit" = day limit order at levels["limit"]
 
     @property
     def is_limit(self) -> bool:
-        return self.levels is not None
+        return self.entry_type == "limit"
 
 
 def cross_above(a, b) -> pd.Series:
@@ -84,6 +91,38 @@ def _fib_signal(level_col):
         lv = d[level_col]
         return (d.Close > d.SMA200) & lv.notna() & (d.Close > lv) & ((d.Close - lv) <= 2 * d.ATR14)
     return f
+
+
+# ---------- H.M. Gartley, "Profits in the Stock Market" (1935) ----------
+def _g222_levels_limit(d):
+    return pd.DataFrame({"limit": d.G_R50, "stop": d.G_B - 0.25 * d.ATR14}, index=d.index)
+
+
+def _g222_limit_signal(d):
+    return d.G_C.notna() & (d.Close > d.G_R50) & (d.Close < d.G_C) & ((d.Close - d.G_R50) <= 2 * d.ATR14)
+
+
+def _g222_levels_stop(d):
+    return pd.DataFrame({"stop": d.G_B - 0.25 * d.ATR14}, index=d.index)
+
+
+def _g222_confirm_signal(d):
+    recent_low = d.Low.rolling(5).min()
+    return (d.G_C.notna() & (recent_low <= d.G_R33) & (recent_low > d.G_B) &
+            (d.Close > d.G_R50) & (d.Close < d.G_C) & (d.Close > d.Close.shift()) & (d.Close > d.Open))
+
+
+def _gartley_breakout(d):
+    lvl = d.PRIOR_TOP * 1.02
+    return (d.Close > lvl) & (d.Close.shift() <= lvl.shift()) & (d.Volume > 1.5 * d.VOL_AVG20)
+
+
+def _ma25_cross_up(d):
+    return (d.Close > d.SMA25_LEAD3) & (d.Close.shift() <= d.SMA25_LEAD3.shift())
+
+
+def _ma25_exit(d):
+    return d.Close < d.SMA25_LEAD3
 
 
 SETUPS = [
@@ -141,13 +180,39 @@ SETUPS = [
     # ---------- Limit orders: placed tonight, filled only if price dips to the level ----------
     Setup("rsi2_pullback_limit", "RSI(2) Pullback — limit order", "long", _rsi2_limit_signal,
           "Uptrend stock; buy limit at the price where RSI(2) would drop below 10", 2.0, 1.5, 5,
-          levels=_rsi2_limit_levels),
+          levels=_rsi2_limit_levels, entry_type="limit"),
     Setup("fib_618_limit", "Fibonacci 61.8% — limit order", "long", _fib_signal("FIB_618"),
           "Uptrend stock pulling back from a fresh swing high; buy limit at the 61.8% retracement, "
-          "stop just below 78.6%, target the swing high", 0, 0, 20, levels=_fib_levels("FIB_618")),
+          "stop just below 78.6%, target the swing high", 0, 0, 20, levels=_fib_levels("FIB_618"), entry_type="limit"),
     Setup("fib_500_limit", "Fibonacci 50% — limit order", "long", _fib_signal("FIB_500"),
           "Uptrend stock pulling back from a fresh swing high; buy limit at the 50% retracement, "
-          "stop just below 78.6%, target the swing high", 0, 0, 20, levels=_fib_levels("FIB_500")),
+          "stop just below 78.6%, target the swing high", 0, 0, 20, levels=_fib_levels("FIB_500"), entry_type="limit"),
+
+    # ---------- Gartley, "Profits in the Stock Market" ----------
+    Setup("gartley_222_limit", "Gartley 222 buying spot — limit order", "long", _g222_limit_signal,
+          "Gartley Ch. VIII: after a 12%+ decline with volume drying up, a minor rally on rising volume, "
+          "then a quieter pullback; buy limit at the 1/2 retracement of the rally, stop under the low, "
+          "target +15% (his 10-20%)", 0, 0, 40,
+          levels=_g222_levels_limit, entry_type="limit", target_pct=0.15),
+    Setup("gartley_222_confirm", "Gartley 222 buying spot — on the turn", "long", _g222_confirm_signal,
+          "Same pattern, but buy at the next open once the pullback has reached the 1/3-1/2 zone and "
+          "closes up (Gartley's 'signs of terminating'); stop under the low, target +15%", 0, 0, 40,
+          levels=_g222_levels_stop, target_pct=0.15),
+    Setup("gartley_breakout", "Gartley breakout above previous top", "long", _gartley_breakout,
+          "Gartley Ch. VIII: decisive (2%+) close above the previous intermediate top, on 1.5x volume; "
+          "target +15% (his 10-20%), stop -7.5%", 0, 0, 60, stop_pct=0.075, target_pct=0.15),
+    Setup("gartley_ma25", "Gartley 25-day moving average", "long", _ma25_cross_up,
+          "Gartley Ch. XI: his best-tested system, close crosses above the 25-day average plotted 3 days "
+          "ahead; exit when it closes back below (protective stop 3 ATR)", 3.0, 0, 120,
+          exit_signal=_ma25_exit, target_pct=10.0),
+    Setup("gartley_ma25_leader", "Gartley 25-day MA — market leaders only", "long",
+          lambda d: _ma25_cross_up(d) & (d.RS63 > 0),
+          "Same, only for stocks beating the S&P 500 over 3 months (Gartley Ch. XVII, 'better-than-market')",
+          3.0, 0, 120, exit_signal=_ma25_exit, target_pct=10.0),
+    Setup("rsi2_pullback_leader", "RSI(2) Pullback — market leaders only", "long",
+          lambda d: (d.Close > d.SMA200) & (d.RSI2 < 10) & (d.RS63 > 0),
+          "RSI(2) Pullback, only for stocks beating the S&P 500 over 3 months (Gartley's stock selection)",
+          2.0, 1.5, 5),
 ]
 
 BY_NAME = {s.name: s for s in SETUPS}
@@ -161,3 +226,9 @@ def signals(ind: pd.DataFrame, setup: Setup) -> pd.Series:
 
 def levels(ind: pd.DataFrame, setup: Setup) -> Optional[pd.DataFrame]:
     return setup.levels(ind) if setup.levels else None
+
+
+def exit_mask(ind: pd.DataFrame, setup: Setup) -> Optional[np.ndarray]:
+    if not setup.exit_signal:
+        return None
+    return setup.exit_signal(ind).fillna(False).astype(bool).to_numpy()

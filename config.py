@@ -16,7 +16,7 @@ CUSTOM_WATCHLIST = [
 ]
 
 # Liquidity filters (set to None to disable)
-MIN_PRICE = 5.0
+MIN_PRICE = 10.0            # Gartley: avoid the low-priced "dogs" (erratic stocks under $10)
 MIN_AVG_VOLUME = 200_000    # 20-day average volume
 
 # ---- Daily scan ----

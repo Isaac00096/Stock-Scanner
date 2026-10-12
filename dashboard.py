@@ -20,6 +20,12 @@ def _win(o):
             f"<span class='muted'>({_f(o.get('win_lo'), '', 0)}–{_f(o.get('win_hi'), '%', 0)})</span>")
 
 
+def _tgt(h):
+    if h.get("target") is None:
+        return f"<span class='muted'>{html.escape(h.get('exit_rule') or 'exit rule')}</span>"
+    return f"${h['target']:.2f}"
+
+
 def _ticker(h):
     url = f"https://www.tradingview.com/chart/?symbol={html.escape(h['ticker'])}"
     badge = "" if h["status"] == "validated" else f" <span class='st'>{h['status']}</span>"
@@ -35,7 +41,7 @@ def _limit_table(rows):
         out.append(
             f"<tr>{tk}<td>{html.escape(h['setup'])}{badge}</td>"
             f"<td class='hl'>${h['entry']:.2f}</td><td>{h['distance_pct']:.1f}% below</td>"
-            f"<td>${h['stop']:.2f}</td><td>${h['target']:.2f}</td><td>{h['max_hold']}d</td>"
+            f"<td>${h['stop']:.2f}</td><td>{_tgt(h)}</td><td>{h['max_hold']}d</td>"
             f"<td>{_win(o)}</td><td>{_f(o.get('avg'), '%', 2)}</td><td>{o.get('n', '–')}</td>"
             f"<td>${h['price']:.2f}</td></tr>")
     return ("<div class='wrap'><table><tr><th>Ticker</th><th>Setup</th><th>Buy limit</th><th>Distance</th>"
@@ -52,7 +58,7 @@ def _open_table(rows):
             f"<tr>{tk}<td><span class='dir {h['direction']}'>{h['direction'].upper()}</span></td>"
             f"<td>{html.escape(h['setup'])}{badge}</td><td>{_win(o)}</td>"
             f"<td>{_f(o.get('avg'), '%', 2)}</td><td>{o.get('n', '–')}</td>"
-            f"<td>${h['price']:.2f}</td><td>${h['stop']:.2f}</td><td>${h['target']:.2f}</td>"
+            f"<td>${h['price']:.2f}</td><td>${h['stop']:.2f}</td><td>{_tgt(h)}</td>"
             f"<td>{h['max_hold']}d</td></tr>")
     return ("<div class='wrap'><table><tr><th>Ticker</th><th>Dir</th><th>Setup</th><th>Win rate (95% range)</th>"
             "<th>Avg / trade</th><th>Past trades</th><th>Last close</th><th>Stop</th><th>Target</th>"
@@ -70,7 +76,8 @@ def render(hits, scanned, errors, as_of, validation, validated_names, out_path):
 
     if validation:
         vline = (f"{len(validated_names)} of {len(validation['setups'])} setups validated "
-                 f"(last validated {html.escape(validation['generated'])}) · <a href='validation.html'>see all setups →</a>")
+                 f"(last validated {html.escape(validation['generated'])}) · <a href='validation.html'>see all setups →</a>"
+                 " · <a href='rules.html'>trading rules</a>")
     else:
         vline = "Setups not validated yet — run the validation workflow first."
 

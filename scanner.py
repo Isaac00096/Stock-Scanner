@@ -43,6 +43,7 @@ def main():
         raise SystemExit("ERROR: no tickers to scan.")
     print(f"Scanning {len(tickers)} tickers...")
 
+    market = data.load_market(config.SCAN_PERIOD, args.csv_dir)
     hits, errors, scanned, as_of = [], 0, 0, None
     for ticker, df in data.iter_daily(tickers, config.SCAN_PERIOD, args.csv_dir):
         if df.empty or len(df) < 210:
@@ -51,7 +52,7 @@ def main():
         if not data.liquid(df):
             continue
         scanned += 1
-        ind = indicators.compute_all(df)
+        ind = indicators.compute_all(df, market)
         last = ind.iloc[-1]
         as_of = max(as_of, ind.index[-1]) if as_of is not None else ind.index[-1]
         for s in SETUPS:
@@ -66,19 +67,21 @@ def main():
             hit = {"ticker": ticker, "price": px, "setup": s.label, "direction": s.direction,
                    "status": status, "oos": st.get("oos", {}), "max_hold": s.max_hold,
                    "kind": "limit" if s.is_limit else "open"}
+            lv = levels(ind, s)
+            lv = lv.iloc[-1] if lv is not None else {}
+            entry = float(lv["limit"]) if s.is_limit else px
+            stop, target = lv.get("stop", float("nan")), lv.get("target", float("nan"))
+            if stop != stop:
+                stop = entry * (1 - sign * s.stop_pct) if s.stop_pct is not None else entry - sign * s.stop_atr * a
+            if target != target:
+                target = (entry * (1 + sign * s.target_pct) if s.target_pct is not None
+                          else entry + sign * s.target_atr * a)
+            hit["entry"], hit["stop"] = entry, float(stop)
+            # trend-following exits (no fixed target) show as "exit rule"
+            hit["target"] = None if (s.target_pct or 0) >= 5 else float(target)
+            hit["exit_rule"] = "close below 25-day MA (3-day lead)" if s.exit_signal else ""
             if s.is_limit:
-                lv = levels(ind, s).iloc[-1]
-                entry = float(lv["limit"])
-                stop = lv.get("stop", float("nan"))
-                target = lv.get("target", float("nan"))
-                hit["entry"] = entry
-                hit["stop"] = float(stop) if stop == stop else entry - sign * s.stop_atr * a
-                hit["target"] = float(target) if target == target else entry + sign * s.target_atr * a
                 hit["distance_pct"] = (px - entry) / px * 100
-            else:
-                hit["entry"] = px
-                hit["stop"] = px - sign * s.stop_atr * a
-                hit["target"] = px + sign * s.target_atr * a
             hits.append(hit)
 
     validated_names = [v["label"] for v in vstats.values() if v["status"] == "validated"]
