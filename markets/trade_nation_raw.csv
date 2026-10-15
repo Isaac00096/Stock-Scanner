@@ -1,23 +1,63 @@
 tn_symbol,name,class
-AAPL,Apple,stock
-AMZN,Amazon.com,stock
-AMD.EX,AMD - Extended Hours,stock
-DE,Deere & Co,stock
-DELL,Dell Technologies,stock
-DUK,Duke Energy Corp,stock
-GOOG.EX,Alphabet - Extended Hours,stock
-META.EX,Meta Platforms - Extended Hours,stock
-NVDA,NVIDIA Corp,stock
-NVDA.EX,NVIDIA - Extended Hours,stock
-NVDA.MN,NVIDIA Corp - Mini,stock
-PCG,PG&E Corp,stock
-SPCX.EX,SpaceX - Extended Hours,stock
-TSLA,Tesla Inc,stock
-WMT,Walmart,stock
-LLOY.L,Lloyds Banking Group,stock
-RR.L,Rolls-Royce,stock
-SHEL.L,Shell PLC,stock
-SU.PA,Schneider Electric,stock
+ALUMINIUM,Aluminium,commodity
+BRENT,Brent Crude,commodity
+COCOA,Cocoa (NY),commodity
+COFFEE,Coffee,commodity
+COPPER,Copper,commodity
+CORN,Corn,commodity
+COTTON,Cotton,commodity
+LEAD,Lead,commodity
+NATURALGAS,Natural Gas,commodity
+ORANGEJUICE,Orange Juice,commodity
+SOYABEAN,Soya Bean,commodity
+SUGARNO5,Sugar No 5,commodity
+WHEAT,Wheat,commodity
+WTI,US Light Crude,commodity
+XAGUSD,Silver,commodity
+XAUUSD,Gold,commodity
+ZINC,Zinc,commodity
+ADAUSD,Cardano,crypto
+BTCUSD,Bitcoin,crypto
+ETHUSD,Ethereum,crypto
+LTCUSD,Litecoin,crypto
+SOLANA,Solana,crypto
+TRONUSD,Tron,crypto
+AUDCAD,AUD/CAD,forex
+AUDCHF,AUD/CHF,forex
+AUDJPY,AUD/JPY,forex
+AUDNZD,AUD/NZD,forex
+AUDUSD,AUD/USD,forex
+CADCHF,CAD/CHF,forex
+CADJPY,CAD/JPY,forex
+CHFJPY,CHF/JPY,forex
+EURAUD,EUR/AUD,forex
+EURCAD,EUR/CAD,forex
+EURCHF,EUR/CHF,forex
+EURGBP,EUR/GBP,forex
+EURJPY,EUR/JPY,forex
+EURNZD,EUR/NZD,forex
+EURPLN,EUR/PLN,forex
+EURUSD,EUR/USD,forex
+EURZAR,EUR/ZAR,forex
+GBPAUD,GBP/AUD,forex
+GBPCAD,GBP/CAD,forex
+GBPCHF,GBP/CHF,forex
+GBPJPY,GBP/JPY,forex
+GBPNZD,GBP/NZD,forex
+GBPPLN,GBP/PLN,forex
+GBPUSD,GBP/USD,forex
+GBPZAR,GBP/ZAR,forex
+NZDCAD,NZD/CAD,forex
+NZDCHF,NZD/CHF,forex
+NZDJPY,NZD/JPY,forex
+NZDUSD,NZD/USD,forex
+USDCAD,USD/CAD,forex
+USDCHF,USD/CHF,forex
+USDJPY,USD/JPY,forex
+USDMXN,USD/MXN,forex
+USDPLN,USD/PLN,forex
+USDSGD,USD/SGD,forex
+USDZAR,USD/ZAR,forex
 AUS200,Australia 200,index
 DE40,Germany 40,index
 DE40FU,Germany 40 - Rolling Future,index
@@ -37,8 +77,8 @@ US2000FU,US 2000 - Rolling Future,index
 US30,Wall Street 30,index
 US30FU,Wall Street 30 - Rolling Future,index
 US500,US 500,index
-US500FU,US 500 - Rolling Future,index
 US500AUD,US 500 (AUD),index
+US500FU,US 500 - Rolling Future,index
 USTEC,US Tech 100,index
 USTECFU,US Tech 100 - Rolling Future,index
 DE40UK100,Germany 40 / UK 100 spread,index_spread
@@ -47,56 +87,99 @@ US30DE40,Wall St 30 / Germany 40 spread,index_spread
 US30UK100,Wall St 30 / UK 100 spread,index_spread
 US30USTEC,Wall St 30 / US Tech 100 spread,index_spread
 US500US2000,US 500 / US 2000 spread,index_spread
-AUDCAD,AUD/CAD,forex
-AUDCHF,AUD/CHF,forex
-AUDJPY,AUD/JPY,forex
-AUDNZD,AUD/NZD,forex
-AUDUSD,AUD/USD,forex
-CADCHF,CAD/CHF,forex
-CADJPY,CAD/JPY,forex
-CHFJPY,CHF/JPY,forex
-EURAUD,EUR/AUD,forex
-EURCAD,EUR/CAD,forex
-EURCHF,EUR/CHF,forex
-EURGBP,EUR/GBP,forex
-EURJPY,EUR/JPY,forex
-EURNZD,EUR/NZD,forex
-EURUSD,EUR/USD,forex
-GBPAUD,GBP/AUD,forex
-GBPCAD,GBP/CAD,forex
-GBPCHF,GBP/CHF,forex
-GBPJPY,GBP/JPY,forex
-GBPNZD,GBP/NZD,forex
-GBPUSD,GBP/USD,forex
-GBPZAR,GBP/ZAR,forex
-NZDCAD,NZD/CAD,forex
-NZDCHF,NZD/CHF,forex
-NZDJPY,NZD/JPY,forex
-NZDUSD,NZD/USD,forex
-USDCAD,USD/CAD,forex
-USDCHF,USD/CHF,forex
-USDJPY,USD/JPY,forex
-USDMXN,USD/MXN,forex
-USDPLN,USD/PLN,forex
-USDZAR,USD/ZAR,forex
-ALUMINIUM,Aluminium,commodity
-BRENT,Brent Crude,commodity
-COCOA,Cocoa (NY),commodity
-COFFEE,Coffee,commodity
-COPPER,Copper,commodity
-COTTON,Cotton,commodity
-LEAD,Lead,commodity
-NATURALGAS,Natural Gas,commodity
-ORANGEJUICE,Orange Juice,commodity
-SOYABEAN,Soya Bean,commodity
-SUGARNO5,Sugar No 5,commodity
-WHEAT,Wheat,commodity
-WTI,US Light Crude,commodity
-XAGUSD,Silver,commodity
-XAUUSD,Gold,commodity
-ZINC,Zinc,commodity
-BTCUSD,Bitcoin,crypto
-ETHUSD,Ethereum,crypto
-LTCUSD,Litecoin,crypto
-SOLANA,Solana,crypto
-TRONUSD,Tron,crypto
+ABI.BR,Anheuser-Busch InBev,stock_eu
+AD.AS,Ahold Delhaize,stock_eu
+ADS.DE,Adidas,stock_eu
+ADYEN.AS,Adyen,stock_eu
+AF.PA,Air France KLM,stock_eu
+AI.PA,Air Liquide,stock_eu
+AIR.PA,Airbus Group SE,stock_eu
+ALIOR,Alior Bank SA (Poland),stock_eu
+ALLEGRO,Allegro SA (Poland),stock_eu
+ALTR,Altri SGPS SA (Portugal),stock_eu
+ALV.DE,Allianz SE,stock_eu
+ASML.AS,ASML Holding NV,stock_eu
+KGHM,KGHM Polska Miedz SA,stock_eu
+NDA.HE,Nordea Bank,stock_eu
+NOVOB.CO,Novo Nordisk AS,stock_eu
+SU.PA,Schneider Electric,stock_eu
+TTE.PA,TotalEnergies,stock_eu
+ABG.JO,Absa Group,stock_jse
+AGL.JO,Anglo American,stock_jse
+AAF.L,Airtel Africa PLC,stock_uk
+AAL.L,Anglo American,stock_uk
+ABDN.L,abrdn,stock_uk
+ABF.L,Associated British Foods,stock_uk
+ADM.L,Admiral Group,stock_uk
+AHT.L,Ashtead Group,stock_uk
+ALW.L,Alliance Witan PLC,stock_uk
+AZN.L,AstraZeneca,stock_uk
+BP.L,BP,stock_uk
+BT.L,BT,stock_uk
+CNA.L,Centrica,stock_uk
+LLOY.L,Lloyds Banking Group,stock_uk
+LSEG.L,London Stock Exchange,stock_uk
+PSON.L,Pearson,stock_uk
+RR.L,Rolls-Royce,stock_uk
+SHEL.L,Shell PLC,stock_uk
+A,Agilent,stock_us
+AA,Alcoa Inc,stock_us
+AAL,American Airlines Group,stock_us
+AAPL,Apple,stock_us
+ABBV,AbbVie Inc,stock_us
+ABNB,Airbnb,stock_us
+ABT,Abbott Labs,stock_us
+ACGL,Arch Capital Group,stock_us
+ACN,Accenture,stock_us
+ADBE,Adobe Systems,stock_us
+ADI,Analog Devices,stock_us
+ADM,Archer-Daniels-Midland,stock_us
+ADP,Automatic Data Processing,stock_us
+ADSK,Autodesk Inc,stock_us
+ADT,ADT Inc,stock_us
+AEE,Ameren Corp,stock_us
+AEP,American Electric Power,stock_us
+AES,AES Corp,stock_us
+AFL,Aflac Inc,stock_us
+AIG,AIG,stock_us
+AIZ,Assurant Inc,stock_us
+AJG,Arthur Gallagher,stock_us
+AKAM,Akamai Tech,stock_us
+ALB,Albemarle,stock_us
+ALGN,Align,stock_us
+ALK,Alaska Air,stock_us
+ALL,Allstate Corp,stock_us
+ALLE,Allegion PLC,stock_us
+AMD,AMD,stock_us
+AMZN,Amazon.com,stock_us
+ASML,ASML (US listing),stock_us
+BAC,Bank of America,stock_us
+BB,BlackBerry Ltd,stock_us
+BRK.B,Berkshire Hathaway Class B,stock_us
+C,Citigroup,stock_us
+DE,Deere & Co,stock_us
+DELL,Dell Technologies,stock_us
+DUK,Duke Energy Corp,stock_us
+GOOG,Alphabet (Class C),stock_us
+GOOGL,Alphabet (Class A),stock_us
+GS,Goldman Sachs,stock_us
+HOLX,Hologic,stock_us
+INTC,Intel Corp,stock_us
+KIM,Kimco Realty,stock_us
+META,Meta Platforms Inc,stock_us
+MRNA,Moderna,stock_us
+MSFT,Microsoft,stock_us
+MSTR,MicroStrategy,stock_us
+MU,Micron Technology,stock_us
+NDAQ,Nasdaq OMX,stock_us
+NVDA,NVIDIA Corp,stock_us
+ORCL,Oracle,stock_us
+PCG,PG&E Corp,stock_us
+QCOM,Qualcomm,stock_us
+RKLB,Rocket Lab Inc,stock_us
+SHOP,Shopify Inc,stock_us
+SPCX,SpaceX,stock_us
+TSLA,Tesla Inc,stock_us
+TSM,Taiwan Semiconductor,stock_us
+WDC,Western Digital,stock_us
+WMT,Walmart,stock_us
