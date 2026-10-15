@@ -21,6 +21,35 @@ CUSTOM_WATCHLIST = [
 BROKER_SYMBOLS_FILE = "broker_symbols.txt"
 BROKER_NAME = "Trade Nation"
 
+# ---- Your account (used to show rand risk per trade and what fits your account) ----
+ACCOUNT_ZAR = 100           # current Trade Nation balance
+GOAL_ZAR = 500              # target
+GOAL_DATE = "2026-12-31"
+RISK_PER_TRADE_PCT = 2.0    # max % of the account to lose on one trade (Gartley: keep losses small)
+TOP_PICKS = 5               # how many plain-language "today's plan" cards to show
+
+# ---- Markets (everything Trade Nation offers, from markets/instruments.csv) ----
+# Every setup is validated SEPARATELY in each market, because a pattern that works on US
+# shares may not work on the JSE, forex or gold. A signal only shows if its setup passed in
+# that market.
+#   cost:      assumed spread + slippage per side, in % (rough Trade Nation-style estimates)
+#   benchmark: used for the "market leaders only" setups (None = those setups don't apply)
+#   liquidity: apply MIN_PRICE / MIN_AVG_VOLUME (only meaningful for US shares)
+INSTRUMENTS_FILE = "markets/instruments.csv"
+MARKETS = {
+    "us":        {"label": "US shares",     "cost": 0.05, "benchmark": "SPY",       "liquidity": True,  "units": "$"},
+    "jse":       {"label": "JSE shares",    "cost": 0.15, "benchmark": "STX40.JO",  "liquidity": False, "units": "c"},
+    "uk":        {"label": "UK shares",     "cost": 0.10, "benchmark": "^FTSE",     "liquidity": False, "units": "p"},
+    "eu":        {"label": "European shares", "cost": 0.10, "benchmark": "^STOXX50E", "liquidity": False, "units": ""},
+    "index":     {"label": "Indices",       "cost": 0.03, "benchmark": None,        "liquidity": False, "units": ""},
+    "forex":     {"label": "Forex",         "cost": 0.02, "benchmark": None,        "liquidity": False, "units": ""},
+    "commodity": {"label": "Commodities",   "cost": 0.05, "benchmark": None,        "liquidity": False, "units": "$"},
+    "crypto":    {"label": "Crypto",        "cost": 0.25, "benchmark": None,        "liquidity": False, "units": "$"},
+}
+# US shares are validated on the Trade Nation US list PLUS the wider NYSE list (more history,
+# clearer verdicts). Other markets are validated on their Trade Nation instruments only.
+US_VALIDATE_WITH_NYSE = True
+
 # Liquidity filters (set to None to disable)
 MIN_PRICE = 10.0            # Gartley: avoid the low-priced "dogs" (erratic stocks under $10)
 MIN_AVG_VOLUME = 200_000    # 20-day average volume

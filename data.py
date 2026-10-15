@@ -91,10 +91,24 @@ def csv_tickers(csv_dir: str) -> list[str]:
     return sorted(f[:-4] for f in os.listdir(csv_dir) if f.endswith(".csv"))
 
 
-def load_market(period: str, csv_dir: str | None = None) -> pd.Series | None:
-    """S&P 500 proxy (SPY) closes, for 'better-than-market' comparisons. None if unavailable."""
-    for _, df in iter_daily(["SPY"], period, csv_dir):
+def load_benchmark(symbol: str | None, period: str, csv_dir: str | None = None) -> pd.Series | None:
+    """Closes of a market benchmark (e.g. SPY), for 'better-than-market' comparisons."""
+    if not symbol:
+        return None
+    for _, df in iter_daily([symbol], period, csv_dir):
         if not df.empty:
             return df["Close"]
-    print("Note: market data (SPY) unavailable; 'market leaders' setups will not trigger.")
+    print(f"Note: benchmark {symbol} unavailable; 'market leaders' setups will not trigger there.")
     return None
+
+
+def load_market(period: str, csv_dir: str | None = None) -> pd.Series | None:
+    return load_benchmark("SPY", period, csv_dir)
+
+
+def instruments() -> pd.DataFrame:
+    """Trade Nation instruments: tn_symbol, yahoo, market, name, tradingview (empty if file missing)."""
+    path = config.INSTRUMENTS_FILE
+    if not os.path.exists(path):
+        return pd.DataFrame(columns=["tn_symbol", "yahoo", "market", "name", "tradingview"])
+    return pd.read_csv(path)

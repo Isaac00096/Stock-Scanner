@@ -25,6 +25,7 @@ ETHUSD,Ethereum,crypto
 LTCUSD,Litecoin,crypto
 SOLANA,Solana,crypto
 TRONUSD,Tron,crypto
+XLMUSD,Stellar,crypto
 AUDCAD,AUD/CAD,forex
 AUDCHF,AUD/CHF,forex
 AUDJPY,AUD/JPY,forex
@@ -228,6 +229,8 @@ VNA.DE,Vonovia,stock_eu
 VOW3.DE,Volkswagen,stock_eu
 VWS.CO,Vestas,stock_eu
 WKL.AS,Wolters Kluwer,stock_eu
+ZABKA,Zabka Group,stock_eu
+ZAL,Zalando,stock_eu
 ABG.JO,Absa Group,stock_jse
 AGL.JO,Anglo American,stock_jse
 AMS.JO,Anglo American Platinum,stock_jse
@@ -402,6 +405,7 @@ UU.L,United Utilities,stock_uk
 VOD.L,Vodafone,stock_uk
 WEIR.L,Weir Group,stock_uk
 WPP.L,WPP,stock_uk
+WTB.L,Whitbread,stock_uk
 A,Agilent,stock_us
 AA,Alcoa Inc,stock_us
 AAL,American Airlines Group,stock_us
@@ -957,3 +961,20 @@ WMB,Williams Companies,stock_us
 WMT,Walmart,stock_us
 WRB,WR Berkley,stock_us
 WST,West Pharmaceutical,stock_us
+WTW,Willis Towers Watson,stock_us
+WU,Western Union,stock_us
+WY,Weyerhaeuser,stock_us
+WYNN,Wynn Resorts,stock_us
+XEL,Xcel Energy,stock_us
+XOM,Exxon Mobil,stock_us
+XPEV,XPeng,stock_us
+XRAY,Dentsply Sirona,stock_us
+XRX,Xerox,stock_us
+XYL,Xylem,stock_us
+YUM,Yum! Brands,stock_us
+ZBH,Zimmer Biomet,stock_us
+ZBRA,Zebra Technologies,stock_us
+ZION,Zions Bancorp,stock_us
+ZM,Zoom,stock_us
+ZS,Zscaler,stock_us
+ZTS,Zoetis,stock_us

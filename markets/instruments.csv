@@ -1,0 +1,961 @@
+tn_symbol,yahoo,market,name,tradingview
+ALUMINIUM,ALI=F,commodity,Aluminium,ALUMINIUM
+BRENT,BZ=F,commodity,Brent Crude,BRENT
+COCOA,CC=F,commodity,Cocoa (NY),COCOA
+COFFEE,KC=F,commodity,Coffee,COFFEE
+COPPER,HG=F,commodity,Copper,COPPER
+CORN,ZC=F,commodity,Corn,CORN
+COTTON,CT=F,commodity,Cotton,COTTON
+NATURALGAS,NG=F,commodity,Natural Gas,NATURALGAS
+ORANGEJUICE,OJ=F,commodity,Orange Juice,ORANGEJUICE
+SOYABEAN,ZS=F,commodity,Soya Bean,SOYABEAN
+WHEAT,ZW=F,commodity,Wheat,WHEAT
+WTI,CL=F,commodity,US Light Crude,WTI
+XAGUSD,SI=F,commodity,Silver,XAGUSD
+XAUUSD,GC=F,commodity,Gold,XAUUSD
+ADAUSD,ADA-USD,crypto,Cardano,CRYPTO:ADAUSD
+BTCUSD,BTC-USD,crypto,Bitcoin,CRYPTO:BTCUSD
+DASHCUSD,DASH-USD,crypto,Dash,CRYPTO:DASHUSD
+EOSUSD,EOS-USD,crypto,EOS,CRYPTO:EOSUSD
+ETHUSD,ETH-USD,crypto,Ethereum,CRYPTO:ETHUSD
+LTCUSD,LTC-USD,crypto,Litecoin,CRYPTO:LTCUSD
+SOLANA,SOL-USD,crypto,Solana,CRYPTO:SOLUSD
+TRONUSD,TRX-USD,crypto,Tron,CRYPTO:TRXUSD
+XLMUSD,XLM-USD,crypto,Stellar,CRYPTO:XLMUSD
+ABI.BR,ABI.BR,eu,Anheuser-Busch InBev,ABI
+AD.AS,AD.AS,eu,Ahold Delhaize,AD
+ADS.DE,ADS.DE,eu,Adidas,ADS
+ADYEN.AS,ADYEN.AS,eu,Adyen,ADYEN
+AF.PA,AF.PA,eu,Air France KLM,AF
+AI.PA,AI.PA,eu,Air Liquide,AI
+AIR.PA,AIR.PA,eu,Airbus Group SE,AIR
+ALIOR,ALR.WA,eu,Alior Bank SA (Poland),ALR
+ALLEGRO,ALE.WA,eu,Allegro SA (Poland),ALE
+ALTR,ALTR.LS,eu,Altri SGPS SA (Portugal),ALTR
+ALV.DE,ALV.DE,eu,Allianz SE,ALV
+AMBUB.CO,AMBU-B.CO,eu,Ambu AS,AMBU-B
+ASML.AS,ASML.AS,eu,ASML Holding NV,ASML
+BAS.DE,BAS.DE,eu,BASF,BAS
+BAVA.CO,BAVA.CO,eu,Bavarian Nordic,BAVA
+BAYN.DE,BAYN.DE,eu,Bayer,BAYN
+BBVA.MC,BBVA.MC,eu,BBVA,BBVA
+BCP,BCP.LS,eu,Banco Comercial Portugues,BCP
+BEI,BEI.DE,eu,Beiersdorf,BEI
+BMW.DE,BMW.DE,eu,BMW,BMW
+BN.PA,BN.PA,eu,Danone,BN
+BNP.PA,BNP.PA,eu,BNP Paribas,BNP
+BNR,BNR.DE,eu,Brenntag,BNR
+BUDIMEX,BDX.WA,eu,Budimex SA,BDX
+CA.PA,CA.PA,eu,Carrefour,CA
+CAP.PA,CAP.PA,eu,Capgemini,CAP
+CARL_B.CO,CARL-B.CO,eu,Carlsberg,CARL-B
+CBK,CBK.DE,eu,Commerzbank,CBK
+CDPROJEKT,CDR.WA,eu,CD Projekt,CDR
+COLOB.CO,COLO-B.CO,eu,Coloplast,COLO-B
+CON,CON.DE,eu,Continental AG,CON
+COR,COR.LS,eu,Corticeira Amorim,COR
+CS.PA,CS.PA,eu,AXA,CS
+CTT,CTT.LS,eu,CTT Correios de Portugal,CTT
+DANSKE.CO,DANSKE.CO,eu,Danske Bank,DANSKE
+DB1.DE,DB1.DE,eu,Deutsche Boerse,DB1
+DBK.DE,DBK.DE,eu,Deutsche Bank,DBK
+DEMANT.CO,DEMANT.CO,eu,Demant,DEMANT
+DG.PA,DG.PA,eu,Vinci,DG
+DHL.DE,DHL.DE,eu,Deutsche Post DHL,DHL
+DINOPL,DNP.WA,eu,Dino Polska,DNP
+DNORD.DC,DNORD.CO,eu,DS Norden,DNORD
+DSV.CO,DSV.CO,eu,DSV,DSV
+DTE.DE,DTE.DE,eu,Deutsche Telekom,DTE
+DTG,DTG.DE,eu,Daimler Truck,DTG
+EDP,EDP.LS,eu,EDP SA,EDP
+EDPR,EDPR.LS,eu,EDP Renovaveis,EDPR
+EGL,EGL.LS,eu,Mota-Engil,EGL
+EL.PA,EL.PA,eu,EssilorLuxottica,EL
+ENEL.MX,ENEL.MI,eu,Enel,ENEL
+ENI.MI,ENI.MI,eu,Eni,ENI
+ENR,ENR.DE,eu,Siemens Energy,ENR
+EOAN.DE,EOAN.DE,eu,E.ON,EOAN
+ERSTEPL,SPL.WA,eu,Erste Bank Polska,SPL
+FLS.CO,FLS.CO,eu,FLSmidth,FLS
+FME,FME.DE,eu,Fresenius Medical Care,FME
+FRE,FRE.DE,eu,Fresenius,FRE
+G1A,G1A.DE,eu,GEA Group,G1A
+G24,G24.DE,eu,Scout24,G24
+GALP,GALP.LS,eu,Galp Energia,GALP
+GLE.PA,GLE.PA,eu,Societe Generale,GLE
+GMAB.CO,GMAB.CO,eu,Genmab,GMAB
+GN.CO,GN.CO,eu,GN Store Nord,GN
+HEI,HEI.DE,eu,Heidelberg Materials,HEI
+HEN3,HEN3.DE,eu,Henkel,HEN3
+HLUNB.CO,HLUN-B.CO,eu,Lundbeck,HLUN-B
+HNR1,HNR1.DE,eu,Hannover Re,HNR1
+IBE.MC,IBE.MC,eu,Iberdrola,IBE
+IBS,IBS.LS,eu,Ibersol,IBS
+IFX.DE,IFX.DE,eu,Infineon,IFX
+ING.AS,ING.AS,eu,ING Group,ING
+ISP.MI,ISP.MI,eu,Intesa Sanpaolo,ISP
+ISS.CO,ISS.CO,eu,ISS,ISS
+ITX.MC,ITX.MC,eu,Inditex,ITX
+JMT,JMT.LS,eu,Jeronimo Martins,JMT
+JYSK.CO,JYSK.CO,eu,Jyske Bank,JYSK
+KEP.PA,KEP.PA,eu,Kering,KEP
+KETY,KTY.WA,eu,Grupa Kety,KTY
+KGHM,KGH.WA,eu,KGHM Polska Miedz SA,KGH
+KNEVB.HE,KNEBV.HE,eu,Kone,KNEBV
+KRUK,KRU.WA,eu,Kruk SA,KRU
+LHA,LHA.DE,eu,Lufthansa,LHA
+MAERSK_B.CO,MAERSK-B.CO,eu,AP Moller-Maersk B,MAERSK-B
+MBANK,MBK.WA,eu,mBank,MBK
+MBG.DE,MBG.DE,eu,Mercedes-Benz,MBG
+MC.PA,MC.PA,eu,LVMH,MC
+MODIVO,MDV.WA,eu,Modivo,MDV
+MRK.DE,MRK.DE,eu,Merck KGaA,MRK
+MTX,MTX.DE,eu,MTU Aero Engines,MTX
+NDA.HE,NDA.HE,eu,Nordea Bank,NDA
+NETC.CO,NETC.CO,eu,Netcompany,NETC
+NOKIA.HE,NOKIA.HE,eu,Nokia,NOKIA
+NOS,NOS.LS,eu,NOS SGPS,NOS
+NOVOB.CO,NOVO-B.CO,eu,Novo Nordisk AS,NOVO-B
+NVG,NVG.LS,eu,The Navigator Company,NVG
+OR.PA,OR.PA,eu,L'Oreal,OR
+ORSTED.CO,ORSTED.CO,eu,Orsted,ORSTED
+PAH3,PAH3.DE,eu,Porsche Automobil Holding,PAH3
+PEKAO,PEO.WA,eu,Bank Pekao,PEO
+PEPCO,PCO.WA,eu,Pepco Group,PCO
+PGE,PGE.WA,eu,PGE SA,PGE
+PHIA.AS,PHIA.AS,eu,Philips,PHIA
+PKNORLEN,PKN.WA,eu,Orlen,PKN
+PKOBP,PKO.WA,eu,PKO Bank Polski,PKO
+PNDORA.CO,PNDORA.CO,eu,Pandora,PNDORA
+PRX.AS,PRX.AS,eu,Prosus,PRX
+PZU,PZU.WA,eu,PZU SA,PZU
+QIA,QIA.DE,eu,Qiagen,QIA
+RACE.MI,RACE.MI,eu,Ferrari,RACE
+RBREW.CO,RBREW.CO,eu,Royal Unibrew,RBREW
+RENE,RENE.LS,eu,REN Redes Energeticas,RENE
+RHM,RHM.DE,eu,Rheinmetall,RHM
+RI.PA,RI.PA,eu,Pernod Ricard,RI
+RMS.PA,RMS.PA,eu,Hermes,RMS
+ROCKB.CO,ROCK-B.CO,eu,Rockwool,ROCK-B
+RWE.DE,RWE.DE,eu,RWE,RWE
+SAF.PA,SAF.PA,eu,Safran,SAF
+SAN.MC,SAN.MC,eu,Banco Santander,SAN
+SAN.PA,SAN.PA,eu,Sanofi,SAN
+SAP.DE,SAP.DE,eu,SAP,SAP
+SEM,SEM.LS,eu,Semapa,SEM
+SHL,SHL.DE,eu,Siemens Healthineers,SHL
+SIE.DE,SIE.DE,eu,Siemens,SIE
+SON,SON.LS,eu,Sonae,SON
+STLAM.MI,STLAM.MI,eu,Stellantis,STLAM
+STMPA.PA,STMPA.PA,eu,STMicroelectronics,STMPA
+SU.PA,SU.PA,eu,Schneider Electric,SU
+SY1,SY1.DE,eu,Symrise,SY1
+TAURONPE,TPE.WA,eu,Tauron Polska,TPE
+TEF.MC,TEF.MC,eu,Telefonica,TEF
+TRYG.CO,TRYG.CO,eu,Tryg,TRYG
+TTE.PA,TTE.PA,eu,TotalEnergies,TTE
+TUI.DE,TUI.DE,eu,TUI,TUI
+UCG.MI,UCG.MI,eu,UniCredit,UCG
+VNA.DE,VNA.DE,eu,Vonovia,VNA
+VOW3.DE,VOW3.DE,eu,Volkswagen,VOW3
+VWS.CO,VWS.CO,eu,Vestas,VWS
+WKL.AS,WKL.AS,eu,Wolters Kluwer,WKL
+ZABKA,ZAB.WA,eu,Zabka Group,ZAB
+ZAL,ZAL.DE,eu,Zalando,ZAL
+AUDCAD,AUDCAD=X,forex,AUD/CAD,FX:AUDCAD
+AUDCHF,AUDCHF=X,forex,AUD/CHF,FX:AUDCHF
+AUDJPY,AUDJPY=X,forex,AUD/JPY,FX:AUDJPY
+AUDNZD,AUDNZD=X,forex,AUD/NZD,FX:AUDNZD
+AUDUSD,AUDUSD=X,forex,AUD/USD,FX:AUDUSD
+CADCHF,CADCHF=X,forex,CAD/CHF,FX:CADCHF
+CADJPY,CADJPY=X,forex,CAD/JPY,FX:CADJPY
+CHFJPY,CHFJPY=X,forex,CHF/JPY,FX:CHFJPY
+EURAUD,EURAUD=X,forex,EUR/AUD,FX:EURAUD
+EURCAD,EURCAD=X,forex,EUR/CAD,FX:EURCAD
+EURCHF,EURCHF=X,forex,EUR/CHF,FX:EURCHF
+EURGBP,EURGBP=X,forex,EUR/GBP,FX:EURGBP
+EURJPY,EURJPY=X,forex,EUR/JPY,FX:EURJPY
+EURNZD,EURNZD=X,forex,EUR/NZD,FX:EURNZD
+EURPLN,EURPLN=X,forex,EUR/PLN,FX:EURPLN
+EURUSD,EURUSD=X,forex,EUR/USD,FX:EURUSD
+EURZAR,EURZAR=X,forex,EUR/ZAR,FX:EURZAR
+GBPAUD,GBPAUD=X,forex,GBP/AUD,FX:GBPAUD
+GBPCAD,GBPCAD=X,forex,GBP/CAD,FX:GBPCAD
+GBPCHF,GBPCHF=X,forex,GBP/CHF,FX:GBPCHF
+GBPJPY,GBPJPY=X,forex,GBP/JPY,FX:GBPJPY
+GBPNZD,GBPNZD=X,forex,GBP/NZD,FX:GBPNZD
+GBPPLN,GBPPLN=X,forex,GBP/PLN,FX:GBPPLN
+GBPUSD,GBPUSD=X,forex,GBP/USD,FX:GBPUSD
+GBPZAR,GBPZAR=X,forex,GBP/ZAR,FX:GBPZAR
+NZDCAD,NZDCAD=X,forex,NZD/CAD,FX:NZDCAD
+NZDCHF,NZDCHF=X,forex,NZD/CHF,FX:NZDCHF
+NZDJPY,NZDJPY=X,forex,NZD/JPY,FX:NZDJPY
+NZDUSD,NZDUSD=X,forex,NZD/USD,FX:NZDUSD
+USDCAD,USDCAD=X,forex,USD/CAD,FX:USDCAD
+USDCHF,USDCHF=X,forex,USD/CHF,FX:USDCHF
+USDJPY,USDJPY=X,forex,USD/JPY,FX:USDJPY
+USDMXN,USDMXN=X,forex,USD/MXN,FX:USDMXN
+USDPLN,USDPLN=X,forex,USD/PLN,FX:USDPLN
+USDSGD,USDSGD=X,forex,USD/SGD,FX:USDSGD
+USDZAR,USDZAR=X,forex,USD/ZAR,FX:USDZAR
+AUS200,^AXJO,index,Australia 200,ASX:XJO
+DE40,^GDAXI,index,Germany 40,XETR:DAX
+F40,^FCHI,index,France 40,EURONEXT:PX1
+HK50,^HSI,index,Hong Kong 50,TVC:HSI
+IBEX,^IBEX,index,Spain 35,BME:IBC
+JP225,^N225,index,Japan 225,TVC:NI225
+SA40,STX40.JO,index,South Africa 40,JSE:J200
+SMI,^SSMI,index,Switzerland 20,SIX:SMI
+STOXX50,^STOXX50E,index,Euro Stocks 50,TVC:SX5E
+UK100,^FTSE,index,UK 100,TVC:UKX
+US2000,^RUT,index,US 2000,TVC:RUT
+US30,^DJI,index,Wall Street 30,DJ:DJI
+US500,^GSPC,index,US 500,SP:SPX
+USTEC,^NDX,index,US Tech 100,NASDAQ:NDX
+ABG.JO,ABG.JO,jse,Absa Group,JSE:ABG
+AGL.JO,AGL.JO,jse,Anglo American,JSE:AGL
+AMS.JO,AMS.JO,jse,Anglo American Platinum,JSE:AMS
+ANG.JO,ANG.JO,jse,AngloGold Ashanti,JSE:ANG
+ANH.JO,ANH.JO,jse,Anheuser-Busch InBev (JSE),JSE:ANH
+APN.JO,APN.JO,jse,Aspen Pharmacare,JSE:APN
+BHG.JO,BHG.JO,jse,BHP Group (JSE),JSE:BHG
+BID.JO,BID.JO,jse,Bid Corporation,JSE:BID
+BTI.JO,BTI.JO,jse,British American Tobacco (JSE),JSE:BTI
+BVT.JO,BVT.JO,jse,Bidvest Group,JSE:BVT
+CFR.JO,CFR.JO,jse,Richemont (JSE),JSE:CFR
+CLS.JO,CLS.JO,jse,Clicks Group,JSE:CLS
+CPI.JO,CPI.JO,jse,Capitec,JSE:CPI
+DSY.JO,DSY.JO,jse,Discovery,JSE:DSY
+EXX.JO,EXX.JO,jse,Exxaro Resources,JSE:EXX
+FSR.JO,FSR.JO,jse,FirstRand,JSE:FSR
+GFI.JO,GFI.JO,jse,Gold Fields,JSE:GFI
+GLN.JO,GLN.JO,jse,Glencore (JSE),JSE:GLN
+HMY.JO,HMY.JO,jse,Harmony Gold,JSE:HMY
+IMP.JO,IMP.JO,jse,Impala Platinum,JSE:IMP
+INL.JO,INL.JO,jse,Investec Ltd,JSE:INL
+LHC.JO,LHC.JO,jse,Life Healthcare,JSE:LHC
+MRP.JO,MRP.JO,jse,Mr Price,JSE:MRP
+MTN.JO,MTN.JO,jse,MTN Group,JSE:MTN
+NED.JO,NED.JO,jse,Nedbank,JSE:NED
+NPH.JO,NPH.JO,jse,Northam Platinum,JSE:NPH
+NPN.JO,NPN.JO,jse,Naspers,JSE:NPN
+NRP.JO,NRP.JO,jse,NEPI Rockcastle,JSE:NRP
+OMU.JO,OMU.JO,jse,Old Mutual,JSE:OMU
+PIK.JO,PIK.JO,jse,Pick n Pay,JSE:PIK
+PRX.JO,PRX.JO,jse,Prosus (JSE),JSE:PRX
+REM.JO,REM.JO,jse,Remgro,JSE:REM
+RNI.JO,RNI.JO,jse,Reinet Investments,JSE:RNI
+SBK.JO,SBK.JO,jse,Standard Bank,JSE:SBK
+SHP.JO,SHP.JO,jse,Shoprite,JSE:SHP
+SLM.JO,SLM.JO,jse,Sanlam,JSE:SLM
+SOL.JO,SOL.JO,jse,Sasol,JSE:SOL
+SSW.JO,SSW.JO,jse,Sibanye-Stillwater,JSE:SSW
+TFG.JO,TFG.JO,jse,The Foschini Group,JSE:TFG
+VOD.JO,VOD.JO,jse,Vodacom,JSE:VOD
+WHL.JO,WHL.JO,jse,Woolworths Holdings,JSE:WHL
+AAF.L,AAF.L,uk,Airtel Africa PLC,LSE:AAF
+AAL.L,AAL.L,uk,Anglo American,LSE:AAL
+ABDN.L,ABDN.L,uk,abrdn,LSE:ABDN
+ABF.L,ABF.L,uk,Associated British Foods,LSE:ABF
+ADM.L,ADM.L,uk,Admiral Group,LSE:ADM
+AHT.L,AHT.L,uk,Ashtead Group,LSE:AHT
+ALW.L,ALW.L,uk,Alliance Witan PLC,LSE:ALW
+AML.L,AML.L,uk,Aston Martin Lagonda,LSE:AML
+ANTO.L,ANTO.L,uk,Antofagasta,LSE:ANTO
+ASC.L,ASC.L,uk,ASOS,LSE:ASC
+AUTO.L,AUTO.L,uk,Auto Trader Group,LSE:AUTO
+AV.L,AV.L,uk,Aviva,LSE:AV
+AZN.L,AZN.L,uk,AstraZeneca,LSE:AZN
+BA.L,BA.L,uk,BAE Systems,LSE:BA
+BAB.L,BAB.L,uk,Babcock International,LSE:BAB
+BARC.L,BARC.L,uk,Barclays,LSE:BARC
+BATS.L,BATS.L,uk,British American Tobacco,LSE:BATS
+BBOX.L,BBOX.L,uk,Tritax Big Box REIT,LSE:BBOX
+BBY.L,BBY.L,uk,Balfour Beatty,LSE:BBY
+BDEV.L,BDEV.L,uk,Barratt Developments,LSE:BDEV
+BEZ.L,BEZ.L,uk,Beazley,LSE:BEZ
+BHP.L,BHP.L,uk,BHP Group PLC,LSE:BHP
+BKG.L,BKG.L,uk,Berkeley Group,LSE:BKG
+BLND.L,BLND.L,uk,British Land,LSE:BLND
+BME.L,BME.L,uk,B&M European Value Retail,LSE:BME
+BNZL.L,BNZL.L,uk,Bunzl,LSE:BNZL
+BP.L,BP.L,uk,BP,LSE:BP
+BRBY.L,BRBY.L,uk,Burberry,LSE:BRBY
+BT.L,BT.L,uk,BT,LSE:BT
+BWY.L,BWY.L,uk,Bellway,LSE:BWY
+CBG.L,CBG.L,uk,Close Brothers,LSE:CBG
+CCH.L,CCH.L,uk,Coca-Cola HBC,LSE:CCH
+CNA.L,CNA.L,uk,Centrica,LSE:CNA
+CPG.L,CPG.L,uk,Compass Group,LSE:CPG
+CRDA.L,CRDA.L,uk,Croda International,LSE:CRDA
+CRH.L,CRH.L,uk,CRH PLC,LSE:CRH
+CRST.L,CRST.L,uk,Crest Nicholson,LSE:CRST
+CTEC.L,CTEC.L,uk,Convatec Group,LSE:CTEC
+CTY.L,CTY.L,uk,City of London Investment Trust,LSE:CTY
+CURY.L,CURY.L,uk,Currys,LSE:CURY
+DCC.L,DCC.L,uk,DCC PLC,LSE:DCC
+DGE.L,DGE.L,uk,Diageo,LSE:DGE
+DPLM.L,DPLM.L,uk,Diploma,LSE:DPLM
+DRX.L,DRX.L,uk,Drax Group,LSE:DRX
+EDV.L,EDV.L,uk,Endeavour Mining,LSE:EDV
+ENT.L,ENT.L,uk,Entain,LSE:ENT
+EXPN.L,EXPN.L,uk,Experian,LSE:EXPN
+EZJ.L,EZJ.L,uk,easyJet,LSE:EZJ
+FCIT.L,FCIT.L,uk,F&C Investment Trust,LSE:FCIT
+FLTR.L,FLTR.L,uk,Flutter Entertainment,LSE:FLTR
+FRAS.L,FRAS.L,uk,Frasers Group,LSE:FRAS
+FRES.L,FRES.L,uk,Fresnillo,LSE:FRES
+GAW.L,GAW.L,uk,Games Workshop,LSE:GAW
+GLEN.L,GLEN.L,uk,Glencore,LSE:GLEN
+GRG.L,GRG.L,uk,Greggs,LSE:GRG
+GSK.L,GSK.L,uk,GSK,LSE:GSK
+HIK.L,HIK.L,uk,Hikma,LSE:HIK
+HLMA.L,HLMA.L,uk,Halma,LSE:HLMA
+HLN.L,HLN.L,uk,Haleon,LSE:HLN
+HSBA.L,HSBA.L,uk,HSBC,LSE:HSBA
+HSX.L,HSX.L,uk,Hiscox,LSE:HSX
+HWDN.L,HWDN.L,uk,Howden Joinery,LSE:HWDN
+IAG.L,IAG.L,uk,International Airlines Group,LSE:IAG
+IGG.L,IGG.L,uk,IG Group,LSE:IGG
+IHG.L,IHG.L,uk,InterContinental Hotels,LSE:IHG
+III.L,III.L,uk,3i Group,LSE:III
+IMB.L,IMB.L,uk,Imperial Brands,LSE:IMB
+IMI.L,IMI.L,uk,IMI,LSE:IMI
+INF.L,INF.L,uk,Informa,LSE:INF
+ITRK.L,ITRK.L,uk,Intertek,LSE:ITRK
+ITV.L,ITV.L,uk,ITV,LSE:ITV
+JD.L,JD.L,uk,JD Sports,LSE:JD
+JDW.L,JDW.L,uk,JD Wetherspoon,LSE:JDW
+JMAT.L,JMAT.L,uk,Johnson Matthey,LSE:JMAT
+JUP.L,JUP.L,uk,Jupiter Fund Management,LSE:JUP
+KGF.L,KGF.L,uk,Kingfisher,LSE:KGF
+LAND.L,LAND.L,uk,Land Securities,LSE:LAND
+LGEN.L,LGEN.L,uk,Legal & General,LSE:LGEN
+LLOY.L,LLOY.L,uk,Lloyds Banking Group,LSE:LLOY
+LMP.L,LMP.L,uk,LondonMetric Property,LSE:LMP
+LSEG.L,LSEG.L,uk,London Stock Exchange,LSE:LSEG
+MAB.L,MAB.L,uk,Mitchells & Butlers,LSE:MAB
+MKS.L,MKS.L,uk,Marks & Spencer,LSE:MKS
+MNDI.L,MNDI.L,uk,Mondi,LSE:MNDI
+MNG.L,MNG.L,uk,M&G,LSE:MNG
+MONY.L,MONY.L,uk,MONY Group,LSE:MONY
+MOON.L,MOON.L,uk,Moonpig,LSE:MOON
+MRO.L,MRO.L,uk,Melrose Industries,LSE:MRO
+NG.L,NG.L,uk,National Grid,LSE:NG
+NWG.L,NWG.L,uk,NatWest,LSE:NWG
+NXT.L,NXT.L,uk,Next,LSE:NXT
+OCDO.L,OCDO.L,uk,Ocado,LSE:OCDO
+PAGE.L,PAGE.L,uk,PageGroup,LSE:PAGE
+PCT.L,PCT.L,uk,Polar Capital Technology,LSE:PCT
+PHNX.L,PHNX.L,uk,Phoenix Group,LSE:PHNX
+PLUS.L,PLUS.L,uk,Plus500,LSE:PLUS
+PNN.L,PNN.L,uk,Pennon,LSE:PNN
+PRU.L,PRU.L,uk,Prudential,LSE:PRU
+PSH.L,PSH.L,uk,Pershing Square Holdings,LSE:PSH
+PSN.L,PSN.L,uk,Persimmon,LSE:PSN
+PSON.L,PSON.L,uk,Pearson,LSE:PSON
+QQ.L,QQ.L,uk,QinetiQ,LSE:QQ
+REL.L,REL.L,uk,RELX,LSE:REL
+RIO.L,RIO.L,uk,Rio Tinto,LSE:RIO
+RKT.L,RKT.L,uk,Reckitt,LSE:RKT
+RMV.L,RMV.L,uk,Rightmove,LSE:RMV
+RR.L,RR.L,uk,Rolls-Royce,LSE:RR
+RTO.L,RTO.L,uk,Rentokil,LSE:RTO
+SBRY.L,SBRY.L,uk,Sainsbury,LSE:SBRY
+SDR.L,SDR.L,uk,Schroders,LSE:SDR
+SGE.L,SGE.L,uk,Sage Group,LSE:SGE
+SGRO.L,SGRO.L,uk,Segro,LSE:SGRO
+SHEL.L,SHEL.L,uk,Shell PLC,LSE:SHEL
+SMIN.L,SMIN.L,uk,Smiths Group,LSE:SMIN
+SMT.L,SMT.L,uk,Scottish Mortgage,LSE:SMT
+SN.L,SN.L,uk,Smith & Nephew,LSE:SN
+SPX.L,SPX.L,uk,Spirax Group,LSE:SPX
+SSE.L,SSE.L,uk,SSE,LSE:SSE
+STAN.L,STAN.L,uk,Standard Chartered,LSE:STAN
+STJ.L,STJ.L,uk,St James's Place,LSE:STJ
+SVT.L,SVT.L,uk,Severn Trent,LSE:SVT
+TLW.L,TLW.L,uk,Tullow Oil,LSE:TLW
+TPK.L,TPK.L,uk,Travis Perkins,LSE:TPK
+TRN.L,TRN.L,uk,Trainline,LSE:TRN
+TRST.L,TRST.L,uk,Trustpilot,LSE:TRST
+TSCO.L,TSCO.L,uk,Tesco,LSE:TSCO
+TW.L,TW.L,uk,Taylor Wimpey,LSE:TW
+ULVR.L,ULVR.L,uk,Unilever,LSE:ULVR
+UTG.L,UTG.L,uk,Unite Group,LSE:UTG
+UU.L,UU.L,uk,United Utilities,LSE:UU
+VOD.L,VOD.L,uk,Vodafone,LSE:VOD
+WEIR.L,WEIR.L,uk,Weir Group,LSE:WEIR
+WPP.L,WPP.L,uk,WPP,LSE:WPP
+WTB.L,WTB.L,uk,Whitbread,LSE:WTB
+A,A,us,Agilent,A
+AA,AA,us,Alcoa Inc,AA
+AAL,AAL,us,American Airlines Group,AAL
+AAPL,AAPL,us,Apple,AAPL
+ABBV,ABBV,us,AbbVie Inc,ABBV
+ABNB,ABNB,us,Airbnb,ABNB
+ABT,ABT,us,Abbott Labs,ABT
+ACGL,ACGL,us,Arch Capital Group,ACGL
+ACN,ACN,us,Accenture,ACN
+ADBE,ADBE,us,Adobe Systems,ADBE
+ADI,ADI,us,Analog Devices,ADI
+ADM,ADM,us,Archer-Daniels-Midland,ADM
+ADP,ADP,us,Automatic Data Processing,ADP
+ADSK,ADSK,us,Autodesk Inc,ADSK
+ADT,ADT,us,ADT Inc,ADT
+AEE,AEE,us,Ameren Corp,AEE
+AEP,AEP,us,American Electric Power,AEP
+AES,AES,us,AES Corp,AES
+AFL,AFL,us,Aflac Inc,AFL
+AIG,AIG,us,AIG,AIG
+AIZ,AIZ,us,Assurant Inc,AIZ
+AJG,AJG,us,Arthur Gallagher,AJG
+AKAM,AKAM,us,Akamai Tech,AKAM
+ALB,ALB,us,Albemarle,ALB
+ALGN,ALGN,us,Align,ALGN
+ALK,ALK,us,Alaska Air,ALK
+ALL,ALL,us,Allstate Corp,ALL
+ALLE,ALLE,us,Allegion PLC,ALLE
+AMAT,AMAT,us,Applied Materials,AMAT
+AMC,AMC,us,AMC Entertainment,AMC
+AMD,AMD,us,AMD,AMD
+AME,AME,us,Ametek,AME
+AMGN,AMGN,us,Amgen,AMGN
+AMP,AMP,us,Ameriprise Financial,AMP
+AMT,AMT,us,American Tower,AMT
+AMZN,AMZN,us,Amazon.com,AMZN
+AN,AN,us,AutoNation,AN
+ANET,ANET,us,Arista Networks,ANET
+ANF,ANF,us,Abercrombie & Fitch,ANF
+AON,AON,us,Aon PLC,AON
+AOS,AOS,us,A O Smith,AOS
+APA,APA,us,APA Corp,APA
+APD,APD,us,Air Products & Chemicals,APD
+APH,APH,us,Amphenol,APH
+APP,APP,us,AppLovin,APP
+APTV,APTV,us,Aptiv,APTV
+ARE,ARE,us,Alexandria Real Estate,ARE
+ARM,ARM,us,Arm Holdings,ARM
+ASML,ASML,us,ASML (US listing),ASML
+ATI,ATI,us,ATI Inc,ATI
+ATO,ATO,us,Atmos Energy,ATO
+AVB,AVB,us,AvalonBay Communities,AVB
+AVGO,AVGO,us,Broadcom,AVGO
+AVY,AVY,us,Avery Dennison,AVY
+AWK,AWK,us,American Water Works,AWK
+AXON,AXON,us,Axon Enterprise,AXON
+AXP,AXP,us,American Express,AXP
+AZO,AZO,us,AutoZone,AZO
+BA,BA,us,Boeing,BA
+BABA,BABA,us,Alibaba Group,BABA
+BAC,BAC,us,Bank of America,BAC
+BAX,BAX,us,Baxter International,BAX
+BB,BB,us,BlackBerry Ltd,BB
+BBY,BBY,us,Best Buy,BBY
+BDX,BDX,us,Becton Dickinson,BDX
+BEN,BEN,us,Franklin Resources,BEN
+BFH,BFH,us,Bread Financial,BFH
+BG,BG,us,Bunge Global,BG
+BIDU,BIDU,us,Baidu,BIDU
+BIIB,BIIB,us,Biogen,BIIB
+BIO,BIO,us,Bio-Rad Labs,BIO
+BIRK,BIRK,us,Birkenstock,BIRK
+BKNG,BKNG,us,Booking Holdings,BKNG
+BKR,BKR,us,Baker Hughes,BKR
+BLDR,BLDR,us,Builders FirstSource,BLDR
+BLK,BLK,us,BlackRock,BLK
+BMBL,BMBL,us,Bumble,BMBL
+BMRN,BMRN,us,BioMarin,BMRN
+BMY,BMY,us,Bristol Myers Squibb,BMY
+BR,BR,us,Broadridge,BR
+BRK.B,BRK-B,us,Berkshire Hathaway Class B,BRK.B
+BRO,BRO,us,Brown & Brown,BRO
+BSX,BSX,us,Boston Scientific,BSX
+BWA,BWA,us,BorgWarner,BWA
+BX,BX,us,Blackstone,BX
+BXP,BXP,us,Boston Properties,BXP
+BYND,BYND,us,Beyond Meat,BYND
+C,C,us,Citigroup,C
+CAG,CAG,us,Conagra Foods,CAG
+CAH,CAH,us,Cardinal Health,CAH
+CARR,CARR,us,Carrier Global,CARR
+CART,CART,us,Maplebear (Instacart),CART
+CAT,CAT,us,Caterpillar,CAT
+CB,CB,us,Chubb,CB
+CBRE,CBRE,us,CBRE Group,CBRE
+CCI,CCI,us,Crown Castle,CCI
+CCJ,CCJ,us,Cameco,CCJ
+CCL,CCL,us,Carnival,CCL
+CDNS,CDNS,us,Cadence Design Systems,CDNS
+CDW,CDW,us,CDW,CDW
+CE,CE,us,Celanese,CE
+CEG,CEG,us,Constellation Energy,CEG
+CF,CF,us,CF Industries,CF
+CFG,CFG,us,Citizens Financial,CFG
+CHD,CHD,us,Church & Dwight,CHD
+CHRW,CHRW,us,CH Robinson,CHRW
+CHTR,CHTR,us,Charter Communications,CHTR
+CI,CI,us,Cigna,CI
+CINF,CINF,us,Cincinnati Financial,CINF
+CL,CL,us,Colgate-Palmolive,CL
+CLF,CLF,us,Cleveland-Cliffs,CLF
+CLSK,CLSK,us,CleanSpark,CLSK
+CLX,CLX,us,Clorox,CLX
+CMA,CMA,us,Comerica,CMA
+CMCSA,CMCSA,us,Comcast,CMCSA
+CME,CME,us,CME Group,CME
+CMG,CMG,us,Chipotle Mexican Grill,CMG
+CMI,CMI,us,Cummins,CMI
+CMS,CMS,us,CMS Energy,CMS
+CNC,CNC,us,Centene,CNC
+CNP,CNP,us,CenterPoint,CNP
+COF,COF,us,Capital One,COF
+COIN,COIN,us,Coinbase,COIN
+COO,COO,us,Cooper Companies,COO
+COP,COP,us,ConocoPhillips,COP
+COST,COST,us,Costco,COST
+CPB,CPB,us,Campbell Soup,CPB
+CPRT,CPRT,us,Copart,CPRT
+CPT,CPT,us,Camden Property,CPT
+CRL,CRL,us,Charles River Labs,CRL
+CRM,CRM,us,Salesforce,CRM
+CRWD,CRWD,us,CrowdStrike,CRWD
+CRWV,CRWV,us,CoreWeave,CRWV
+CSCO,CSCO,us,Cisco Systems,CSCO
+CSGP,CSGP,us,CoStar Group,CSGP
+CSX,CSX,us,CSX Corp,CSX
+CTAS,CTAS,us,Cintas,CTAS
+CTRA,CTRA,us,Coterra Energy,CTRA
+CTSH,CTSH,us,Cognizant,CTSH
+CTVA,CTVA,us,Corteva,CTVA
+CVS,CVS,us,CVS Health,CVS
+CVX,CVX,us,Chevron,CVX
+CZR,CZR,us,Caesars Entertainment,CZR
+D,D,us,Dominion Energy,D
+DAL,DAL,us,Delta Air Lines,DAL
+DASH,DASH,us,DoorDash,DASH
+DD,DD,us,DuPont,DD
+DDOG,DDOG,us,Datadog,DDOG
+DE,DE,us,Deere & Co,DE
+DELL,DELL,us,Dell Technologies,DELL
+DG,DG,us,Dollar General,DG
+DGX,DGX,us,Quest Diagnostics,DGX
+DHI,DHI,us,DR Horton,DHI
+DHR,DHR,us,Danaher,DHR
+DIS,DIS,us,Walt Disney,DIS
+DLR,DLR,us,Digital Realty,DLR
+DLTR,DLTR,us,Dollar Tree,DLTR
+DOCU,DOCU,us,DocuSign,DOCU
+DOV,DOV,us,Dover,DOV
+DOW,DOW,us,Dow Inc,DOW
+DPZ,DPZ,us,Domino's Pizza,DPZ
+DRI,DRI,us,Darden Restaurants,DRI
+DUK,DUK,us,Duke Energy Corp,DUK
+DVA,DVA,us,DaVita,DVA
+DVN,DVN,us,Devon Energy,DVN
+DXC,DXC,us,DXC Technology,DXC
+DXCM,DXCM,us,Dexcom,DXCM
+EA,EA,us,Electronic Arts,EA
+EBAY,EBAY,us,eBay,EBAY
+ECL,ECL,us,Ecolab,ECL
+ED,ED,us,Consolidated Edison,ED
+EFX,EFX,us,Equifax,EFX
+EG,EG,us,Everest Group,EG
+EIX,EIX,us,Edison International,EIX
+EL,EL,us,Estee Lauder,EL
+ELV,ELV,us,Elevance Health,ELV
+EMN,EMN,us,Eastman Chemical,EMN
+EMR,EMR,us,Emerson Electric,EMR
+ENPH,ENPH,us,Enphase,ENPH
+EOG,EOG,us,EOG Resources,EOG
+EPAM,EPAM,us,EPAM,EPAM
+EQIX,EQIX,us,Equinix,EQIX
+EQR,EQR,us,Equity Residential,EQR
+EQT,EQT,us,EQT Corp,EQT
+ES,ES,us,Eversource Energy,ES
+ESS,ESS,us,Essex Property Trust,ESS
+ETN,ETN,us,Eaton,ETN
+ETR,ETR,us,Entergy,ETR
+ETSY,ETSY,us,Etsy,ETSY
+EVRG,EVRG,us,Evergy,EVRG
+EW,EW,us,Edwards Lifesciences,EW
+EXC,EXC,us,Exelon,EXC
+EXPD,EXPD,us,Expeditors International,EXPD
+EXPE,EXPE,us,Expedia,EXPE
+F,F,us,Ford Motor,F
+FANG,FANG,us,Diamondback Energy,FANG
+FAST,FAST,us,Fastenal,FAST
+FBIN,FBIN,us,Fortune Brands Innovations,FBIN
+FCX,FCX,us,Freeport-McMoRan,FCX
+FDX,FDX,us,FedEx,FDX
+FE,FE,us,FirstEnergy,FE
+FFIV,FFIV,us,F5,FFIV
+FICO,FICO,us,Fair Isaac,FICO
+FIS,FIS,us,Fidelity National Info,FIS
+FITB,FITB,us,Fifth Third,FITB
+FL,FL,us,Foot Locker,FL
+FLR,FLR,us,Fluor,FLR
+FMC,FMC,us,FMC Corp,FMC
+FOSL,FOSL,us,Fossil Group,FOSL
+FOX,FOX,us,Fox Corp,FOX
+FRT,FRT,us,Federal Realty,FRT
+FSLR,FSLR,us,First Solar,FSLR
+FTI,FTI,us,TechnipFMC,FTI
+FTNT,FTNT,us,Fortinet,FTNT
+GD,GD,us,General Dynamics,GD
+GE,GE,us,General Electric,GE
+GEHC,GEHC,us,GE HealthCare,GEHC
+GEN,GEN,us,Gen Digital,GEN
+GFS,GFS,us,GlobalFoundries,GFS
+GILD,GILD,us,Gilead Sciences,GILD
+GIS,GIS,us,General Mills,GIS
+GL,GL,us,Globe Life,GL
+GLW,GLW,us,Corning,GLW
+GM,GM,us,General Motors,GM
+GME,GME,us,GameStop,GME
+GNRC,GNRC,us,Generac,GNRC
+GOOG,GOOG,us,Alphabet (Class C),GOOG
+GOOGL,GOOGL,us,Alphabet (Class A),GOOGL
+GPC,GPC,us,Genuine Parts,GPC
+GPN,GPN,us,Global Payments,GPN
+GPS,GPS,us,Gap,GPS
+GRMN,GRMN,us,Garmin,GRMN
+GS,GS,us,Goldman Sachs,GS
+GT,GT,us,Goodyear,GT
+GWW,GWW,us,WW Grainger,GWW
+HAL,HAL,us,Halliburton,HAL
+HAS,HAS,us,Hasbro,HAS
+HBAN,HBAN,us,Huntington Bancshares,HBAN
+HD,HD,us,Home Depot,HD
+HIG,HIG,us,Hartford Financial,HIG
+HII,HII,us,Huntington Ingalls,HII
+HLT,HLT,us,Hilton,HLT
+HOG,HOG,us,Harley-Davidson,HOG
+HOLX,HOLX,us,Hologic,HOLX
+HON,HON,us,Honeywell,HON
+HOOD,HOOD,us,Robinhood,HOOD
+HP,HP,us,Helmerich & Payne,HP
+HPQ,HPQ,us,HP Inc,HPQ
+HRL,HRL,us,Hormel Foods,HRL
+HST,HST,us,Host Hotels,HST
+HSY,HSY,us,Hershey,HSY
+HUBB,HUBB,us,Hubbell,HUBB
+HUBS,HUBS,us,HubSpot,HUBS
+HUM,HUM,us,Humana,HUM
+HWM,HWM,us,Howmet,HWM
+IBM,IBM,us,IBM,IBM
+ICE,ICE,us,Intercontinental Exchange,ICE
+IFF,IFF,us,International Flavors,IFF
+ILMN,ILMN,us,Illumina,ILMN
+INCY,INCY,us,Incyte,INCY
+INTC,INTC,us,Intel Corp,INTC
+INTU,INTU,us,Intuit,INTU
+INVH,INVH,us,Invitation Homes,INVH
+IP,IP,us,International Paper,IP
+IQV,IQV,us,IQVIA,IQV
+IR,IR,us,Ingersoll Rand,IR
+IRM,IRM,us,Iron Mountain,IRM
+ISRG,ISRG,us,Intuitive Surgical,ISRG
+IT,IT,us,Gartner,IT
+ITW,ITW,us,Illinois Tool Works,ITW
+IVR,IVR,us,Invesco Mortgage Capital,IVR
+J,J,us,Jacobs Solutions,J
+JBHT,JBHT,us,JB Hunt,JBHT
+JBL,JBL,us,Jabil,JBL
+JCI,JCI,us,Johnson Controls,JCI
+JD,JD,us,JD.com,JD
+JKHY,JKHY,us,Jack Henry,JKHY
+JNJ,JNJ,us,Johnson & Johnson,JNJ
+JPM,JPM,us,JPMorgan Chase,JPM
+K,K,us,Kellanova,K
+KDP,KDP,us,Keurig Dr Pepper,KDP
+KEY,KEY,us,KeyCorp,KEY
+KEYS,KEYS,us,Keysight,KEYS
+KHC,KHC,us,Kraft Heinz,KHC
+KIM,KIM,us,Kimco Realty,KIM
+KLAC,KLAC,us,KLA Corp,KLAC
+KLAR,KLAR,us,Klarna,KLAR
+KMB,KMB,us,Kimberly-Clark,KMB
+KMI,KMI,us,Kinder Morgan,KMI
+KMX,KMX,us,CarMax,KMX
+KO,KO,us,Coca-Cola,KO
+KR,KR,us,Kroger,KR
+KSS,KSS,us,Kohl's,KSS
+KVUE,KVUE,us,Kenvue,KVUE
+KVYO,KVYO,us,Klaviyo,KVYO
+L,L,us,Loews,L
+LCID,LCID,us,Lucid Group,LCID
+LDOS,LDOS,us,Leidos,LDOS
+LEN,LEN,us,Lennar,LEN
+LH,LH,us,Labcorp,LH
+LHX,LHX,us,L3Harris,LHX
+LKQ,LKQ,us,LKQ Corp,LKQ
+LLY,LLY,us,Eli Lilly,LLY
+LMND,LMND,us,Lemonade,LMND
+LMT,LMT,us,Lockheed Martin,LMT
+LNC,LNC,us,Lincoln National,LNC
+LNT,LNT,us,Alliant Energy,LNT
+LOW,LOW,us,Lowe's,LOW
+LRCX,LRCX,us,Lam Research,LRCX
+LULU,LULU,us,Lululemon,LULU
+LUMN,LUMN,us,Lumen,LUMN
+LUNR,LUNR,us,Intuitive Machines,LUNR
+LUV,LUV,us,Southwest Airlines,LUV
+LVS,LVS,us,Las Vegas Sands,LVS
+LW,LW,us,Lamb Weston,LW
+LYB,LYB,us,LyondellBasell,LYB
+LYV,LYV,us,Live Nation,LYV
+M,M,us,Macy's,M
+MA,MA,us,Mastercard,MA
+MAA,MAA,us,Mid-America Apartment,MAA
+MAR,MAR,us,Marriott,MAR
+MAS,MAS,us,Masco,MAS
+MAT,MAT,us,Mattel,MAT
+MCD,MCD,us,McDonald's,MCD
+MCHP,MCHP,us,Microchip Technology,MCHP
+MCK,MCK,us,McKesson,MCK
+MCO,MCO,us,Moody's,MCO
+MDLZ,MDLZ,us,Mondelez,MDLZ
+MDT,MDT,us,Medtronic,MDT
+MELI,MELI,us,MercadoLibre,MELI
+MET,MET,us,MetLife,MET
+META,META,us,Meta Platforms Inc,META
+MGM,MGM,us,MGM Resorts,MGM
+MHK,MHK,us,Mohawk Industries,MHK
+MKC,MKC,us,McCormick,MKC
+MKTX,MKTX,us,MarketAxess,MKTX
+MLM,MLM,us,Martin Marietta,MLM
+MMC,MMC,us,Marsh & McLennan,MMC
+MMM,MMM,us,3M,MMM
+MNST,MNST,us,Monster Beverage,MNST
+MO,MO,us,Altria,MO
+MOH,MOH,us,Molina Healthcare,MOH
+MOS,MOS,us,Mosaic,MOS
+MPC,MPC,us,Marathon Petroleum,MPC
+MPWR,MPWR,us,Monolithic Power,MPWR
+MRK,MRK,us,Merck & Co,MRK
+MRNA,MRNA,us,Moderna,MRNA
+MRVL,MRVL,us,Marvell Technology,MRVL
+MS,MS,us,Morgan Stanley,MS
+MSCI,MSCI,us,MSCI,MSCI
+MSFT,MSFT,us,Microsoft,MSFT
+MSI,MSI,us,Motorola Solutions,MSI
+MSTR,MSTR,us,MicroStrategy,MSTR
+MTB,MTB,us,M&T Bank,MTB
+MTCH,MTCH,us,Match Group,MTCH
+MTD,MTD,us,Mettler-Toledo,MTD
+MU,MU,us,Micron Technology,MU
+MUR,MUR,us,Murphy Oil,MUR
+NBR,NBR,us,Nabors Industries,NBR
+NCLH,NCLH,us,Norwegian Cruise Line,NCLH
+NDAQ,NDAQ,us,Nasdaq OMX,NDAQ
+NDSN,NDSN,us,Nordson,NDSN
+NEE,NEE,us,NextEra Energy,NEE
+NEM,NEM,us,Newmont,NEM
+NFLX,NFLX,us,Netflix,NFLX
+NI,NI,us,NiSource,NI
+NIO,NIO,us,NIO,NIO
+NKE,NKE,us,Nike,NKE
+NOC,NOC,us,Northrop Grumman,NOC
+NOW,NOW,us,ServiceNow,NOW
+NRG,NRG,us,NRG Energy,NRG
+NSC,NSC,us,Norfolk Southern,NSC
+NTAP,NTAP,us,NetApp,NTAP
+NTES,NTES,us,NetEase,NTES
+NTRS,NTRS,us,Northern Trust,NTRS
+NUE,NUE,us,Nucor,NUE
+NVDA,NVDA,us,NVIDIA Corp,NVDA
+NVR,NVR,us,NVR,NVR
+NWL,NWL,us,Newell Brands,NWL
+NWSA,NWSA,us,News Corp,NWSA
+NXPI,NXPI,us,NXP Semiconductors,NXPI
+O,O,us,Realty Income,O
+ODFL,ODFL,us,Old Dominion Freight,ODFL
+OKE,OKE,us,ONEOK,OKE
+OKTA,OKTA,us,Okta,OKTA
+OMC,OMC,us,Omnicom,OMC
+ORCL,ORCL,us,Oracle,ORCL
+ORLY,ORLY,us,O'Reilly Automotive,ORLY
+OSCR,OSCR,us,Oscar Health,OSCR
+OXY,OXY,us,Occidental Petroleum,OXY
+PAAS,PAAS,us,Pan American Silver,PAAS
+PANW,PANW,us,Palo Alto Networks,PANW
+PAYC,PAYC,us,Paycom,PAYC
+PAYX,PAYX,us,Paychex,PAYX
+PBI,PBI,us,Pitney Bowes,PBI
+PCAR,PCAR,us,Paccar,PCAR
+PCG,PCG,us,PG&E Corp,PCG
+PDD,PDD,us,PDD Holdings,PDD
+PEG,PEG,us,Public Service Enterprise,PEG
+PENN,PENN,us,Penn Entertainment,PENN
+PEP,PEP,us,PepsiCo,PEP
+PFE,PFE,us,Pfizer,PFE
+PFG,PFG,us,Principal Financial,PFG
+PG,PG,us,Procter & Gamble,PG
+PGR,PGR,us,Progressive,PGR
+PH,PH,us,Parker-Hannifin,PH
+PHM,PHM,us,PulteGroup,PHM
+PINS,PINS,us,Pinterest,PINS
+PKG,PKG,us,Packaging Corp of America,PKG
+PLD,PLD,us,Prologis,PLD
+PLTR,PLTR,us,Palantir,PLTR
+PM,PM,us,Philip Morris,PM
+PNC,PNC,us,PNC Financial,PNC
+PNR,PNR,us,Pentair,PNR
+PNW,PNW,us,Pinnacle West,PNW
+PODD,PODD,us,Insulet,PODD
+POOL,POOL,us,Pool Corp,POOL
+PPG,PPG,us,PPG Industries,PPG
+PPL,PPL,us,PPL Corp,PPL
+PSA,PSA,us,Public Storage,PSA
+PSX,PSX,us,Phillips 66,PSX
+PTON,PTON,us,Peloton,PTON
+PVH,PVH,us,PVH Corp,PVH
+PWR,PWR,us,Quanta Services,PWR
+PYPL,PYPL,us,PayPal,PYPL
+QBTS,QBTS,us,D-Wave Quantum,QBTS
+QCOM,QCOM,us,Qualcomm,QCOM
+QRVO,QRVO,us,Qorvo,QRVO
+RBLX,RBLX,us,Roblox,RBLX
+RCL,RCL,us,Royal Caribbean,RCL
+REG,REG,us,Regency Centers,REG
+REGN,REGN,us,Regeneron,REGN
+RF,RF,us,Regions Financial,RF
+RHI,RHI,us,Robert Half,RHI
+RIG,RIG,us,Transocean,RIG
+RIOT,RIOT,us,Riot Platforms,RIOT
+RIVN,RIVN,us,Rivian,RIVN
+RJF,RJF,us,Raymond James,RJF
+RKLB,RKLB,us,Rocket Lab Inc,RKLB
+RL,RL,us,Ralph Lauren,RL
+RMD,RMD,us,ResMed,RMD
+ROK,ROK,us,Rockwell Automation,ROK
+ROKU,ROKU,us,Roku,ROKU
+ROL,ROL,us,Rollins,ROL
+ROP,ROP,us,Roper Technologies,ROP
+ROST,ROST,us,Ross Stores,ROST
+RRC,RRC,us,Range Resources,RRC
+RSG,RSG,us,Republic Services,RSG
+RTX,RTX,us,RTX Corp,RTX
+RVTY,RVTY,us,Revvity,RVTY
+SBAC,SBAC,us,SBA Communications,SBAC
+SBUX,SBUX,us,Starbucks,SBUX
+SCHW,SCHW,us,Charles Schwab,SCHW
+SEDG,SEDG,us,SolarEdge,SEDG
+SEE,SEE,us,Sealed Air,SEE
+SHOP,SHOP,us,Shopify Inc,SHOP
+SHW,SHW,us,Sherwin-Williams,SHW
+SIRI,SIRI,us,Sirius XM,SIRI
+SJM,SJM,us,J.M. Smucker,SJM
+SKHY,SKHY,us,SK Hynix ADR,SKHY
+SLB,SLB,us,Schlumberger,SLB
+SMCI,SMCI,us,Super Micro Computer,SMCI
+SNA,SNA,us,Snap-on,SNA
+SNAP,SNAP,us,Snap Inc,SNAP
+SNDK,SNDK,us,SanDisk,SNDK
+SNOW,SNOW,us,Snowflake,SNOW
+SNPS,SNPS,us,Synopsys,SNPS
+SO,SO,us,Southern Co,SO
+SPCX,SPCX,us,SpaceX,SPCX
+SPG,SPG,us,Simon Property,SPG
+SPGI,SPGI,us,S&P Global,SPGI
+SPOT,SPOT,us,Spotify,SPOT
+SQ,XYZ,us,Block,XYZ
+SRE,SRE,us,Sempra,SRE
+STE,STE,us,Steris,STE
+STLD,STLD,us,Steel Dynamics,STLD
+STT,STT,us,State Street,STT
+STX,STX,us,Seagate,STX
+STZ,STZ,us,Constellation Brands,STZ
+SWK,SWK,us,Stanley Black & Decker,SWK
+SWKS,SWKS,us,Skyworks,SWKS
+SYF,SYF,us,Synchrony Financial,SYF
+SYK,SYK,us,Stryker,SYK
+SYY,SYY,us,Sysco,SYY
+T,T,us,AT&T,T
+TAP,TAP,us,Molson Coors,TAP
+TDG,TDG,us,TransDigm,TDG
+TEAM,TEAM,us,Atlassian,TEAM
+TECH,TECH,us,Bio-Techne,TECH
+TEL,TEL,us,TE Connectivity,TEL
+TER,TER,us,Teradyne,TER
+TFC,TFC,us,Truist Financial,TFC
+TFX,TFX,us,Teleflex,TFX
+TGT,TGT,us,Target,TGT
+TJX,TJX,us,TJX Companies,TJX
+TMO,TMO,us,Thermo Fisher,TMO
+TMUS,TMUS,us,T-Mobile US,TMUS
+TPR,TPR,us,Tapestry,TPR
+TRGP,TRGP,us,Targa Resources,TRGP
+TRIP,TRIP,us,Tripadvisor,TRIP
+TRMB,TRMB,us,Trimble,TRMB
+TROW,TROW,us,T. Rowe Price,TROW
+TRV,TRV,us,Travelers,TRV
+TSCO,TSCO,us,Tractor Supply,TSCO
+TSLA,TSLA,us,Tesla Inc,TSLA
+TSM,TSM,us,Taiwan Semiconductor,TSM
+TSN,TSN,us,Tyson Foods,TSN
+TT,TT,us,Trane Technologies,TT
+TTC,TTC,us,Toro,TTC
+TTD,TTD,us,The Trade Desk,TTD
+TXN,TXN,us,Texas Instruments,TXN
+TXT,TXT,us,Textron,TXT
+TYL,TYL,us,Tyler Technologies,TYL
+UA,UA,us,Under Armour,UA
+UAL,UAL,us,United Airlines,UAL
+UBER,UBER,us,Uber,UBER
+UDR,UDR,us,UDR Inc,UDR
+UHS,UHS,us,Universal Health Services,UHS
+ULTA,ULTA,us,Ulta Beauty,ULTA
+UNH,UNH,us,UnitedHealth,UNH
+UNM,UNM,us,Unum,UNM
+UNP,UNP,us,Union Pacific,UNP
+UPS,UPS,us,UPS,UPS
+UPST,UPST,us,Upstart,UPST
+URI,URI,us,United Rentals,URI
+USB,USB,us,US Bancorp,USB
+V,V,us,Visa,V
+VFC,VFC,us,VF Corp,VFC
+VLO,VLO,us,Valero,VLO
+VLTO,VLTO,us,Veralto,VLTO
+VMC,VMC,us,Vulcan Materials,VMC
+VNO,VNO,us,Vornado,VNO
+VRSK,VRSK,us,Verisk,VRSK
+VRSN,VRSN,us,VeriSign,VRSN
+VRTX,VRTX,us,Vertex Pharmaceuticals,VRTX
+VST,VST,us,Vistra,VST
+VTR,VTR,us,Ventas,VTR
+VTRS,VTRS,us,Viatris,VTRS
+VZ,VZ,us,Verizon,VZ
+WAB,WAB,us,Wabtec,WAB
+WAT,WAT,us,Waters,WAT
+WB,WB,us,Weibo,WB
+WBA,WBA,us,Walgreens,WBA
+WBD,WBD,us,Warner Bros Discovery,WBD
+WDAY,WDAY,us,Workday,WDAY
+WDC,WDC,us,Western Digital,WDC
+WEC,WEC,us,WEC Energy,WEC
+WELL,WELL,us,Welltower,WELL
+WFC,WFC,us,Wells Fargo,WFC
+WHR,WHR,us,Whirlpool,WHR
+WM,WM,us,Waste Management,WM
+WMB,WMB,us,Williams Companies,WMB
+WMT,WMT,us,Walmart,WMT
+WRB,WRB,us,WR Berkley,WRB
+WST,WST,us,West Pharmaceutical,WST
+WTW,WTW,us,Willis Towers Watson,WTW
+WU,WU,us,Western Union,WU
+WY,WY,us,Weyerhaeuser,WY
+WYNN,WYNN,us,Wynn Resorts,WYNN
+XEL,XEL,us,Xcel Energy,XEL
+XOM,XOM,us,Exxon Mobil,XOM
+XPEV,XPEV,us,XPeng,XPEV
+XRAY,XRAY,us,Dentsply Sirona,XRAY
+XRX,XRX,us,Xerox,XRX
+XYL,XYL,us,Xylem,XYL
+YUM,YUM,us,Yum! Brands,YUM
+ZBH,ZBH,us,Zimmer Biomet,ZBH
+ZBRA,ZBRA,us,Zebra Technologies,ZBRA
+ZION,ZION,us,Zions Bancorp,ZION
+ZM,ZM,us,Zoom,ZM
+ZS,ZS,us,Zscaler,ZS
+ZTS,ZTS,us,Zoetis,ZTS
