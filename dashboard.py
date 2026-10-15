@@ -36,7 +36,7 @@ def _ticker(h):
 
 def _limit_table(rows):
     out = []
-    for h in sorted(rows, key=lambda h: (h["status"] != "validated", h.get("distance_pct", 99))):
+    for h in sorted(rows, key=lambda h: (h["status"] != "validated", -(h["oos"].get("win_rate") or 0), h.get("distance_pct", 99))):
         tk, badge = _ticker(h)
         o = h["oos"]
         out.append(
@@ -52,7 +52,7 @@ def _limit_table(rows):
 
 def _open_table(rows):
     out = []
-    for h in sorted(rows, key=lambda h: (h["status"] != "validated", -(h["oos"].get("avg") or -99))):
+    for h in sorted(rows, key=lambda h: (h["status"] != "validated", -(h["oos"].get("win_rate") or 0), -(h["oos"].get("avg") or -99))):
         tk, badge = _ticker(h)
         o = h["oos"]
         out.append(
@@ -112,7 +112,7 @@ random entries in testing, but not yet convincingly. Practise them on your demo 
 <div class="lead">Place a <b>day</b> buy limit order at the price shown before the US open (15:30 SA time).
 If the price dips to it, you're filled; if not, the order expires and there's no trade. Once filled,
 set the stop and target, and close the trade after the max hold if neither is hit.
-Sorted by how close the price already is.</div>
+Highest historical win rate first.</div>
 {limit_block}
 
 <h2>Triggered at the close (enter at the next open)</h2>

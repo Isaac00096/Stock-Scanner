@@ -93,6 +93,16 @@ def _fib_signal(level_col):
     return f
 
 
+# ---------- High-probability "quick bounce" setups: buy a sharp dip in an uptrend,
+# sell at the first sign of recovery (close above the 5-day average) ----------
+def _bounce_exit(d):
+    return d.Close > d.SMA5
+
+
+def _three_down(d):
+    return (d.Close < d.Close.shift()) & (d.Close.shift() < d.Close.shift(2)) & (d.Close.shift(2) < d.Close.shift(3))
+
+
 # ---------- H.M. Gartley, "Profits in the Stock Market" (1935) ----------
 def _g222_levels_limit(d):
     return pd.DataFrame({"limit": d.G_R50, "stop": d.G_B - 0.25 * d.ATR14}, index=d.index)
@@ -220,6 +230,21 @@ SETUPS = [
           "Same signal, day buy limit half a typical day's range (0.5 ATR) below the signal day's close",
           3.0, 0, 120, exit_signal=_ma25_exit, target_pct=10.0,
           levels=lambda d: pd.DataFrame({"limit": d.Close - 0.5 * d.ATR14}, index=d.index), entry_type="limit"),
+    # ---------- High-probability quick bounces ----------
+    Setup("bounce_rsi2", "Quick bounce: RSI(2) dip", "long",
+          lambda d: (d.Close > d.SMA200) & (d.RSI2 < 10),
+          "Uptrend stock with RSI(2) below 10; sell at the first close above the 5-day average "
+          "(protective stop 3 ATR, max 10 days)", 3.0, 0, 10,
+          exit_signal=_bounce_exit, target_pct=10.0),
+    Setup("bounce_rsi2_leader", "Quick bounce: RSI(2) dip — market leaders", "long",
+          lambda d: (d.Close > d.SMA200) & (d.RSI2 < 10) & (d.RS63 > 0),
+          "Same, only stocks beating the S&P 500 over 3 months", 3.0, 0, 10,
+          exit_signal=_bounce_exit, target_pct=10.0),
+    Setup("bounce_3down", "Quick bounce: 3 down days", "long",
+          lambda d: (d.Close > d.SMA200) & _three_down(d) & (d.Close < d.SMA5),
+          "Uptrend stock that closed lower 3 days in a row; sell at the first close above the 5-day "
+          "average (protective stop 3 ATR, max 10 days)", 3.0, 0, 10,
+          exit_signal=_bounce_exit, target_pct=10.0),
     Setup("rsi2_pullback_leader", "RSI(2) Pullback — market leaders only", "long",
           lambda d: (d.Close > d.SMA200) & (d.RSI2 < 10) & (d.RS63 > 0),
           "RSI(2) Pullback, only for stocks beating the S&P 500 over 3 months (Gartley's stock selection)",

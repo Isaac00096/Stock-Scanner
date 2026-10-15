@@ -79,7 +79,8 @@ def main():
             hit["entry"], hit["stop"] = entry, float(stop)
             # trend-following exits (no fixed target) show as "exit rule"
             hit["target"] = None if (s.target_pct or 0) >= 5 else float(target)
-            hit["exit_rule"] = "close below 25-day MA (3-day lead)" if s.exit_signal else ""
+            hit["exit_rule"] = ("sell on first close above 5-day average" if s.name.startswith("bounce")
+                                else "close below 25-day MA (3-day lead)" if s.exit_signal else "")
             if s.is_limit:
                 hit["distance_pct"] = (px - entry) / px * 100
             hits.append(hit)

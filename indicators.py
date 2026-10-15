@@ -119,6 +119,7 @@ def atr(df: pd.DataFrame, n: int = 14) -> pd.Series:
 def compute_all(df: pd.DataFrame, market: pd.Series | None = None) -> pd.DataFrame:
     d = df.copy()
     c = d["Close"]
+    d["SMA5"] = c.rolling(5).mean()
     d["SMA20"] = c.rolling(20).mean()
     d["SMA50"] = c.rolling(50).mean()
     d["SMA200"] = c.rolling(200).mean()
