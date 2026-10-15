@@ -152,6 +152,21 @@ GALP,Galp Energia,stock_eu
 GLE.PA,Societe Generale,stock_eu
 GMAB.CO,Genmab,stock_eu
 GN.CO,GN Store Nord,stock_eu
+HEI,Heidelberg Materials,stock_eu
+HEN3,Henkel,stock_eu
+HLUNB.CO,Lundbeck,stock_eu
+HNR1,Hannover Re,stock_eu
+IBE.MC,Iberdrola,stock_eu
+IBS,Ibersol,stock_eu
+IFX.DE,Infineon,stock_eu
+ING.AS,ING Group,stock_eu
+ISP.MI,Intesa Sanpaolo,stock_eu
+ISS.CO,ISS,stock_eu
+ITX.MC,Inditex,stock_eu
+JMT,Jeronimo Martins,stock_eu
+JYSK.CO,Jyske Bank,stock_eu
+KEP.PA,Kering,stock_eu
+KETY,Grupa Kety,stock_eu
 KGHM,KGHM Polska Miedz SA,stock_eu
 NDA.HE,Nordea Bank,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
@@ -175,6 +190,9 @@ EXX.JO,Exxaro Resources,stock_jse
 FSR.JO,FirstRand,stock_jse
 GFI.JO,Gold Fields,stock_jse
 GLN.JO,Glencore (JSE),stock_jse
+HMY.JO,Harmony Gold,stock_jse
+IMP.JO,Impala Platinum,stock_jse
+INL.JO,Investec Ltd,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -231,6 +249,25 @@ GAW.L,Games Workshop,stock_uk
 GLEN.L,Glencore,stock_uk
 GRG.L,Greggs,stock_uk
 GSK.L,GSK,stock_uk
+HIK.L,Hikma,stock_uk
+HLMA.L,Halma,stock_uk
+HLN.L,Haleon,stock_uk
+HSBA.L,HSBC,stock_uk
+HSX.L,Hiscox,stock_uk
+HWDN.L,Howden Joinery,stock_uk
+IAG.L,International Airlines Group,stock_uk
+IGG.L,IG Group,stock_uk
+IHG.L,InterContinental Hotels,stock_uk
+III.L,3i Group,stock_uk
+IMB.L,Imperial Brands,stock_uk
+IMI.L,IMI,stock_uk
+INF.L,Informa,stock_uk
+ITRK.L,Intertek,stock_uk
+ITV.L,ITV,stock_uk
+JD.L,JD Sports,stock_uk
+JDW.L,JD Wetherspoon,stock_uk
+JMAT.L,Johnson Matthey,stock_uk
+JUP.L,Jupiter Fund Management,stock_uk
 LLOY.L,Lloyds Banking Group,stock_uk
 LSEG.L,London Stock Exchange,stock_uk
 PSON.L,Pearson,stock_uk
@@ -472,8 +509,53 @@ GS,Goldman Sachs,stock_us
 GT,Goodyear,stock_us
 GWW,WW Grainger,stock_us
 HAL,Halliburton,stock_us
+HAS,Hasbro,stock_us
+HBAN,Huntington Bancshares,stock_us
+HD,Home Depot,stock_us
+HIG,Hartford Financial,stock_us
+HII,Huntington Ingalls,stock_us
+HLT,Hilton,stock_us
+HOG,Harley-Davidson,stock_us
 HOLX,Hologic,stock_us
+HON,Honeywell,stock_us
+HOOD,Robinhood,stock_us
+HP,Helmerich & Payne,stock_us
+HPQ,HP Inc,stock_us
+HRL,Hormel Foods,stock_us
+HST,Host Hotels,stock_us
+HSY,Hershey,stock_us
+HUBB,Hubbell,stock_us
+HUBS,HubSpot,stock_us
+HUM,Humana,stock_us
+HWM,Howmet,stock_us
+IBM,IBM,stock_us
+ICE,Intercontinental Exchange,stock_us
+IFF,International Flavors,stock_us
+ILMN,Illumina,stock_us
+INCY,Incyte,stock_us
 INTC,Intel Corp,stock_us
+INTU,Intuit,stock_us
+INVH,Invitation Homes,stock_us
+IP,International Paper,stock_us
+IQV,IQVIA,stock_us
+IR,Ingersoll Rand,stock_us
+IRM,Iron Mountain,stock_us
+ISRG,Intuitive Surgical,stock_us
+IT,Gartner,stock_us
+ITW,Illinois Tool Works,stock_us
+IVR,Invesco Mortgage Capital,stock_us
+J,Jacobs Solutions,stock_us
+JBHT,JB Hunt,stock_us
+JBL,Jabil,stock_us
+JCI,Johnson Controls,stock_us
+JD,JD.com,stock_us
+JKHY,Jack Henry,stock_us
+JNJ,Johnson & Johnson,stock_us
+JPM,JPMorgan Chase,stock_us
+K,Kellanova,stock_us
+KDP,Keurig Dr Pepper,stock_us
+KEY,KeyCorp,stock_us
+KEYS,Keysight,stock_us
 KIM,Kimco Realty,stock_us
 META,Meta Platforms Inc,stock_us
 MRNA,Moderna,stock_us
