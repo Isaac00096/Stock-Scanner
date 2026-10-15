@@ -1,0 +1,102 @@
+tn_symbol,name,class
+AAPL,Apple,stock
+AMZN,Amazon.com,stock
+AMD.EX,AMD - Extended Hours,stock
+DE,Deere & Co,stock
+DELL,Dell Technologies,stock
+DUK,Duke Energy Corp,stock
+GOOG.EX,Alphabet - Extended Hours,stock
+META.EX,Meta Platforms - Extended Hours,stock
+NVDA,NVIDIA Corp,stock
+NVDA.EX,NVIDIA - Extended Hours,stock
+NVDA.MN,NVIDIA Corp - Mini,stock
+PCG,PG&E Corp,stock
+SPCX.EX,SpaceX - Extended Hours,stock
+TSLA,Tesla Inc,stock
+WMT,Walmart,stock
+LLOY.L,Lloyds Banking Group,stock
+RR.L,Rolls-Royce,stock
+SHEL.L,Shell PLC,stock
+SU.PA,Schneider Electric,stock
+AUS200,Australia 200,index
+DE40,Germany 40,index
+DE40FU,Germany 40 - Rolling Future,index
+F40,France 40,index
+F40FU,France 40 - Rolling Future,index
+HK50,Hong Kong 50,index
+IBEX,Spain 35,index
+JP225,Japan 225,index
+SA40,South Africa 40,index
+SMI,Switzerland 20,index
+STOXX50,Euro Stocks 50,index
+STOXX50FU,Euro Stocks 50 - Rolling Future,index
+UK100,UK 100,index
+UK100FU,UK 100 - Rolling Future,index
+US2000,US 2000,index
+US2000FU,US 2000 - Rolling Future,index
+US30,Wall Street 30,index
+US30FU,Wall Street 30 - Rolling Future,index
+US500,US 500,index
+US500FU,US 500 - Rolling Future,index
+US500AUD,US 500 (AUD),index
+USTEC,US Tech 100,index
+USTECFU,US Tech 100 - Rolling Future,index
+DE40UK100,Germany 40 / UK 100 spread,index_spread
+UK100STOXX50,UK 100 / Euro Stocks 50 spread,index_spread
+US30DE40,Wall St 30 / Germany 40 spread,index_spread
+US30UK100,Wall St 30 / UK 100 spread,index_spread
+US30USTEC,Wall St 30 / US Tech 100 spread,index_spread
+US500US2000,US 500 / US 2000 spread,index_spread
+AUDCAD,AUD/CAD,forex
+AUDCHF,AUD/CHF,forex
+AUDJPY,AUD/JPY,forex
+AUDNZD,AUD/NZD,forex
+AUDUSD,AUD/USD,forex
+CADCHF,CAD/CHF,forex
+CADJPY,CAD/JPY,forex
+CHFJPY,CHF/JPY,forex
+EURAUD,EUR/AUD,forex
+EURCAD,EUR/CAD,forex
+EURCHF,EUR/CHF,forex
+EURGBP,EUR/GBP,forex
+EURJPY,EUR/JPY,forex
+EURNZD,EUR/NZD,forex
+EURUSD,EUR/USD,forex
+GBPAUD,GBP/AUD,forex
+GBPCAD,GBP/CAD,forex
+GBPCHF,GBP/CHF,forex
+GBPJPY,GBP/JPY,forex
+GBPNZD,GBP/NZD,forex
+GBPUSD,GBP/USD,forex
+GBPZAR,GBP/ZAR,forex
+NZDCAD,NZD/CAD,forex
+NZDCHF,NZD/CHF,forex
+NZDJPY,NZD/JPY,forex
+NZDUSD,NZD/USD,forex
+USDCAD,USD/CAD,forex
+USDCHF,USD/CHF,forex
+USDJPY,USD/JPY,forex
+USDMXN,USD/MXN,forex
+USDPLN,USD/PLN,forex
+USDZAR,USD/ZAR,forex
+ALUMINIUM,Aluminium,commodity
+BRENT,Brent Crude,commodity
+COCOA,Cocoa (NY),commodity
+COFFEE,Coffee,commodity
+COPPER,Copper,commodity
+COTTON,Cotton,commodity
+LEAD,Lead,commodity
+NATURALGAS,Natural Gas,commodity
+ORANGEJUICE,Orange Juice,commodity
+SOYABEAN,Soya Bean,commodity
+SUGARNO5,Sugar No 5,commodity
+WHEAT,Wheat,commodity
+WTI,US Light Crude,commodity
+XAGUSD,Silver,commodity
+XAUUSD,Gold,commodity
+ZINC,Zinc,commodity
+BTCUSD,Bitcoin,crypto
+ETHUSD,Ethereum,crypto
+LTCUSD,Litecoin,crypto
+SOLANA,Solana,crypto
+TRONUSD,Tron,crypto
