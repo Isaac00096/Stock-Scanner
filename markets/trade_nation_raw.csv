@@ -220,7 +220,14 @@ SU.PA,Schneider Electric,stock_eu
 SY1,Symrise,stock_eu
 TAURONPE,Tauron Polska,stock_eu
 TEF.MC,Telefonica,stock_eu
+TRYG.CO,Tryg,stock_eu
 TTE.PA,TotalEnergies,stock_eu
+TUI.DE,TUI,stock_eu
+UCG.MI,UniCredit,stock_eu
+VNA.DE,Vonovia,stock_eu
+VOW3.DE,Volkswagen,stock_eu
+VWS.CO,Vestas,stock_eu
+WKL.AS,Wolters Kluwer,stock_eu
 ABG.JO,Absa Group,stock_jse
 AGL.JO,Anglo American,stock_jse
 AMS.JO,Anglo American Platinum,stock_jse
@@ -260,6 +267,8 @@ SLM.JO,Sanlam,stock_jse
 SOL.JO,Sasol,stock_jse
 SSW.JO,Sibanye-Stillwater,stock_jse
 TFG.JO,The Foschini Group,stock_jse
+VOD.JO,Vodacom,stock_jse
+WHL.JO,Woolworths Holdings,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -383,6 +392,16 @@ STJ.L,St James's Place,stock_uk
 SVT.L,Severn Trent,stock_uk
 TLW.L,Tullow Oil,stock_uk
 TPK.L,Travis Perkins,stock_uk
+TRN.L,Trainline,stock_uk
+TRST.L,Trustpilot,stock_uk
+TSCO.L,Tesco,stock_uk
+TW.L,Taylor Wimpey,stock_uk
+ULVR.L,Unilever,stock_uk
+UTG.L,Unite Group,stock_uk
+UU.L,United Utilities,stock_uk
+VOD.L,Vodafone,stock_uk
+WEIR.L,Weir Group,stock_uk
+WPP.L,WPP,stock_uk
 A,Agilent,stock_us
 AA,Alcoa Inc,stock_us
 AAL,American Airlines Group,stock_us
@@ -884,7 +903,57 @@ TPR,Tapestry,stock_us
 TRGP,Targa Resources,stock_us
 TRIP,Tripadvisor,stock_us
 TRMB,Trimble,stock_us
+TROW,T. Rowe Price,stock_us
+TRV,Travelers,stock_us
+TSCO,Tractor Supply,stock_us
 TSLA,Tesla Inc,stock_us
 TSM,Taiwan Semiconductor,stock_us
+TSN,Tyson Foods,stock_us
+TT,Trane Technologies,stock_us
+TTC,Toro,stock_us
+TTD,The Trade Desk,stock_us
+TXN,Texas Instruments,stock_us
+TXT,Textron,stock_us
+TYL,Tyler Technologies,stock_us
+UA,Under Armour,stock_us
+UAL,United Airlines,stock_us
+UBER,Uber,stock_us
+UDR,UDR Inc,stock_us
+UHS,Universal Health Services,stock_us
+ULTA,Ulta Beauty,stock_us
+UNH,UnitedHealth,stock_us
+UNM,Unum,stock_us
+UNP,Union Pacific,stock_us
+UPS,UPS,stock_us
+UPST,Upstart,stock_us
+URI,United Rentals,stock_us
+USB,US Bancorp,stock_us
+V,Visa,stock_us
+VFC,VF Corp,stock_us
+VLO,Valero,stock_us
+VLTO,Veralto,stock_us
+VMC,Vulcan Materials,stock_us
+VNO,Vornado,stock_us
+VRSK,Verisk,stock_us
+VRSN,VeriSign,stock_us
+VRTX,Vertex Pharmaceuticals,stock_us
+VST,Vistra,stock_us
+VTR,Ventas,stock_us
+VTRS,Viatris,stock_us
+VZ,Verizon,stock_us
+WAB,Wabtec,stock_us
+WAT,Waters,stock_us
+WB,Weibo,stock_us
+WBA,Walgreens,stock_us
+WBD,Warner Bros Discovery,stock_us
+WDAY,Workday,stock_us
 WDC,Western Digital,stock_us
+WEC,WEC Energy,stock_us
+WELL,Welltower,stock_us
+WFC,Wells Fargo,stock_us
+WHR,Whirlpool,stock_us
+WM,Waste Management,stock_us
+WMB,Williams Companies,stock_us
 WMT,Walmart,stock_us
+WRB,WR Berkley,stock_us
+WST,West Pharmaceutical,stock_us
