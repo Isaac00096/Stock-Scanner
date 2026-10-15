@@ -98,7 +98,14 @@ ALIOR,Alior Bank SA (Poland),stock_eu
 ALLEGRO,Allegro SA (Poland),stock_eu
 ALTR,Altri SGPS SA (Portugal),stock_eu
 ALV.DE,Allianz SE,stock_eu
+AMBUB.CO,Ambu AS,stock_eu
 ASML.AS,ASML Holding NV,stock_eu
+BAS.DE,BASF,stock_eu
+BAVA.CO,Bavarian Nordic,stock_eu
+BAYN.DE,Bayer,stock_eu
+BBVA.MC,BBVA,stock_eu
+BCP,Banco Comercial Portugues,stock_eu
+BEI,Beiersdorf,stock_eu
 KGHM,KGHM Polska Miedz SA,stock_eu
 NDA.HE,Nordea Bank,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
@@ -106,6 +113,12 @@ SU.PA,Schneider Electric,stock_eu
 TTE.PA,TotalEnergies,stock_eu
 ABG.JO,Absa Group,stock_jse
 AGL.JO,Anglo American,stock_jse
+AMS.JO,Anglo American Platinum,stock_jse
+ANG.JO,AngloGold Ashanti,stock_jse
+ANH.JO,Anheuser-Busch InBev (JSE),stock_jse
+APN.JO,Aspen Pharmacare,stock_jse
+BHG.JO,BHP Group (JSE),stock_jse
+BID.JO,Bid Corporation,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -113,7 +126,21 @@ ABF.L,Associated British Foods,stock_uk
 ADM.L,Admiral Group,stock_uk
 AHT.L,Ashtead Group,stock_uk
 ALW.L,Alliance Witan PLC,stock_uk
+AML.L,Aston Martin Lagonda,stock_uk
+ANTO.L,Antofagasta,stock_uk
+ASC.L,ASOS,stock_uk
+AUTO.L,Auto Trader Group,stock_uk
+AV.L,Aviva,stock_uk
 AZN.L,AstraZeneca,stock_uk
+BA.L,BAE Systems,stock_uk
+BAB.L,Babcock International,stock_uk
+BARC.L,Barclays,stock_uk
+BATS.L,British American Tobacco,stock_uk
+BBOX.L,Tritax Big Box REIT,stock_uk
+BBY.L,Balfour Beatty,stock_uk
+BDEV.L,Barratt Developments,stock_uk
+BEZ.L,Beazley,stock_uk
+BHP.L,BHP Group PLC,stock_uk
 BP.L,BP,stock_uk
 BT.L,BT,stock_uk
 CNA.L,Centrica,stock_uk
@@ -150,11 +177,49 @@ ALGN,Align,stock_us
 ALK,Alaska Air,stock_us
 ALL,Allstate Corp,stock_us
 ALLE,Allegion PLC,stock_us
+AMAT,Applied Materials,stock_us
+AMC,AMC Entertainment,stock_us
 AMD,AMD,stock_us
+AME,Ametek,stock_us
+AMGN,Amgen,stock_us
+AMP,Ameriprise Financial,stock_us
+AMT,American Tower,stock_us
 AMZN,Amazon.com,stock_us
+AN,AutoNation,stock_us
+ANET,Arista Networks,stock_us
+ANF,Abercrombie & Fitch,stock_us
+AON,Aon PLC,stock_us
+AOS,A O Smith,stock_us
+APA,APA Corp,stock_us
+APD,Air Products & Chemicals,stock_us
+APH,Amphenol,stock_us
+APP,AppLovin,stock_us
+APTV,Aptiv,stock_us
+ARE,Alexandria Real Estate,stock_us
+ARM,Arm Holdings,stock_us
 ASML,ASML (US listing),stock_us
+ATI,ATI Inc,stock_us
+ATO,Atmos Energy,stock_us
+AVB,AvalonBay Communities,stock_us
+AVGO,Broadcom,stock_us
+AVY,Avery Dennison,stock_us
+AWK,American Water Works,stock_us
+AXON,Axon Enterprise,stock_us
+AXP,American Express,stock_us
+AZO,AutoZone,stock_us
+BA,Boeing,stock_us
+BABA,Alibaba Group,stock_us
 BAC,Bank of America,stock_us
+BAX,Baxter International,stock_us
 BB,BlackBerry Ltd,stock_us
+BBY,Best Buy,stock_us
+BDX,Becton Dickinson,stock_us
+BEN,Franklin Resources,stock_us
+BFH,Bread Financial,stock_us
+BG,Bunge Global,stock_us
+BIDU,Baidu,stock_us
+BIIB,Biogen,stock_us
+BIO,Bio-Rad Labs,stock_us
 BRK.B,Berkshire Hathaway Class B,stock_us
 C,Citigroup,stock_us
 DE,Deere & Co,stock_us
