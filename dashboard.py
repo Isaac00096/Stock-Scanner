@@ -46,7 +46,7 @@ def _limit_table(rows):
             f"<td>{_win(o)}</td><td>{_f(o.get('avg'), '%', 2)}</td><td>{o.get('n', '–')}</td>"
             f"<td>${h['price']:.2f}</td></tr>")
     return ("<div class='wrap'><table><tr><th>Ticker</th><th>Setup</th><th>Buy limit</th><th>Distance</th>"
-            "<th>Stop</th><th>Target</th><th>Max hold</th><th>Win rate (95% range)</th><th>Avg / trade</th>"
+            "<th>Stop</th><th>Target</th><th>Max hold</th><th>Chance of a win (95% range)</th><th>Avg / trade</th>"
             "<th>Past trades</th><th>Last close</th></tr>" + "".join(out) + "</table></div>")
 
 
@@ -61,7 +61,7 @@ def _open_table(rows):
             f"<td>{_f(o.get('avg'), '%', 2)}</td><td>{o.get('n', '–')}</td>"
             f"<td>${h['price']:.2f}</td><td>${h['stop']:.2f}</td><td>{_tgt(h)}</td>"
             f"<td>{h['max_hold']}d</td></tr>")
-    return ("<div class='wrap'><table><tr><th>Ticker</th><th>Dir</th><th>Setup</th><th>Win rate (95% range)</th>"
+    return ("<div class='wrap'><table><tr><th>Ticker</th><th>Dir</th><th>Setup</th><th>Chance of a win (95% range)</th>"
             "<th>Avg / trade</th><th>Past trades</th><th>Last close</th><th>Stop</th><th>Target</th>"
             "<th>Max hold</th></tr>" + "".join(out) + "</table></div>")
 
