@@ -7,6 +7,7 @@ COPPER,Copper,commodity
 CORN,Corn,commodity
 COTTON,Cotton,commodity
 LEAD,Lead,commodity
+LEAD_V,Lead (variable spread),commodity
 NATURALGAS,Natural Gas,commodity
 ORANGEJUICE,Orange Juice,commodity
 SOYABEAN,Soya Bean,commodity
@@ -168,6 +169,14 @@ JYSK.CO,Jyske Bank,stock_eu
 KEP.PA,Kering,stock_eu
 KETY,Grupa Kety,stock_eu
 KGHM,KGHM Polska Miedz SA,stock_eu
+KNEVB.HE,Kone,stock_eu
+KRUK,Kruk SA,stock_eu
+LHA,Lufthansa,stock_eu
+MAERSK_B.CO,AP Moller-Maersk B,stock_eu
+MBANK,mBank,stock_eu
+MBG.DE,Mercedes-Benz,stock_eu
+MC.PA,LVMH,stock_eu
+MODIVO,Modivo,stock_eu
 NDA.HE,Nordea Bank,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
 SU.PA,Schneider Electric,stock_eu
@@ -193,6 +202,7 @@ GLN.JO,Glencore (JSE),stock_jse
 HMY.JO,Harmony Gold,stock_jse
 IMP.JO,Impala Platinum,stock_jse
 INL.JO,Investec Ltd,stock_jse
+LHC.JO,Life Healthcare,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -268,8 +278,18 @@ JD.L,JD Sports,stock_uk
 JDW.L,JD Wetherspoon,stock_uk
 JMAT.L,Johnson Matthey,stock_uk
 JUP.L,Jupiter Fund Management,stock_uk
+KGF.L,Kingfisher,stock_uk
+LAND.L,Land Securities,stock_uk
+LGEN.L,Legal & General,stock_uk
 LLOY.L,Lloyds Banking Group,stock_uk
+LMP.L,LondonMetric Property,stock_uk
 LSEG.L,London Stock Exchange,stock_uk
+MAB.L,Mitchells & Butlers,stock_uk
+MKS.L,Marks & Spencer,stock_uk
+MNDI.L,Mondi,stock_uk
+MNG.L,M&G,stock_uk
+MONY.L,MONY Group,stock_uk
+MOON.L,Moonpig,stock_uk
 PSON.L,Pearson,stock_uk
 RR.L,Rolls-Royce,stock_uk
 SHEL.L,Shell PLC,stock_uk
@@ -556,8 +576,67 @@ K,Kellanova,stock_us
 KDP,Keurig Dr Pepper,stock_us
 KEY,KeyCorp,stock_us
 KEYS,Keysight,stock_us
+KHC,Kraft Heinz,stock_us
 KIM,Kimco Realty,stock_us
+KLAC,KLA Corp,stock_us
+KLAR,Klarna,stock_us
+KMB,Kimberly-Clark,stock_us
+KMI,Kinder Morgan,stock_us
+KMX,CarMax,stock_us
+KO,Coca-Cola,stock_us
+KR,Kroger,stock_us
+KSS,Kohl's,stock_us
+KVUE,Kenvue,stock_us
+KVYO,Klaviyo,stock_us
+L,Loews,stock_us
+LCID,Lucid Group,stock_us
+LDOS,Leidos,stock_us
+LEN,Lennar,stock_us
+LH,Labcorp,stock_us
+LHX,L3Harris,stock_us
+LKQ,LKQ Corp,stock_us
+LLY,Eli Lilly,stock_us
+LMND,Lemonade,stock_us
+LMT,Lockheed Martin,stock_us
+LNC,Lincoln National,stock_us
+LNT,Alliant Energy,stock_us
+LOW,Lowe's,stock_us
+LRCX,Lam Research,stock_us
+LULU,Lululemon,stock_us
+LUMN,Lumen,stock_us
+LUNR,Intuitive Machines,stock_us
+LUV,Southwest Airlines,stock_us
+LVS,Las Vegas Sands,stock_us
+LW,Lamb Weston,stock_us
+LYB,LyondellBasell,stock_us
+LYV,Live Nation,stock_us
+M,Macy's,stock_us
+MA,Mastercard,stock_us
+MAA,Mid-America Apartment,stock_us
+MAR,Marriott,stock_us
+MAS,Masco,stock_us
+MAT,Mattel,stock_us
+MCD,McDonald's,stock_us
+MCHP,Microchip Technology,stock_us
+MCK,McKesson,stock_us
+MCO,Moody's,stock_us
+MDLZ,Mondelez,stock_us
+MDT,Medtronic,stock_us
+MELI,MercadoLibre,stock_us
+MET,MetLife,stock_us
 META,Meta Platforms Inc,stock_us
+MGM,MGM Resorts,stock_us
+MHK,Mohawk Industries,stock_us
+MKC,McCormick,stock_us
+MKTX,MarketAxess,stock_us
+MLM,Martin Marietta,stock_us
+MMC,Marsh & McLennan,stock_us
+MMM,3M,stock_us
+MNST,Monster Beverage,stock_us
+MO,Altria,stock_us
+MOH,Molina Healthcare,stock_us
+MOS,Mosaic,stock_us
+MPC,Marathon Petroleum,stock_us
 MRNA,Moderna,stock_us
 MSFT,Microsoft,stock_us
 MSTR,MicroStrategy,stock_us
