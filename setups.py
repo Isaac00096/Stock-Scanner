@@ -240,6 +240,12 @@ SETUPS = [
           lambda d: (d.Close > d.SMA200) & (d.RSI2 < 10) & (d.RS63 > 0),
           "Same, only stocks beating the S&P 500 over 3 months", 3.0, 0, 10,
           exit_signal=_bounce_exit, target_pct=10.0),
+    Setup("bounce_rsi2_leader_limit_close", "Quick bounce: RSI(2) dip — leaders, buy limit at last close", "long",
+          lambda d: (d.Close > d.SMA200) & (d.RSI2 < 10) & (d.RS63 > 0),
+          "Same as the market-leaders quick bounce, but a day buy limit at the signal day's close "
+          "instead of buying at the open", 3.0, 0, 10,
+          exit_signal=_bounce_exit, target_pct=10.0,
+          levels=lambda d: pd.DataFrame({"limit": d.Close}, index=d.index), entry_type="limit"),
     Setup("bounce_3down", "Quick bounce: 3 down days", "long",
           lambda d: (d.Close > d.SMA200) & _three_down(d) & (d.Close < d.SMA5),
           "Uptrend stock that closed lower 3 days in a row; sell at the first close above the 5-day "
