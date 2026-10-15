@@ -19,6 +19,7 @@ ZINC,Zinc,commodity
 ADAUSD,Cardano,crypto
 BTCUSD,Bitcoin,crypto
 DASHCUSD,Dash,crypto
+EOSUSD,EOS,crypto
 ETHUSD,Ethereum,crypto
 LTCUSD,Litecoin,crypto
 SOLANA,Solana,crypto
@@ -137,6 +138,20 @@ EDP,EDP SA,stock_eu
 EDPR,EDP Renovaveis,stock_eu
 EGL,Mota-Engil,stock_eu
 EL.PA,EssilorLuxottica,stock_eu
+ENEL.MX,Enel,stock_eu
+ENI.MI,Eni,stock_eu
+ENR,Siemens Energy,stock_eu
+EOAN.DE,E.ON,stock_eu
+ERSTEPL,Erste Bank Polska,stock_eu
+FLS.CO,FLSmidth,stock_eu
+FME,Fresenius Medical Care,stock_eu
+FRE,Fresenius,stock_eu
+G1A,GEA Group,stock_eu
+G24,Scout24,stock_eu
+GALP,Galp Energia,stock_eu
+GLE.PA,Societe Generale,stock_eu
+GMAB.CO,Genmab,stock_eu
+GN.CO,GN Store Nord,stock_eu
 KGHM,KGHM Polska Miedz SA,stock_eu
 NDA.HE,Nordea Bank,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
@@ -156,6 +171,10 @@ CFR.JO,Richemont (JSE),stock_jse
 CLS.JO,Clicks Group,stock_jse
 CPI.JO,Capitec,stock_jse
 DSY.JO,Discovery,stock_jse
+EXX.JO,Exxaro Resources,stock_jse
+FSR.JO,FirstRand,stock_jse
+GFI.JO,Gold Fields,stock_jse
+GLN.JO,Glencore (JSE),stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -201,6 +220,17 @@ DGE.L,Diageo,stock_uk
 DPLM.L,Diploma,stock_uk
 DRX.L,Drax Group,stock_uk
 EDV.L,Endeavour Mining,stock_uk
+ENT.L,Entain,stock_uk
+EXPN.L,Experian,stock_uk
+EZJ.L,easyJet,stock_uk
+FCIT.L,F&C Investment Trust,stock_uk
+FLTR.L,Flutter Entertainment,stock_uk
+FRAS.L,Frasers Group,stock_uk
+FRES.L,Fresnillo,stock_uk
+GAW.L,Games Workshop,stock_uk
+GLEN.L,Glencore,stock_uk
+GRG.L,Greggs,stock_uk
+GSK.L,GSK,stock_uk
 LLOY.L,Lloyds Banking Group,stock_uk
 LSEG.L,London Stock Exchange,stock_uk
 PSON.L,Pearson,stock_uk
@@ -381,9 +411,67 @@ EFX,Equifax,stock_us
 EG,Everest Group,stock_us
 EIX,Edison International,stock_us
 EL,Estee Lauder,stock_us
+ELV,Elevance Health,stock_us
+EMN,Eastman Chemical,stock_us
+EMR,Emerson Electric,stock_us
+ENPH,Enphase,stock_us
+EOG,EOG Resources,stock_us
+EPAM,EPAM,stock_us
+EQIX,Equinix,stock_us
+EQR,Equity Residential,stock_us
+EQT,EQT Corp,stock_us
+ES,Eversource Energy,stock_us
+ESS,Essex Property Trust,stock_us
+ETN,Eaton,stock_us
+ETR,Entergy,stock_us
+ETSY,Etsy,stock_us
+EVRG,Evergy,stock_us
+EW,Edwards Lifesciences,stock_us
+EXC,Exelon,stock_us
+EXPD,Expeditors International,stock_us
+EXPE,Expedia,stock_us
+F,Ford Motor,stock_us
+FANG,Diamondback Energy,stock_us
+FAST,Fastenal,stock_us
+FBIN,Fortune Brands Innovations,stock_us
+FCX,Freeport-McMoRan,stock_us
+FDX,FedEx,stock_us
+FE,FirstEnergy,stock_us
+FFIV,F5,stock_us
+FICO,Fair Isaac,stock_us
+FIS,Fidelity National Info,stock_us
+FITB,Fifth Third,stock_us
+FL,Foot Locker,stock_us
+FLR,Fluor,stock_us
+FMC,FMC Corp,stock_us
+FOSL,Fossil Group,stock_us
+FOX,Fox Corp,stock_us
+FRT,Federal Realty,stock_us
+FSLR,First Solar,stock_us
+FTI,TechnipFMC,stock_us
+FTNT,Fortinet,stock_us
+GD,General Dynamics,stock_us
+GE,General Electric,stock_us
+GEHC,GE HealthCare,stock_us
+GEN,Gen Digital,stock_us
+GFS,GlobalFoundries,stock_us
+GILD,Gilead Sciences,stock_us
+GIS,General Mills,stock_us
+GL,Globe Life,stock_us
+GLW,Corning,stock_us
+GM,General Motors,stock_us
+GME,GameStop,stock_us
+GNRC,Generac,stock_us
 GOOG,Alphabet (Class C),stock_us
 GOOGL,Alphabet (Class A),stock_us
+GPC,Genuine Parts,stock_us
+GPN,Global Payments,stock_us
+GPS,Gap,stock_us
+GRMN,Garmin,stock_us
 GS,Goldman Sachs,stock_us
+GT,Goodyear,stock_us
+GWW,WW Grainger,stock_us
+HAL,Halliburton,stock_us
 HOLX,Hologic,stock_us
 INTC,Intel Corp,stock_us
 KIM,Kimco Realty,stock_us
