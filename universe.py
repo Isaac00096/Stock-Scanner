@@ -84,6 +84,21 @@ def fetch_nyse_tickers() -> list[str]:
     return []
 
 
+def broker_symbols() -> list[str]:
+    """Tickers your broker offers, from config.BROKER_SYMBOLS_FILE (empty list if not set up)."""
+    import os
+    path = config.BROKER_SYMBOLS_FILE
+    if not path or not os.path.exists(path):
+        return []
+    out = []
+    with open(path) as fh:
+        for line in fh:
+            s = line.split("#", 1)[0].strip().upper()
+            if s:
+                out.append(s.replace(".", "-"))
+    return sorted(set(out))
+
+
 def get_universe() -> list[str]:
     if config.WATCHLIST_SOURCE == "CUSTOM":
         return list(config.CUSTOM_WATCHLIST)

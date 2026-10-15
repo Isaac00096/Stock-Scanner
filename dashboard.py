@@ -66,7 +66,7 @@ def _open_table(rows):
             "<th>Max hold</th></tr>" + "".join(out) + "</table></div>")
 
 
-def render(hits, scanned, errors, as_of, validation, validated_names, out_path):
+def render(hits, scanned, errors, as_of, validation, validated_names, out_path, broker=None):
     hits = sorted(hits, key=lambda h: h["status"] != "validated")
     limit_rows = [h for h in hits if h.get("kind") == "limit"]
     open_rows = [h for h in hits if h.get("kind") != "limit"]
@@ -102,7 +102,7 @@ def render(hits, scanned, errors, as_of, validation, validated_names, out_path):
  .note{{margin-top:28px;font-size:12px;color:#9098a8;line-height:1.5;max-width:800px}}
 </style></head><body>
 <h1>Morning Scan</h1>
-<div class="sub">Based on the close of {date} · {scanned} liquid tickers scanned · {len(limit_rows)} limit order(s) · {len(open_rows)} open signal(s)</div>
+<div class="sub">Based on the close of {date} · {scanned} liquid tickers scanned{f" (only stocks offered by {html.escape(broker)})" if broker else ""} · {len(limit_rows)} limit order(s) · {len(open_rows)} open signal(s)</div>
 <div class="sub">{vline}</div>
 
 <div class="lead" style="margin-top:14px">Rows marked <span class='st'>paper trade only</span> come from setups that beat

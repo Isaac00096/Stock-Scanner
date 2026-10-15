@@ -38,7 +38,16 @@ def main():
     if not validation:
         print("No setups.json yet — run validate.py first. Showing all triggers as unvalidated.")
 
-    tickers = data.csv_tickers(args.csv_dir) if args.csv_dir else universe.get_universe()
+    broker = universe.broker_symbols()
+    if args.csv_dir:
+        tickers = data.csv_tickers(args.csv_dir)
+        if broker:
+            tickers = [t for t in tickers if t in set(broker)]
+    elif broker:
+        tickers = broker
+        print(f"Scanning only the {len(broker)} stocks offered by {config.BROKER_NAME}.")
+    else:
+        tickers = universe.get_universe()
     if not tickers:
         raise SystemExit("ERROR: no tickers to scan.")
     print(f"Scanning {len(tickers)} tickers...")
@@ -87,7 +96,7 @@ def main():
 
     validated_names = [v["label"] for v in vstats.values() if v["status"] == "validated"]
     os.makedirs(config.OUTPUT_DIR, exist_ok=True)
-    dashboard.render(hits, scanned=scanned, errors=errors, as_of=as_of,
+    dashboard.render(hits, scanned=scanned, broker=(config.BROKER_NAME if broker else None), errors=errors, as_of=as_of,
                      validation=validation, validated_names=validated_names,
                      out_path=os.path.join(config.OUTPUT_DIR, config.DASHBOARD_FILE))
     print(f"Done. {len(hits)} signal(s). Dashboard: {os.path.join(config.OUTPUT_DIR, config.DASHBOARD_FILE)}")

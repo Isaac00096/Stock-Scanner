@@ -15,6 +15,12 @@ CUSTOM_WATCHLIST = [
     "GM", "H", "MAR", "HLT", "CCL", "DAL", "UBER", "SHOP", "SPGI", "BLK",
 ]
 
+# Broker filter: if this file exists (one ticker per line), the DAILY SCAN checks only these
+# stocks, so every signal is tradable at your broker (Trade Nation). Validation still uses the
+# wide NYSE universe for more history. Lines starting with # are ignored.
+BROKER_SYMBOLS_FILE = "broker_symbols.txt"
+BROKER_NAME = "Trade Nation"
+
 # Liquidity filters (set to None to disable)
 MIN_PRICE = 10.0            # Gartley: avoid the low-priced "dogs" (erratic stocks under $10)
 MIN_AVG_VOLUME = 200_000    # 20-day average volume
