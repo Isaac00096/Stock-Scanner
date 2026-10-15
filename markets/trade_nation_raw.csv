@@ -18,6 +18,7 @@ XAUUSD,Gold,commodity
 ZINC,Zinc,commodity
 ADAUSD,Cardano,crypto
 BTCUSD,Bitcoin,crypto
+DASHCUSD,Dash,crypto
 ETHUSD,Ethereum,crypto
 LTCUSD,Litecoin,crypto
 SOLANA,Solana,crypto
@@ -119,6 +120,23 @@ CDPROJEKT,CD Projekt,stock_eu
 COLOB.CO,Coloplast,stock_eu
 CON,Continental AG,stock_eu
 COR,Corticeira Amorim,stock_eu
+CS.PA,AXA,stock_eu
+CTT,CTT Correios de Portugal,stock_eu
+DANSKE.CO,Danske Bank,stock_eu
+DB1.DE,Deutsche Boerse,stock_eu
+DBK.DE,Deutsche Bank,stock_eu
+DEMANT.CO,Demant,stock_eu
+DG.PA,Vinci,stock_eu
+DHL.DE,Deutsche Post DHL,stock_eu
+DINOPL,Dino Polska,stock_eu
+DNORD.DC,DS Norden,stock_eu
+DSV.CO,DSV,stock_eu
+DTE.DE,Deutsche Telekom,stock_eu
+DTG,Daimler Truck,stock_eu
+EDP,EDP SA,stock_eu
+EDPR,EDP Renovaveis,stock_eu
+EGL,Mota-Engil,stock_eu
+EL.PA,EssilorLuxottica,stock_eu
 KGHM,KGHM Polska Miedz SA,stock_eu
 NDA.HE,Nordea Bank,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
@@ -136,6 +154,8 @@ BTI.JO,British American Tobacco (JSE),stock_jse
 BVT.JO,Bidvest Group,stock_jse
 CFR.JO,Richemont (JSE),stock_jse
 CLS.JO,Clicks Group,stock_jse
+CPI.JO,Capitec,stock_jse
+DSY.JO,Discovery,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -169,6 +189,18 @@ BWY.L,Bellway,stock_uk
 CBG.L,Close Brothers,stock_uk
 CCH.L,Coca-Cola HBC,stock_uk
 CNA.L,Centrica,stock_uk
+CPG.L,Compass Group,stock_uk
+CRDA.L,Croda International,stock_uk
+CRH.L,CRH PLC,stock_uk
+CRST.L,Crest Nicholson,stock_uk
+CTEC.L,Convatec Group,stock_uk
+CTY.L,City of London Investment Trust,stock_uk
+CURY.L,Currys,stock_uk
+DCC.L,DCC PLC,stock_uk
+DGE.L,Diageo,stock_uk
+DPLM.L,Diploma,stock_uk
+DRX.L,Drax Group,stock_uk
+EDV.L,Endeavour Mining,stock_uk
 LLOY.L,Lloyds Banking Group,stock_uk
 LSEG.L,London Stock Exchange,stock_uk
 PSON.L,Pearson,stock_uk
@@ -299,9 +331,56 @@ COF,Capital One,stock_us
 COIN,Coinbase,stock_us
 COO,Cooper Companies,stock_us
 COP,ConocoPhillips,stock_us
+COST,Costco,stock_us
+CPB,Campbell Soup,stock_us
+CPRT,Copart,stock_us
+CPT,Camden Property,stock_us
+CRL,Charles River Labs,stock_us
+CRM,Salesforce,stock_us
+CRWD,CrowdStrike,stock_us
+CRWV,CoreWeave,stock_us
+CSCO,Cisco Systems,stock_us
+CSGP,CoStar Group,stock_us
+CSX,CSX Corp,stock_us
+CTAS,Cintas,stock_us
+CTRA,Coterra Energy,stock_us
+CTSH,Cognizant,stock_us
+CTVA,Corteva,stock_us
+CVS,CVS Health,stock_us
+CVX,Chevron,stock_us
+CZR,Caesars Entertainment,stock_us
+D,Dominion Energy,stock_us
+DAL,Delta Air Lines,stock_us
+DASH,DoorDash,stock_us
+DD,DuPont,stock_us
+DDOG,Datadog,stock_us
 DE,Deere & Co,stock_us
 DELL,Dell Technologies,stock_us
+DG,Dollar General,stock_us
+DGX,Quest Diagnostics,stock_us
+DHI,DR Horton,stock_us
+DHR,Danaher,stock_us
+DIS,Walt Disney,stock_us
+DLR,Digital Realty,stock_us
+DLTR,Dollar Tree,stock_us
+DOCU,DocuSign,stock_us
+DOV,Dover,stock_us
+DOW,Dow Inc,stock_us
+DPZ,Domino's Pizza,stock_us
+DRI,Darden Restaurants,stock_us
 DUK,Duke Energy Corp,stock_us
+DVA,DaVita,stock_us
+DVN,Devon Energy,stock_us
+DXC,DXC Technology,stock_us
+DXCM,Dexcom,stock_us
+EA,Electronic Arts,stock_us
+EBAY,eBay,stock_us
+ECL,Ecolab,stock_us
+ED,Consolidated Edison,stock_us
+EFX,Equifax,stock_us
+EG,Everest Group,stock_us
+EIX,Edison International,stock_us
+EL,Estee Lauder,stock_us
 GOOG,Alphabet (Class C),stock_us
 GOOGL,Alphabet (Class A),stock_us
 GS,Goldman Sachs,stock_us
