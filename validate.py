@@ -46,6 +46,8 @@ def judge(is_s: dict, oos_s: dict, base_s: dict) -> tuple[str, list[str]]:
     if oos_s.get("n", 0) < config.MIN_TRADES_OOS:
         return "insufficient", [f"only {oos_s.get('n', 0)} out-of-sample trades (need {config.MIN_TRADES_OOS})"]
     reasons = []
+    if not base_s.get("n"):
+        reasons.append("no random-entry baseline to compare against")
     if oos_s["avg"] <= 0:
         reasons.append("loses money out-of-sample after costs")
     edge_t = engine.edge_tstat(oos_s, base_s)
@@ -154,7 +156,7 @@ def main():
                 # random days where the setup's levels exist (and a limit would sit below the close)
                 placeable = lv.notna().all(axis=1)
                 if "limit" in lv:
-                    placeable &= lv["limit"] < ind["Close"]
+                    placeable &= lv["limit"] <= ind["Close"]
                 pool = np.intersect1d(ready, np.flatnonzero(placeable.to_numpy()))
             if len(pool):
                 mask = np.zeros(len(ind), bool)
