@@ -205,7 +205,21 @@ RHM,Rheinmetall,stock_eu
 RI.PA,Pernod Ricard,stock_eu
 RMS.PA,Hermes,stock_eu
 ROCKB.CO,Rockwool,stock_eu
+RWE.DE,RWE,stock_eu
+SAF.PA,Safran,stock_eu
+SAN.MC,Banco Santander,stock_eu
+SAN.PA,Sanofi,stock_eu
+SAP.DE,SAP,stock_eu
+SEM,Semapa,stock_eu
+SHL,Siemens Healthineers,stock_eu
+SIE.DE,Siemens,stock_eu
+SON,Sonae,stock_eu
+STLAM.MI,Stellantis,stock_eu
+STMPA.PA,STMicroelectronics,stock_eu
 SU.PA,Schneider Electric,stock_eu
+SY1,Symrise,stock_eu
+TAURONPE,Tauron Polska,stock_eu
+TEF.MC,Telefonica,stock_eu
 TTE.PA,TotalEnergies,stock_eu
 ABG.JO,Absa Group,stock_jse
 AGL.JO,Anglo American,stock_jse
@@ -240,6 +254,12 @@ PIK.JO,Pick n Pay,stock_jse
 PRX.JO,Prosus (JSE),stock_jse
 REM.JO,Remgro,stock_jse
 RNI.JO,Reinet Investments,stock_jse
+SBK.JO,Standard Bank,stock_jse
+SHP.JO,Shoprite,stock_jse
+SLM.JO,Sanlam,stock_jse
+SOL.JO,Sasol,stock_jse
+SSW.JO,Sibanye-Stillwater,stock_jse
+TFG.JO,The Foschini Group,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -348,7 +368,21 @@ RKT.L,Reckitt,stock_uk
 RMV.L,Rightmove,stock_uk
 RR.L,Rolls-Royce,stock_uk
 RTO.L,Rentokil,stock_uk
+SBRY.L,Sainsbury,stock_uk
+SDR.L,Schroders,stock_uk
+SGE.L,Sage Group,stock_uk
+SGRO.L,Segro,stock_uk
 SHEL.L,Shell PLC,stock_uk
+SMIN.L,Smiths Group,stock_uk
+SMT.L,Scottish Mortgage,stock_uk
+SN.L,Smith & Nephew,stock_uk
+SPX.L,Spirax Group,stock_uk
+SSE.L,SSE,stock_uk
+STAN.L,Standard Chartered,stock_uk
+STJ.L,St James's Place,stock_uk
+SVT.L,Severn Trent,stock_uk
+TLW.L,Tullow Oil,stock_uk
+TPK.L,Travis Perkins,stock_uk
 A,Agilent,stock_us
 AA,Alcoa Inc,stock_us
 AAL,American Airlines Group,stock_us
@@ -799,8 +833,57 @@ RRC,Range Resources,stock_us
 RSG,Republic Services,stock_us
 RTX,RTX Corp,stock_us
 RVTY,Revvity,stock_us
+SBAC,SBA Communications,stock_us
+SBUX,Starbucks,stock_us
+SCHW,Charles Schwab,stock_us
+SEDG,SolarEdge,stock_us
+SEE,Sealed Air,stock_us
 SHOP,Shopify Inc,stock_us
+SHW,Sherwin-Williams,stock_us
+SIRI,Sirius XM,stock_us
+SJM,J.M. Smucker,stock_us
+SKHY,SK Hynix ADR,stock_us
+SLB,Schlumberger,stock_us
+SMCI,Super Micro Computer,stock_us
+SNA,Snap-on,stock_us
+SNAP,Snap Inc,stock_us
+SNDK,SanDisk,stock_us
+SNOW,Snowflake,stock_us
+SNPS,Synopsys,stock_us
+SO,Southern Co,stock_us
 SPCX,SpaceX,stock_us
+SPG,Simon Property,stock_us
+SPGI,S&P Global,stock_us
+SPOT,Spotify,stock_us
+SQ,Block,stock_us
+SRE,Sempra,stock_us
+STE,Steris,stock_us
+STLD,Steel Dynamics,stock_us
+STT,State Street,stock_us
+STX,Seagate,stock_us
+STZ,Constellation Brands,stock_us
+SWK,Stanley Black & Decker,stock_us
+SWKS,Skyworks,stock_us
+SYF,Synchrony Financial,stock_us
+SYK,Stryker,stock_us
+SYY,Sysco,stock_us
+T,AT&T,stock_us
+TAP,Molson Coors,stock_us
+TDG,TransDigm,stock_us
+TEAM,Atlassian,stock_us
+TECH,Bio-Techne,stock_us
+TEL,TE Connectivity,stock_us
+TER,Teradyne,stock_us
+TFC,Truist Financial,stock_us
+TFX,Teleflex,stock_us
+TGT,Target,stock_us
+TJX,TJX Companies,stock_us
+TMO,Thermo Fisher,stock_us
+TMUS,T-Mobile US,stock_us
+TPR,Tapestry,stock_us
+TRGP,Targa Resources,stock_us
+TRIP,Tripadvisor,stock_us
+TRMB,Trimble,stock_us
 TSLA,Tesla Inc,stock_us
 TSM,Taiwan Semiconductor,stock_us
 WDC,Western Digital,stock_us
