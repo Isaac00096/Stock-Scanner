@@ -189,6 +189,22 @@ OR.PA,L'Oreal,stock_eu
 ORSTED.CO,Orsted,stock_eu
 PAH3,Porsche Automobil Holding,stock_eu
 PEKAO,Bank Pekao,stock_eu
+PEPCO,Pepco Group,stock_eu
+PGE,PGE SA,stock_eu
+PHIA.AS,Philips,stock_eu
+PKNORLEN,Orlen,stock_eu
+PKOBP,PKO Bank Polski,stock_eu
+PNDORA.CO,Pandora,stock_eu
+PRX.AS,Prosus,stock_eu
+PZU,PZU SA,stock_eu
+QIA,Qiagen,stock_eu
+RACE.MI,Ferrari,stock_eu
+RBREW.CO,Royal Unibrew,stock_eu
+RENE,REN Redes Energeticas,stock_eu
+RHM,Rheinmetall,stock_eu
+RI.PA,Pernod Ricard,stock_eu
+RMS.PA,Hermes,stock_eu
+ROCKB.CO,Rockwool,stock_eu
 SU.PA,Schneider Electric,stock_eu
 TTE.PA,TotalEnergies,stock_eu
 ABG.JO,Absa Group,stock_jse
@@ -220,6 +236,10 @@ NPH.JO,Northam Platinum,stock_jse
 NPN.JO,Naspers,stock_jse
 NRP.JO,NEPI Rockcastle,stock_jse
 OMU.JO,Old Mutual,stock_jse
+PIK.JO,Pick n Pay,stock_jse
+PRX.JO,Prosus (JSE),stock_jse
+REM.JO,Remgro,stock_jse
+RNI.JO,Reinet Investments,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -314,8 +334,20 @@ NXT.L,Next,stock_uk
 OCDO.L,Ocado,stock_uk
 PAGE.L,PageGroup,stock_uk
 PCT.L,Polar Capital Technology,stock_uk
+PHNX.L,Phoenix Group,stock_uk
+PLUS.L,Plus500,stock_uk
+PNN.L,Pennon,stock_uk
+PRU.L,Prudential,stock_uk
+PSH.L,Pershing Square Holdings,stock_uk
+PSN.L,Persimmon,stock_uk
 PSON.L,Pearson,stock_uk
+QQ.L,QinetiQ,stock_uk
+REL.L,RELX,stock_uk
+RIO.L,Rio Tinto,stock_uk
+RKT.L,Reckitt,stock_uk
+RMV.L,Rightmove,stock_uk
 RR.L,Rolls-Royce,stock_uk
+RTO.L,Rentokil,stock_uk
 SHEL.L,Shell PLC,stock_uk
 A,Agilent,stock_us
 AA,Alcoa Inc,stock_us
@@ -718,8 +750,55 @@ PDD,PDD Holdings,stock_us
 PEG,Public Service Enterprise,stock_us
 PENN,Penn Entertainment,stock_us
 PEP,PepsiCo,stock_us
+PFE,Pfizer,stock_us
+PFG,Principal Financial,stock_us
+PG,Procter & Gamble,stock_us
+PGR,Progressive,stock_us
+PH,Parker-Hannifin,stock_us
+PHM,PulteGroup,stock_us
+PINS,Pinterest,stock_us
+PKG,Packaging Corp of America,stock_us
+PLD,Prologis,stock_us
+PLTR,Palantir,stock_us
+PM,Philip Morris,stock_us
+PNC,PNC Financial,stock_us
+PNR,Pentair,stock_us
+PNW,Pinnacle West,stock_us
+PODD,Insulet,stock_us
+POOL,Pool Corp,stock_us
+PPG,PPG Industries,stock_us
+PPL,PPL Corp,stock_us
+PSA,Public Storage,stock_us
+PSX,Phillips 66,stock_us
+PTON,Peloton,stock_us
+PVH,PVH Corp,stock_us
+PWR,Quanta Services,stock_us
+PYPL,PayPal,stock_us
+QBTS,D-Wave Quantum,stock_us
 QCOM,Qualcomm,stock_us
+QRVO,Qorvo,stock_us
+RBLX,Roblox,stock_us
+RCL,Royal Caribbean,stock_us
+REG,Regency Centers,stock_us
+REGN,Regeneron,stock_us
+RF,Regions Financial,stock_us
+RHI,Robert Half,stock_us
+RIG,Transocean,stock_us
+RIOT,Riot Platforms,stock_us
+RIVN,Rivian,stock_us
+RJF,Raymond James,stock_us
 RKLB,Rocket Lab Inc,stock_us
+RL,Ralph Lauren,stock_us
+RMD,ResMed,stock_us
+ROK,Rockwell Automation,stock_us
+ROKU,Roku,stock_us
+ROL,Rollins,stock_us
+ROP,Roper Technologies,stock_us
+ROST,Ross Stores,stock_us
+RRC,Range Resources,stock_us
+RSG,Republic Services,stock_us
+RTX,RTX Corp,stock_us
+RVTY,Revvity,stock_us
 SHOP,Shopify Inc,stock_us
 SPCX,SpaceX,stock_us
 TSLA,Tesla Inc,stock_us
