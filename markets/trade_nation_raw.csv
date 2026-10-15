@@ -106,6 +106,19 @@ BAYN.DE,Bayer,stock_eu
 BBVA.MC,BBVA,stock_eu
 BCP,Banco Comercial Portugues,stock_eu
 BEI,Beiersdorf,stock_eu
+BMW.DE,BMW,stock_eu
+BN.PA,Danone,stock_eu
+BNP.PA,BNP Paribas,stock_eu
+BNR,Brenntag,stock_eu
+BUDIMEX,Budimex SA,stock_eu
+CA.PA,Carrefour,stock_eu
+CAP.PA,Capgemini,stock_eu
+CARL_B.CO,Carlsberg,stock_eu
+CBK,Commerzbank,stock_eu
+CDPROJEKT,CD Projekt,stock_eu
+COLOB.CO,Coloplast,stock_eu
+CON,Continental AG,stock_eu
+COR,Corticeira Amorim,stock_eu
 KGHM,KGHM Polska Miedz SA,stock_eu
 NDA.HE,Nordea Bank,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
@@ -119,6 +132,10 @@ ANH.JO,Anheuser-Busch InBev (JSE),stock_jse
 APN.JO,Aspen Pharmacare,stock_jse
 BHG.JO,BHP Group (JSE),stock_jse
 BID.JO,Bid Corporation,stock_jse
+BTI.JO,British American Tobacco (JSE),stock_jse
+BVT.JO,Bidvest Group,stock_jse
+CFR.JO,Richemont (JSE),stock_jse
+CLS.JO,Clicks Group,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -141,8 +158,16 @@ BBY.L,Balfour Beatty,stock_uk
 BDEV.L,Barratt Developments,stock_uk
 BEZ.L,Beazley,stock_uk
 BHP.L,BHP Group PLC,stock_uk
+BKG.L,Berkeley Group,stock_uk
+BLND.L,British Land,stock_uk
+BME.L,B&M European Value Retail,stock_uk
+BNZL.L,Bunzl,stock_uk
 BP.L,BP,stock_uk
+BRBY.L,Burberry,stock_uk
 BT.L,BT,stock_uk
+BWY.L,Bellway,stock_uk
+CBG.L,Close Brothers,stock_uk
+CCH.L,Coca-Cola HBC,stock_uk
 CNA.L,Centrica,stock_uk
 LLOY.L,Lloyds Banking Group,stock_uk
 LSEG.L,London Stock Exchange,stock_uk
@@ -220,8 +245,60 @@ BG,Bunge Global,stock_us
 BIDU,Baidu,stock_us
 BIIB,Biogen,stock_us
 BIO,Bio-Rad Labs,stock_us
+BIRK,Birkenstock,stock_us
+BKNG,Booking Holdings,stock_us
+BKR,Baker Hughes,stock_us
+BLDR,Builders FirstSource,stock_us
+BLK,BlackRock,stock_us
+BMBL,Bumble,stock_us
+BMRN,BioMarin,stock_us
+BMY,Bristol Myers Squibb,stock_us
+BR,Broadridge,stock_us
 BRK.B,Berkshire Hathaway Class B,stock_us
+BRO,Brown & Brown,stock_us
+BSX,Boston Scientific,stock_us
+BWA,BorgWarner,stock_us
+BX,Blackstone,stock_us
+BXP,Boston Properties,stock_us
+BYND,Beyond Meat,stock_us
 C,Citigroup,stock_us
+CAG,Conagra Foods,stock_us
+CAH,Cardinal Health,stock_us
+CARR,Carrier Global,stock_us
+CART,Maplebear (Instacart),stock_us
+CAT,Caterpillar,stock_us
+CB,Chubb,stock_us
+CBRE,CBRE Group,stock_us
+CCI,Crown Castle,stock_us
+CCJ,Cameco,stock_us
+CCL,Carnival,stock_us
+CDNS,Cadence Design Systems,stock_us
+CDW,CDW,stock_us
+CE,Celanese,stock_us
+CEG,Constellation Energy,stock_us
+CF,CF Industries,stock_us
+CFG,Citizens Financial,stock_us
+CHD,Church & Dwight,stock_us
+CHRW,CH Robinson,stock_us
+CHTR,Charter Communications,stock_us
+CI,Cigna,stock_us
+CINF,Cincinnati Financial,stock_us
+CL,Colgate-Palmolive,stock_us
+CLF,Cleveland-Cliffs,stock_us
+CLSK,CleanSpark,stock_us
+CLX,Clorox,stock_us
+CMA,Comerica,stock_us
+CMCSA,Comcast,stock_us
+CME,CME Group,stock_us
+CMG,Chipotle Mexican Grill,stock_us
+CMI,Cummins,stock_us
+CMS,CMS Energy,stock_us
+CNC,Centene,stock_us
+CNP,CenterPoint,stock_us
+COF,Capital One,stock_us
+COIN,Coinbase,stock_us
+COO,Cooper Companies,stock_us
+COP,ConocoPhillips,stock_us
 DE,Deere & Co,stock_us
 DELL,Dell Technologies,stock_us
 DUK,Duke Energy Corp,stock_us
