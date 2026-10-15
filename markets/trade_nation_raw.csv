@@ -177,8 +177,18 @@ MBANK,mBank,stock_eu
 MBG.DE,Mercedes-Benz,stock_eu
 MC.PA,LVMH,stock_eu
 MODIVO,Modivo,stock_eu
+MRK.DE,Merck KGaA,stock_eu
+MTX,MTU Aero Engines,stock_eu
 NDA.HE,Nordea Bank,stock_eu
+NETC.CO,Netcompany,stock_eu
+NOKIA.HE,Nokia,stock_eu
+NOS,NOS SGPS,stock_eu
 NOVOB.CO,Novo Nordisk AS,stock_eu
+NVG,The Navigator Company,stock_eu
+OR.PA,L'Oreal,stock_eu
+ORSTED.CO,Orsted,stock_eu
+PAH3,Porsche Automobil Holding,stock_eu
+PEKAO,Bank Pekao,stock_eu
 SU.PA,Schneider Electric,stock_eu
 TTE.PA,TotalEnergies,stock_eu
 ABG.JO,Absa Group,stock_jse
@@ -203,6 +213,13 @@ HMY.JO,Harmony Gold,stock_jse
 IMP.JO,Impala Platinum,stock_jse
 INL.JO,Investec Ltd,stock_jse
 LHC.JO,Life Healthcare,stock_jse
+MRP.JO,Mr Price,stock_jse
+MTN.JO,MTN Group,stock_jse
+NED.JO,Nedbank,stock_jse
+NPH.JO,Northam Platinum,stock_jse
+NPN.JO,Naspers,stock_jse
+NRP.JO,NEPI Rockcastle,stock_jse
+OMU.JO,Old Mutual,stock_jse
 AAF.L,Airtel Africa PLC,stock_uk
 AAL.L,Anglo American,stock_uk
 ABDN.L,abrdn,stock_uk
@@ -290,6 +307,13 @@ MNDI.L,Mondi,stock_uk
 MNG.L,M&G,stock_uk
 MONY.L,MONY Group,stock_uk
 MOON.L,Moonpig,stock_uk
+MRO.L,Melrose Industries,stock_uk
+NG.L,National Grid,stock_uk
+NWG.L,NatWest,stock_uk
+NXT.L,Next,stock_uk
+OCDO.L,Ocado,stock_uk
+PAGE.L,PageGroup,stock_uk
+PCT.L,Polar Capital Technology,stock_uk
 PSON.L,Pearson,stock_uk
 RR.L,Rolls-Royce,stock_uk
 SHEL.L,Shell PLC,stock_uk
@@ -637,14 +661,63 @@ MO,Altria,stock_us
 MOH,Molina Healthcare,stock_us
 MOS,Mosaic,stock_us
 MPC,Marathon Petroleum,stock_us
+MPWR,Monolithic Power,stock_us
+MRK,Merck & Co,stock_us
 MRNA,Moderna,stock_us
+MRVL,Marvell Technology,stock_us
+MS,Morgan Stanley,stock_us
+MSCI,MSCI,stock_us
 MSFT,Microsoft,stock_us
+MSI,Motorola Solutions,stock_us
 MSTR,MicroStrategy,stock_us
+MTB,M&T Bank,stock_us
+MTCH,Match Group,stock_us
+MTD,Mettler-Toledo,stock_us
 MU,Micron Technology,stock_us
+MUR,Murphy Oil,stock_us
+NBR,Nabors Industries,stock_us
+NCLH,Norwegian Cruise Line,stock_us
 NDAQ,Nasdaq OMX,stock_us
+NDSN,Nordson,stock_us
+NEE,NextEra Energy,stock_us
+NEM,Newmont,stock_us
+NFLX,Netflix,stock_us
+NI,NiSource,stock_us
+NIO,NIO,stock_us
+NKE,Nike,stock_us
+NOC,Northrop Grumman,stock_us
+NOW,ServiceNow,stock_us
+NRG,NRG Energy,stock_us
+NSC,Norfolk Southern,stock_us
+NTAP,NetApp,stock_us
+NTES,NetEase,stock_us
+NTRS,Northern Trust,stock_us
+NUE,Nucor,stock_us
 NVDA,NVIDIA Corp,stock_us
+NVR,NVR,stock_us
+NWL,Newell Brands,stock_us
+NWSA,News Corp,stock_us
+NXPI,NXP Semiconductors,stock_us
+O,Realty Income,stock_us
+ODFL,Old Dominion Freight,stock_us
+OKE,ONEOK,stock_us
+OKTA,Okta,stock_us
+OMC,Omnicom,stock_us
 ORCL,Oracle,stock_us
+ORLY,O'Reilly Automotive,stock_us
+OSCR,Oscar Health,stock_us
+OXY,Occidental Petroleum,stock_us
+PAAS,Pan American Silver,stock_us
+PANW,Palo Alto Networks,stock_us
+PAYC,Paycom,stock_us
+PAYX,Paychex,stock_us
+PBI,Pitney Bowes,stock_us
+PCAR,Paccar,stock_us
 PCG,PG&E Corp,stock_us
+PDD,PDD Holdings,stock_us
+PEG,Public Service Enterprise,stock_us
+PENN,Penn Entertainment,stock_us
+PEP,PepsiCo,stock_us
 QCOM,Qualcomm,stock_us
 RKLB,Rocket Lab Inc,stock_us
 SHOP,Shopify Inc,stock_us
