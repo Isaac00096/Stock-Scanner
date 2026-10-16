@@ -1,8 +1,8 @@
-name: Weekly Setup Validation
+name: Daily Setup Validation
 
 on:
   schedule:
-    - cron: "0 12 * * 6"     # Saturdays 12:00 UTC
+    - cron: "30 20 * * 1-5"  # weekdays 20:30 UTC (22:30 SA), after the US close and before the 22:00 UTC scan
   workflow_dispatch: {}       # run manually from the Actions tab (do this once first!)
 
 permissions:
