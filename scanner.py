@@ -138,6 +138,14 @@ def add_rand_risk(hits, fx, pairs=None):
         h["stop_pct"] = per_unit / h["entry"] * 100 if h["entry"] else None
 
 
+def fits_account(h):
+    """Live-tradable on this account: validated setup, known size, and the smallest size loses
+    no more than RISK_PER_TRADE_PCT of the account at the stop. Everything else is hidden."""
+    r = h.get("risk_zar_1")
+    max_risk = config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100
+    return h["status"] == "validated" and r is not None and r * h.get("min_qty", config.MIN_QTY) <= max_risk
+
+
 def pick_top(hits, n):
     """Best validated signals for the 'today's plan' cards: one per instrument, highest win chance."""
     seen, picks = set(), []
@@ -231,6 +239,9 @@ def main():
             hits += scan_instrument(by_symbol[sym], ind, stats)
 
     add_rand_risk(hits, fx, pairs)
+    total = len(hits)
+    hits = [h for h in hits if fits_account(h)]
+    print(f"{total} signal(s) found; {len(hits)} are validated and fit the R{config.ACCOUNT_ZAR} account (others hidden).")
     picks = pick_top(hits, config.TOP_PICKS)
     if not args.csv_dir:
         add_news(picks)

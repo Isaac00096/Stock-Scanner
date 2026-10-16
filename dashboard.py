@@ -237,15 +237,11 @@ def render(hits, scanned, errors, as_of, validation, out_path, picks=None, fx=No
 
     picks = picks or []
     fit_picks = [h for h in picks if _fit(h)[0] is True]
-    big_picks = [h for h in picks if _fit(h)[0] is not True]
     if fit_picks:
         plan = "".join(_card(i, h) for i, h in enumerate(fit_picks, 1))
     else:
-        plan = ("<div class='empty'><b>No trade fits your account today.</b> Every tested signal would risk more than "
-                f"{config.RISK_PER_TRADE_PCT:g}% of your balance, even at the smallest size. Don't place real orders today.</div>")
-    if big_picks:
-        plan += ("<h3 class='bigh'>Too big for your account: paper trade only (demo)</h3>"
-                 + "".join(_card(i, h) for i, h in enumerate(big_picks, len(fit_picks) + 1)))
+        plan = ("<div class='empty'><b>No trade fits your account today.</b> Nothing passed testing and fits a "
+                f"R{config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100:,.0f} maximum loss. Don't place real orders today. That's normal, not a fault.</div>")
     details = "".join(sections) or "<div class='empty'>No signals from validated setups on the latest close, in any market.</div>"
     fx_line = " · ".join(f"{k.upper()}/ZAR {v:.2f}" for k, v in (fx or {}).items())
     date = as_of.date() if as_of is not None else "–"
@@ -281,16 +277,15 @@ def render(hits, scanned, errors, as_of, validation, out_path, picks=None, fx=No
  details{{max-width:1200px}} summary{{cursor:pointer;font-size:17px;font-weight:700;padding:14px 0;border-bottom:1px solid #262b38}}
 </style></head><body>
 <h1>Morning Scan</h1>
-<div class="sub">Based on the close of {date} · {sum(scanned.values())} Trade Nation instruments checked · {len(hits)} signal(s){' · ' + fx_line if fx_line else ''}</div>
+<div class="sub">Based on the close of {date} · {sum(scanned.values())} Trade Nation instruments checked · {len(hits)} trade(s) that fit your account{' · ' + fx_line if fx_line else ''}</div>
 <div class="sub">{vline} · <a href='instruments.html'>what you can trade</a></div>
 {_goal_box()}
 <h2>Today's plan</h2>
-<div class="lead">Only trades whose loss at the stop fits your account are listed first. Anything bigger is shown
-separately for demo practice. If a card says <b>don't use real money</b>, don't.</div>
+<div class="lead">Only validated trades you can place on your R{config.ACCOUNT_ZAR:,.0f} live account are shown. Anything that
+would lose more than R{config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100:,.0f} at the stop, even at the smallest size, is left off this page.</div>
 {plan}
 <h2>All signals by market</h2>
-<div class="lead">Tap a market to open it. Rows marked <span class='st'>paper trade only</span> beat random entries in testing,
-but not yet convincingly: practise those on demo.</div>
+<div class="lead">Tap a market to open it. Same rule: only trades that fit your account.</div>
 <div class="chips">{''.join(chips)}</div>
 {details}
 <div class="note">{('No signals today in: ' + ', '.join(empty_markets) + '.<br>') if empty_markets else ''}
