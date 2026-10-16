@@ -90,12 +90,31 @@ def scan_instrument(row, ind, setups_stats) -> list[dict]:
 FX_SYMBOLS = {"USDZAR=X": "usd", "GBPZAR=X": "gbp", "EURZAR=X": "eur"}
 
 
-def add_rand_risk(hits, fx):
-    """Rand you'd lose on ONE share/unit if the stop is hit (shares only; CFD sizes for
-    forex/indices/commodities differ per contract, so those are left blank)."""
+def zar_per(ccy, fx, pairs):
+    """Rand value of 1 unit of a currency, from tonight's forex closes."""
+    usd = fx.get("usd")
+    if ccy == "ZAR":
+        return 1.0
+    if ccy == "USD":
+        return usd
+    if ccy == "GBP" and fx.get("gbp"):
+        return fx["gbp"]
+    if ccy == "EUR" and fx.get("eur"):
+        return fx["eur"]
+    if usd and pairs.get("USD" + ccy):
+        return usd / pairs["USD" + ccy]
+    if usd and pairs.get(ccy + "USD"):
+        return usd * pairs[ccy + "USD"]
+    return None
+
+
+def add_rand_risk(hits, fx, pairs=None):
+    """risk_zar_1 = rand lost at the stop with Amount 1.0 (1 share for shares; 1.0 contract for CFDs).
+    min_qty = smallest Amount we size with. Left blank where the contract size isn't known."""
+    pairs = pairs or {}
     for h in hits:
         per_unit = abs(h["entry"] - h["stop"])
-        m, z = h["market"], None
+        m, tn, z, mq, unit = h["market"], h["ticker"], None, config.MIN_QTY, "share"
         if m == "us" and fx.get("usd"):
             z = per_unit * fx["usd"]
         elif m == "jse":
@@ -104,7 +123,18 @@ def add_rand_risk(hits, fx):
             z = per_unit / 100 * fx["gbp"]           # UK prices are in pence
         elif m == "eu" and fx.get("eur") and h["yahoo"].endswith((".DE", ".PA", ".AS", ".MC", ".MI", ".BR", ".HE", ".LS")):
             z = per_unit * fx["eur"]
-        h["risk_zar_1"] = z
+        elif m == "forex" and len(tn) == 6:
+            c, rate = config.CFD["forex"], zar_per(tn[3:], fx, pairs)    # profit is in the second currency
+            if rate:
+                z, mq, unit = per_unit * c["per_point"] * rate, c["min"], "amount"
+        elif m == "index" and tn in config.INDEX_CCY:
+            c, rate = config.CFD["index"], zar_per(config.INDEX_CCY[tn], fx, pairs)
+            if rate:
+                z, mq, unit = per_unit * c["per_point"] * rate, c["min"], "amount"
+        elif m == "commodity" and tn in config.CFD["commodity"] and fx.get("usd"):
+            c = config.CFD["commodity"][tn]
+            z, mq, unit = per_unit * c["per_point"] * fx["usd"], c["min"], "amount"
+        h["risk_zar_1"], h["min_qty"], h["unit"] = z, mq, unit
         h["stop_pct"] = per_unit / h["entry"] * 100 if h["entry"] else None
 
 
@@ -115,7 +145,7 @@ def pick_top(hits, n):
 
     def too_big(h):
         r = h.get("risk_zar_1")
-        return r is not None and r * config.MIN_QTY > max_risk
+        return r is None or r * h.get("min_qty", config.MIN_QTY) > max_risk
 
     for h in sorted([h for h in hits if h["status"] == "validated"],
                     key=lambda h: (too_big(h), -(h["oos"].get("win_rate") or 0), -(h["oos"].get("avg") or 0))):
@@ -175,7 +205,7 @@ def main():
     if args.csv_dir:
         inst = inst[inst["yahoo"].isin(set(data.csv_tickers(args.csv_dir)))]
 
-    hits, errors, as_of, fx = [], 0, None, {}
+    hits, errors, as_of, fx, pairs = [], 0, None, {}, {}
     scanned = {m: 0 for m in config.MARKETS}
     for m, cfg in config.MARKETS.items():
         rows = inst[inst["market"] == m]
@@ -193,12 +223,14 @@ def main():
                 continue
             if sym in FX_SYMBOLS:
                 fx[FX_SYMBOLS[sym]] = float(df["Close"].iloc[-1])
+            if m == "forex":
+                pairs[by_symbol[sym].tn_symbol] = float(df["Close"].iloc[-1])
             scanned[m] += 1
             ind = indicators.compute_all(df, bench)
             as_of = max(as_of, ind.index[-1]) if as_of is not None else ind.index[-1]
             hits += scan_instrument(by_symbol[sym], ind, stats)
 
-    add_rand_risk(hits, fx)
+    add_rand_risk(hits, fx, pairs)
     picks = pick_top(hits, config.TOP_PICKS)
     if not args.csv_dir:
         add_news(picks)

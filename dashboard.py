@@ -52,14 +52,18 @@ def _fit(h):
     if risk is None:
         return None, ("<span class='bad'>Size unknown for this market: on the order screen, choose a size whose loss at the "
                       f"stop is at most {_zar(max_risk)}. If the smallest size loses more, don't trade it.</span>")
+    mq = h.get("min_qty", config.MIN_QTY)
+    word = "Amount" if h.get("unit") == "amount" else "share(s)"
     qty = max_risk / risk if risk else 0
-    min_loss = risk * config.MIN_QTY
-    if qty >= config.MIN_QTY:
-        q = int(qty / config.MIN_QTY) * config.MIN_QTY
-        return True, (f"<span class='ok'><b>Your size: {q:g} share(s).</b> Loss if the stop is hit: about "
+    min_loss = risk * mq
+    if qty >= mq:
+        q = round(int(qty / mq + 1e-9) * mq, 4)
+        size = f"Amount {q:g}" if word == "Amount" else f"{q:g} share(s)"
+        return True, (f"<span class='ok'><b>Your size: {size}.</b> Loss if the stop is hit: about "
                       f"{_zar(risk * q)} (within your {_zar(max_risk)} limit).</span>")
+    small = f"Amount {mq:g}" if word == "Amount" else f"{mq:g} share"
     return False, (f"<span class='bad'><b>Too big for your account. Don't use real money.</b> Even the smallest size "
-                   f"({config.MIN_QTY:g} share) loses about {_zar(min_loss)} at the stop, which is "
+                   f"({small}) loses about {_zar(min_loss)} at the stop, which is "
                    f"{min_loss / config.ACCOUNT_ZAR * 100:.0f}% of your account (your limit is {_zar(max_risk)}). "
                    f"Paper trade it on demo instead.</span>")
 
@@ -175,10 +179,15 @@ def _open_table(rows):
             f"<td>{html.escape(h['setup'])}{badge}</td><td>{_win(o)}</td>"
             f"<td>{_f(o.get('avg'), '%', 2)}</td><td>{o.get('n', '–')}</td>"
             f"<td class='hl'>{_px(h.get('limit_hint', h['price']), m)}</td><td>{_px(h['stop'], m)}</td><td>{_tgt(h)}</td>"
-            f"<td>{h['max_hold']}d</td><td>{_zar(h.get('risk_zar_1'))}</td></tr>")
+            f"<td>{h['max_hold']}d</td><td>{_zar(_min_loss(h))}</td></tr>")
     return ("<div class='wrap'><table><tr><th>Trade Nation symbol</th><th>Dir</th><th>Setup</th><th>Chance of a win (95% range)</th>"
             "<th>Avg / trade</th><th>Past trades</th><th>Buy limit</th><th>Stop</th><th>Target / exit</th>"
-            "<th>Max hold</th><th>Loss at stop, 1 share</th></tr>" + "".join(out) + "</table></div>")
+            "<th>Max hold</th><th>Loss at stop, smallest size</th></tr>" + "".join(out) + "</table></div>")
+
+
+def _min_loss(h):
+    r = h.get("risk_zar_1")
+    return None if r is None else r * h.get("min_qty", config.MIN_QTY)
 
 
 OPEN_TIMES = {"us": "US open, 15:30 SA time", "jse": "JSE open, 09:00 SA time", "uk": "London open, 09:00 SA time",
@@ -227,8 +236,8 @@ def render(hits, scanned, errors, as_of, validation, out_path, picks=None, fx=No
         vline = "Setups not validated yet — run the validation workflow first."
 
     picks = picks or []
-    fit_picks = [h for h in picks if _fit(h)[0] is not False]
-    big_picks = [h for h in picks if _fit(h)[0] is False]
+    fit_picks = [h for h in picks if _fit(h)[0] is True]
+    big_picks = [h for h in picks if _fit(h)[0] is not True]
     if fit_picks:
         plan = "".join(_card(i, h) for i, h in enumerate(fit_picks, 1))
     else:

@@ -31,6 +31,22 @@ GOAL_NOTE = ("Simulated on the tested US setup: about a 1 in 3 chance of reachin
 TOP_PICKS = 5               # how many plain-language "today's plan" cards to show
 MIN_QTY = 0.1               # smallest share quantity Trade Nation accepts on your account
 
+# ---- CFD contract sizes (read off Trade Nation order tickets, 16 Oct 2026) ----
+# per_point = money gained/lost, in the instrument's currency, when the price moves 1.0
+# with Amount = 1.0.  min = smallest Amount we size with.
+#   EURUSD ticket: Amount 0.11 -> pip value $1.10, so 1.0 = 100,000 units of the first currency.
+#   US500 ticket:  Amount 0.1  -> tick (1 point) value $0.10, so 1.0 = $1 per point.
+#   XAUUSD ticket: Amount 0.1  -> trade value = 1 ounce, tick ($0.10) value $0.10, so 1.0 = $10 per $1.
+# Forex min is 0.1 until the smallest allowed Amount is confirmed (0.01 would be 10x smaller).
+CFD = {
+    "forex": {"per_point": 100_000, "min": 0.1},
+    "index": {"per_point": 1, "min": 0.1},          # confirmed on US500; same structure assumed for other indices
+    "commodity": {"XAUUSD": {"per_point": 10, "min": 0.1}},   # others unknown until a ticket is checked
+}
+INDEX_CCY = {"US500": "USD", "USTEC": "USD", "US30": "USD", "US2000": "USD", "UK100": "GBP",
+             "DE40": "EUR", "F40": "EUR", "STOXX50": "EUR", "IBEX": "EUR", "SMI": "CHF",
+             "JP225": "JPY", "HK50": "HKD", "AUS200": "AUD"}   # SA40 left out: our data is an ETF, not the index
+
 # ---- Markets (everything Trade Nation offers, from markets/instruments.csv) ----
 # Every setup is validated SEPARATELY in each market, because a pattern that works on US
 # shares may not work on the JSE, forex or gold. A signal only shows if its setup passed in
