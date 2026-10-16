@@ -41,9 +41,8 @@ def _goal_box():
     max_risk = config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100
     return f"""<div class='goal'><b>Your account:</b> R{config.ACCOUNT_ZAR:,.0f} &nbsp;→&nbsp; goal R{config.GOAL_ZAR:,.0f} by {config.GOAL_DATE}
 <span class='muted'>({growth:.0f}× in about {days_left} trading days = <b>+{per_day:.1f}% every trading day</b>)</span><br>
-<span class='muted'>For comparison, today's best tested setups average roughly +0.3% to +1% <i>per trade</i>. Trading alone is very
-unlikely to reach this goal safely; adding deposits is the realistic route. Safe size: risk at most
-<b>R{max_risk:,.0f}</b> per trade ({config.RISK_PER_TRADE_PCT:g}% of your account).</span></div>"""
+<span class='muted'>{config.GOAL_NOTE} Your rule: lose at most
+<b>R{max_risk:,.0f}</b> on any one trade ({config.RISK_PER_TRADE_PCT:g}% of your account). Every card below is sized to that.</span></div>"""
 
 
 def _fit(h):

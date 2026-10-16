@@ -23,9 +23,11 @@ BROKER_NAME = "Trade Nation"
 
 # ---- Your account (used to show rand risk per trade and what fits your account) ----
 ACCOUNT_ZAR = 100           # current Trade Nation balance
-GOAL_ZAR = 500              # target
+GOAL_ZAR = 140              # target (agreed: realistic stretch goal)
 GOAL_DATE = "2026-12-31"
-RISK_PER_TRADE_PCT = 2.0    # max % of the account to lose on one trade (Gartley: keep losses small)
+RISK_PER_TRADE_PCT = 10.0   # max % of the account to lose on one trade (chosen: 10%)
+GOAL_NOTE = ("Simulated on the tested US setup: about a 1 in 3 chance of reaching R140 by December, "
+             "about 3 in 4 of finishing in profit, under 1 in 10 of falling below R80.")
 TOP_PICKS = 5               # how many plain-language "today's plan" cards to show
 MIN_QTY = 0.1               # smallest share quantity Trade Nation accepts on your account
 
