@@ -111,8 +111,14 @@ def add_rand_risk(hits, fx):
 def pick_top(hits, n):
     """Best validated signals for the 'today's plan' cards: one per instrument, highest win chance."""
     seen, picks = set(), []
+    max_risk = config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100
+
+    def too_big(h):
+        r = h.get("risk_zar_1")
+        return r is not None and r * config.MIN_QTY > max_risk
+
     for h in sorted([h for h in hits if h["status"] == "validated"],
-                    key=lambda h: (-(h["oos"].get("win_rate") or 0), -(h["oos"].get("avg") or 0))):
+                    key=lambda h: (too_big(h), -(h["oos"].get("win_rate") or 0), -(h["oos"].get("avg") or 0))):
         if h["ticker"] in seen:
             continue
         seen.add(h["ticker"])

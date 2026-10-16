@@ -27,6 +27,7 @@ GOAL_ZAR = 500              # target
 GOAL_DATE = "2026-12-31"
 RISK_PER_TRADE_PCT = 2.0    # max % of the account to lose on one trade (Gartley: keep losses small)
 TOP_PICKS = 5               # how many plain-language "today's plan" cards to show
+MIN_QTY = 0.1               # smallest share quantity Trade Nation accepts on your account
 
 # ---- Markets (everything Trade Nation offers, from markets/instruments.csv) ----
 # Every setup is validated SEPARATELY in each market, because a pattern that works on US

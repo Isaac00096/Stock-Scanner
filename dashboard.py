@@ -46,6 +46,25 @@ unlikely to reach this goal safely; adding deposits is the realistic route. Safe
 <b>R{max_risk:,.0f}</b> per trade ({config.RISK_PER_TRADE_PCT:g}% of your account).</span></div>"""
 
 
+def _fit(h):
+    """(fits_account, html). Size = the most you can buy while risking at most RISK_PER_TRADE_PCT."""
+    risk = h.get("risk_zar_1")
+    max_risk = config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100
+    if risk is None:
+        return None, ("<span class='bad'>Size unknown for this market: on the order screen, choose a size whose loss at the "
+                      f"stop is at most {_zar(max_risk)}. If the smallest size loses more, don't trade it.</span>")
+    qty = max_risk / risk if risk else 0
+    min_loss = risk * config.MIN_QTY
+    if qty >= config.MIN_QTY:
+        q = int(qty / config.MIN_QTY) * config.MIN_QTY
+        return True, (f"<span class='ok'><b>Your size: {q:g} share(s).</b> Loss if the stop is hit: about "
+                      f"{_zar(risk * q)} (within your {_zar(max_risk)} limit).</span>")
+    return False, (f"<span class='bad'><b>Too big for your account. Don't use real money.</b> Even the smallest size "
+                   f"({config.MIN_QTY:g} share) loses about {_zar(min_loss)} at the stop, which is "
+                   f"{min_loss / config.ACCOUNT_ZAR * 100:.0f}% of your account (your limit is {_zar(max_risk)}). "
+                   f"Paper trade it on demo instead.</span>")
+
+
 def _card(i, h):
     m, o = h["market"], h["oos"]
     cfg = config.MARKETS[m]
@@ -56,16 +75,7 @@ def _card(i, h):
     else:
         exit_txt = f"No fixed take profit: <b>{html.escape(h.get('exit_rule') or 'exit rule')}</b>"
     exit_txt += f", or close after <b>{h['max_hold']} trading days</b> if neither happens."
-    risk = h.get("risk_zar_1")
-    max_risk = config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100
-    if risk is None:
-        fit = ("<span class='muted'>Rand risk depends on Trade Nation's contract size for this market: "
-               "check the loss shown on the order screen before confirming.</span>")
-    elif risk <= max_risk:
-        fit = f"<span class='ok'>Fits your account: 1 share risks about {_zar(risk)}.</span>"
-    else:
-        fit = (f"<span class='bad'>1 share risks about {_zar(risk)}, more than your safe limit of {_zar(max_risk)}"
-               f" ({risk / config.ACCOUNT_ZAR * 100:.0f}% of your account). Paper trade it, or use the smallest size Trade Nation allows.</span>")
+    fits, fit = _fit(h)
     news = ""
     if h.get("earnings"):
         news += f"<div class='warn'>Earnings report due <b>{html.escape(h['earnings'])}</b>: results can move the price sharply, whatever the chart says.</div>"
@@ -79,7 +89,8 @@ def _card(i, h):
 <div class='why'>{html.escape(h['setup'])}: won <b>{_f(o.get('win_rate'), '%')}</b> of {o.get('n', 0):,} past trades in this market,
 averaging <b>{_f(o.get('avg'), '%', 2)}</b> per trade after costs.</div>
 <ol>
-<li><b>Before the {html.escape(when)}:</b> place a <b>BUY LIMIT</b> order at <b class='hl'>{_px(entry, m)}</b>, set to expire at the end of the day.
+<li><b>Before the {html.escape(when)}:</b> place a <b>BUY LIMIT</b> order at <b class='hl'>{_px(entry, m)}</b>, Expiry <b>Day</b>
+<span class='muted'>(if only GTC is offered, cancel it yourself tonight if it hasn't filled)</span>.
 <br><span class='muted'>Market already open? Buy now only if the price is at or below {_px(entry, m)}. If it never gets there, skip it.</span></li>
 <li><b>Stop loss:</b> {_px(h['stop'], m)} <span class='muted'>({_f(h.get('stop_pct'), '%')} below entry)</span>. Set it on the order.</li>
 <li><b>Exit:</b> {exit_txt}</li>
@@ -217,8 +228,16 @@ def render(hits, scanned, errors, as_of, validation, out_path, picks=None, fx=No
         vline = "Setups not validated yet — run the validation workflow first."
 
     picks = picks or []
-    plan = ("".join(_card(i, h) for i, h in enumerate(picks, 1)) if picks else
-            "<div class='empty'>No validated trades today. That's normal: no trade is better than a bad trade.</div>")
+    fit_picks = [h for h in picks if _fit(h)[0] is not False]
+    big_picks = [h for h in picks if _fit(h)[0] is False]
+    if fit_picks:
+        plan = "".join(_card(i, h) for i, h in enumerate(fit_picks, 1))
+    else:
+        plan = ("<div class='empty'><b>No trade fits your account today.</b> Every tested signal would risk more than "
+                f"{config.RISK_PER_TRADE_PCT:g}% of your balance, even at the smallest size. Don't place real orders today.</div>")
+    if big_picks:
+        plan += ("<h3 class='bigh'>Too big for your account: paper trade only (demo)</h3>"
+                 + "".join(_card(i, h) for i, h in enumerate(big_picks, len(fit_picks) + 1)))
     details = "".join(sections) or "<div class='empty'>No signals from validated setups on the latest close, in any market.</div>"
     fx_line = " · ".join(f"{k.upper()}/ZAR {v:.2f}" for k, v in (fx or {}).items())
     date = as_of.date() if as_of is not None else "–"
@@ -248,7 +267,7 @@ def render(hits, scanned, errors, as_of, validation, out_path, picks=None, fx=No
  .ct{{font-size:17px;margin-bottom:6px}} .num{{display:inline-block;width:24px;height:24px;border-radius:50%;background:#2fbf71;color:#0f1117;text-align:center;font-weight:700;font-size:14px;line-height:24px}}
  .sym{{color:#9098a8;font-size:13px;margin-left:6px}} .why{{color:#c8ccd6;margin-bottom:6px}}
  .card ol{{padding-left:20px;margin:8px 0}} .card li{{margin:6px 0}}
- .ok{{color:#2fbf71}} .bad{{color:#e5a14a}} .fit{{margin-top:8px}}
+ .bigh{{color:#e5a14a;margin-top:26px}} .ok{{color:#2fbf71}} .bad{{color:#e5a14a}} .fit{{margin-top:8px}}
  .warn{{margin-top:10px;padding:8px 10px;border-radius:8px;background:rgba(229,72,77,.12);color:#f0a0a3}}
  .news{{margin-top:10px;font-size:13px}} .news ul{{margin:4px 0;padding-left:18px}}
  details{{max-width:1200px}} summary{{cursor:pointer;font-size:17px;font-weight:700;padding:14px 0;border-bottom:1px solid #262b38}}
@@ -258,7 +277,8 @@ def render(hits, scanned, errors, as_of, validation, out_path, picks=None, fx=No
 <div class="sub">{vline} · <a href='instruments.html'>what you can trade</a></div>
 {_goal_box()}
 <h2>Today's plan</h2>
-<div class="lead">The {len(picks) or 'best'} strongest tested trades on Trade Nation, in plain steps. Highest chance of a win first.</div>
+<div class="lead">Only trades whose loss at the stop fits your account are listed first. Anything bigger is shown
+separately for demo practice. If a card says <b>don't use real money</b>, don't.</div>
 {plan}
 <h2>All signals by market</h2>
 <div class="lead">Tap a market to open it. Rows marked <span class='st'>paper trade only</span> beat random entries in testing,
