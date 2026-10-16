@@ -10,7 +10,7 @@ Exits (whichever comes first):
 To add a setup: write its signal function and append a Setup(...) to SETUPS.
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Callable, Optional
 
 import numpy as np
@@ -272,6 +272,26 @@ SETUPS = [
           "RSI(2) Pullback, only for stocks beating the S&P 500 over 3 months (Gartley's stock selection)",
           2.0, 1.5, 5),
 ]
+
+# ---------- Weekly-chart confirmation (multi-timeframe) ----------
+# Each setup that passed somewhere gets a twin that only fires when the WEEKLY chart is also rising
+# (last completed week closed above its 10-week average, and that average is rising).
+# Both versions are tested side by side; the data decides whether the weekly filter helps.
+WEEKLY_TWINS = ["gartley_ma25", "gartley_ma25_leader", "gartley_ma25_leader_limit_close",
+                "gartley_ma25_leader_limit_dip", "fib_618_limit", "gartley_222_confirm",
+                "bounce_rsi2", "bounce_rsi2_leader", "bounce_rsi2_leader_limit_close", "bounce_3down",
+                "rsi_oversold_bounce", "hp_rsi2_leader"]
+
+
+def _with_weekly(sig):
+    return lambda d: sig(d) & d.WEEKLY_UP
+
+
+_base = {s.name: s for s in SETUPS}
+SETUPS += [replace(_base[n], name=n + "_wk", label=_base[n].label + " + weekly uptrend",
+                   signal=_with_weekly(_base[n].signal),
+                   description=_base[n].description + ". Only when the weekly chart is also rising.")
+           for n in WEEKLY_TWINS]
 
 BY_NAME = {s.name: s for s in SETUPS}
 

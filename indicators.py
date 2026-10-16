@@ -143,6 +143,12 @@ def compute_all(df: pd.DataFrame, market: pd.Series | None = None) -> pd.DataFra
     d["SMA25_LEAD3"] = c.rolling(25).mean().shift(3)
     # previous intermediate top: highest high from ~6 months ago up to a week ago
     d["PRIOR_TOP"] = d["High"].rolling(125).max().shift(6)
+    # Weekly-chart trend, from COMPLETED weeks only (no peeking at the current week):
+    # weekly close above its 10-week average, and that average rising.
+    wk = c.resample("W-FRI").last().dropna()
+    wk_sma = wk.rolling(10).mean()
+    wk_up = ((wk > wk_sma) & (wk_sma > wk_sma.shift(1))).astype(float).where(wk_sma.shift(1).notna())
+    d["WEEKLY_UP"] = wk_up.reindex(d.index.union(wk_up.index)).ffill().reindex(d.index).fillna(0).astype(bool)
     # "better-than-market": 3-month return vs the market (S&P 500 via SPY)
     if market is not None and len(market):
         mkt = market.reindex(d.index).ffill()
