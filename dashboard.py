@@ -40,7 +40,7 @@ def _goal_box():
     per_day = (growth ** (1 / days_left) - 1) * 100
     max_risk = config.ACCOUNT_ZAR * config.RISK_PER_TRADE_PCT / 100
     return f"""<div class='goal'><b>Your account:</b> R{config.ACCOUNT_ZAR:,.0f} &nbsp;→&nbsp; goal R{config.GOAL_ZAR:,.0f} by {config.GOAL_DATE}
-<span class='muted'>({growth:.0f}× in about {days_left} trading days = <b>+{per_day:.1f}% every trading day</b>)</span><br>
+<span class='muted'>({growth:.1f}× in about {days_left} trading days = <b>+{per_day:.1f}% every trading day</b>)</span><br>
 <span class='muted'>{config.GOAL_NOTE} Your rule: lose at most
 <b>R{max_risk:,.0f}</b> on any one trade ({config.RISK_PER_TRADE_PCT:g}% of your account). Every card below is sized to that.</span></div>"""
 
