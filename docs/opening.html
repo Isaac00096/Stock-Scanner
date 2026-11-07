@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Opening Direction Test</title>
+<style>body{margin:0;padding:28px 18px 60px;background:#0f1117;color:#e8e9ed;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.5}
+main{max-width:900px} h1{font-size:23px;margin:0 0 4px} h2{font-size:17px;margin:30px 0 8px}
+.muted{color:#9098a8} .box{background:#171a23;border:1px solid #262b38;border-left:4px solid #e5484d;border-radius:10px;padding:14px 16px;margin:16px 0}
+table{border-collapse:collapse;font-size:14px;width:100%} td,th{text-align:left;padding:8px 8px;border-bottom:1px solid #262b38}
+th{color:#9098a8;font-size:12px;text-transform:uppercase} .wrap{overflow-x:auto} a{color:#8fb4ff}</style></head><body><main>
+<h1>Opening Direction Test</h1>
+<div class="muted">US shares on Trade Nation · 1-minute charts · history 2026-09-01 to 2026-11-09 · 30 shares · updated 2026-11-07 18:31 UTC</div>
+<div class="box"><b>Verdict: FAILED</b><br>Loses money on average after costs.</div>
+<h2>The rule</h2>
+<ol><li>At the close, RSI(14) on the 1-minute chart is between 40 and 60.</li>
+<li>The last 1-minute candle shows pressure: green = buying, red = selling, with at least 2× the day's normal 1-minute volume.</li>
+<li>Price crossed the 20-period VWMA in the same direction within the last 15 minutes.</li>
+<li>Next day: buy (buying pressure) or sell (selling pressure) at the open; close after 15 minutes.</li></ol>
+<h2>Results</h2><div class="wrap"><table>
+<tr><th>Version</th><th>Trades</th><th>Different days</th><th>First minute went the right way</th><th>Gap went the right way</th>
+<th>Win rate (15 min)</th><th>Avg per trade after costs</th><th>Luck test (t, need 2+)</th></tr><tr><td><b>Your rule</b></td><td>444</td><td>49</td><td>50.9%</td><td>100.0%</td><td>36.0%</td><td>-0.114%</td><td>-9.24</td></tr><tr><td><b>Last candle only (no RSI / VWMA)</b></td><td>1,470</td><td>49</td><td>51.1%</td><td>100.0%</td><td>35.2%</td><td>-0.110%</td><td>-13.66</td></tr><tr><td><b>Every stock, every day (buy)</b></td><td>1,470</td><td>49</td><td>51.6%</td><td>51.4%</td><td>38.8%</td><td>-0.090%</td><td>-10.45</td></tr></table></div>
+<h2>Same rule, but entering at day 1's close and holding overnight</h2>
+<p class="muted">If the move happens in the overnight gap, entering at the open is too late. This version enters in the last minute of day 1.</p>
+<div class="wrap"><table><tr><th>Version</th><th>Win rate</th><th>Avg after costs</th><th>t</th></tr><tr><td><b>Your rule</b></td><td>71.2%</td><td>0.186%</td><td>14.95</td></tr><tr><td><b>Last candle only</b></td><td>72.4%</td><td>0.190%</td><td>23.46</td></tr><tr><td><b>Every stock, every day (buy)</b></td><td>42.1%</td><td>-0.082%</td><td>-7.69</td></tr></table></div>
+<p class="muted">Costs: 0.05% per side. The luck test treats each day as one result, because all shares tend to move together.</p>
+<h2>Your rule: average per trade by holding time</h2><div class="wrap"><table>
+<tr><th>1 min</th><th>5 min</th><th>15 min</th><th>30 min</th><th>60 min</th></tr><tr><td>-0.100%</td><td>-0.106%</td><td>-0.114%</td><td>-0.097%</td><td>-0.098%</td></tr></table></div>
+<h2>Sensitivity (does it depend on the exact numbers?)</h2><div class="wrap"><table>
+<tr><th>Variant</th><th>Trades</th><th>Days</th><th>First minute right</th><th>Avg after costs</th><th>t</th></tr><tr><td>RSI 45–55 (tighter)</td><td>228</td><td>49</td><td>49.1%</td><td>-0.082%</td><td>-2.85</td></tr><tr><td>RSI 35–65 (looser)</td><td>607</td><td>49</td><td>51.4%</td><td>-0.103%</td><td>-9.01</td></tr><tr><td>Last-candle volume 1.5×</td><td>450</td><td>49</td><td>51.1%</td><td>-0.113%</td><td>-9.37</td></tr><tr><td>Last-candle volume 3×</td><td>321</td><td>49</td><td>50.5%</td><td>-0.113%</td><td>-7.89</td></tr><tr><td>VWMA cross within 5 min</td><td>355</td><td>49</td><td>48.7%</td><td>-0.108%</td><td>-7.19</td></tr><tr><td>VWMA cross within 30 min</td><td>467</td><td>49</td><td>50.7%</td><td>-0.114%</td><td>-9.45</td></tr><tr><td>Buy signals only</td><td>215</td><td>49</td><td>50.7%</td><td>-0.090%</td><td>-4.46</td></tr><tr><td>Sell signals only</td><td>229</td><td>49</td><td>51.1%</td><td>-0.136%</td><td>-7.21</td></tr></table></div>
+<h2>Tonight's signals</h2><p class='muted'>Hidden until the rule is proven. Nothing here is a trade for real money yet.</p>
+<p class="muted" style="margin-top:28px">Proof needs 150+ trades over 40+ different trading days, a t of 2+,
+and a better average than both simpler versions. Free 1-minute history only goes back about 30 days, so the
+history grows by one day every weeknight. Not financial advice.</p></main></body></html>

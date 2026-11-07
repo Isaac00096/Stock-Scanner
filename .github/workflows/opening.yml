@@ -1,0 +1,29 @@
+name: Opening Direction Test
+
+on:
+  schedule:
+    - cron: "40 21 * * 1-5"   # weekdays 21:40 UTC (23:40 SA), after the US close (summer and winter)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  opening:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python opening.py
+      - name: Commit history and report
+        run: |
+          git config user.name "nyse-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/opening/days.csv docs/opening.html docs/index.html
+          git diff --quiet --cached || git commit -m "Opening test: add today's 1-minute history"
+          git pull --rebase origin main
+          git push
