@@ -4,7 +4,7 @@ Isaac's opening-direction strategy (US shares, 1-minute charts).
 THE RULE (day 1, at the close; all on the 1-minute chart):
   1. RSI(14) is around 50 at the close             (default: between 40 and 60)
   2. The LAST 1-minute candle shows pressure:      green = buying, red = selling,
-     on heavy volume                               (default: 2x the day's normal 1-min volume)
+     on heavy volume                               (default: 1.5x its usual closing-minute volume)
   3. Price has crossed the 20-period VWMA in that  (close above VWMA20 for buying, below for selling,
      same direction, recently                       having crossed within the last 15 minutes)
   Prediction: day 2 OPENS in that direction.  Trade: buy (or sell) at day 2's open.
@@ -42,7 +42,7 @@ import data
 # ------------------------------------------------------------------ rule settings
 RSI_LEN = 14
 RSI_LO, RSI_HI = 40, 60          # "around 50"
-LAST_VOL_MULT = 2.0              # last 1-min candle volume vs the day's median 1-min volume
+LAST_VOL_MULT = 1.5              # last 1-min candle volume vs this stock's usual last-minute volume (prior 10 days)
 VWMA_LEN = 20
 CROSS_WITHIN_MIN = 15            # VWMA20 crossed in the last N minutes of the session
 COST_PCT_SIDE = 0.05             # Trade Nation spread + slippage per side, %
@@ -126,6 +126,10 @@ def day_rows(ticker, df):
     df = df.assign(RSI=rsi(df["Close"]), VWMA=vwma(df))
     days = sorted(set(df.index.date))
     by_day = {d: df[df.index.date == d] for d in days}
+    # The last minute always has big volume (closing auction), so "heavy" means heavy compared with
+    # this stock's own last minute on the previous 10 days.
+    last_vols = pd.Series({d: float(by_day[d]["Volume"].iloc[-1]) for d in days})
+    ref = last_vols.shift(1).rolling(10, min_periods=5).median()
     rows = []
     for d1, d2 in zip(days[:-1], days[1:]):
         a, b = by_day[d1], by_day[d2]
@@ -142,7 +146,7 @@ def day_rows(ticker, df):
         row = {"date": str(d1), "next_date": str(d2), "ticker": ticker,
                "close": float(last["Close"]), "rsi": float(last["RSI"]),
                "last_dir": int(np.sign(last["Close"] - last["Open"])),
-               "last_vol_ratio": float(last["Volume"] / max(a["Volume"].iloc[:-1].median(), 1)),
+               "last_vol_ratio": float(last["Volume"] / ref[d1]) if ref[d1] > 0 else float("nan"),
                "vwma_side": int(side.iloc[-1]) if not math.isnan(side.iloc[-1]) else 0,
                "cross_age": int(cross_age),
                "day_volume": float(a["Volume"].sum()),
@@ -199,8 +203,8 @@ def verdict(rule, last_only, every):
     if rule["n"] == 0:
         return "no_signals", "The rule hasn't triggered yet in the saved history."
     if rule["days"] < MIN_DAYS or rule["n"] < MIN_TRADES:
-        return "collecting", (f"Not enough history yet: {rule['n']} trades over {rule['days']} different days "
-                              f"(need {MIN_TRADES} trades over {MIN_DAYS}+ days). Keep collecting; don't trade it.")
+        return "collecting", (f"Not enough history yet: {rule['days']} different trading days "
+                              f"(need {MIN_DAYS}+ days and {MIN_TRADES}+ trades). Keep collecting; don't trade it.")
     if rule["avg"] <= 0:
         return "failed", "Loses money on average after costs."
     if not (rule["tstat"] >= MIN_TSTAT):
@@ -254,7 +258,7 @@ th{{color:#9098a8;font-size:12px;text-transform:uppercase}} .wrap{{overflow-x:au
 <div class="box"><b>Verdict: {status.replace('_', ' ').upper()}</b><br>{html.escape(why)}</div>
 <h2>The rule</h2>
 <ol><li>At the close, RSI({RSI_LEN}) on the 1-minute chart is between {RSI_LO} and {RSI_HI}.</li>
-<li>The last 1-minute candle shows pressure: green = buying, red = selling, with at least {LAST_VOL_MULT:g}× the day's normal 1-minute volume.</li>
+<li>The last 1-minute candle shows pressure: green = buying, red = selling, with at least {LAST_VOL_MULT:g}× this share's usual closing-minute volume (previous 10 days).</li>
 <li>Price crossed the {VWMA_LEN}-period VWMA in the same direction within the last {CROSS_WITHIN_MIN} minutes.</li>
 <li>Next day: buy (buying pressure) or sell (selling pressure) at the open; close after {MAIN_HOLD} minutes.</li></ol>
 <h2>Results</h2><div class="wrap"><table>
@@ -286,7 +290,7 @@ def analyse(h):
     variants = {
         "RSI 45–55 (tighter)": evaluate(h, signal(h, rsi_lo=45, rsi_hi=55)),
         "RSI 35–65 (looser)": evaluate(h, signal(h, rsi_lo=35, rsi_hi=65)),
-        "Last-candle volume 1.5×": evaluate(h, signal(h, vol_mult=1.5)),
+        "Last-candle volume 1.2×": evaluate(h, signal(h, vol_mult=1.2)),
         "Last-candle volume 3×": evaluate(h, signal(h, vol_mult=3.0)),
         "VWMA cross within 5 min": evaluate(h, signal(h, cross_within=5)),
         "VWMA cross within 30 min": evaluate(h, signal(h, cross_within=30)),
@@ -341,13 +345,15 @@ def latest_signal(ticker, df):
     df = df.assign(RSI=rsi(df["Close"]), VWMA=vwma(df))
     d = df.index[-1].date()
     a = df[df.index.date == d]
+    prev = sorted(x for x in set(df.index.date) if x < d)[-10:]
+    ref = np.median([float(df[df.index.date == x]["Volume"].iloc[-1]) for x in prev]) if len(prev) >= 5 else np.nan
     if len(a) < 300 or a.index[-1].hour * 60 + a.index[-1].minute < 15 * 60 + 58:
         return None
     last = a.iloc[-1]
     side = np.sign(a["Close"] - a["VWMA"])
     flips = np.flatnonzero((side != side.shift()).to_numpy()[1:]) + 1
     row = pd.DataFrame([{"rsi": last["RSI"], "last_dir": int(np.sign(last["Close"] - last["Open"])),
-                         "last_vol_ratio": last["Volume"] / max(a["Volume"].iloc[:-1].median(), 1),
+                         "last_vol_ratio": last["Volume"] / ref if ref and ref > 0 else np.nan,
                          "vwma_side": int(side.iloc[-1]) if not math.isnan(side.iloc[-1]) else 0,
                          "cross_age": (len(a) - 1 - flips[-1]) if len(flips) else 999}])
     s = int(signal(row).iloc[0])
