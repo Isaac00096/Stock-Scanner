@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "nyse-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/opening/days.csv docs/opening.html docs/index.html
+          git add -A data/opening docs/opening.html docs/index.html
           git diff --quiet --cached || git commit -m "Opening test: add today's 1-minute history"
           git pull --rebase origin main
           git push

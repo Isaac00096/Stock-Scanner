@@ -326,6 +326,9 @@ def main():
             hist = hist.drop_duplicates(["ticker", "date"], keep="last").sort_values(["date", "ticker"])
             os.makedirs(os.path.dirname(HIST), exist_ok=True)
             hist.to_csv(HIST, index=False)
+    if today_signals:   # tonight's candidates, saved for checking (shown on the page only once proven)
+        pd.DataFrame(today_signals).sort_values("vol", ascending=False).to_csv(
+            os.path.join("data", "opening", "latest.csv"), index=False)
     if hist.empty:
         raise SystemExit("No history yet.")
     results = analyse(hist)
@@ -357,7 +360,7 @@ def latest_signal(ticker, df):
                          "vwma_side": int(side.iloc[-1]) if not math.isnan(side.iloc[-1]) else 0,
                          "cross_age": (len(a) - 1 - flips[-1]) if len(flips) else 999}])
     s = int(signal(row).iloc[0])
-    return {"ticker": ticker, "dir": s, "rsi": float(last["RSI"]), "vol": float(row["last_vol_ratio"].iloc[0])} if s else None
+    return {"ticker": ticker, "date": str(d), "close": float(last["Close"]), "dir": s, "rsi": float(last["RSI"]), "vol": float(row["last_vol_ratio"].iloc[0])} if s else None
 
 
 if __name__ == "__main__":
