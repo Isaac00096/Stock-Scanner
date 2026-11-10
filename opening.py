@@ -323,7 +323,12 @@ def main():
         print(f"  {len(new)} stock-days from this download")
         hist = pd.concat([hist, new]) if len(hist) else new
         if len(hist):
-            hist = hist.drop_duplicates(["ticker", "date"], keep="last").sort_values(["date", "ticker"])
+            # keep a row's best version: one with a closing-volume reading (needs 10 prior days, which
+            # later downloads no longer have for the oldest days) beats one without
+            hist = (hist.assign(_ok=hist["last_vol_ratio"].notna()).iloc[::-1]
+                    .sort_values("_ok", ascending=False, kind="stable")
+                    .drop_duplicates(["ticker", "date"], keep="first").drop(columns="_ok")
+                    .sort_values(["date", "ticker"]))
             os.makedirs(os.path.dirname(HIST), exist_ok=True)
             hist.to_csv(HIST, index=False)
     if today_signals:   # tonight's candidates, saved for checking (shown on the page only once proven)
