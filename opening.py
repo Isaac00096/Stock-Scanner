@@ -221,6 +221,11 @@ def _f(x, suf="", nd=1):
 
 def render(h, results, status, why, today_signals):
     rule, last_only, every, variants = results
+    variants = dict(variants)
+    ex = variants.pop("_exits_3x", {})
+    ex_rows = "".join(f"<tr><td><b>{html.escape(k)}</b></td><td>{v['n']:,}</td><td>{_f(v['reached'], '%')}</td>"
+                      f"<td>{_f(v['win'], '%')}</td><td>{_f(v['avg'], '%', 3)}</td><td>{_f(v['tstat'], '', 2)}</td></tr>"
+                      for k, v in ex.items())
     rows = ""
     for label, r in [("Your rule", rule), ("Last candle only (no RSI / VWMA)", last_only),
                      ("Every stock, every day (buy)", every)]:
@@ -270,6 +275,9 @@ th{{color:#9098a8;font-size:12px;text-transform:uppercase}} .wrap{{overflow-x:au
 <p class="muted">Costs: {COST_PCT_SIDE:g}% per side. The luck test treats each day as one result, because all shares tend to move together.</p>
 <h2>Your rule: average per trade by holding time</h2><div class="wrap"><table>
 <tr>{''.join(f'<th>{m} min</th>' for m in HOLD_MINUTES)}</tr><tr>{hold}</tr></table></div>
+<h2>Exits compared: 3× closing-volume version, {STOP_PCT:g}% stop from the fill</h2>
+<p class="muted">Same trades, different ways out. Where the stop and the take-profit were both touched, the stop is counted first.</p>
+<div class="wrap"><table><tr><th>Exit</th><th>Trades</th><th>Reached take-profit</th><th>Win rate</th><th>Avg after costs</th><th>t</th></tr>{ex_rows}</table></div>
 <h2>Sensitivity (does it depend on the exact numbers?)</h2><div class="wrap"><table>
 <tr><th>Variant</th><th>Trades</th><th>Days</th><th>First minute right</th><th>Avg after costs</th><th>t</th></tr>{var_rows}</table></div>
 {sig_html}
@@ -280,6 +288,33 @@ history grows by one day every weeknight. Not financial advice.</p></main></body
     for path in (REPORT, os.path.join(config.OUTPUT_DIR, config.DASHBOARD_FILE)):   # also the main dashboard
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(page)
+
+
+STOP_PCT = 3.0                   # protective stop, % from the actual fill at the open
+
+
+def exits(h, direction, hold=MAIN_HOLD, stop=STOP_PCT):
+    """Compare exit rules on the same trades: close after `hold` minutes, or take profit at 1% / 1.5%.
+    If the stop and the take-profit were both touched in the window, we assume the STOP came first
+    (1-minute data can't show the order), so take-profit results are if anything understated."""
+    t = h[direction != 0]
+    if t.empty:
+        return {}
+    d = direction[direction != 0].to_numpy()
+    fav = np.where(d > 0, t[f"hi_{hold}"], -t[f"lo_{hold}"])
+    adv = np.where(d > 0, -t[f"lo_{hold}"], t[f"hi_{hold}"])
+    end = d * t[f"ret_{hold}"].to_numpy()
+    out = {}
+    for label, tp in [(f"Close after {hold} min (no take-profit)", None),
+                      ("Take profit at 1%", 1.0), ("Take profit at 1.5%", 1.5)]:
+        reached = (fav >= tp) if tp else np.zeros(len(t), bool)
+        pnl = np.where(adv >= stop, -stop, np.where(reached, tp or 0, end)) - 2 * COST_PCT_SIDE
+        per_day = pd.Series(pnl, index=t.index).groupby(t["date"]).mean()
+        sd = per_day.std(ddof=1)
+        out[label] = {"n": len(t), "reached": reached.mean() * 100 if tp else None,
+                      "win": (pnl > 0).mean() * 100, "avg": pnl.mean(),
+                      "tstat": per_day.mean() / (sd / math.sqrt(len(per_day))) if len(per_day) > 2 and sd > 0 else float("nan")}
+    return out
 
 
 def analyse(h):
@@ -297,6 +332,7 @@ def analyse(h):
         "Buy signals only": evaluate(h, sig.where(sig > 0, 0)),
         "Sell signals only": evaluate(h, sig.where(sig < 0, 0)),
     }
+    variants["_exits_3x"] = exits(h, signal(h, vol_mult=3.0))
     return rule, last_only, every, variants
 
 
