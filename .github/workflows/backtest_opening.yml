@@ -1,0 +1,39 @@
+name: Opening Strategy Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First day to test (only used on the very first run)"
+        default: "2016-01-04"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency: backtest-opening
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt requests
+      - name: Download history (resumes where the last run stopped) and write the report
+        env:
+          ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
+        run: python backtest_opening.py --start "${{ inputs.start }}" --max-minutes 320
+      - name: Save progress and report
+        if: always()
+        run: |
+          git config user.name "nyse-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data/opening/bt data/opening/bt_state.json docs/backtest_opening.html || true
+          git diff --quiet --cached || git commit -m "Opening backtest: progress"
+          git pull --rebase origin main
+          git push
