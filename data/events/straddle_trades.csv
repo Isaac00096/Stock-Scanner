@@ -1,229 +1,1125 @@
-time_utc,group,name,pair,stop_k,day_range_pct,stop_pct,target_pct,buy,sell,outcome,net_pct,net_r,net_zar_001
-2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.1,0.463,0.046,0.139,stop,target,One hit target,0.0177,0.382,4.06
-2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.25,0.463,0.116,0.348,stop,stop,Both stopped (whipsaw),-0.3317,-2.863,-76.16
-2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.5,0.463,0.232,0.695,stop,stop,Both stopped (whipsaw),-0.5634,-2.432,-129.36
-2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.1,0.418,0.042,0.126,stop,target,One hit target,0.0237,0.566,4.54
-2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.25,0.418,0.105,0.314,stop,target,One hit target,0.1492,1.426,28.62
-2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.5,0.418,0.209,0.628,stop,target,One hit target,0.3584,1.713,68.76
-2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.1,0.492,0.049,0.148,stop,target,One hit target,0.0235,0.477,5.37
-2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.25,0.492,0.123,0.369,stop,target,One hit target,0.1712,1.391,39.17
-2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.5,0.492,0.246,0.739,stop,target,One hit target,0.4175,1.695,95.5
-2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.1,0.623,0.062,0.187,stop,stop,Both stopped (whipsaw),-0.2046,-3.285,-35.89
-2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.25,0.623,0.156,0.467,target,stop,One hit target,0.2514,1.615,44.11
-2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.5,0.623,0.311,0.934,target,stop,One hit target,0.5628,1.807,98.75
-2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.1,0.885,0.088,0.265,target,stop,One hit target,-0.2731,-3.087,-47.92
-2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.25,0.885,0.221,0.663,target,stop,One hit target,-0.0077,-0.035,-1.35
-2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.5,0.885,0.442,1.327,target,stop,One hit target,0.4346,0.983,76.25
-2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR,0.1,1.266,0.127,0.38,stop,stop,Both stopped (whipsaw),-0.8531,-6.741,-153.46
-2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR,0.25,1.266,0.316,0.949,stop,stop,Both stopped (whipsaw),-1.2328,-3.896,-221.76
-2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR,0.5,1.266,0.633,1.898,stop,time,Neither target (closed at 24h),-0.9487,-1.499,-170.65
-2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.1,0.652,0.065,0.196,stop,target,One hit target,0.0705,1.08,13.5
-2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.25,0.652,0.163,0.489,stop,target,One hit target,0.2662,1.632,51.0
-2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.5,0.652,0.326,0.979,stop,target,One hit target,0.5924,1.816,113.5
-2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.1,0.614,0.061,0.184,stop,target,One hit target,0.0478,0.779,11.1
-2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.25,0.614,0.154,0.461,stop,target,One hit target,0.232,1.511,53.88
-2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.5,0.614,0.307,0.921,stop,target,One hit target,0.5391,1.756,125.18
-2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.1,0.872,0.087,0.262,target,stop,One hit target,0.1144,1.312,20.93
-2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.25,0.872,0.218,0.654,target,stop,One hit target,0.3759,1.725,68.81
-2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.5,0.872,0.436,1.308,target,stop,One hit target,0.8119,1.862,148.59
-2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.1,0.795,0.079,0.238,stop,stop,Both stopped (whipsaw),-0.239,-3.006,-46.18
-2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.25,0.795,0.199,0.596,stop,stop,Both stopped (whipsaw),-0.4774,-2.403,-92.26
-2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.5,0.795,0.397,1.192,time,stop,Neither target (closed at 24h),-0.374,-0.941,-72.27
-2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.1,0.906,0.091,0.272,stop,stop,Both stopped (whipsaw),-0.2813,-3.103,-64.9
-2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.25,0.906,0.227,0.68,time,stop,Neither target (closed at 24h),-0.1932,-0.853,-44.58
-2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.5,0.906,0.453,1.359,time,time,Neither target (closed at 24h),-0.05,-0.11,-11.54
-2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.1,0.857,0.086,0.257,target,stop,One hit target,0.1114,1.3,20.66
-2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.25,0.857,0.214,0.643,stop,stop,Both stopped (whipsaw),-0.5084,-2.373,-94.3
-2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.5,0.857,0.428,1.285,stop,time,Neither target (closed at 24h),-0.0011,-0.003,-0.2
-2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR,0.1,1.223,0.122,0.367,stop,stop,Both stopped (whipsaw),-0.8447,-6.905,-155.75
-2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR,0.25,1.223,0.306,0.917,stop,stop,Both stopped (whipsaw),-1.2117,-3.962,-223.43
-2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR,0.5,1.223,0.612,1.835,time,stop,Neither target (closed at 24h),-0.4073,-0.666,-75.1
-2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.1,1.093,0.109,0.328,stop,target,One hit target,-0.2315,-2.119,-42.58
-2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.25,1.093,0.273,0.819,stop,time,Neither target (closed at 24h),-0.524,-1.918,-96.38
-2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.5,1.093,0.546,1.639,stop,time,Neither target (closed at 24h),-0.7971,-1.459,-146.62
-2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.722,0.072,0.217,target,stop,One hit target,0.0844,1.169,16.62
-2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.722,0.18,0.541,stop,stop,Both stopped (whipsaw),-0.4409,-2.443,-86.87
-2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.722,0.361,1.083,stop,time,Neither target (closed at 24h),-0.0412,-0.114,-8.13
-2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.568,0.057,0.17,target,stop,One hit target,0.0386,0.679,9.06
-2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.568,0.142,0.426,stop,stop,Both stopped (whipsaw),-0.3839,-2.704,-90.18
-2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.568,0.284,0.852,stop,time,Neither target (closed at 24h),-0.2189,-0.771,-51.43
-2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.919,0.092,0.276,stop,target,One hit target,0.1239,1.347,22.42
-2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.919,0.23,0.69,stop,target,One hit target,0.3997,1.739,72.33
-2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.919,0.46,1.379,stop,time,Neither target (closed at 24h),0.2401,0.522,43.44
-2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR,0.1,1.043,0.104,0.313,stop,stop,Both stopped (whipsaw),-0.8085,-7.754,-147.29
-2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR,0.25,1.043,0.261,0.782,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-204.27
-2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR,0.5,1.043,0.521,1.564,time,time,Neither target (closed at 24h),-0.3,-0.575,-54.65
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.1,0.661,0.066,0.198,stop,stop,Both stopped (whipsaw),-0.2122,-3.211,-43.45
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.25,0.661,0.165,0.496,stop,stop,Both stopped (whipsaw),-0.4104,-2.484,-84.04
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.5,0.661,0.33,0.991,stop,stop,Both stopped (whipsaw),-0.7409,-2.242,-151.71
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.1,0.562,0.056,0.168,stop,stop,Both stopped (whipsaw),-0.2123,-3.78,-52.01
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.25,0.562,0.14,0.421,stop,stop,Both stopped (whipsaw),-0.3808,-2.712,-93.28
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.5,0.562,0.281,0.842,target,stop,One hit target,0.4866,1.733,119.2
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.1,0.782,0.078,0.235,stop,stop,Both stopped (whipsaw),-0.2363,-3.023,-44.59
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.25,0.782,0.195,0.586,stop,stop,Both stopped (whipsaw),-0.4708,-2.409,-88.83
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.5,0.782,0.391,1.173,stop,target,One hit target,0.7217,1.846,136.16
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.1,1.043,0.104,0.313,stop,stop,Both stopped (whipsaw),-0.8085,-7.754,-152.55
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.25,1.043,0.261,0.782,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-211.57
-2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.5,1.043,0.521,1.564,stop,stop,Both stopped (whipsaw),-1.6427,-3.151,-309.93
-2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.657,0.066,0.197,stop,stop,Both stopped (whipsaw),-0.2115,-3.217,-43.68
-2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.657,0.164,0.493,stop,stop,Both stopped (whipsaw),-0.4086,-2.487,-84.41
-2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.657,0.329,0.986,stop,target,One hit target,0.5973,1.817,123.37
-2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.566,0.057,0.17,stop,stop,Both stopped (whipsaw),-0.2132,-3.766,-51.78
-2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.566,0.142,0.425,stop,stop,Both stopped (whipsaw),-0.3831,-2.707,-93.02
-2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.566,0.283,0.849,stop,time,Neither target (closed at 24h),0.2068,0.73,50.2
-2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.822,0.082,0.247,stop,stop,Both stopped (whipsaw),-0.2444,-2.973,-44.51
-2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.822,0.206,0.617,stop,stop,Both stopped (whipsaw),-0.4911,-2.389,-89.43
-2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.822,0.411,1.233,target,stop,One hit target,0.7622,1.854,138.8
-2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.1,0.936,0.094,0.281,stop,stop,Both stopped (whipsaw),-0.7873,-8.407,-141.04
-2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.25,0.936,0.234,0.702,target,stop,One hit target,0.0182,0.078,3.26
-2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.5,0.936,0.468,1.405,time,stop,Neither target (closed at 24h),-0.2057,-0.439,-36.84
-2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR,0.1,0.906,0.091,0.272,stop,stop,Both stopped (whipsaw),-0.7813,-8.62,-139.03
-2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR,0.25,0.906,0.227,0.68,stop,stop,Both stopped (whipsaw),-1.0532,-4.648,-187.42
-2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR,0.5,0.906,0.453,1.36,time,stop,Neither target (closed at 24h),-0.1786,-0.394,-31.78
-2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.755,0.076,0.227,stop,target,One hit target,0.0911,1.206,18.9
-2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.755,0.189,0.566,stop,target,One hit target,0.3176,1.682,65.93
-2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.755,0.378,1.133,stop,time,Neither target (closed at 24h),-0.0358,-0.095,-7.42
-2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.599,0.06,0.18,stop,target,One hit target,0.0449,0.749,10.88
-2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.599,0.15,0.45,stop,target,One hit target,0.2247,1.499,54.5
-2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.599,0.3,0.899,stop,time,Neither target (closed at 24h),-0.2455,-0.819,-59.55
-2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.915,0.092,0.275,stop,stop,Both stopped (whipsaw),-0.2631,-2.874,-47.36
-2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.915,0.229,0.687,stop,stop,Both stopped (whipsaw),-0.5377,-2.35,-96.8
-2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.915,0.458,1.373,time,stop,Neither target (closed at 24h),-0.0017,-0.004,-0.3
-2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.588,0.059,0.177,stop,stop,Both stopped (whipsaw),-0.1977,-3.359,-40.89
-2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.588,0.147,0.441,stop,target,One hit target,0.2342,1.592,48.45
-2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.588,0.294,0.883,stop,time,Neither target (closed at 24h),0.2398,0.815,49.6
-2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.623,0.062,0.187,stop,stop,Both stopped (whipsaw),-0.2245,-3.606,-53.74
-2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.623,0.156,0.467,stop,target,One hit target,0.2363,1.518,56.56
-2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.623,0.311,0.934,stop,time,Neither target (closed at 24h),0.3122,1.003,74.71
-2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.761,0.076,0.228,stop,stop,Both stopped (whipsaw),-0.2322,-3.052,-41.79
-2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.761,0.19,0.571,target,stop,One hit target,0.3204,1.685,57.67
-2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.761,0.38,1.141,target,stop,One hit target,0.7008,1.842,126.14
-2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR,0.1,0.911,0.091,0.273,stop,target,One hit target,-0.2679,-2.941,-48.55
-2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR,0.25,0.911,0.228,0.683,stop,stop,Both stopped (whipsaw),-1.0553,-4.635,-191.29
-2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR,0.5,0.911,0.455,1.366,stop,stop,Both stopped (whipsaw),-1.5107,-3.318,-273.82
-2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.1,0.502,0.05,0.151,stop,stop,Both stopped (whipsaw),-0.1804,-3.593,-37.31
-2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.25,0.502,0.126,0.377,stop,stop,Both stopped (whipsaw),-0.3311,-2.637,-68.46
-2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.5,0.502,0.251,0.753,stop,stop,Both stopped (whipsaw),-0.5822,-2.319,-120.39
-2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.1,0.468,0.047,0.14,stop,stop,Both stopped (whipsaw),-0.1936,-4.136,-46.13
-2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.25,0.468,0.117,0.351,stop,stop,Both stopped (whipsaw),-0.3341,-2.854,-79.6
-2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.5,0.468,0.234,0.702,stop,stop,Both stopped (whipsaw),-0.5682,-2.427,-135.37
-2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.1,0.623,0.062,0.187,stop,stop,Both stopped (whipsaw),-0.2047,-3.283,-35.62
-2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.25,0.623,0.156,0.468,stop,stop,Both stopped (whipsaw),-0.3917,-2.513,-68.16
-2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.5,0.623,0.312,0.935,stop,stop,Both stopped (whipsaw),-0.7035,-2.257,-122.41
-2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR,0.1,0.897,0.09,0.269,stop,stop,Both stopped (whipsaw),-0.7793,-8.692,-135.58
-2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR,0.25,0.897,0.224,0.672,stop,stop,Both stopped (whipsaw),-1.0483,-4.677,-182.38
-2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR,0.5,0.897,0.448,1.345,stop,time,Neither target (closed at 24h),-0.9863,-2.2,-171.6
-2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.1,0.453,0.045,0.136,stop,stop,Both stopped (whipsaw),-0.1706,-3.765,-34.15
-2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.25,0.453,0.113,0.34,stop,target,One hit target,0.1666,1.47,33.34
-2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.5,0.453,0.227,0.68,stop,target,One hit target,0.3932,1.735,78.69
-2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.1,0.536,0.054,0.161,stop,stop,Both stopped (whipsaw),-0.2072,-3.866,-47.06
-2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.25,0.536,0.134,0.402,stop,target,One hit target,0.1929,1.44,43.83
-2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.5,0.536,0.268,0.804,stop,time,Neither target (closed at 24h),0.0912,0.34,20.71
-2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.1,0.656,0.066,0.197,target,stop,One hit target,0.0713,1.086,12.26
-2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.25,0.656,0.164,0.492,target,stop,One hit target,0.2682,1.634,46.12
-2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.5,0.656,0.328,0.985,target,stop,One hit target,0.5964,1.817,102.56
-2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR,0.1,0.907,0.091,0.272,stop,stop,Both stopped (whipsaw),-0.7814,-8.614,-134.28
-2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR,0.25,0.907,0.227,0.68,stop,stop,Both stopped (whipsaw),-1.0536,-4.645,-181.05
-2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR,0.5,0.907,0.454,1.361,stop,stop,Both stopped (whipsaw),-1.5072,-3.323,-259.0
-2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.1,0.531,0.053,0.159,stop,stop,Both stopped (whipsaw),-0.2062,-3.883,-46.54
-2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.25,0.531,0.133,0.398,stop,stop,Both stopped (whipsaw),-0.3656,-2.753,-82.5
-2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.5,0.531,0.266,0.797,target,stop,One hit target,0.4561,1.718,102.94
-2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.1,0.4,0.04,0.12,target,stop,One hit target,0.02,0.499,3.94
-2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.25,0.4,0.1,0.3,target,stop,One hit target,0.1399,1.4,27.64
-2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.5,0.4,0.2,0.6,target,stop,One hit target,0.3398,1.7,67.14
-2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.1,0.482,0.048,0.145,target,stop,One hit target,0.0213,0.443,4.82
-2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.25,0.482,0.12,0.361,target,stop,One hit target,0.1658,1.377,37.48
-2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.5,0.482,0.241,0.723,target,stop,One hit target,0.4067,1.689,91.91
-2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.1,0.659,0.066,0.198,stop,stop,Both stopped (whipsaw),-0.2118,-3.214,-35.9
-2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.25,0.659,0.165,0.494,stop,stop,Both stopped (whipsaw),-0.4095,-2.486,-69.42
-2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.5,0.659,0.329,0.988,stop,time,Neither target (closed at 24h),0.2641,0.802,44.77
-2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.1,0.491,0.049,0.147,stop,stop,Both stopped (whipsaw),-0.1782,-3.629,-33.75
-2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.25,0.491,0.123,0.368,stop,stop,Both stopped (whipsaw),-0.3255,-2.652,-61.65
-2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.5,0.491,0.246,0.737,stop,stop,Both stopped (whipsaw),-0.5711,-2.326,-108.15
-2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.1,0.526,0.053,0.158,stop,stop,Both stopped (whipsaw),-0.2051,-3.903,-44.87
-2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.25,0.526,0.131,0.394,stop,stop,Both stopped (whipsaw),-0.3628,-2.761,-79.35
-2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.5,0.526,0.263,0.788,stop,stop,Both stopped (whipsaw),-0.6256,-2.381,-136.84
-2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.1,0.538,0.054,0.161,stop,stop,Both stopped (whipsaw),-0.1876,-3.487,-29.76
-2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.25,0.538,0.134,0.403,stop,stop,Both stopped (whipsaw),-0.3489,-2.595,-55.36
-2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.5,0.538,0.269,0.807,stop,time,Neither target (closed at 24h),0.1983,0.737,31.46
-2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR,0.1,0.919,0.092,0.276,stop,target,One hit target,-0.2661,-2.895,-41.77
-2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR,0.25,0.919,0.23,0.69,stop,stop,Both stopped (whipsaw),-1.0597,-4.61,-166.33
-2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR,0.5,0.919,0.46,1.379,stop,stop,Both stopped (whipsaw),-1.5194,-3.305,-238.48
-2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.595,0.059,0.178,stop,target,One hit target,0.0589,0.991,11.49
-2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.595,0.149,0.446,stop,target,One hit target,0.2374,1.596,46.28
-2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.595,0.297,0.892,stop,stop,Both stopped (whipsaw),-0.6747,-2.269,-131.55
-2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.623,0.062,0.187,stop,target,One hit target,0.0495,0.796,11.19
-2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.623,0.156,0.467,stop,target,One hit target,0.2363,1.518,53.36
-2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.623,0.311,0.934,stop,stop,Both stopped (whipsaw),-0.7227,-2.321,-163.18
-2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.594,0.059,0.178,stop,stop,Both stopped (whipsaw),-0.1988,-3.347,-33.62
-2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.594,0.148,0.445,stop,stop,Both stopped (whipsaw),-0.3769,-2.539,-63.75
-2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.594,0.297,0.891,stop,stop,Both stopped (whipsaw),-0.6738,-2.269,-113.97
-2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR,0.1,2.045,0.205,0.614,stop,stop,Both stopped (whipsaw),-1.0091,-4.934,-171.41
-2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR,0.25,2.045,0.511,1.534,stop,stop,Both stopped (whipsaw),-1.6226,-3.173,-275.64
-2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR,0.5,2.045,1.023,3.068,time,time,Neither target (closed at 24h),-0.3,-0.293,-50.96
-2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.447,0.045,0.134,stop,stop,Both stopped (whipsaw),-0.1694,-3.79,-33.31
-2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.447,0.112,0.335,stop,stop,Both stopped (whipsaw),-0.3034,-2.716,-59.68
-2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.447,0.223,0.67,time,stop,Neither target (closed at 24h),0.1271,0.569,25.0
-2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.506,0.051,0.152,stop,stop,Both stopped (whipsaw),-0.2012,-3.976,-45.67
-2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.506,0.127,0.38,stop,stop,Both stopped (whipsaw),-0.3531,-2.79,-80.13
-2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.506,0.253,0.759,target,stop,One hit target,0.4312,1.704,97.85
-2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.415,0.042,0.125,stop,stop,Both stopped (whipsaw),-0.163,-3.928,-27.45
-2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.415,0.104,0.311,target,stop,One hit target,0.1475,1.422,24.84
-2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.415,0.208,0.623,stop,stop,Both stopped (whipsaw),-0.495,-2.386,-83.35
-2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR,0.1,0.934,0.093,0.28,stop,stop,Both stopped (whipsaw),-0.7868,-8.425,-128.35
-2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR,0.25,0.934,0.233,0.7,stop,stop,Both stopped (whipsaw),-1.067,-4.57,-174.06
-2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR,0.5,0.934,0.467,1.401,stop,time,Neither target (closed at 24h),-0.4126,-0.884,-67.31
-2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.384,0.038,0.115,stop,stop,Both stopped (whipsaw),-0.1567,-4.085,-29.54
-2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.384,0.096,0.288,stop,stop,Both stopped (whipsaw),-0.2718,-2.834,-51.23
-2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.384,0.192,0.575,stop,target,One hit target,0.3236,1.687,60.99
-2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.423,0.042,0.127,stop,stop,Both stopped (whipsaw),-0.1846,-4.363,-40.24
-2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.423,0.106,0.317,stop,target,One hit target,0.1366,1.291,29.76
-2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.423,0.212,0.635,stop,target,One hit target,0.3482,1.646,75.87
-2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.264,0.026,0.079,target,stop,One hit target,-0.0072,-0.273,-1.18
-2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.264,0.066,0.198,target,stop,One hit target,0.072,1.091,11.74
-2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.264,0.132,0.396,target,stop,One hit target,0.2039,1.545,33.27
-2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR,0.1,0.863,0.086,0.259,target,stop,One hit target,-0.2773,-3.212,-46.48
-2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR,0.25,0.863,0.216,0.647,target,stop,One hit target,-0.0183,-0.085,-3.07
-2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR,0.5,0.863,0.432,1.295,target,stop,One hit target,0.4133,0.958,69.28
-2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.366,0.037,0.11,stop,stop,Both stopped (whipsaw),-0.1532,-4.186,-29.03
-2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.366,0.091,0.274,target,stop,One hit target,0.123,1.344,23.3
-2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.366,0.183,0.549,target,stop,One hit target,0.306,1.672,57.97
-2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.424,0.042,0.127,stop,stop,Both stopped (whipsaw),-0.1848,-4.357,-40.87
-2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.424,0.106,0.318,target,stop,One hit target,0.1371,1.293,30.31
-2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.424,0.212,0.636,target,stop,One hit target,0.3492,1.646,77.21
-2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.333,0.033,0.1,stop,stop,Both stopped (whipsaw),-0.1466,-4.402,-24.33
-2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.333,0.083,0.25,stop,target,One hit target,0.1065,1.279,17.68
-2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.333,0.167,0.5,stop,target,One hit target,0.2731,1.64,45.31
-2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.1,0.303,0.03,0.091,stop,target,One hit target,0.0007,0.022,0.13
-2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.25,0.303,0.076,0.228,stop,target,One hit target,0.0917,1.209,17.32
-2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.5,0.303,0.152,0.455,stop,target,One hit target,0.2433,1.604,45.98
-2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.1,0.305,0.031,0.092,stop,target,One hit target,-0.0139,-0.457,-3.07
-2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.25,0.305,0.076,0.229,stop,target,One hit target,0.0776,1.017,17.1
-2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.5,0.305,0.153,0.458,stop,target,One hit target,0.2303,1.509,50.71
-2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.1,0.578,0.058,0.173,stop,stop,Both stopped (whipsaw),-0.1955,-3.385,-32.04
-2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.25,0.578,0.144,0.433,target,stop,One hit target,0.2289,1.585,37.5
-2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.5,0.578,0.289,0.867,target,stop,One hit target,0.5177,1.792,84.82
-2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR,0.1,0.782,0.078,0.235,stop,stop,Both stopped (whipsaw),-0.7565,-9.67,-123.91
-2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR,0.25,0.782,0.196,0.587,stop,stop,Both stopped (whipsaw),-0.9911,-5.068,-162.35
-2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR,0.5,0.782,0.391,1.173,time,stop,Neither target (closed at 24h),-0.5206,-1.331,-85.28
-2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.1,0.482,0.048,0.145,stop,stop,Both stopped (whipsaw),-0.1763,-3.661,-32.67
-2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.25,0.482,0.12,0.361,stop,stop,Both stopped (whipsaw),-0.3208,-2.664,-59.45
-2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.5,0.482,0.241,0.723,stop,stop,Both stopped (whipsaw),-0.5617,-2.332,-104.07
-2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.1,0.416,0.042,0.125,stop,stop,Both stopped (whipsaw),-0.1833,-4.401,-40.55
-2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.25,0.416,0.104,0.312,target,stop,One hit target,0.1332,1.28,29.47
-2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.5,0.416,0.208,0.625,time,stop,Neither target (closed at 24h),0.2034,0.977,45.01
-2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.1,0.437,0.044,0.131,stop,stop,Both stopped (whipsaw),-0.1675,-3.829,-27.85
-2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.25,0.437,0.109,0.328,stop,target,One hit target,0.1587,1.451,26.39
-2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.5,0.437,0.219,0.656,stop,time,Neither target (closed at 24h),-0.0682,-0.312,-11.35
-2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.1,0.483,0.048,0.145,stop,stop,Both stopped (whipsaw),-0.1766,-3.657,-32.88
-2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.25,0.483,0.121,0.362,target,stop,One hit target,0.1814,1.503,33.79
-2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.5,0.483,0.241,0.724,time,stop,Neither target (closed at 24h),-0.0542,-0.224,-10.09
-2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.1,0.427,0.043,0.128,stop,stop,Both stopped (whipsaw),-0.1853,-4.343,-41.37
-2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.25,0.427,0.107,0.32,target,stop,One hit target,0.1384,1.297,30.88
-2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.5,0.427,0.213,0.64,time,stop,Neither target (closed at 24h),0.0256,0.12,5.72
-2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.1,0.444,0.044,0.133,stop,stop,Both stopped (whipsaw),-0.1687,-3.803,-28.03
-2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.25,0.444,0.111,0.333,stop,target,One hit target,0.1619,1.459,26.89
-2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.5,0.444,0.222,0.666,stop,target,One hit target,0.3837,1.73,63.74
-2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.1,0.791,0.079,0.237,stop,stop,Both stopped (whipsaw),-0.7582,-9.587,-125.94
-2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.25,0.791,0.198,0.593,stop,target,One hit target,-0.0546,-0.276,-9.07
-2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.5,0.791,0.395,1.186,stop,target,One hit target,0.3408,0.862,56.61
+time_utc,group,name,pair,stop_k,tp_mult,day_range_pct,stop_pct,target_pct,buy,sell,outcome,net_pct,net_r,net_zar_001
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.1,3.0,0.463,0.046,0.139,stop,target,One hit target,0.0177,0.382,4.06
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.25,3.0,0.463,0.116,0.348,stop,stop,Both stopped (whipsaw),-0.3317,-2.863,-76.16
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.5,3.0,0.463,0.232,0.695,stop,stop,Both stopped (whipsaw),-0.5634,-2.432,-129.36
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.25,1.0,0.463,0.116,0.116,stop,target,One hit target,-0.075,-0.647,-17.22
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.25,1.5,0.463,0.116,0.174,stop,target,One hit target,-0.0171,-0.147,-3.92
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.25,2.0,0.463,0.116,0.232,stop,target,One hit target,0.0409,0.353,9.38
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.5,1.0,0.463,0.232,0.232,stop,target,One hit target,-0.075,-0.324,-17.22
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.5,1.5,0.463,0.232,0.348,stop,stop,Both stopped (whipsaw),-0.5634,-2.432,-129.36
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.5,2.0,0.463,0.232,0.463,stop,stop,Both stopped (whipsaw),-0.5634,-2.432,-129.36
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.75,1.0,0.463,0.348,0.348,target,stop,One hit target,-0.075,-0.216,-17.22
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.75,1.5,0.463,0.348,0.521,target,stop,One hit target,0.0988,0.284,22.68
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.75,2.0,0.463,0.348,0.695,time,stop,Neither target (closed at 24h),-0.3603,-1.037,-82.72
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,0.75,3.0,0.463,0.348,1.043,time,stop,Neither target (closed at 24h),-0.3603,-1.037,-82.72
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,1.0,1.0,0.463,0.463,0.463,target,stop,One hit target,-0.075,-0.162,-17.22
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,1.0,1.5,0.463,0.463,0.695,time,stop,Neither target (closed at 24h),-0.4761,-1.027,-109.32
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,1.0,2.0,0.463,0.463,0.927,time,stop,Neither target (closed at 24h),-0.4761,-1.027,-109.32
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD,1.0,3.0,0.463,0.463,1.39,time,stop,Neither target (closed at 24h),-0.4761,-1.027,-109.32
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.1,3.0,0.418,0.042,0.126,stop,target,One hit target,0.0237,0.566,4.54
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.25,3.0,0.418,0.105,0.314,stop,target,One hit target,0.1492,1.426,28.62
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.5,3.0,0.418,0.209,0.628,stop,target,One hit target,0.3584,1.713,68.76
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.25,1.0,0.418,0.105,0.105,stop,target,One hit target,-0.06,-0.574,-11.51
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.25,1.5,0.418,0.105,0.157,stop,target,One hit target,-0.0077,-0.074,-1.48
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.25,2.0,0.418,0.105,0.209,stop,target,One hit target,0.0446,0.426,8.56
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.5,1.0,0.418,0.209,0.209,stop,target,One hit target,-0.06,-0.287,-11.51
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.5,1.5,0.418,0.209,0.314,stop,target,One hit target,0.0446,0.213,8.56
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.5,2.0,0.418,0.209,0.418,stop,target,One hit target,0.1492,0.713,28.62
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.75,1.0,0.418,0.314,0.314,stop,target,One hit target,-0.06,-0.191,-11.51
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.75,1.5,0.418,0.314,0.471,stop,target,One hit target,0.0969,0.309,18.59
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.75,2.0,0.418,0.314,0.628,stop,target,One hit target,0.2538,0.809,48.69
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,0.75,3.0,0.418,0.314,0.941,stop,target,One hit target,0.5676,1.809,108.89
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,1.0,1.0,0.418,0.418,0.418,stop,target,One hit target,-0.06,-0.143,-11.51
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,1.0,1.5,0.418,0.418,0.628,stop,target,One hit target,0.1492,0.357,28.62
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,1.0,2.0,0.418,0.418,0.837,stop,target,One hit target,0.3584,0.857,68.76
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD,1.0,3.0,0.418,0.418,1.255,stop,target,One hit target,0.7768,1.857,149.02
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.1,3.0,0.492,0.049,0.148,stop,target,One hit target,0.0235,0.477,5.37
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.25,3.0,0.492,0.123,0.369,stop,target,One hit target,0.1712,1.391,39.17
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.5,3.0,0.492,0.246,0.739,stop,target,One hit target,0.4175,1.695,95.5
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.25,1.0,0.492,0.123,0.123,stop,target,One hit target,-0.075,-0.609,-17.16
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.25,1.5,0.492,0.123,0.185,stop,target,One hit target,-0.0134,-0.109,-3.08
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.25,2.0,0.492,0.123,0.246,stop,target,One hit target,0.0481,0.391,11.01
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.5,1.0,0.492,0.246,0.246,stop,target,One hit target,-0.075,-0.305,-17.16
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.5,1.5,0.492,0.246,0.369,stop,target,One hit target,0.0481,0.195,11.01
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.5,2.0,0.492,0.246,0.492,stop,target,One hit target,0.1712,0.695,39.17
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.75,1.0,0.492,0.369,0.369,stop,target,One hit target,-0.075,-0.203,-17.16
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.75,1.5,0.492,0.369,0.554,stop,target,One hit target,0.1097,0.297,25.09
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.75,2.0,0.492,0.369,0.739,stop,target,One hit target,0.2943,0.797,67.34
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,0.75,3.0,0.492,0.369,1.108,stop,target,One hit target,0.6637,1.797,151.83
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,1.0,1.0,0.492,0.492,0.492,stop,target,One hit target,-0.075,-0.152,-17.16
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,1.0,1.5,0.492,0.492,0.739,stop,target,One hit target,0.1712,0.348,39.17
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,1.0,2.0,0.492,0.492,0.985,stop,target,One hit target,0.4175,0.848,95.5
+2024-11-06 00:00,Political,US election 2024 results,GBP/USD,1.0,3.0,0.492,0.492,1.477,stop,target,One hit target,0.9099,1.848,208.16
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.1,3.0,0.623,0.062,0.187,stop,stop,Both stopped (whipsaw),-0.2046,-3.285,-35.89
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.25,3.0,0.623,0.156,0.467,target,stop,One hit target,0.2514,1.615,44.11
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.5,3.0,0.623,0.311,0.934,target,stop,One hit target,0.5628,1.807,98.75
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.25,1.0,0.623,0.156,0.156,target,stop,One hit target,-0.06,-0.385,-10.53
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.25,1.5,0.623,0.156,0.234,target,stop,One hit target,0.0178,0.115,3.13
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.25,2.0,0.623,0.156,0.311,target,stop,One hit target,0.0957,0.615,16.79
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.5,1.0,0.623,0.311,0.311,target,stop,One hit target,-0.06,-0.193,-10.53
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.5,1.5,0.623,0.311,0.467,target,stop,One hit target,0.0957,0.307,16.79
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.5,2.0,0.623,0.311,0.623,target,stop,One hit target,0.2514,0.807,44.11
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.75,1.0,0.623,0.467,0.467,target,stop,One hit target,-0.06,-0.128,-10.53
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.75,1.5,0.623,0.467,0.701,target,stop,One hit target,0.1735,0.372,30.45
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.75,2.0,0.623,0.467,0.934,target,stop,One hit target,0.4071,0.872,71.43
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,0.75,3.0,0.623,0.467,1.401,target,stop,One hit target,0.8742,1.872,153.38
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,1.0,1.0,0.623,0.623,0.623,target,stop,One hit target,-0.06,-0.096,-10.53
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,1.0,1.5,0.623,0.623,0.934,target,stop,One hit target,0.2514,0.404,44.11
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,1.0,2.0,0.623,0.623,1.246,target,stop,One hit target,0.5628,0.904,98.75
+2024-11-06 00:00,Political,US election 2024 results,USD/JPY,1.0,3.0,0.623,0.623,1.868,target,stop,One hit target,1.1856,1.904,208.02
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.1,3.0,0.885,0.088,0.265,target,stop,One hit target,-0.2731,-3.087,-47.92
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.25,3.0,0.885,0.221,0.663,target,stop,One hit target,-0.0077,-0.035,-1.35
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.5,3.0,0.885,0.442,1.327,target,stop,One hit target,0.4346,0.983,76.25
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.25,1.0,0.885,0.221,0.221,target,stop,One hit target,-0.45,-2.035,-78.96
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.25,1.5,0.885,0.221,0.332,target,stop,One hit target,-0.3394,-1.535,-59.56
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.25,2.0,0.885,0.221,0.442,target,stop,One hit target,-0.2289,-1.035,-40.16
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.5,1.0,0.885,0.442,0.442,target,stop,One hit target,-0.45,-1.017,-78.96
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.5,1.5,0.885,0.442,0.663,target,stop,One hit target,-0.2289,-0.517,-40.16
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.5,2.0,0.885,0.442,0.885,target,stop,One hit target,-0.0077,-0.017,-1.35
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.75,1.0,0.885,0.663,0.663,target,stop,One hit target,-0.45,-0.678,-78.96
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.75,1.5,0.885,0.663,0.995,target,stop,One hit target,-0.1183,-0.178,-20.75
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.75,2.0,0.885,0.663,1.327,target,stop,One hit target,0.2134,0.322,37.45
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,0.75,3.0,0.885,0.663,1.99,target,stop,One hit target,0.8769,1.322,153.85
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,1.0,1.0,0.885,0.885,0.885,target,stop,One hit target,-0.45,-0.509,-78.96
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,1.0,1.5,0.885,0.885,1.327,target,stop,One hit target,-0.0077,-0.009,-1.35
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,1.0,2.0,0.885,0.885,1.769,target,stop,One hit target,0.4346,0.491,76.25
+2024-11-06 00:00,Political,US election 2024 results,USD/ZAR,1.0,3.0,0.885,0.885,2.654,time,stop,Neither target (closed at 24h),0.2892,0.327,50.74
+2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR,0.1,3.0,1.266,0.127,0.38,stop,stop,Both stopped (whipsaw),-0.8531,-6.741,-153.46
+2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR,0.25,3.0,1.266,0.316,0.949,stop,stop,Both stopped (whipsaw),-1.2328,-3.896,-221.76
+2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR,0.5,3.0,1.266,0.633,1.898,stop,time,Neither target (closed at 24h),-0.9487,-1.499,-170.65
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.1,3.0,0.652,0.065,0.196,stop,target,One hit target,0.0705,1.08,13.5
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.25,3.0,0.652,0.163,0.489,stop,target,One hit target,0.2662,1.632,51.0
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.5,3.0,0.652,0.326,0.979,stop,target,One hit target,0.5924,1.816,113.5
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.25,1.0,0.652,0.163,0.163,stop,target,One hit target,-0.06,-0.368,-11.5
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.25,1.5,0.652,0.163,0.245,stop,target,One hit target,0.0216,0.132,4.13
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.25,2.0,0.652,0.163,0.326,stop,target,One hit target,0.1031,0.632,19.75
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.5,1.0,0.652,0.326,0.326,stop,target,One hit target,-0.06,-0.184,-11.5
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.5,1.5,0.652,0.326,0.489,stop,target,One hit target,0.1031,0.316,19.75
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.5,2.0,0.652,0.326,0.652,stop,target,One hit target,0.2662,0.816,51.0
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.75,1.0,0.652,0.489,0.489,stop,target,One hit target,-0.06,-0.123,-11.5
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.75,1.5,0.652,0.489,0.734,stop,target,One hit target,0.1847,0.377,35.38
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.75,2.0,0.652,0.489,0.979,stop,target,One hit target,0.4293,0.877,82.25
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,0.75,3.0,0.652,0.489,1.468,stop,time,Neither target (closed at 24h),0.3223,0.659,61.76
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,1.0,1.0,0.652,0.652,0.652,stop,target,One hit target,-0.06,-0.092,-11.5
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,1.0,1.5,0.652,0.652,0.979,stop,target,One hit target,0.2662,0.408,51.0
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,1.0,2.0,0.652,0.652,1.305,stop,time,Neither target (closed at 24h),0.1592,0.244,30.51
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD,1.0,3.0,0.652,0.652,1.957,stop,time,Neither target (closed at 24h),0.1592,0.244,30.51
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.1,3.0,0.614,0.061,0.184,stop,target,One hit target,0.0478,0.779,11.1
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.25,3.0,0.614,0.154,0.461,stop,target,One hit target,0.232,1.511,53.88
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.5,3.0,0.614,0.307,0.921,stop,target,One hit target,0.5391,1.756,125.18
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.25,1.0,0.614,0.154,0.154,stop,target,One hit target,-0.075,-0.489,-17.42
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.25,1.5,0.614,0.154,0.23,stop,target,One hit target,0.0018,0.011,0.41
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.25,2.0,0.614,0.154,0.307,stop,target,One hit target,0.0785,0.511,18.23
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.5,1.0,0.614,0.307,0.307,stop,target,One hit target,-0.075,-0.244,-17.42
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.5,1.5,0.614,0.307,0.461,stop,target,One hit target,0.0785,0.256,18.23
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.5,2.0,0.614,0.307,0.614,stop,target,One hit target,0.232,0.756,53.88
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.75,1.0,0.614,0.461,0.461,stop,target,One hit target,-0.075,-0.163,-17.42
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.75,1.5,0.614,0.461,0.691,stop,target,One hit target,0.1553,0.337,36.06
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.75,2.0,0.614,0.461,0.921,stop,target,One hit target,0.3856,0.837,89.53
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,0.75,3.0,0.614,0.461,1.382,stop,target,One hit target,0.8461,1.837,196.49
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,1.0,1.0,0.614,0.614,0.614,stop,target,One hit target,-0.075,-0.122,-17.42
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,1.0,1.5,0.614,0.614,0.921,stop,target,One hit target,0.232,0.378,53.88
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,1.0,2.0,0.614,0.614,1.228,stop,target,One hit target,0.5391,0.878,125.18
+2024-12-18 19:00,US Fed decision,Fed cut,GBP/USD,1.0,3.0,0.614,0.614,1.842,stop,time,Neither target (closed at 24h),0.5688,0.926,132.08
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.1,3.0,0.872,0.087,0.262,target,stop,One hit target,0.1144,1.312,20.93
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.25,3.0,0.872,0.218,0.654,target,stop,One hit target,0.3759,1.725,68.81
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.5,3.0,0.872,0.436,1.308,target,stop,One hit target,0.8119,1.862,148.59
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.25,1.0,0.872,0.218,0.218,target,stop,One hit target,-0.06,-0.275,-10.98
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.25,1.5,0.872,0.218,0.327,target,stop,One hit target,0.049,0.225,8.97
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.25,2.0,0.872,0.218,0.436,target,stop,One hit target,0.158,0.725,28.91
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.5,1.0,0.872,0.436,0.436,target,stop,One hit target,-0.06,-0.138,-10.98
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.5,1.5,0.872,0.436,0.654,target,stop,One hit target,0.158,0.362,28.91
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.5,2.0,0.872,0.436,0.872,target,stop,One hit target,0.3759,0.862,68.81
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.75,1.0,0.872,0.654,0.654,target,stop,One hit target,-0.06,-0.092,-10.98
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.75,1.5,0.872,0.654,0.981,target,stop,One hit target,0.2669,0.408,48.86
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.75,2.0,0.872,0.654,1.308,target,stop,One hit target,0.5939,0.908,108.7
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,0.75,3.0,0.872,0.654,1.962,target,stop,One hit target,1.2478,1.908,228.38
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,1.0,1.0,0.872,0.872,0.872,target,stop,One hit target,-0.06,-0.069,-10.98
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,1.0,1.5,0.872,0.872,1.308,target,stop,One hit target,0.3759,0.431,68.81
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,1.0,2.0,0.872,0.872,1.744,target,stop,One hit target,0.8119,0.931,148.59
+2024-12-18 19:00,US Fed decision,Fed cut,USD/JPY,1.0,3.0,0.872,0.872,2.616,target,stop,One hit target,1.6837,1.931,308.17
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.795,0.079,0.238,stop,stop,Both stopped (whipsaw),-0.239,-3.006,-46.18
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.795,0.199,0.596,stop,stop,Both stopped (whipsaw),-0.4774,-2.403,-92.26
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.795,0.397,1.192,time,stop,Neither target (closed at 24h),-0.374,-0.941,-72.27
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.795,0.199,0.199,stop,target,One hit target,-0.06,-0.302,-11.59
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.795,0.199,0.298,stop,stop,Both stopped (whipsaw),-0.4774,-2.403,-92.26
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.795,0.199,0.397,stop,stop,Both stopped (whipsaw),-0.4774,-2.403,-92.26
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.795,0.397,0.397,target,stop,One hit target,-0.06,-0.151,-11.59
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.795,0.397,0.596,time,stop,Neither target (closed at 24h),-0.374,-0.941,-72.27
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.795,0.397,0.795,time,stop,Neither target (closed at 24h),-0.374,-0.941,-72.27
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.795,0.596,0.596,time,time,Neither target (closed at 24h),-0.04,-0.067,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.795,0.596,0.894,time,time,Neither target (closed at 24h),-0.04,-0.067,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.795,0.596,1.192,time,time,Neither target (closed at 24h),-0.04,-0.067,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.795,0.596,1.788,time,time,Neither target (closed at 24h),-0.04,-0.067,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.795,0.795,0.795,time,time,Neither target (closed at 24h),-0.04,-0.05,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.795,0.795,1.192,time,time,Neither target (closed at 24h),-0.04,-0.05,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.795,0.795,1.59,time,time,Neither target (closed at 24h),-0.04,-0.05,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.795,0.795,2.385,time,time,Neither target (closed at 24h),-0.04,-0.05,-7.73
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.906,0.091,0.272,stop,stop,Both stopped (whipsaw),-0.2813,-3.103,-64.9
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.906,0.227,0.68,time,stop,Neither target (closed at 24h),-0.1932,-0.853,-44.58
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.906,0.453,1.359,time,time,Neither target (closed at 24h),-0.05,-0.11,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.906,0.227,0.227,target,stop,One hit target,-0.075,-0.331,-17.31
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.906,0.227,0.34,time,stop,Neither target (closed at 24h),-0.1932,-0.853,-44.58
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.906,0.227,0.453,time,stop,Neither target (closed at 24h),-0.1932,-0.853,-44.58
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.906,0.453,0.453,time,time,Neither target (closed at 24h),-0.05,-0.11,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.906,0.453,0.68,time,time,Neither target (closed at 24h),-0.05,-0.11,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.906,0.453,0.906,time,time,Neither target (closed at 24h),-0.05,-0.11,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.906,0.68,0.68,time,time,Neither target (closed at 24h),-0.05,-0.074,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.906,0.68,1.02,time,time,Neither target (closed at 24h),-0.05,-0.074,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.906,0.68,1.359,time,time,Neither target (closed at 24h),-0.05,-0.074,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.906,0.68,2.039,time,time,Neither target (closed at 24h),-0.05,-0.074,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.906,0.906,0.906,time,time,Neither target (closed at 24h),-0.05,-0.055,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.906,0.906,1.359,time,time,Neither target (closed at 24h),-0.05,-0.055,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.906,0.906,1.813,time,time,Neither target (closed at 24h),-0.05,-0.055,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.906,0.906,2.719,time,time,Neither target (closed at 24h),-0.05,-0.055,-11.54
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.857,0.086,0.257,target,stop,One hit target,0.1114,1.3,20.66
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.857,0.214,0.643,stop,stop,Both stopped (whipsaw),-0.5084,-2.373,-94.3
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.857,0.428,1.285,stop,time,Neither target (closed at 24h),-0.0011,-0.003,-0.2
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.857,0.214,0.214,target,stop,One hit target,-0.06,-0.28,-11.13
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.857,0.214,0.321,stop,stop,Both stopped (whipsaw),-0.5084,-2.373,-94.3
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.857,0.214,0.428,stop,stop,Both stopped (whipsaw),-0.5084,-2.373,-94.3
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.857,0.428,0.428,stop,target,One hit target,-0.06,-0.14,-11.13
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.857,0.428,0.643,stop,target,One hit target,0.1542,0.36,28.6
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.857,0.428,0.857,stop,target,One hit target,0.3684,0.86,68.33
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.857,0.643,0.643,stop,target,One hit target,-0.06,-0.093,-11.13
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.857,0.643,0.964,stop,time,Neither target (closed at 24h),-0.2153,-0.335,-39.93
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.857,0.643,1.285,stop,time,Neither target (closed at 24h),-0.2153,-0.335,-39.93
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.857,0.643,1.928,stop,time,Neither target (closed at 24h),-0.2153,-0.335,-39.93
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.857,0.857,0.857,stop,target,One hit target,-0.06,-0.07,-11.13
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.857,0.857,1.285,stop,time,Neither target (closed at 24h),-0.4295,-0.501,-79.66
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.857,0.857,1.714,stop,time,Neither target (closed at 24h),-0.4295,-0.501,-79.66
+2025-01-29 19:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.857,0.857,2.571,stop,time,Neither target (closed at 24h),-0.4295,-0.501,-79.66
+2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR,0.1,3.0,1.223,0.122,0.367,stop,stop,Both stopped (whipsaw),-0.8447,-6.905,-155.75
+2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR,0.25,3.0,1.223,0.306,0.917,stop,stop,Both stopped (whipsaw),-1.2117,-3.962,-223.43
+2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR,0.5,3.0,1.223,0.612,1.835,time,stop,Neither target (closed at 24h),-0.4073,-0.666,-75.1
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.1,3.0,1.093,0.109,0.328,stop,target,One hit target,-0.2315,-2.119,-42.58
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.25,3.0,1.093,0.273,0.819,stop,time,Neither target (closed at 24h),-0.524,-1.918,-96.38
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.5,3.0,1.093,0.546,1.639,stop,time,Neither target (closed at 24h),-0.7971,-1.459,-146.62
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.25,1.0,1.093,0.273,0.273,stop,target,One hit target,-0.45,-1.647,-82.77
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.25,1.5,1.093,0.273,0.41,stop,target,One hit target,-0.3134,-1.147,-57.65
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.25,2.0,1.093,0.273,0.546,stop,target,One hit target,-0.1769,-0.647,-32.53
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.5,1.0,1.093,0.546,0.546,stop,target,One hit target,-0.45,-0.824,-82.77
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.5,1.5,1.093,0.546,0.819,stop,time,Neither target (closed at 24h),-0.7971,-1.459,-146.62
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.5,2.0,1.093,0.546,1.093,stop,time,Neither target (closed at 24h),-0.7971,-1.459,-146.62
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.75,1.0,1.093,0.819,0.819,time,time,Neither target (closed at 24h),-0.3,-0.366,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.75,1.5,1.093,0.819,1.229,time,time,Neither target (closed at 24h),-0.3,-0.366,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.75,2.0,1.093,0.819,1.639,time,time,Neither target (closed at 24h),-0.3,-0.366,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,0.75,3.0,1.093,0.819,2.458,time,time,Neither target (closed at 24h),-0.3,-0.366,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,1.0,1.0,1.093,1.093,1.093,time,time,Neither target (closed at 24h),-0.3,-0.275,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,1.0,1.5,1.093,1.093,1.639,time,time,Neither target (closed at 24h),-0.3,-0.275,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,1.0,2.0,1.093,1.093,2.185,time,time,Neither target (closed at 24h),-0.3,-0.275,-55.18
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR,1.0,3.0,1.093,1.093,3.278,time,time,Neither target (closed at 24h),-0.3,-0.275,-55.18
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.722,0.072,0.217,target,stop,One hit target,0.0844,1.169,16.62
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.722,0.18,0.541,stop,stop,Both stopped (whipsaw),-0.4409,-2.443,-86.87
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.722,0.361,1.083,stop,time,Neither target (closed at 24h),-0.0412,-0.114,-8.13
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.722,0.18,0.18,target,stop,One hit target,-0.06,-0.333,-11.82
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.722,0.18,0.271,target,stop,One hit target,0.0302,0.167,5.96
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.722,0.18,0.361,stop,stop,Both stopped (whipsaw),-0.4409,-2.443,-86.87
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.722,0.361,0.361,stop,target,One hit target,-0.06,-0.166,-11.82
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.722,0.361,0.541,stop,target,One hit target,0.1204,0.334,23.73
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.722,0.361,0.722,stop,time,Neither target (closed at 24h),-0.0412,-0.114,-8.13
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.722,0.541,0.541,stop,target,One hit target,-0.06,-0.111,-11.82
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.722,0.541,0.812,stop,time,Neither target (closed at 24h),-0.2217,-0.41,-43.68
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.722,0.541,1.083,stop,time,Neither target (closed at 24h),-0.2217,-0.41,-43.68
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.722,0.541,1.624,stop,time,Neither target (closed at 24h),-0.2217,-0.41,-43.68
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.722,0.722,0.722,time,time,Neither target (closed at 24h),-0.04,-0.055,-7.88
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.722,0.722,1.083,time,time,Neither target (closed at 24h),-0.04,-0.055,-7.88
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.722,0.722,1.444,time,time,Neither target (closed at 24h),-0.04,-0.055,-7.88
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.722,0.722,2.165,time,time,Neither target (closed at 24h),-0.04,-0.055,-7.88
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.568,0.057,0.17,target,stop,One hit target,0.0386,0.679,9.06
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.568,0.142,0.426,stop,stop,Both stopped (whipsaw),-0.3839,-2.704,-90.18
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.568,0.284,0.852,stop,time,Neither target (closed at 24h),-0.2189,-0.771,-51.43
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.568,0.142,0.142,target,stop,One hit target,-0.075,-0.528,-17.62
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.568,0.142,0.213,target,stop,One hit target,-0.004,-0.028,-0.94
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.568,0.142,0.284,stop,stop,Both stopped (whipsaw),-0.3839,-2.704,-90.18
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.568,0.284,0.284,stop,target,One hit target,-0.075,-0.264,-17.62
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.568,0.284,0.426,stop,time,Neither target (closed at 24h),-0.2189,-0.771,-51.43
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.568,0.284,0.568,stop,time,Neither target (closed at 24h),-0.2189,-0.771,-51.43
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.568,0.426,0.426,time,time,Neither target (closed at 24h),-0.05,-0.117,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.568,0.426,0.639,time,time,Neither target (closed at 24h),-0.05,-0.117,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.568,0.426,0.852,time,time,Neither target (closed at 24h),-0.05,-0.117,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.568,0.426,1.278,time,time,Neither target (closed at 24h),-0.05,-0.117,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.568,0.568,0.568,time,time,Neither target (closed at 24h),-0.05,-0.088,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.568,0.568,0.852,time,time,Neither target (closed at 24h),-0.05,-0.088,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.568,0.568,1.136,time,time,Neither target (closed at 24h),-0.05,-0.088,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.568,0.568,1.704,time,time,Neither target (closed at 24h),-0.05,-0.088,-11.74
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.919,0.092,0.276,stop,target,One hit target,0.1239,1.347,22.42
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.919,0.23,0.69,stop,target,One hit target,0.3997,1.739,72.33
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.919,0.46,1.379,stop,time,Neither target (closed at 24h),0.2401,0.522,43.44
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.919,0.23,0.23,stop,target,One hit target,-0.06,-0.261,-10.86
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.919,0.23,0.345,stop,target,One hit target,0.0549,0.239,9.94
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.919,0.23,0.46,stop,target,One hit target,0.1699,0.739,30.74
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.919,0.46,0.46,stop,target,One hit target,-0.06,-0.131,-10.86
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.919,0.46,0.69,stop,target,One hit target,0.1699,0.369,30.74
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.919,0.46,0.919,stop,target,One hit target,0.3997,0.869,72.33
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.919,0.69,0.69,stop,target,One hit target,-0.06,-0.087,-10.86
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.919,0.69,1.034,stop,target,One hit target,0.2848,0.413,51.53
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.919,0.69,1.379,stop,time,Neither target (closed at 24h),0.0102,0.015,1.85
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.919,0.69,2.069,stop,time,Neither target (closed at 24h),0.0102,0.015,1.85
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.919,0.919,0.919,stop,target,One hit target,-0.06,-0.065,-10.86
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.919,0.919,1.379,stop,time,Neither target (closed at 24h),-0.2196,-0.239,-39.74
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.919,0.919,1.839,stop,time,Neither target (closed at 24h),-0.2196,-0.239,-39.74
+2025-03-19 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.919,0.919,2.758,stop,time,Neither target (closed at 24h),-0.2196,-0.239,-39.74
+2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR,0.1,3.0,1.043,0.104,0.313,stop,stop,Both stopped (whipsaw),-0.8085,-7.754,-147.29
+2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR,0.25,3.0,1.043,0.261,0.782,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-204.27
+2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR,0.5,3.0,1.043,0.521,1.564,time,time,Neither target (closed at 24h),-0.3,-0.575,-54.65
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.1,3.0,0.661,0.066,0.198,stop,stop,Both stopped (whipsaw),-0.2122,-3.211,-43.45
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.25,3.0,0.661,0.165,0.496,stop,stop,Both stopped (whipsaw),-0.4104,-2.484,-84.04
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.5,3.0,0.661,0.33,0.991,stop,stop,Both stopped (whipsaw),-0.7409,-2.242,-151.71
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.25,1.0,0.661,0.165,0.165,stop,stop,Both stopped (whipsaw),-0.4104,-2.484,-84.04
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.25,1.5,0.661,0.165,0.248,stop,stop,Both stopped (whipsaw),-0.4104,-2.484,-84.04
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.25,2.0,0.661,0.165,0.33,stop,stop,Both stopped (whipsaw),-0.4104,-2.484,-84.04
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.5,1.0,0.661,0.33,0.33,stop,stop,Both stopped (whipsaw),-0.7409,-2.242,-151.71
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.5,1.5,0.661,0.33,0.496,stop,stop,Both stopped (whipsaw),-0.7409,-2.242,-151.71
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.5,2.0,0.661,0.33,0.661,stop,stop,Both stopped (whipsaw),-0.7409,-2.242,-151.71
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.75,1.0,0.661,0.496,0.496,target,stop,One hit target,-0.06,-0.121,-12.29
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.75,1.5,0.661,0.496,0.743,target,stop,One hit target,0.1878,0.379,38.46
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.75,2.0,0.661,0.496,0.991,target,stop,One hit target,0.4357,0.879,89.21
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,0.75,3.0,0.661,0.496,1.487,target,stop,One hit target,0.9313,1.879,190.7
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,1.0,1.0,0.661,0.661,0.661,target,stop,One hit target,-0.06,-0.091,-12.29
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,1.0,1.5,0.661,0.661,0.991,target,stop,One hit target,0.2704,0.409,55.38
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,1.0,2.0,0.661,0.661,1.322,target,stop,One hit target,0.6009,0.909,123.04
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD,1.0,3.0,0.661,0.661,1.983,target,stop,One hit target,1.2617,1.909,258.37
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.1,3.0,0.562,0.056,0.168,stop,stop,Both stopped (whipsaw),-0.2123,-3.78,-52.01
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.25,3.0,0.562,0.14,0.421,stop,stop,Both stopped (whipsaw),-0.3808,-2.712,-93.28
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.5,3.0,0.562,0.281,0.842,target,stop,One hit target,0.4866,1.733,119.2
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.25,1.0,0.562,0.14,0.14,stop,stop,Both stopped (whipsaw),-0.3808,-2.712,-93.28
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.25,1.5,0.562,0.14,0.211,stop,stop,Both stopped (whipsaw),-0.3808,-2.712,-93.28
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.25,2.0,0.562,0.14,0.281,stop,stop,Both stopped (whipsaw),-0.3808,-2.712,-93.28
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.5,1.0,0.562,0.281,0.281,target,stop,One hit target,-0.075,-0.267,-18.37
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.5,1.5,0.562,0.281,0.421,target,stop,One hit target,0.0654,0.233,16.02
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.5,2.0,0.562,0.281,0.562,target,stop,One hit target,0.2058,0.733,50.41
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.75,1.0,0.562,0.421,0.421,target,stop,One hit target,-0.075,-0.178,-18.37
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.75,1.5,0.562,0.421,0.632,target,stop,One hit target,0.1356,0.322,33.22
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.75,2.0,0.562,0.421,0.842,target,stop,One hit target,0.3462,0.822,84.8
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,0.75,3.0,0.562,0.421,1.264,target,stop,One hit target,0.7675,1.822,187.98
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,1.0,1.0,0.562,0.562,0.562,target,stop,One hit target,-0.075,-0.134,-18.37
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,1.0,1.5,0.562,0.562,0.842,target,stop,One hit target,0.2058,0.366,50.41
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,1.0,2.0,0.562,0.562,1.123,target,stop,One hit target,0.4866,0.866,119.2
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,GBP/USD,1.0,3.0,0.562,0.562,1.685,target,stop,One hit target,1.0483,1.866,256.76
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.1,3.0,0.782,0.078,0.235,stop,stop,Both stopped (whipsaw),-0.2363,-3.023,-44.59
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.25,3.0,0.782,0.195,0.586,stop,stop,Both stopped (whipsaw),-0.4708,-2.409,-88.83
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.5,3.0,0.782,0.391,1.173,stop,target,One hit target,0.7217,1.846,136.16
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.25,1.0,0.782,0.195,0.195,stop,stop,Both stopped (whipsaw),-0.4708,-2.409,-88.83
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.25,1.5,0.782,0.195,0.293,stop,stop,Both stopped (whipsaw),-0.4708,-2.409,-88.83
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.25,2.0,0.782,0.195,0.391,stop,stop,Both stopped (whipsaw),-0.4708,-2.409,-88.83
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.5,1.0,0.782,0.391,0.391,stop,target,One hit target,-0.06,-0.154,-11.32
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.5,1.5,0.782,0.391,0.586,stop,target,One hit target,0.1354,0.346,25.55
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.5,2.0,0.782,0.391,0.782,stop,target,One hit target,0.3308,0.846,62.42
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.75,1.0,0.782,0.586,0.586,stop,target,One hit target,-0.06,-0.102,-11.32
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.75,1.5,0.782,0.586,0.879,stop,target,One hit target,0.2331,0.398,43.99
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.75,2.0,0.782,0.586,1.173,stop,target,One hit target,0.5263,0.898,99.29
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,0.75,3.0,0.782,0.586,1.759,stop,target,One hit target,1.1125,1.898,209.9
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,1.0,1.0,0.782,0.782,0.782,stop,target,One hit target,-0.06,-0.077,-11.32
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,1.0,1.5,0.782,0.782,1.173,stop,target,One hit target,0.3308,0.423,62.42
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,1.0,2.0,0.782,0.782,1.563,stop,target,One hit target,0.7217,0.923,136.16
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/JPY,1.0,3.0,0.782,0.782,2.345,stop,target,One hit target,1.5033,1.923,283.64
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.1,3.0,1.043,0.104,0.313,stop,stop,Both stopped (whipsaw),-0.8085,-7.754,-152.55
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.25,3.0,1.043,0.261,0.782,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-211.57
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.5,3.0,1.043,0.521,1.564,stop,stop,Both stopped (whipsaw),-1.6427,-3.151,-309.93
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.25,1.0,1.043,0.261,0.261,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-211.57
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.25,1.5,1.043,0.261,0.391,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-211.57
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.25,2.0,1.043,0.261,0.521,stop,stop,Both stopped (whipsaw),-1.1213,-4.302,-211.57
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.5,1.0,1.043,0.521,0.521,stop,stop,Both stopped (whipsaw),-1.6427,-3.151,-309.93
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.5,1.5,1.043,0.521,0.782,stop,stop,Both stopped (whipsaw),-1.6427,-3.151,-309.93
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.5,2.0,1.043,0.521,1.043,stop,stop,Both stopped (whipsaw),-1.6427,-3.151,-309.93
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.75,1.0,1.043,0.782,0.782,target,stop,One hit target,-0.45,-0.575,-84.9
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.75,1.5,1.043,0.782,1.173,stop,stop,Both stopped (whipsaw),-2.164,-2.767,-408.3
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.75,2.0,1.043,0.782,1.564,stop,stop,Both stopped (whipsaw),-2.164,-2.767,-408.3
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,0.75,3.0,1.043,0.782,2.346,stop,stop,Both stopped (whipsaw),-2.164,-2.767,-408.3
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,1.0,1.0,1.043,1.043,1.043,time,time,Neither target (closed at 24h),-0.3,-0.288,-56.6
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,1.0,1.5,1.043,1.043,1.564,time,time,Neither target (closed at 24h),-0.3,-0.288,-56.6
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,1.0,2.0,1.043,1.043,2.085,time,time,Neither target (closed at 24h),-0.3,-0.288,-56.6
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,USD/ZAR,1.0,3.0,1.043,1.043,3.128,time,time,Neither target (closed at 24h),-0.3,-0.288,-56.6
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.657,0.066,0.197,stop,stop,Both stopped (whipsaw),-0.2115,-3.217,-43.68
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.657,0.164,0.493,stop,stop,Both stopped (whipsaw),-0.4086,-2.487,-84.41
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.657,0.329,0.986,stop,target,One hit target,0.5973,1.817,123.37
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.657,0.164,0.164,target,stop,One hit target,-0.06,-0.365,-12.39
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.657,0.164,0.246,stop,stop,Both stopped (whipsaw),-0.4086,-2.487,-84.41
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.657,0.164,0.329,stop,stop,Both stopped (whipsaw),-0.4086,-2.487,-84.41
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.657,0.329,0.329,stop,target,One hit target,-0.06,-0.183,-12.39
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.657,0.329,0.493,stop,target,One hit target,0.1043,0.317,21.55
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.657,0.329,0.657,stop,target,One hit target,0.2686,0.817,55.49
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.657,0.493,0.493,stop,target,One hit target,-0.06,-0.122,-12.39
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.657,0.493,0.739,stop,target,One hit target,0.1865,0.378,38.52
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.657,0.493,0.986,stop,target,One hit target,0.433,0.878,89.43
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.657,0.493,1.479,stop,time,Neither target (closed at 24h),0.4353,0.883,89.92
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.657,0.657,0.657,stop,target,One hit target,-0.06,-0.091,-12.39
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.657,0.657,0.986,stop,target,One hit target,0.2686,0.409,55.49
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.657,0.657,1.315,stop,time,Neither target (closed at 24h),0.271,0.412,55.98
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.657,0.657,1.972,stop,time,Neither target (closed at 24h),0.271,0.412,55.98
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.566,0.057,0.17,stop,stop,Both stopped (whipsaw),-0.2132,-3.766,-51.78
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.566,0.142,0.425,stop,stop,Both stopped (whipsaw),-0.3831,-2.707,-93.02
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.566,0.283,0.849,stop,time,Neither target (closed at 24h),0.2068,0.73,50.2
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.566,0.142,0.142,stop,target,One hit target,-0.075,-0.53,-18.21
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.566,0.142,0.212,stop,target,One hit target,-0.0042,-0.03,-1.03
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.566,0.142,0.283,stop,target,One hit target,0.0665,0.47,16.16
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.566,0.283,0.283,stop,target,One hit target,-0.075,-0.265,-18.21
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.566,0.283,0.425,stop,target,One hit target,0.0665,0.235,16.16
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.566,0.283,0.566,stop,target,One hit target,0.2081,0.735,50.53
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.566,0.425,0.425,stop,target,One hit target,-0.075,-0.177,-18.21
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.566,0.425,0.637,stop,target,One hit target,0.1373,0.323,33.34
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.566,0.425,0.849,stop,time,Neither target (closed at 24h),0.0652,0.154,15.83
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.566,0.425,1.274,stop,time,Neither target (closed at 24h),0.0652,0.154,15.83
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.566,0.566,0.566,stop,target,One hit target,-0.075,-0.132,-18.21
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.566,0.566,0.849,stop,time,Neither target (closed at 24h),-0.0763,-0.135,-18.53
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.566,0.566,1.132,stop,time,Neither target (closed at 24h),-0.0763,-0.135,-18.53
+2025-05-07 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.566,0.566,1.698,stop,time,Neither target (closed at 24h),-0.0763,-0.135,-18.53
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.822,0.082,0.247,stop,stop,Both stopped (whipsaw),-0.2444,-2.973,-44.51
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.822,0.206,0.617,stop,stop,Both stopped (whipsaw),-0.4911,-2.389,-89.43
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.822,0.411,1.233,target,stop,One hit target,0.7622,1.854,138.8
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.822,0.206,0.206,stop,stop,Both stopped (whipsaw),-0.4911,-2.389,-89.43
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.822,0.206,0.308,stop,stop,Both stopped (whipsaw),-0.4911,-2.389,-89.43
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.822,0.206,0.411,stop,stop,Both stopped (whipsaw),-0.4911,-2.389,-89.43
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.822,0.411,0.411,target,stop,One hit target,-0.06,-0.146,-10.93
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.822,0.411,0.617,target,stop,One hit target,0.1456,0.354,26.51
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.822,0.411,0.822,target,stop,One hit target,0.3511,0.854,63.94
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.822,0.617,0.617,target,stop,One hit target,-0.06,-0.097,-10.93
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.822,0.617,0.925,target,stop,One hit target,0.2483,0.403,45.22
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.822,0.617,1.233,target,stop,One hit target,0.5567,0.903,101.37
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.822,0.617,1.85,time,stop,Neither target (closed at 24h),0.9781,1.586,178.11
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.822,0.822,0.822,target,stop,One hit target,-0.06,-0.073,-10.93
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.822,0.822,1.233,target,stop,One hit target,0.3511,0.427,63.94
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.822,0.822,1.644,target,stop,One hit target,0.7622,0.927,138.8
+2025-05-07 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.822,0.822,2.467,time,stop,Neither target (closed at 24h),0.7726,0.94,140.68
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.1,3.0,0.936,0.094,0.281,stop,stop,Both stopped (whipsaw),-0.7873,-8.407,-141.04
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.25,3.0,0.936,0.234,0.702,target,stop,One hit target,0.0182,0.078,3.26
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.5,3.0,0.936,0.468,1.405,time,stop,Neither target (closed at 24h),-0.2057,-0.439,-36.84
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.25,1.0,0.936,0.234,0.234,target,stop,One hit target,-0.45,-1.922,-80.62
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.25,1.5,0.936,0.234,0.351,target,stop,One hit target,-0.3329,-1.422,-59.65
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.25,2.0,0.936,0.234,0.468,target,stop,One hit target,-0.2159,-0.922,-38.68
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.5,1.0,0.936,0.468,0.468,target,stop,One hit target,-0.45,-0.961,-80.62
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.5,1.5,0.936,0.468,0.702,target,stop,One hit target,-0.2159,-0.461,-38.68
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.5,2.0,0.936,0.468,0.936,target,stop,One hit target,0.0182,0.039,3.26
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.75,1.0,0.936,0.702,0.702,target,stop,One hit target,-0.45,-0.641,-80.62
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.75,1.5,0.936,0.702,1.054,time,stop,Neither target (closed at 24h),-0.4398,-0.626,-78.78
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.75,2.0,0.936,0.702,1.405,time,stop,Neither target (closed at 24h),-0.4398,-0.626,-78.78
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,0.75,3.0,0.936,0.702,2.107,time,stop,Neither target (closed at 24h),-0.4398,-0.626,-78.78
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,1.0,1.0,0.936,0.936,0.936,target,stop,One hit target,-0.45,-0.481,-80.62
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,1.0,1.5,0.936,0.936,1.405,time,stop,Neither target (closed at 24h),-0.6739,-0.72,-120.72
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,1.0,2.0,0.936,0.936,1.873,time,stop,Neither target (closed at 24h),-0.6739,-0.72,-120.72
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR,1.0,3.0,0.936,0.936,2.809,time,stop,Neither target (closed at 24h),-0.6739,-0.72,-120.72
+2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR,0.1,3.0,0.906,0.091,0.272,stop,stop,Both stopped (whipsaw),-0.7813,-8.62,-139.03
+2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR,0.25,3.0,0.906,0.227,0.68,stop,stop,Both stopped (whipsaw),-1.0532,-4.648,-187.42
+2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR,0.5,3.0,0.906,0.453,1.36,time,stop,Neither target (closed at 24h),-0.1786,-0.394,-31.78
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.755,0.076,0.227,stop,target,One hit target,0.0911,1.206,18.9
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.755,0.189,0.566,stop,target,One hit target,0.3176,1.682,65.93
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.755,0.378,1.133,stop,time,Neither target (closed at 24h),-0.0358,-0.095,-7.42
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.755,0.189,0.189,stop,target,One hit target,-0.06,-0.318,-12.45
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.755,0.189,0.283,stop,target,One hit target,0.0344,0.182,7.14
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.755,0.189,0.378,stop,target,One hit target,0.1288,0.682,26.74
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.755,0.378,0.378,stop,target,One hit target,-0.06,-0.159,-12.45
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.755,0.378,0.566,stop,target,One hit target,0.1288,0.341,26.74
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.755,0.378,0.755,stop,time,Neither target (closed at 24h),-0.0358,-0.095,-7.42
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.755,0.566,0.566,stop,target,One hit target,-0.06,-0.106,-12.45
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.755,0.566,0.85,stop,time,Neither target (closed at 24h),-0.2246,-0.396,-46.61
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.755,0.566,1.133,stop,time,Neither target (closed at 24h),-0.2246,-0.396,-46.61
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.755,0.566,1.699,stop,time,Neither target (closed at 24h),-0.2246,-0.396,-46.61
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.755,0.755,0.755,time,time,Neither target (closed at 24h),-0.04,-0.053,-8.3
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.755,0.755,1.133,time,time,Neither target (closed at 24h),-0.04,-0.053,-8.3
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.755,0.755,1.511,time,time,Neither target (closed at 24h),-0.04,-0.053,-8.3
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.755,0.755,2.266,time,time,Neither target (closed at 24h),-0.04,-0.053,-8.3
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.599,0.06,0.18,stop,target,One hit target,0.0449,0.749,10.88
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.599,0.15,0.45,stop,target,One hit target,0.2247,1.499,54.5
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.599,0.3,0.899,stop,time,Neither target (closed at 24h),-0.2455,-0.819,-59.55
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.599,0.15,0.15,stop,target,One hit target,-0.075,-0.501,-18.19
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.599,0.15,0.225,stop,target,One hit target,-0.0001,-0.001,-0.02
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.599,0.15,0.3,stop,target,One hit target,0.0748,0.499,18.15
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.599,0.3,0.3,stop,target,One hit target,-0.075,-0.25,-18.19
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.599,0.3,0.45,stop,target,One hit target,0.0748,0.25,18.15
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.599,0.3,0.599,stop,target,One hit target,0.2247,0.75,54.5
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.599,0.45,0.45,stop,target,One hit target,-0.075,-0.167,-18.19
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.599,0.45,0.674,stop,time,Neither target (closed at 24h),-0.3954,-0.88,-95.89
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.599,0.45,0.899,stop,time,Neither target (closed at 24h),-0.3954,-0.88,-95.89
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.599,0.45,1.349,stop,time,Neither target (closed at 24h),-0.3954,-0.88,-95.89
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.599,0.599,0.599,stop,target,One hit target,-0.075,-0.125,-18.19
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.599,0.599,0.899,stop,time,Neither target (closed at 24h),-0.5452,-0.91,-132.24
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.599,0.599,1.199,stop,time,Neither target (closed at 24h),-0.5452,-0.91,-132.24
+2025-06-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.599,0.599,1.798,stop,time,Neither target (closed at 24h),-0.5452,-0.91,-132.24
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.915,0.092,0.275,stop,stop,Both stopped (whipsaw),-0.2631,-2.874,-47.36
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.915,0.229,0.687,stop,stop,Both stopped (whipsaw),-0.5377,-2.35,-96.8
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.915,0.458,1.373,time,stop,Neither target (closed at 24h),-0.0017,-0.004,-0.3
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.915,0.229,0.229,stop,target,One hit target,-0.06,-0.262,-10.8
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.915,0.229,0.343,stop,stop,Both stopped (whipsaw),-0.5377,-2.35,-96.8
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.915,0.229,0.458,stop,stop,Both stopped (whipsaw),-0.5377,-2.35,-96.8
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.915,0.458,0.458,target,stop,One hit target,-0.06,-0.131,-10.8
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.915,0.458,0.687,target,stop,One hit target,0.1689,0.369,30.4
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.915,0.458,0.915,time,stop,Neither target (closed at 24h),-0.0017,-0.004,-0.3
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.915,0.687,0.687,target,stop,One hit target,-0.06,-0.087,-10.8
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.915,0.687,1.03,time,stop,Neither target (closed at 24h),-0.2305,-0.336,-41.5
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.915,0.687,1.373,time,stop,Neither target (closed at 24h),-0.2305,-0.336,-41.5
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.915,0.687,2.06,time,stop,Neither target (closed at 24h),-0.2305,-0.336,-41.5
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.915,0.915,0.915,time,time,Neither target (closed at 24h),-0.04,-0.044,-7.2
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.915,0.915,1.373,time,time,Neither target (closed at 24h),-0.04,-0.044,-7.2
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.915,0.915,1.831,time,time,Neither target (closed at 24h),-0.04,-0.044,-7.2
+2025-06-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.915,0.915,2.746,time,time,Neither target (closed at 24h),-0.04,-0.044,-7.2
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.588,0.059,0.177,stop,stop,Both stopped (whipsaw),-0.1977,-3.359,-40.89
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.588,0.147,0.441,stop,target,One hit target,0.2342,1.592,48.45
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.588,0.294,0.883,stop,time,Neither target (closed at 24h),0.2398,0.815,49.6
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.588,0.147,0.147,stop,target,One hit target,-0.06,-0.408,-12.41
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.588,0.147,0.221,stop,target,One hit target,0.0136,0.092,2.8
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.588,0.147,0.294,stop,target,One hit target,0.0871,0.592,18.02
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.588,0.294,0.294,stop,target,One hit target,-0.06,-0.204,-12.41
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.588,0.294,0.441,stop,target,One hit target,0.0871,0.296,18.02
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.588,0.294,0.588,stop,target,One hit target,0.2342,0.796,48.45
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.588,0.441,0.441,stop,target,One hit target,-0.06,-0.136,-12.41
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.588,0.441,0.662,stop,target,One hit target,0.1607,0.364,33.23
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.588,0.441,0.883,stop,time,Neither target (closed at 24h),0.0927,0.21,19.17
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.588,0.441,1.324,stop,time,Neither target (closed at 24h),0.0927,0.21,19.17
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.588,0.588,0.588,stop,target,One hit target,-0.06,-0.102,-12.41
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.588,0.588,0.883,stop,time,Neither target (closed at 24h),-0.0545,-0.093,-11.26
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.588,0.588,1.177,stop,time,Neither target (closed at 24h),-0.0545,-0.093,-11.26
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.588,0.588,1.765,stop,time,Neither target (closed at 24h),-0.0545,-0.093,-11.26
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.623,0.062,0.187,stop,stop,Both stopped (whipsaw),-0.2245,-3.606,-53.74
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.623,0.156,0.467,stop,target,One hit target,0.2363,1.518,56.56
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.623,0.311,0.934,stop,time,Neither target (closed at 24h),0.3122,1.003,74.71
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.623,0.156,0.156,stop,target,One hit target,-0.075,-0.482,-17.95
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.623,0.156,0.233,stop,target,One hit target,0.0028,0.018,0.68
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.623,0.156,0.311,stop,target,One hit target,0.0807,0.518,19.3
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.623,0.311,0.311,stop,target,One hit target,-0.075,-0.241,-17.95
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.623,0.311,0.467,stop,target,One hit target,0.0807,0.259,19.3
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.623,0.311,0.623,stop,target,One hit target,0.2363,0.759,56.56
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.623,0.467,0.467,stop,target,One hit target,-0.075,-0.161,-17.95
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.623,0.467,0.7,stop,target,One hit target,0.1585,0.339,37.93
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.623,0.467,0.934,stop,time,Neither target (closed at 24h),0.1565,0.335,37.46
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.623,0.467,1.401,stop,time,Neither target (closed at 24h),0.1565,0.335,37.46
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.623,0.623,0.623,stop,target,One hit target,-0.075,-0.12,-17.95
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.623,0.623,0.934,stop,time,Neither target (closed at 24h),0.0008,0.001,0.2
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.623,0.623,1.245,stop,time,Neither target (closed at 24h),0.0008,0.001,0.2
+2025-07-30 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.623,0.623,1.868,stop,time,Neither target (closed at 24h),0.0008,0.001,0.2
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.761,0.076,0.228,stop,stop,Both stopped (whipsaw),-0.2322,-3.052,-41.79
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.761,0.19,0.571,target,stop,One hit target,0.3204,1.685,57.67
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.761,0.38,1.141,target,stop,One hit target,0.7008,1.842,126.14
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.761,0.19,0.19,target,stop,One hit target,-0.06,-0.315,-10.8
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.761,0.19,0.285,target,stop,One hit target,0.0351,0.185,6.32
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.761,0.19,0.38,target,stop,One hit target,0.1302,0.685,23.44
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.761,0.38,0.38,target,stop,One hit target,-0.06,-0.158,-10.8
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.761,0.38,0.571,target,stop,One hit target,0.1302,0.342,23.44
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.761,0.38,0.761,target,stop,One hit target,0.3204,0.842,57.67
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.761,0.571,0.571,target,stop,One hit target,-0.06,-0.105,-10.8
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.761,0.571,0.856,target,stop,One hit target,0.2253,0.395,40.55
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.761,0.571,1.141,target,stop,One hit target,0.5106,0.895,91.9
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.761,0.571,1.712,time,stop,Neither target (closed at 24h),0.6425,1.126,115.65
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.761,0.761,0.761,target,stop,One hit target,-0.06,-0.079,-10.8
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.761,0.761,1.141,target,stop,One hit target,0.3204,0.421,57.67
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.761,0.761,1.522,time,stop,Neither target (closed at 24h),0.4523,0.595,81.41
+2025-07-30 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.761,0.761,2.282,time,stop,Neither target (closed at 24h),0.4523,0.595,81.41
+2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR,0.1,3.0,0.911,0.091,0.273,stop,target,One hit target,-0.2679,-2.941,-48.55
+2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR,0.25,3.0,0.911,0.228,0.683,stop,stop,Both stopped (whipsaw),-1.0553,-4.635,-191.29
+2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR,0.5,3.0,0.911,0.455,1.366,stop,stop,Both stopped (whipsaw),-1.5107,-3.318,-273.82
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.1,3.0,0.502,0.05,0.151,stop,stop,Both stopped (whipsaw),-0.1804,-3.593,-37.31
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.25,3.0,0.502,0.126,0.377,stop,stop,Both stopped (whipsaw),-0.3311,-2.637,-68.46
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.5,3.0,0.502,0.251,0.753,stop,stop,Both stopped (whipsaw),-0.5822,-2.319,-120.39
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.25,1.0,0.502,0.126,0.126,stop,stop,Both stopped (whipsaw),-0.3311,-2.637,-68.46
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.25,1.5,0.502,0.126,0.188,stop,stop,Both stopped (whipsaw),-0.3311,-2.637,-68.46
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.25,2.0,0.502,0.126,0.251,stop,stop,Both stopped (whipsaw),-0.3311,-2.637,-68.46
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.5,1.0,0.502,0.251,0.251,stop,stop,Both stopped (whipsaw),-0.5822,-2.319,-120.39
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.5,1.5,0.502,0.251,0.377,stop,stop,Both stopped (whipsaw),-0.5822,-2.319,-120.39
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.5,2.0,0.502,0.251,0.502,stop,stop,Both stopped (whipsaw),-0.5822,-2.319,-120.39
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.75,1.0,0.502,0.377,0.377,stop,target,One hit target,-0.06,-0.159,-12.41
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.75,1.5,0.502,0.377,0.565,stop,target,One hit target,0.1283,0.341,26.54
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.75,2.0,0.502,0.377,0.753,stop,target,One hit target,0.3167,0.841,65.48
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,0.75,3.0,0.502,0.377,1.13,stop,time,Neither target (closed at 24h),0.3415,0.907,70.62
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,1.0,1.0,0.502,0.502,0.502,stop,target,One hit target,-0.06,-0.119,-12.41
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,1.0,1.5,0.502,0.502,0.753,stop,target,One hit target,0.1911,0.381,39.52
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,1.0,2.0,0.502,0.502,1.004,stop,target,One hit target,0.4422,0.881,91.44
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD,1.0,3.0,0.502,0.502,1.507,stop,time,Neither target (closed at 24h),0.216,0.43,44.66
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.1,3.0,0.468,0.047,0.14,stop,stop,Both stopped (whipsaw),-0.1936,-4.136,-46.13
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.25,3.0,0.468,0.117,0.351,stop,stop,Both stopped (whipsaw),-0.3341,-2.854,-79.6
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.5,3.0,0.468,0.234,0.702,stop,stop,Both stopped (whipsaw),-0.5682,-2.427,-135.37
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.25,1.0,0.468,0.117,0.117,stop,stop,Both stopped (whipsaw),-0.3341,-2.854,-79.6
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.25,1.5,0.468,0.117,0.176,stop,stop,Both stopped (whipsaw),-0.3341,-2.854,-79.6
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.25,2.0,0.468,0.117,0.234,stop,stop,Both stopped (whipsaw),-0.3341,-2.854,-79.6
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.5,1.0,0.468,0.234,0.234,stop,stop,Both stopped (whipsaw),-0.5682,-2.427,-135.37
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.5,1.5,0.468,0.234,0.351,stop,stop,Both stopped (whipsaw),-0.5682,-2.427,-135.37
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.5,2.0,0.468,0.234,0.468,stop,stop,Both stopped (whipsaw),-0.5682,-2.427,-135.37
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.75,1.0,0.468,0.351,0.351,stop,target,One hit target,-0.075,-0.214,-17.87
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.75,1.5,0.468,0.351,0.527,stop,target,One hit target,0.1006,0.286,23.96
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.75,2.0,0.468,0.351,0.702,stop,target,One hit target,0.2762,0.786,65.79
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,0.75,3.0,0.468,0.351,1.053,stop,target,One hit target,0.6273,1.786,149.45
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,1.0,1.0,0.468,0.468,0.468,stop,target,One hit target,-0.075,-0.16,-17.87
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,1.0,1.5,0.468,0.468,0.702,stop,target,One hit target,0.1591,0.34,37.9
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,1.0,2.0,0.468,0.468,0.936,stop,target,One hit target,0.3932,0.84,93.68
+2025-09-17 18:00,US Fed decision,Fed cut,GBP/USD,1.0,3.0,0.468,0.468,1.405,stop,time,Neither target (closed at 24h),0.4504,0.962,107.31
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.1,3.0,0.623,0.062,0.187,stop,stop,Both stopped (whipsaw),-0.2047,-3.283,-35.62
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.25,3.0,0.623,0.156,0.468,stop,stop,Both stopped (whipsaw),-0.3917,-2.513,-68.16
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.5,3.0,0.623,0.312,0.935,stop,stop,Both stopped (whipsaw),-0.7035,-2.257,-122.41
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.25,1.0,0.623,0.156,0.156,stop,stop,Both stopped (whipsaw),-0.3917,-2.513,-68.16
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.25,1.5,0.623,0.156,0.234,stop,stop,Both stopped (whipsaw),-0.3917,-2.513,-68.16
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.25,2.0,0.623,0.156,0.312,stop,stop,Both stopped (whipsaw),-0.3917,-2.513,-68.16
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.5,1.0,0.623,0.312,0.312,stop,stop,Both stopped (whipsaw),-0.7035,-2.257,-122.41
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.5,1.5,0.623,0.312,0.468,stop,stop,Both stopped (whipsaw),-0.7035,-2.257,-122.41
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.5,2.0,0.623,0.312,0.623,stop,stop,Both stopped (whipsaw),-0.7035,-2.257,-122.41
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.75,1.0,0.623,0.468,0.468,stop,target,One hit target,-0.06,-0.128,-10.44
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.75,1.5,0.623,0.468,0.701,stop,stop,Both stopped (whipsaw),-1.0152,-2.171,-176.65
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.75,2.0,0.623,0.468,0.935,stop,stop,Both stopped (whipsaw),-1.0152,-2.171,-176.65
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,0.75,3.0,0.623,0.468,1.403,stop,stop,Both stopped (whipsaw),-1.0152,-2.171,-176.65
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,1.0,1.0,0.623,0.623,0.623,target,stop,One hit target,-0.06,-0.096,-10.44
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,1.0,1.5,0.623,0.623,0.935,target,stop,One hit target,0.2517,0.404,43.8
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,1.0,2.0,0.623,0.623,1.247,target,stop,One hit target,0.5635,0.904,98.05
+2025-09-17 18:00,US Fed decision,Fed cut,USD/JPY,1.0,3.0,0.623,0.623,1.87,time,stop,Neither target (closed at 24h),0.4242,0.68,73.81
+2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR,0.1,3.0,0.897,0.09,0.269,stop,stop,Both stopped (whipsaw),-0.7793,-8.692,-135.58
+2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR,0.25,3.0,0.897,0.224,0.672,stop,stop,Both stopped (whipsaw),-1.0483,-4.677,-182.38
+2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR,0.5,3.0,0.897,0.448,1.345,stop,time,Neither target (closed at 24h),-0.9863,-2.2,-171.6
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.1,3.0,0.453,0.045,0.136,stop,stop,Both stopped (whipsaw),-0.1706,-3.765,-34.15
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.25,3.0,0.453,0.113,0.34,stop,target,One hit target,0.1666,1.47,33.34
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.5,3.0,0.453,0.227,0.68,stop,target,One hit target,0.3932,1.735,78.69
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.25,1.0,0.453,0.113,0.113,stop,target,One hit target,-0.06,-0.53,-12.01
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.25,1.5,0.453,0.113,0.17,stop,target,One hit target,-0.0034,-0.03,-0.67
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.25,2.0,0.453,0.113,0.227,stop,target,One hit target,0.0533,0.47,10.67
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.5,1.0,0.453,0.227,0.227,stop,target,One hit target,-0.06,-0.265,-12.01
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.5,1.5,0.453,0.227,0.34,stop,target,One hit target,0.0533,0.235,10.67
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.5,2.0,0.453,0.227,0.453,stop,target,One hit target,0.1666,0.735,33.34
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.75,1.0,0.453,0.34,0.34,stop,target,One hit target,-0.06,-0.177,-12.01
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.75,1.5,0.453,0.34,0.51,stop,target,One hit target,0.1099,0.323,22.0
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.75,2.0,0.453,0.34,0.68,stop,target,One hit target,0.2799,0.823,56.01
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,0.75,3.0,0.453,0.34,1.02,stop,time,Neither target (closed at 24h),0.2017,0.593,40.37
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,1.0,1.0,0.453,0.453,0.453,stop,target,One hit target,-0.06,-0.132,-12.01
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,1.0,1.5,0.453,0.453,0.68,stop,target,One hit target,0.1666,0.368,33.34
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,1.0,2.0,0.453,0.453,0.906,stop,time,Neither target (closed at 24h),0.0884,0.195,17.69
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD,1.0,3.0,0.453,0.453,1.36,stop,time,Neither target (closed at 24h),0.0884,0.195,17.69
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.1,3.0,0.536,0.054,0.161,stop,stop,Both stopped (whipsaw),-0.2072,-3.866,-47.06
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.25,3.0,0.536,0.134,0.402,stop,target,One hit target,0.1929,1.44,43.83
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.5,3.0,0.536,0.268,0.804,stop,time,Neither target (closed at 24h),0.0912,0.34,20.71
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.25,1.0,0.536,0.134,0.134,stop,target,One hit target,-0.075,-0.56,-17.04
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.25,1.5,0.536,0.134,0.201,stop,target,One hit target,-0.008,-0.06,-1.82
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.25,2.0,0.536,0.134,0.268,stop,target,One hit target,0.059,0.44,13.39
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.5,1.0,0.536,0.268,0.268,stop,target,One hit target,-0.075,-0.28,-17.04
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.5,1.5,0.536,0.268,0.402,stop,target,One hit target,0.059,0.22,13.39
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.5,2.0,0.536,0.268,0.536,stop,target,One hit target,0.1929,0.72,43.83
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.75,1.0,0.536,0.402,0.402,stop,target,One hit target,-0.075,-0.187,-17.04
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.75,1.5,0.536,0.402,0.603,stop,target,One hit target,0.1259,0.313,28.61
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.75,2.0,0.536,0.402,0.804,stop,time,Neither target (closed at 24h),-0.0428,-0.106,-9.72
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,0.75,3.0,0.536,0.402,1.206,stop,time,Neither target (closed at 24h),-0.0428,-0.106,-9.72
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,1.0,1.0,0.536,0.536,0.536,stop,target,One hit target,-0.075,-0.14,-17.04
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,1.0,1.5,0.536,0.536,0.804,stop,time,Neither target (closed at 24h),-0.1768,-0.33,-40.15
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,1.0,2.0,0.536,0.536,1.072,stop,time,Neither target (closed at 24h),-0.1768,-0.33,-40.15
+2025-10-29 18:00,US Fed decision,Fed cut,GBP/USD,1.0,3.0,0.536,0.536,1.608,stop,time,Neither target (closed at 24h),-0.1768,-0.33,-40.15
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.1,3.0,0.656,0.066,0.197,target,stop,One hit target,0.0713,1.086,12.26
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.25,3.0,0.656,0.164,0.492,target,stop,One hit target,0.2682,1.634,46.12
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.5,3.0,0.656,0.328,0.985,target,stop,One hit target,0.5964,1.817,102.56
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.25,1.0,0.656,0.164,0.164,target,stop,One hit target,-0.06,-0.366,-10.32
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.25,1.5,0.656,0.164,0.246,target,stop,One hit target,0.0221,0.134,3.79
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.25,2.0,0.656,0.164,0.328,target,stop,One hit target,0.1041,0.634,17.9
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.5,1.0,0.656,0.328,0.328,target,stop,One hit target,-0.06,-0.183,-10.32
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.5,1.5,0.656,0.328,0.492,target,stop,One hit target,0.1041,0.317,17.9
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.5,2.0,0.656,0.328,0.656,target,stop,One hit target,0.2682,0.817,46.12
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.75,1.0,0.656,0.492,0.492,target,stop,One hit target,-0.06,-0.122,-10.32
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.75,1.5,0.656,0.492,0.738,target,stop,One hit target,0.1862,0.378,32.01
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.75,2.0,0.656,0.492,0.985,target,stop,One hit target,0.4323,0.878,74.34
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,0.75,3.0,0.656,0.492,1.477,time,stop,Neither target (closed at 24h),0.6635,1.348,114.09
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,1.0,1.0,0.656,0.656,0.656,target,stop,One hit target,-0.06,-0.091,-10.32
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,1.0,1.5,0.656,0.656,0.985,target,stop,One hit target,0.2682,0.409,46.12
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,1.0,2.0,0.656,0.656,1.313,target,stop,One hit target,0.5964,0.909,102.56
+2025-10-29 18:00,US Fed decision,Fed cut,USD/JPY,1.0,3.0,0.656,0.656,1.969,time,stop,Neither target (closed at 24h),0.4994,0.761,85.87
+2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR,0.1,3.0,0.907,0.091,0.272,stop,stop,Both stopped (whipsaw),-0.7814,-8.614,-134.28
+2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR,0.25,3.0,0.907,0.227,0.68,stop,stop,Both stopped (whipsaw),-1.0536,-4.645,-181.05
+2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR,0.5,3.0,0.907,0.454,1.361,stop,stop,Both stopped (whipsaw),-1.5072,-3.323,-259.0
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.1,3.0,0.531,0.053,0.159,stop,stop,Both stopped (whipsaw),-0.2062,-3.883,-46.54
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.25,3.0,0.531,0.133,0.398,stop,stop,Both stopped (whipsaw),-0.3656,-2.753,-82.5
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.5,3.0,0.531,0.266,0.797,target,stop,One hit target,0.4561,1.718,102.94
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.25,1.0,0.531,0.133,0.133,stop,stop,Both stopped (whipsaw),-0.3656,-2.753,-82.5
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.25,1.5,0.531,0.133,0.199,stop,stop,Both stopped (whipsaw),-0.3656,-2.753,-82.5
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.25,2.0,0.531,0.133,0.266,stop,stop,Both stopped (whipsaw),-0.3656,-2.753,-82.5
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.5,1.0,0.531,0.266,0.266,target,stop,One hit target,-0.075,-0.282,-16.93
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.5,1.5,0.531,0.266,0.398,target,stop,One hit target,0.0578,0.218,13.04
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.5,2.0,0.531,0.266,0.531,target,stop,One hit target,0.1906,0.718,43.01
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.75,1.0,0.531,0.398,0.398,target,stop,One hit target,-0.075,-0.188,-16.93
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.75,1.5,0.531,0.398,0.598,target,stop,One hit target,0.1242,0.312,28.02
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.75,2.0,0.531,0.398,0.797,target,stop,One hit target,0.3234,0.812,72.97
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,0.75,3.0,0.531,0.398,1.195,time,stop,Neither target (closed at 24h),0.0612,0.154,13.82
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,1.0,1.0,0.531,0.531,0.531,target,stop,One hit target,-0.075,-0.141,-16.93
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,1.0,1.5,0.531,0.531,0.797,target,stop,One hit target,0.1906,0.359,43.01
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,1.0,2.0,0.531,0.531,1.062,time,stop,Neither target (closed at 24h),-0.0716,-0.135,-16.15
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD,1.0,3.0,0.531,0.531,1.593,time,stop,Neither target (closed at 24h),-0.0716,-0.135,-16.15
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.1,3.0,0.4,0.04,0.12,target,stop,One hit target,0.02,0.499,3.94
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.25,3.0,0.4,0.1,0.3,target,stop,One hit target,0.1399,1.4,27.64
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.5,3.0,0.4,0.2,0.6,target,stop,One hit target,0.3398,1.7,67.14
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.25,1.0,0.4,0.1,0.1,target,stop,One hit target,-0.06,-0.6,-11.86
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.25,1.5,0.4,0.1,0.15,target,stop,One hit target,-0.01,-0.1,-1.98
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.25,2.0,0.4,0.1,0.2,target,stop,One hit target,0.0399,0.4,7.89
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.5,1.0,0.4,0.2,0.2,target,stop,One hit target,-0.06,-0.3,-11.86
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.5,1.5,0.4,0.2,0.3,target,stop,One hit target,0.0399,0.2,7.89
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.5,2.0,0.4,0.2,0.4,target,stop,One hit target,0.1399,0.7,27.64
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.75,1.0,0.4,0.3,0.3,target,stop,One hit target,-0.06,-0.2,-11.86
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.75,1.5,0.4,0.3,0.45,target,stop,One hit target,0.0899,0.3,17.77
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.75,2.0,0.4,0.3,0.6,target,stop,One hit target,0.2398,0.8,47.39
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,0.75,3.0,0.4,0.3,0.9,target,stop,One hit target,0.5397,1.8,106.64
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,1.0,1.0,0.4,0.4,0.4,target,stop,One hit target,-0.06,-0.15,-11.86
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,1.0,1.5,0.4,0.4,0.6,target,stop,One hit target,0.1399,0.35,27.64
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,1.0,2.0,0.4,0.4,0.8,target,stop,One hit target,0.3398,0.85,67.14
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD,1.0,3.0,0.4,0.4,1.199,time,stop,Neither target (closed at 24h),0.4102,1.026,81.05
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.1,3.0,0.482,0.048,0.145,target,stop,One hit target,0.0213,0.443,4.82
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.25,3.0,0.482,0.12,0.361,target,stop,One hit target,0.1658,1.377,37.48
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.5,3.0,0.482,0.241,0.723,target,stop,One hit target,0.4067,1.689,91.91
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.25,1.0,0.482,0.12,0.12,target,stop,One hit target,-0.075,-0.623,-16.95
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.25,1.5,0.482,0.12,0.181,target,stop,One hit target,-0.0148,-0.123,-3.34
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.25,2.0,0.482,0.12,0.241,target,stop,One hit target,0.0454,0.377,10.27
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.5,1.0,0.482,0.241,0.241,target,stop,One hit target,-0.075,-0.311,-16.95
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.5,1.5,0.482,0.241,0.361,target,stop,One hit target,0.0454,0.189,10.27
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.5,2.0,0.482,0.241,0.482,target,stop,One hit target,0.1658,0.689,37.48
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.75,1.0,0.482,0.361,0.361,target,stop,One hit target,-0.075,-0.208,-16.95
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.75,1.5,0.482,0.361,0.542,target,stop,One hit target,0.1056,0.292,23.87
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.75,2.0,0.482,0.361,0.723,target,stop,One hit target,0.2863,0.792,64.7
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,0.75,3.0,0.482,0.361,1.084,time,stop,Neither target (closed at 24h),0.1889,0.523,42.68
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,1.0,1.0,0.482,0.482,0.482,target,stop,One hit target,-0.075,-0.156,-16.95
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,1.0,1.5,0.482,0.482,0.723,target,stop,One hit target,0.1658,0.344,37.48
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,1.0,2.0,0.482,0.482,0.963,time,stop,Neither target (closed at 24h),0.0684,0.142,15.47
+2025-12-10 19:00,US Fed decision,Fed cut,GBP/USD,1.0,3.0,0.482,0.482,1.445,time,stop,Neither target (closed at 24h),0.0684,0.142,15.47
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.1,3.0,0.659,0.066,0.198,stop,stop,Both stopped (whipsaw),-0.2118,-3.214,-35.9
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.25,3.0,0.659,0.165,0.494,stop,stop,Both stopped (whipsaw),-0.4095,-2.486,-69.42
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.5,3.0,0.659,0.329,0.988,stop,time,Neither target (closed at 24h),0.2641,0.802,44.77
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.25,1.0,0.659,0.165,0.165,stop,stop,Both stopped (whipsaw),-0.4095,-2.486,-69.42
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.25,1.5,0.659,0.165,0.247,stop,stop,Both stopped (whipsaw),-0.4095,-2.486,-69.42
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.25,2.0,0.659,0.165,0.329,stop,stop,Both stopped (whipsaw),-0.4095,-2.486,-69.42
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.5,1.0,0.659,0.329,0.329,stop,target,One hit target,-0.06,-0.182,-10.17
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.5,1.5,0.659,0.329,0.494,stop,target,One hit target,0.1047,0.318,17.76
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.5,2.0,0.659,0.329,0.659,stop,target,One hit target,0.2695,0.818,45.68
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.75,1.0,0.659,0.494,0.494,stop,target,One hit target,-0.06,-0.121,-10.17
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.75,1.5,0.659,0.494,0.741,stop,target,One hit target,0.1871,0.379,31.72
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.75,2.0,0.659,0.494,0.988,stop,time,Neither target (closed at 24h),0.0993,0.201,16.84
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,0.75,3.0,0.659,0.494,1.483,stop,time,Neither target (closed at 24h),0.0993,0.201,16.84
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,1.0,1.0,0.659,0.659,0.659,stop,target,One hit target,-0.06,-0.091,-10.17
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,1.0,1.5,0.659,0.659,0.988,stop,time,Neither target (closed at 24h),-0.0654,-0.099,-11.08
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,1.0,2.0,0.659,0.659,1.318,stop,time,Neither target (closed at 24h),-0.0654,-0.099,-11.08
+2025-12-10 19:00,US Fed decision,Fed cut,USD/JPY,1.0,3.0,0.659,0.659,1.977,stop,time,Neither target (closed at 24h),-0.0654,-0.099,-11.08
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.491,0.049,0.147,stop,stop,Both stopped (whipsaw),-0.1782,-3.629,-33.75
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.491,0.123,0.368,stop,stop,Both stopped (whipsaw),-0.3255,-2.652,-61.65
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.491,0.246,0.737,stop,stop,Both stopped (whipsaw),-0.5711,-2.326,-108.15
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.491,0.123,0.123,stop,target,One hit target,-0.06,-0.489,-11.36
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.491,0.123,0.184,stop,target,One hit target,0.0014,0.011,0.26
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.491,0.123,0.246,stop,target,One hit target,0.0628,0.511,11.89
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.491,0.246,0.246,stop,target,One hit target,-0.06,-0.244,-11.36
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.491,0.246,0.368,stop,stop,Both stopped (whipsaw),-0.5711,-2.326,-108.15
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.491,0.246,0.491,stop,stop,Both stopped (whipsaw),-0.5711,-2.326,-108.15
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.491,0.368,0.368,target,stop,One hit target,-0.06,-0.163,-11.36
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.491,0.368,0.552,time,stop,Neither target (closed at 24h),-0.213,-0.578,-40.33
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.491,0.368,0.737,time,stop,Neither target (closed at 24h),-0.213,-0.578,-40.33
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.491,0.368,1.105,time,stop,Neither target (closed at 24h),-0.213,-0.578,-40.33
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.491,0.491,0.491,target,stop,One hit target,-0.06,-0.122,-11.36
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.491,0.491,0.737,time,stop,Neither target (closed at 24h),-0.3357,-0.684,-63.58
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.491,0.491,0.982,time,stop,Neither target (closed at 24h),-0.3357,-0.684,-63.58
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.491,0.491,1.473,time,stop,Neither target (closed at 24h),-0.3357,-0.684,-63.58
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.526,0.053,0.158,stop,stop,Both stopped (whipsaw),-0.2051,-3.903,-44.87
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.526,0.131,0.394,stop,stop,Both stopped (whipsaw),-0.3628,-2.761,-79.35
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.526,0.263,0.788,stop,stop,Both stopped (whipsaw),-0.6256,-2.381,-136.84
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.526,0.131,0.131,stop,target,One hit target,-0.075,-0.571,-16.4
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.526,0.131,0.197,stop,target,One hit target,-0.0093,-0.071,-2.03
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.526,0.131,0.263,stop,stop,Both stopped (whipsaw),-0.3628,-2.761,-79.35
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.526,0.263,0.263,target,stop,One hit target,-0.075,-0.285,-16.4
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.526,0.263,0.394,target,stop,One hit target,0.0564,0.215,12.34
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.526,0.263,0.526,stop,stop,Both stopped (whipsaw),-0.6256,-2.381,-136.84
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.526,0.394,0.394,target,stop,One hit target,-0.075,-0.19,-16.4
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.526,0.394,0.591,time,stop,Neither target (closed at 24h),-0.3754,-0.952,-82.1
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.526,0.394,0.788,time,stop,Neither target (closed at 24h),-0.3754,-0.952,-82.1
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.526,0.394,1.183,time,stop,Neither target (closed at 24h),-0.3754,-0.952,-82.1
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.526,0.526,0.526,time,time,Neither target (closed at 24h),-0.05,-0.095,-10.94
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.526,0.526,0.788,time,time,Neither target (closed at 24h),-0.05,-0.095,-10.94
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.526,0.526,1.051,time,time,Neither target (closed at 24h),-0.05,-0.095,-10.94
+2026-01-28 19:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.526,0.526,1.577,time,time,Neither target (closed at 24h),-0.05,-0.095,-10.94
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.538,0.054,0.161,stop,stop,Both stopped (whipsaw),-0.1876,-3.487,-29.76
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.538,0.134,0.403,stop,stop,Both stopped (whipsaw),-0.3489,-2.595,-55.36
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.538,0.269,0.807,stop,time,Neither target (closed at 24h),0.1983,0.737,31.46
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.538,0.134,0.134,stop,stop,Both stopped (whipsaw),-0.3489,-2.595,-55.36
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.538,0.134,0.202,stop,stop,Both stopped (whipsaw),-0.3489,-2.595,-55.36
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.538,0.134,0.269,stop,stop,Both stopped (whipsaw),-0.3489,-2.595,-55.36
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.538,0.269,0.269,stop,target,One hit target,-0.06,-0.223,-9.52
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.538,0.269,0.403,stop,target,One hit target,0.0745,0.277,11.81
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.538,0.269,0.538,stop,target,One hit target,0.2089,0.777,33.15
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.538,0.403,0.403,stop,target,One hit target,-0.06,-0.149,-9.52
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.538,0.403,0.605,stop,target,One hit target,0.1417,0.351,22.48
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.538,0.403,0.807,stop,time,Neither target (closed at 24h),0.0639,0.158,10.13
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.538,0.403,1.21,stop,time,Neither target (closed at 24h),0.0639,0.158,10.13
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.538,0.538,0.538,stop,target,One hit target,-0.06,-0.112,-9.52
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.538,0.538,0.807,stop,time,Neither target (closed at 24h),-0.0706,-0.131,-11.2
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.538,0.538,1.076,stop,time,Neither target (closed at 24h),-0.0706,-0.131,-11.2
+2026-01-28 19:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.538,0.538,1.614,stop,time,Neither target (closed at 24h),-0.0706,-0.131,-11.2
+2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR,0.1,3.0,0.919,0.092,0.276,stop,target,One hit target,-0.2661,-2.895,-41.77
+2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR,0.25,3.0,0.919,0.23,0.69,stop,stop,Both stopped (whipsaw),-1.0597,-4.61,-166.33
+2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR,0.5,3.0,0.919,0.46,1.379,stop,stop,Both stopped (whipsaw),-1.5194,-3.305,-238.48
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.595,0.059,0.178,stop,target,One hit target,0.0589,0.991,11.49
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.595,0.149,0.446,stop,target,One hit target,0.2374,1.596,46.28
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.595,0.297,0.892,stop,stop,Both stopped (whipsaw),-0.6747,-2.269,-131.55
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.595,0.149,0.149,stop,target,One hit target,-0.06,-0.404,-11.7
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.595,0.149,0.223,stop,target,One hit target,0.0143,0.096,2.8
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.595,0.149,0.297,stop,target,One hit target,0.0887,0.596,17.29
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.595,0.297,0.297,stop,target,One hit target,-0.06,-0.202,-11.7
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.595,0.297,0.446,stop,target,One hit target,0.0887,0.298,17.29
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.595,0.297,0.595,stop,target,One hit target,0.2374,0.798,46.28
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.595,0.446,0.446,stop,target,One hit target,-0.06,-0.135,-11.7
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.595,0.446,0.669,stop,target,One hit target,0.163,0.365,31.78
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.595,0.446,0.892,stop,time,Neither target (closed at 24h),-0.8182,-1.835,-159.53
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.595,0.446,1.338,stop,time,Neither target (closed at 24h),-0.8182,-1.835,-159.53
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.595,0.595,0.595,stop,target,One hit target,-0.06,-0.101,-11.7
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.595,0.595,0.892,stop,time,Neither target (closed at 24h),-0.9669,-1.626,-188.52
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.595,0.595,1.189,stop,time,Neither target (closed at 24h),-0.9669,-1.626,-188.52
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.595,0.595,1.784,stop,time,Neither target (closed at 24h),-0.9669,-1.626,-188.52
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.623,0.062,0.187,stop,target,One hit target,0.0495,0.796,11.19
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.623,0.156,0.467,stop,target,One hit target,0.2363,1.518,53.36
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.623,0.311,0.934,stop,stop,Both stopped (whipsaw),-0.7227,-2.321,-163.18
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.623,0.156,0.156,stop,target,One hit target,-0.075,-0.482,-16.93
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.623,0.156,0.234,stop,target,One hit target,0.0028,0.018,0.64
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.623,0.156,0.311,stop,target,One hit target,0.0807,0.518,18.22
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.623,0.311,0.311,stop,target,One hit target,-0.075,-0.241,-16.93
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.623,0.311,0.467,stop,target,One hit target,0.0807,0.259,18.22
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.623,0.311,0.623,stop,target,One hit target,0.2363,0.759,53.36
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.623,0.467,0.467,stop,target,One hit target,-0.075,-0.161,-16.93
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.623,0.467,0.701,stop,target,One hit target,0.1585,0.339,35.79
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.623,0.467,0.934,stop,time,Neither target (closed at 24h),-0.9492,-2.033,-214.32
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.623,0.467,1.401,stop,time,Neither target (closed at 24h),-0.9492,-2.033,-214.32
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.623,0.623,0.623,stop,target,One hit target,-0.075,-0.12,-16.93
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.623,0.623,0.934,stop,time,Neither target (closed at 24h),-1.1049,-1.774,-249.47
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.623,0.623,1.245,stop,time,Neither target (closed at 24h),-1.1049,-1.774,-249.47
+2026-03-18 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.623,0.623,1.868,stop,time,Neither target (closed at 24h),-1.1049,-1.774,-249.47
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.594,0.059,0.178,stop,stop,Both stopped (whipsaw),-0.1988,-3.347,-33.62
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.594,0.148,0.445,stop,stop,Both stopped (whipsaw),-0.3769,-2.539,-63.75
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.594,0.297,0.891,stop,stop,Both stopped (whipsaw),-0.6738,-2.269,-113.97
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.594,0.148,0.148,target,stop,One hit target,-0.06,-0.404,-10.15
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.594,0.148,0.223,target,stop,One hit target,0.0142,0.096,2.41
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.594,0.148,0.297,target,stop,One hit target,0.0885,0.596,14.96
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.594,0.297,0.297,target,stop,One hit target,-0.06,-0.202,-10.15
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.594,0.297,0.445,stop,stop,Both stopped (whipsaw),-0.6738,-2.269,-113.97
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.594,0.297,0.594,stop,stop,Both stopped (whipsaw),-0.6738,-2.269,-113.97
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.594,0.445,0.445,stop,target,One hit target,-0.06,-0.135,-10.15
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.594,0.445,0.668,stop,target,One hit target,0.1627,0.365,27.52
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.594,0.445,0.891,stop,target,One hit target,0.3854,0.865,65.18
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.594,0.445,1.336,stop,time,Neither target (closed at 24h),0.4853,1.09,82.08
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.594,0.594,0.594,stop,target,One hit target,-0.06,-0.101,-10.15
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.594,0.594,0.891,stop,target,One hit target,0.2369,0.399,40.07
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.594,0.594,1.188,stop,time,Neither target (closed at 24h),0.3368,0.567,56.97
+2026-03-18 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.594,0.594,1.781,stop,time,Neither target (closed at 24h),0.3368,0.567,56.97
+2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR,0.1,3.0,2.045,0.205,0.614,stop,stop,Both stopped (whipsaw),-1.0091,-4.934,-171.41
+2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR,0.25,3.0,2.045,0.511,1.534,stop,stop,Both stopped (whipsaw),-1.6226,-3.173,-275.64
+2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR,0.5,3.0,2.045,1.023,3.068,time,time,Neither target (closed at 24h),-0.3,-0.293,-50.96
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.447,0.045,0.134,stop,stop,Both stopped (whipsaw),-0.1694,-3.79,-33.31
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.447,0.112,0.335,stop,stop,Both stopped (whipsaw),-0.3034,-2.716,-59.68
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.447,0.223,0.67,time,stop,Neither target (closed at 24h),0.1271,0.569,25.0
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.447,0.112,0.112,stop,target,One hit target,-0.06,-0.537,-11.8
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.447,0.112,0.168,stop,target,One hit target,-0.0041,-0.037,-0.81
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.447,0.112,0.223,stop,stop,Both stopped (whipsaw),-0.3034,-2.716,-59.68
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.447,0.223,0.223,target,stop,One hit target,-0.06,-0.269,-11.8
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.447,0.223,0.335,target,stop,One hit target,0.0517,0.231,10.17
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.447,0.223,0.447,target,stop,One hit target,0.1634,0.731,32.14
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.447,0.335,0.335,target,stop,One hit target,-0.06,-0.179,-11.8
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.447,0.335,0.503,time,stop,Neither target (closed at 24h),0.0154,0.046,3.02
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.447,0.335,0.67,time,stop,Neither target (closed at 24h),0.0154,0.046,3.02
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.447,0.335,1.005,time,stop,Neither target (closed at 24h),0.0154,0.046,3.02
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.447,0.447,0.447,target,stop,One hit target,-0.06,-0.134,-11.8
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.447,0.447,0.67,time,stop,Neither target (closed at 24h),-0.0963,-0.216,-18.95
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.447,0.447,0.894,time,stop,Neither target (closed at 24h),-0.0963,-0.216,-18.95
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.447,0.447,1.341,time,stop,Neither target (closed at 24h),-0.0963,-0.216,-18.95
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.506,0.051,0.152,stop,stop,Both stopped (whipsaw),-0.2012,-3.976,-45.67
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.506,0.127,0.38,stop,stop,Both stopped (whipsaw),-0.3531,-2.79,-80.13
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.506,0.253,0.759,target,stop,One hit target,0.4312,1.704,97.85
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.506,0.127,0.127,stop,target,One hit target,-0.075,-0.593,-17.02
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.506,0.127,0.19,stop,stop,Both stopped (whipsaw),-0.3531,-2.79,-80.13
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.506,0.127,0.253,stop,stop,Both stopped (whipsaw),-0.3531,-2.79,-80.13
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.506,0.253,0.253,target,stop,One hit target,-0.075,-0.296,-17.02
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.506,0.253,0.38,target,stop,One hit target,0.0515,0.204,11.7
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.506,0.253,0.506,target,stop,One hit target,0.1781,0.704,40.41
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.506,0.38,0.38,target,stop,One hit target,-0.075,-0.198,-17.02
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.506,0.38,0.569,target,stop,One hit target,0.1148,0.302,26.05
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.506,0.38,0.759,target,stop,One hit target,0.3046,0.802,69.13
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.506,0.38,1.139,time,stop,Neither target (closed at 24h),0.3168,0.835,71.9
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.506,0.506,0.506,target,stop,One hit target,-0.075,-0.148,-17.02
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.506,0.506,0.759,target,stop,One hit target,0.1781,0.352,40.41
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.506,0.506,1.012,time,stop,Neither target (closed at 24h),0.1903,0.376,43.18
+2026-04-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.506,0.506,1.518,time,stop,Neither target (closed at 24h),0.1903,0.376,43.18
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.415,0.042,0.125,stop,stop,Both stopped (whipsaw),-0.163,-3.928,-27.45
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.415,0.104,0.311,target,stop,One hit target,0.1475,1.422,24.84
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.415,0.208,0.623,stop,stop,Both stopped (whipsaw),-0.495,-2.386,-83.35
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.415,0.104,0.104,target,stop,One hit target,-0.06,-0.578,-10.1
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.415,0.104,0.156,target,stop,One hit target,-0.0081,-0.078,-1.37
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.415,0.104,0.208,target,stop,One hit target,0.0438,0.422,7.37
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.415,0.208,0.208,target,stop,One hit target,-0.06,-0.289,-10.1
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.415,0.208,0.311,target,stop,One hit target,0.0438,0.211,7.37
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.415,0.208,0.415,stop,stop,Both stopped (whipsaw),-0.495,-2.386,-83.35
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.415,0.311,0.311,target,stop,One hit target,-0.06,-0.193,-10.1
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.415,0.311,0.467,stop,stop,Both stopped (whipsaw),-0.7025,-2.257,-118.29
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.415,0.311,0.623,stop,stop,Both stopped (whipsaw),-0.7025,-2.257,-118.29
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.415,0.311,0.934,stop,stop,Both stopped (whipsaw),-0.7025,-2.257,-118.29
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.415,0.415,0.415,stop,target,One hit target,-0.06,-0.145,-10.1
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.415,0.415,0.623,stop,target,One hit target,0.1475,0.355,24.84
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.415,0.415,0.83,stop,target,One hit target,0.355,0.855,59.78
+2026-04-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.415,0.415,1.245,stop,target,One hit target,0.77,1.855,129.66
+2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR,0.1,3.0,0.934,0.093,0.28,stop,stop,Both stopped (whipsaw),-0.7868,-8.425,-128.35
+2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR,0.25,3.0,0.934,0.233,0.7,stop,stop,Both stopped (whipsaw),-1.067,-4.57,-174.06
+2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR,0.5,3.0,0.934,0.467,1.401,stop,time,Neither target (closed at 24h),-0.4126,-0.884,-67.31
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.384,0.038,0.115,stop,stop,Both stopped (whipsaw),-0.1567,-4.085,-29.54
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.384,0.096,0.288,stop,stop,Both stopped (whipsaw),-0.2718,-2.834,-51.23
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.384,0.192,0.575,stop,target,One hit target,0.3236,1.687,60.99
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.384,0.096,0.096,stop,stop,Both stopped (whipsaw),-0.2718,-2.834,-51.23
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.384,0.096,0.144,stop,stop,Both stopped (whipsaw),-0.2718,-2.834,-51.23
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.384,0.096,0.192,stop,stop,Both stopped (whipsaw),-0.2718,-2.834,-51.23
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.384,0.192,0.192,stop,target,One hit target,-0.06,-0.313,-11.31
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.384,0.192,0.288,stop,target,One hit target,0.0359,0.187,6.77
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.384,0.192,0.384,stop,target,One hit target,0.1318,0.687,24.84
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.384,0.288,0.288,stop,target,One hit target,-0.06,-0.209,-11.31
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.384,0.288,0.432,stop,target,One hit target,0.0839,0.291,15.8
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.384,0.288,0.575,stop,target,One hit target,0.2277,0.791,42.92
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.384,0.288,0.863,stop,time,Neither target (closed at 24h),0.409,1.421,77.08
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.384,0.384,0.384,stop,target,One hit target,-0.06,-0.156,-11.31
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.384,0.384,0.575,stop,target,One hit target,0.1318,0.344,24.84
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.384,0.384,0.767,stop,target,One hit target,0.3236,0.844,60.99
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.384,0.384,1.151,stop,time,Neither target (closed at 24h),0.3131,0.816,59.0
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.423,0.042,0.127,stop,stop,Both stopped (whipsaw),-0.1846,-4.363,-40.24
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.423,0.106,0.317,stop,target,One hit target,0.1366,1.291,29.76
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.423,0.212,0.635,stop,target,One hit target,0.3482,1.646,75.87
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.423,0.106,0.106,stop,target,One hit target,-0.075,-0.709,-16.34
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.423,0.106,0.159,stop,target,One hit target,-0.0221,-0.209,-4.82
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.423,0.106,0.212,stop,target,One hit target,0.0308,0.291,6.71
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.423,0.212,0.212,stop,target,One hit target,-0.075,-0.354,-16.34
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.423,0.212,0.317,stop,target,One hit target,0.0308,0.146,6.71
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.423,0.212,0.423,stop,target,One hit target,0.1366,0.646,29.76
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.423,0.317,0.317,stop,target,One hit target,-0.075,-0.236,-16.34
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.423,0.317,0.476,stop,target,One hit target,0.0837,0.264,18.24
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.423,0.317,0.635,stop,target,One hit target,0.2424,0.764,52.82
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.423,0.317,0.952,stop,target,One hit target,0.5597,1.764,121.98
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.423,0.423,0.423,stop,target,One hit target,-0.075,-0.177,-16.34
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.423,0.423,0.635,stop,target,One hit target,0.1366,0.323,29.76
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.423,0.423,0.846,stop,target,One hit target,0.3482,0.823,75.87
+2026-06-17 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.423,0.423,1.269,stop,time,Neither target (closed at 24h),0.6194,1.464,134.99
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.264,0.026,0.079,target,stop,One hit target,-0.0072,-0.273,-1.18
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.264,0.066,0.198,target,stop,One hit target,0.072,1.091,11.74
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.264,0.132,0.396,target,stop,One hit target,0.2039,1.545,33.27
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.264,0.066,0.066,target,stop,One hit target,-0.06,-0.909,-9.79
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.264,0.066,0.099,target,stop,One hit target,-0.027,-0.409,-4.41
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.264,0.066,0.132,target,stop,One hit target,0.006,0.091,0.98
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.264,0.132,0.132,target,stop,One hit target,-0.06,-0.455,-9.79
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.264,0.132,0.198,target,stop,One hit target,0.006,0.045,0.98
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.264,0.132,0.264,target,stop,One hit target,0.072,0.545,11.74
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.264,0.198,0.198,target,stop,One hit target,-0.06,-0.303,-9.79
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.264,0.198,0.297,target,stop,One hit target,0.039,0.197,6.36
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.264,0.198,0.396,target,stop,One hit target,0.138,0.697,22.51
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.264,0.198,0.594,target,stop,One hit target,0.3359,1.697,54.8
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.264,0.264,0.264,target,stop,One hit target,-0.06,-0.227,-9.79
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.264,0.264,0.396,target,stop,One hit target,0.072,0.273,11.74
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.264,0.264,0.528,target,stop,One hit target,0.2039,0.773,33.27
+2026-06-17 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.264,0.264,0.792,target,stop,One hit target,0.4679,1.773,76.33
+2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR,0.1,3.0,0.777,0.078,0.233,target,stop,One hit target,-0.2945,-3.789,-49.37
+2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR,0.25,3.0,0.777,0.194,0.583,target,stop,One hit target,-0.0614,-0.316,-10.28
+2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR,0.5,3.0,0.777,0.389,1.166,target,stop,One hit target,0.3273,0.842,54.86
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.342,0.034,0.103,stop,stop,Both stopped (whipsaw),-0.1485,-4.337,-28.13
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.342,0.086,0.257,target,stop,One hit target,0.1112,1.299,21.06
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.342,0.171,0.513,target,stop,One hit target,0.2823,1.649,53.49
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.342,0.086,0.086,target,stop,One hit target,-0.06,-0.701,-11.37
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.342,0.086,0.128,target,stop,One hit target,-0.0172,-0.201,-3.26
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.342,0.086,0.171,target,stop,One hit target,0.0256,0.299,4.85
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.342,0.171,0.171,target,stop,One hit target,-0.06,-0.351,-11.37
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.342,0.171,0.257,target,stop,One hit target,0.0256,0.149,4.85
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.342,0.171,0.342,target,stop,One hit target,0.1112,0.649,21.06
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.342,0.257,0.257,target,stop,One hit target,-0.06,-0.234,-11.37
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.342,0.257,0.385,target,stop,One hit target,0.0684,0.266,12.95
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.342,0.257,0.513,target,stop,One hit target,0.1967,0.766,37.28
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.342,0.257,0.77,target,stop,One hit target,0.4535,1.766,85.92
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.342,0.342,0.342,target,stop,One hit target,-0.06,-0.175,-11.37
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.342,0.342,0.513,target,stop,One hit target,0.1112,0.325,21.06
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.342,0.342,0.685,target,stop,One hit target,0.2823,0.825,53.49
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.342,0.342,1.027,target,stop,One hit target,0.6247,1.825,118.35
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.374,0.037,0.112,stop,stop,Both stopped (whipsaw),-0.1748,-4.674,-38.65
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.374,0.093,0.28,target,stop,One hit target,0.112,1.198,24.76
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.374,0.187,0.561,target,stop,One hit target,0.2989,1.599,66.1
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.374,0.093,0.093,target,stop,One hit target,-0.075,-0.802,-16.58
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.374,0.093,0.14,target,stop,One hit target,-0.0283,-0.302,-6.25
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.374,0.093,0.187,target,stop,One hit target,0.0185,0.198,4.09
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.374,0.187,0.187,target,stop,One hit target,-0.075,-0.401,-16.58
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.374,0.187,0.28,target,stop,One hit target,0.0185,0.099,4.09
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.374,0.187,0.374,target,stop,One hit target,0.112,0.599,24.76
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.374,0.28,0.28,target,stop,One hit target,-0.075,-0.267,-16.58
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.374,0.28,0.421,target,stop,One hit target,0.0652,0.233,14.42
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.374,0.28,0.561,target,stop,One hit target,0.2055,0.733,45.43
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.374,0.28,0.841,target,stop,One hit target,0.4859,1.733,107.44
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.374,0.374,0.374,target,stop,One hit target,-0.075,-0.201,-16.58
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.374,0.374,0.561,target,stop,One hit target,0.112,0.299,24.76
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.374,0.374,0.748,target,stop,One hit target,0.2989,0.799,66.1
+2026-07-29 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.374,0.374,1.122,time,stop,Neither target (closed at 24h),0.6517,1.743,144.09
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.333,0.033,0.1,stop,stop,Both stopped (whipsaw),-0.1466,-4.402,-24.33
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.333,0.083,0.25,stop,target,One hit target,0.1065,1.279,17.68
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.333,0.167,0.5,stop,target,One hit target,0.2731,1.64,45.31
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.333,0.083,0.083,stop,target,One hit target,-0.06,-0.721,-9.96
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.333,0.083,0.125,stop,target,One hit target,-0.0184,-0.221,-3.05
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.333,0.083,0.167,stop,target,One hit target,0.0233,0.279,3.86
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.333,0.167,0.167,stop,target,One hit target,-0.06,-0.36,-9.96
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.333,0.167,0.25,stop,target,One hit target,0.0233,0.14,3.86
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.333,0.167,0.333,stop,target,One hit target,0.1065,0.64,17.68
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.333,0.25,0.25,stop,target,One hit target,-0.06,-0.24,-9.96
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.333,0.25,0.375,stop,target,One hit target,0.0649,0.26,10.77
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.333,0.25,0.5,stop,target,One hit target,0.1898,0.76,31.5
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.333,0.25,0.749,stop,target,One hit target,0.4396,1.76,72.95
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.333,0.333,0.333,stop,target,One hit target,-0.06,-0.18,-9.96
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.333,0.333,0.5,stop,target,One hit target,0.1065,0.32,17.68
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.333,0.333,0.666,stop,target,One hit target,0.2731,0.82,45.31
+2026-07-29 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.333,0.333,0.999,stop,target,One hit target,0.6061,1.82,100.58
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.1,3.0,0.303,0.03,0.091,stop,target,One hit target,0.0007,0.022,0.13
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.25,3.0,0.303,0.076,0.228,stop,target,One hit target,0.0917,1.209,17.32
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.5,3.0,0.303,0.152,0.455,stop,target,One hit target,0.2433,1.604,45.98
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.25,1.0,0.303,0.076,0.076,stop,target,One hit target,-0.06,-0.791,-11.34
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.25,1.5,0.303,0.076,0.114,stop,target,One hit target,-0.0221,-0.291,-4.17
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.25,2.0,0.303,0.076,0.152,stop,target,One hit target,0.0158,0.209,2.99
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.5,1.0,0.303,0.152,0.152,stop,target,One hit target,-0.06,-0.396,-11.34
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.5,1.5,0.303,0.152,0.228,stop,target,One hit target,0.0158,0.104,2.99
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.5,2.0,0.303,0.152,0.303,stop,target,One hit target,0.0917,0.604,17.32
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.75,1.0,0.303,0.228,0.228,stop,target,One hit target,-0.06,-0.264,-11.34
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.75,1.5,0.303,0.228,0.341,stop,target,One hit target,0.0538,0.236,10.16
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.75,2.0,0.303,0.228,0.455,stop,target,One hit target,0.1675,0.736,31.65
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,0.75,3.0,0.303,0.228,0.683,stop,time,Neither target (closed at 24h),0.1717,0.755,32.44
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,1.0,1.0,0.303,0.303,0.303,stop,target,One hit target,-0.06,-0.198,-11.34
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,1.0,1.5,0.303,0.303,0.455,stop,target,One hit target,0.0917,0.302,17.32
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,1.0,2.0,0.303,0.303,0.607,stop,target,One hit target,0.2433,0.802,45.98
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD,1.0,3.0,0.303,0.303,0.91,stop,time,Neither target (closed at 24h),0.0959,0.316,18.11
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.1,3.0,0.305,0.031,0.092,stop,target,One hit target,-0.0139,-0.457,-3.07
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.25,3.0,0.305,0.076,0.229,stop,target,One hit target,0.0776,1.017,17.1
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.5,3.0,0.305,0.153,0.458,stop,target,One hit target,0.2303,1.509,50.71
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.25,1.0,0.305,0.076,0.076,stop,target,One hit target,-0.075,-0.983,-16.51
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.25,1.5,0.305,0.076,0.114,stop,target,One hit target,-0.0368,-0.483,-8.11
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.25,2.0,0.305,0.076,0.153,stop,target,One hit target,0.0013,0.017,0.29
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.5,1.0,0.305,0.153,0.153,stop,target,One hit target,-0.075,-0.491,-16.51
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.5,1.5,0.305,0.153,0.229,stop,target,One hit target,0.0013,0.009,0.29
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.5,2.0,0.305,0.153,0.305,stop,target,One hit target,0.0776,0.509,17.1
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.75,1.0,0.305,0.229,0.229,stop,target,One hit target,-0.075,-0.328,-16.51
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.75,1.5,0.305,0.229,0.343,stop,target,One hit target,0.0395,0.172,8.69
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.75,2.0,0.305,0.229,0.458,stop,target,One hit target,0.154,0.672,33.9
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,0.75,3.0,0.305,0.229,0.687,stop,target,One hit target,0.3829,1.672,84.32
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,1.0,1.0,0.305,0.305,0.305,stop,target,One hit target,-0.075,-0.246,-16.51
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,1.0,1.5,0.305,0.305,0.458,stop,target,One hit target,0.0776,0.254,17.1
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,1.0,2.0,0.305,0.305,0.611,stop,target,One hit target,0.2303,0.754,50.71
+2026-09-16 18:00,US Fed decision,Fed hike,GBP/USD,1.0,3.0,0.305,0.305,0.916,stop,time,Neither target (closed at 24h),0.2978,0.976,65.58
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.1,3.0,0.578,0.058,0.173,stop,stop,Both stopped (whipsaw),-0.1955,-3.385,-32.04
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.25,3.0,0.578,0.144,0.433,target,stop,One hit target,0.2289,1.585,37.5
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.5,3.0,0.578,0.289,0.867,target,stop,One hit target,0.5177,1.792,84.82
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.25,1.0,0.578,0.144,0.144,target,stop,One hit target,-0.06,-0.415,-9.83
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.25,1.5,0.578,0.144,0.217,target,stop,One hit target,0.0122,0.085,2.0
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.25,2.0,0.578,0.144,0.289,target,stop,One hit target,0.0844,0.585,13.83
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.5,1.0,0.578,0.289,0.289,target,stop,One hit target,-0.06,-0.208,-9.83
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.5,1.5,0.578,0.289,0.433,target,stop,One hit target,0.0844,0.292,13.83
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.5,2.0,0.578,0.289,0.578,target,stop,One hit target,0.2289,0.792,37.5
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.75,1.0,0.578,0.433,0.433,target,stop,One hit target,-0.06,-0.138,-9.83
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.75,1.5,0.578,0.433,0.65,target,stop,One hit target,0.1567,0.362,25.67
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.75,2.0,0.578,0.433,0.867,target,stop,One hit target,0.3733,0.862,61.16
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,0.75,3.0,0.578,0.433,1.3,time,stop,Neither target (closed at 24h),0.1337,0.309,21.9
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,1.0,1.0,0.578,0.578,0.578,target,stop,One hit target,-0.06,-0.104,-9.83
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,1.0,1.5,0.578,0.578,0.867,target,stop,One hit target,0.2289,0.396,37.5
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,1.0,2.0,0.578,0.578,1.155,time,stop,Neither target (closed at 24h),-0.0107,-0.019,-1.76
+2026-09-16 18:00,US Fed decision,Fed hike,USD/JPY,1.0,3.0,0.578,0.578,1.733,time,stop,Neither target (closed at 24h),-0.0107,-0.019,-1.76
+2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR,0.1,3.0,0.782,0.078,0.235,stop,stop,Both stopped (whipsaw),-0.7565,-9.67,-123.91
+2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR,0.25,3.0,0.782,0.196,0.587,stop,stop,Both stopped (whipsaw),-0.9911,-5.068,-162.35
+2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR,0.5,3.0,0.782,0.391,1.173,time,stop,Neither target (closed at 24h),-0.5206,-1.331,-85.28
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.1,3.0,0.482,0.048,0.145,stop,stop,Both stopped (whipsaw),-0.1763,-3.661,-32.67
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.25,3.0,0.482,0.12,0.361,stop,stop,Both stopped (whipsaw),-0.3208,-2.664,-59.45
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.5,3.0,0.482,0.241,0.723,stop,stop,Both stopped (whipsaw),-0.5617,-2.332,-104.07
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.0,0.482,0.12,0.12,target,stop,One hit target,-0.06,-0.498,-11.12
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.25,1.5,0.482,0.12,0.181,target,stop,One hit target,0.0002,0.002,0.04
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.25,2.0,0.482,0.12,0.241,target,stop,One hit target,0.0604,0.502,11.2
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.0,0.482,0.241,0.241,target,stop,One hit target,-0.06,-0.249,-11.12
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.5,1.5,0.482,0.241,0.361,stop,stop,Both stopped (whipsaw),-0.5617,-2.332,-104.07
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.5,2.0,0.482,0.241,0.482,stop,stop,Both stopped (whipsaw),-0.5617,-2.332,-104.07
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.0,0.482,0.361,0.361,time,time,Neither target (closed at 24h),-0.04,-0.111,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.75,1.5,0.482,0.361,0.542,time,time,Neither target (closed at 24h),-0.04,-0.111,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.75,2.0,0.482,0.361,0.723,time,time,Neither target (closed at 24h),-0.04,-0.111,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,0.75,3.0,0.482,0.361,1.084,time,time,Neither target (closed at 24h),-0.04,-0.111,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.0,0.482,0.482,0.482,time,time,Neither target (closed at 24h),-0.04,-0.083,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,1.0,1.5,0.482,0.482,0.723,time,time,Neither target (closed at 24h),-0.04,-0.083,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,1.0,2.0,0.482,0.482,0.963,time,time,Neither target (closed at 24h),-0.04,-0.083,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD,1.0,3.0,0.482,0.482,1.445,time,time,Neither target (closed at 24h),-0.04,-0.083,-7.41
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.1,3.0,0.416,0.042,0.125,stop,stop,Both stopped (whipsaw),-0.1833,-4.401,-40.55
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.25,3.0,0.416,0.104,0.312,target,stop,One hit target,0.1332,1.28,29.47
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.5,3.0,0.416,0.208,0.625,time,stop,Neither target (closed at 24h),0.2034,0.977,45.01
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.0,0.416,0.104,0.104,target,stop,One hit target,-0.075,-0.72,-16.59
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.25,1.5,0.416,0.104,0.156,target,stop,One hit target,-0.0229,-0.22,-5.08
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.25,2.0,0.416,0.104,0.208,target,stop,One hit target,0.0291,0.28,6.44
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.0,0.416,0.208,0.208,target,stop,One hit target,-0.075,-0.36,-16.59
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.5,1.5,0.416,0.208,0.312,target,stop,One hit target,0.0291,0.14,6.44
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.5,2.0,0.416,0.208,0.416,target,stop,One hit target,0.1332,0.64,29.47
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.0,0.416,0.312,0.312,target,stop,One hit target,-0.075,-0.24,-16.59
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.75,1.5,0.416,0.312,0.468,target,stop,One hit target,0.0812,0.26,17.95
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.75,2.0,0.416,0.312,0.625,time,stop,Neither target (closed at 24h),0.0993,0.318,21.97
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,0.75,3.0,0.416,0.312,0.937,time,stop,Neither target (closed at 24h),0.0993,0.318,21.97
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.0,0.416,0.416,0.416,target,stop,One hit target,-0.075,-0.18,-16.59
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,1.0,1.5,0.416,0.416,0.625,time,stop,Neither target (closed at 24h),-0.0048,-0.011,-1.06
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,1.0,2.0,0.416,0.416,0.833,time,stop,Neither target (closed at 24h),-0.0048,-0.011,-1.06
+2026-10-28 18:00,US Fed decision,Fed hold,GBP/USD,1.0,3.0,0.416,0.416,1.249,time,stop,Neither target (closed at 24h),-0.0048,-0.011,-1.06
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.1,3.0,0.437,0.044,0.131,stop,stop,Both stopped (whipsaw),-0.1675,-3.829,-27.85
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.25,3.0,0.437,0.109,0.328,stop,target,One hit target,0.1587,1.451,26.39
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.5,3.0,0.437,0.219,0.656,stop,time,Neither target (closed at 24h),-0.0682,-0.312,-11.35
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.0,0.437,0.109,0.109,stop,target,One hit target,-0.06,-0.549,-9.98
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.25,1.5,0.437,0.109,0.164,stop,target,One hit target,-0.0053,-0.049,-0.89
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.25,2.0,0.437,0.109,0.219,stop,target,One hit target,0.0493,0.451,8.21
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.0,0.437,0.219,0.219,stop,target,One hit target,-0.06,-0.274,-9.98
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.5,1.5,0.437,0.219,0.328,stop,target,One hit target,0.0493,0.226,8.21
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.5,2.0,0.437,0.219,0.437,stop,time,Neither target (closed at 24h),-0.0682,-0.312,-11.35
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.0,0.437,0.328,0.328,stop,target,One hit target,-0.06,-0.183,-9.98
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.75,1.5,0.437,0.328,0.492,stop,time,Neither target (closed at 24h),-0.1776,-0.541,-29.53
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.75,2.0,0.437,0.328,0.656,stop,time,Neither target (closed at 24h),-0.1776,-0.541,-29.53
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,0.75,3.0,0.437,0.328,0.984,stop,time,Neither target (closed at 24h),-0.1776,-0.541,-29.53
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.0,0.437,0.437,0.437,time,time,Neither target (closed at 24h),-0.04,-0.091,-6.65
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,1.0,1.5,0.437,0.437,0.656,time,time,Neither target (closed at 24h),-0.04,-0.091,-6.65
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,1.0,2.0,0.437,0.437,0.875,time,time,Neither target (closed at 24h),-0.04,-0.091,-6.65
+2026-10-28 18:00,US Fed decision,Fed hold,USD/JPY,1.0,3.0,0.437,0.437,1.312,time,time,Neither target (closed at 24h),-0.04,-0.091,-6.65
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.1,3.0,0.483,0.048,0.145,stop,stop,Both stopped (whipsaw),-0.1766,-3.657,-32.88
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.25,3.0,0.483,0.121,0.362,target,stop,One hit target,0.1814,1.503,33.79
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.5,3.0,0.483,0.241,0.724,time,stop,Neither target (closed at 24h),-0.0542,-0.224,-10.09
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.25,1.0,0.483,0.121,0.121,target,stop,One hit target,-0.06,-0.497,-11.17
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.25,1.5,0.483,0.121,0.181,target,stop,One hit target,0.0004,0.003,0.07
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.25,2.0,0.483,0.121,0.241,target,stop,One hit target,0.0607,0.503,11.31
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.5,1.0,0.483,0.241,0.241,target,stop,One hit target,-0.06,-0.248,-11.17
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.5,1.5,0.483,0.241,0.362,target,stop,One hit target,0.0607,0.252,11.31
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.5,2.0,0.483,0.241,0.483,target,stop,One hit target,0.1814,0.752,33.79
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.75,1.0,0.483,0.362,0.362,target,stop,One hit target,-0.06,-0.166,-11.17
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.75,1.5,0.483,0.362,0.543,target,stop,One hit target,0.1211,0.334,22.55
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.75,2.0,0.483,0.362,0.724,time,stop,Neither target (closed at 24h),-0.1749,-0.483,-32.58
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,0.75,3.0,0.483,0.362,1.087,time,stop,Neither target (closed at 24h),-0.1749,-0.483,-32.58
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,1.0,1.0,0.483,0.483,0.483,target,stop,One hit target,-0.06,-0.124,-11.17
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,1.0,1.5,0.483,0.483,0.724,time,stop,Neither target (closed at 24h),-0.2957,-0.612,-55.06
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,1.0,2.0,0.483,0.483,0.966,time,stop,Neither target (closed at 24h),-0.2957,-0.612,-55.06
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD,1.0,3.0,0.483,0.483,1.449,time,stop,Neither target (closed at 24h),-0.2957,-0.612,-55.06
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.1,3.0,0.427,0.043,0.128,stop,stop,Both stopped (whipsaw),-0.1853,-4.343,-41.37
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.25,3.0,0.427,0.107,0.32,target,stop,One hit target,0.1384,1.297,30.88
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.5,3.0,0.427,0.213,0.64,time,stop,Neither target (closed at 24h),0.0256,0.12,5.72
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.25,1.0,0.427,0.107,0.107,target,stop,One hit target,-0.075,-0.703,-16.74
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.25,1.5,0.427,0.107,0.16,target,stop,One hit target,-0.0217,-0.203,-4.83
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.25,2.0,0.427,0.107,0.213,target,stop,One hit target,0.0317,0.297,7.07
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.5,1.0,0.427,0.213,0.213,target,stop,One hit target,-0.075,-0.352,-16.74
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.5,1.5,0.427,0.213,0.32,target,stop,One hit target,0.0317,0.148,7.07
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.5,2.0,0.427,0.213,0.427,target,stop,One hit target,0.1384,0.648,30.88
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.75,1.0,0.427,0.32,0.32,target,stop,One hit target,-0.075,-0.234,-16.74
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.75,1.5,0.427,0.32,0.48,target,stop,One hit target,0.085,0.266,18.98
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.75,2.0,0.427,0.32,0.64,time,stop,Neither target (closed at 24h),-0.081,-0.253,-18.09
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,0.75,3.0,0.427,0.32,0.96,time,stop,Neither target (closed at 24h),-0.081,-0.253,-18.09
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,1.0,1.0,0.427,0.427,0.427,target,stop,One hit target,-0.075,-0.176,-16.74
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,1.0,1.5,0.427,0.427,0.64,time,stop,Neither target (closed at 24h),-0.1877,-0.44,-41.89
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,1.0,2.0,0.427,0.427,0.853,time,stop,Neither target (closed at 24h),-0.1877,-0.44,-41.89
+2026-11-04 00:00,Political,US midterms 2026 results,GBP/USD,1.0,3.0,0.427,0.427,1.28,time,stop,Neither target (closed at 24h),-0.1877,-0.44,-41.89
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.1,3.0,0.444,0.044,0.133,stop,stop,Both stopped (whipsaw),-0.1687,-3.803,-28.03
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.25,3.0,0.444,0.111,0.333,stop,target,One hit target,0.1619,1.459,26.89
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.5,3.0,0.444,0.222,0.666,stop,target,One hit target,0.3837,1.73,63.74
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.25,1.0,0.444,0.111,0.111,stop,target,One hit target,-0.06,-0.541,-9.97
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.25,1.5,0.444,0.111,0.166,stop,target,One hit target,-0.0045,-0.041,-0.75
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.25,2.0,0.444,0.111,0.222,stop,target,One hit target,0.0509,0.459,8.46
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.5,1.0,0.444,0.222,0.222,stop,target,One hit target,-0.06,-0.27,-9.97
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.5,1.5,0.444,0.222,0.333,stop,target,One hit target,0.0509,0.23,8.46
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.5,2.0,0.444,0.222,0.444,stop,target,One hit target,0.1619,0.73,26.89
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.75,1.0,0.444,0.333,0.333,stop,target,One hit target,-0.06,-0.18,-9.97
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.75,1.5,0.444,0.333,0.499,stop,target,One hit target,0.1064,0.32,17.67
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.75,2.0,0.444,0.333,0.666,stop,target,One hit target,0.2728,0.82,45.31
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,0.75,3.0,0.444,0.333,0.998,stop,time,Neither target (closed at 24h),-0.3385,-1.017,-56.23
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,1.0,1.0,0.444,0.444,0.444,stop,target,One hit target,-0.06,-0.135,-9.97
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,1.0,1.5,0.444,0.444,0.666,stop,target,One hit target,0.1619,0.365,26.89
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,1.0,2.0,0.444,0.444,0.887,stop,time,Neither target (closed at 24h),-0.4494,-1.013,-74.66
+2026-11-04 00:00,Political,US midterms 2026 results,USD/JPY,1.0,3.0,0.444,0.444,1.331,stop,time,Neither target (closed at 24h),-0.4494,-1.013,-74.66
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.1,3.0,0.791,0.079,0.237,stop,stop,Both stopped (whipsaw),-0.7582,-9.587,-125.94
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.25,3.0,0.791,0.198,0.593,stop,target,One hit target,-0.0546,-0.276,-9.07
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.5,3.0,0.791,0.395,1.186,stop,target,One hit target,0.3408,0.862,56.61
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.25,1.0,0.791,0.198,0.198,stop,target,One hit target,-0.45,-2.276,-74.75
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.25,1.5,0.791,0.198,0.297,stop,target,One hit target,-0.3511,-1.776,-58.33
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.25,2.0,0.791,0.198,0.395,stop,target,One hit target,-0.2523,-1.276,-41.91
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.5,1.0,0.791,0.395,0.395,stop,target,One hit target,-0.45,-1.138,-74.75
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.5,1.5,0.791,0.395,0.593,stop,target,One hit target,-0.2523,-0.638,-41.91
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.5,2.0,0.791,0.395,0.791,stop,target,One hit target,-0.0546,-0.138,-9.07
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.75,1.0,0.791,0.593,0.593,stop,target,One hit target,-0.45,-0.759,-74.75
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.75,1.5,0.791,0.593,0.89,stop,target,One hit target,-0.1534,-0.259,-25.49
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.75,2.0,0.791,0.593,1.186,stop,target,One hit target,0.1431,0.241,23.77
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,0.75,3.0,0.791,0.593,1.779,stop,time,Neither target (closed at 24h),0.0939,0.158,15.6
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,1.0,1.0,0.791,0.791,0.791,stop,target,One hit target,-0.45,-0.569,-74.75
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,1.0,1.5,0.791,0.791,1.186,stop,target,One hit target,-0.0546,-0.069,-9.07
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,1.0,2.0,0.791,0.791,1.582,stop,time,Neither target (closed at 24h),-0.1038,-0.131,-17.24
+2026-11-04 00:00,Political,US midterms 2026 results,USD/ZAR,1.0,3.0,0.791,0.791,2.372,stop,time,Neither target (closed at 24h),-0.1038,-0.131,-17.24

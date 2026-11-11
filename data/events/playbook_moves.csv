@@ -56,14 +56,14 @@ date,name,type,country,market,move_2d,next20,times_normal
 2016-06-24,Brexit vote result,Elections & referendums,UK,GBP/USD,-9.05,-2.388,15.5
 2016-06-24,Brexit vote result,Elections & referendums,UK,USD/JPY,-2.411,4.112,4.21
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,Rand,2.205,6.15,2.17
-2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,JSE Top 40,2.523,-1.622,2.1
+2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,JSE Top 40,2.522,-1.622,2.1
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,S&P 500,1.044,1.375,1.02
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,Gold,-1.659,0.367,1.55
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,EUR/USD,-0.07,0.232,0.14
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,GBP/USD,0.506,0.395,0.87
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,USD/JPY,1.72,-0.23,3.0
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,Rand,2.275,-6.29,2.24
-2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,JSE Top 40,-0.384,3.929,0.32
+2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,JSE Top 40,-0.384,3.93,0.32
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,S&P 500,0.882,-0.132,0.86
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,Gold,-1.453,-1.07,1.35
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,EUR/USD,-0.752,0.593,1.46
@@ -133,7 +133,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2017-04-24,Macron tops French first round,Elections & referendums,EU,GBP/USD,-0.198,1.711,0.34
 2017-04-24,Macron tops French first round,Elections & referendums,EU,USD/JPY,0.243,1.14,0.42
 2017-05-08,Macron wins French presidency,Elections & referendums,EU,Rand,0.156,7.0,0.15
-2017-05-08,Macron wins French presidency,Elections & referendums,EU,JSE Top 40,1.158,-3.487,0.96
+2017-05-08,Macron wins French presidency,Elections & referendums,EU,JSE Top 40,1.158,-3.488,0.96
 2017-05-08,Macron wins French presidency,Elections & referendums,EU,S&P 500,-0.099,1.511,0.1
 2017-05-08,Macron wins French presidency,Elections & referendums,EU,Gold,-0.857,6.242,0.8
 2017-05-08,Macron wins French presidency,Elections & referendums,EU,EUR/USD,-0.49,3.011,0.95
@@ -287,7 +287,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2020-08-28,Abe resigns,Leaders & ministers,JP,GBP/USD,1.034,-4.415,1.77
 2020-08-28,Abe resigns,Leaders & ministers,JP,USD/JPY,-0.303,0.037,0.53
 2020-11-04,US election (Biden),Elections & referendums,US,Rand,1.945,3.696,1.91
-2020-11-04,US election (Biden),Elections & referendums,US,JSE Top 40,3.901,6.807,3.25
+2020-11-04,US election (Biden),Elections & referendums,US,JSE Top 40,3.901,6.806,3.25
 2020-11-04,US election (Biden),Elections & referendums,US,S&P 500,4.194,5.375,4.1
 2020-11-04,US election (Biden),Elections & referendums,US,Gold,1.905,-5.486,1.78
 2020-11-04,US election (Biden),Elections & referendums,US,EUR/USD,0.772,3.255,1.5
@@ -322,7 +322,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2021-09-29,Kishida wins LDP leadership,Leaders & ministers,JP,GBP/USD,-2.009,2.282,3.44
 2021-09-29,Kishida wins LDP leadership,Leaders & ministers,JP,USD/JPY,0.876,1.644,1.53
 2021-11-02,SA local elections (results),Elections & referendums,SA,Rand,-1.458,-3.043,1.43
-2021-11-02,SA local elections (results),Elections & referendums,SA,JSE Top 40,1.752,4.734,1.46
+2021-11-02,SA local elections (results),Elections & referendums,SA,JSE Top 40,1.752,4.735,1.46
 2021-11-02,SA local elections (results),Elections & referendums,SA,S&P 500,1.017,-1.791,0.99
 2021-11-02,SA local elections (results),Elections & referendums,SA,Gold,-1.776,-0.068,1.66
 2021-11-02,SA local elections (results),Elections & referendums,SA,EUR/USD,0.197,-2.152,0.38
@@ -357,7 +357,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2022-07-07,Johnson resigns,Leaders & ministers,UK,GBP/USD,0.66,1.085,1.13
 2022-07-07,Johnson resigns,Leaders & ministers,UK,USD/JPY,0.289,-2.422,0.51
 2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,Rand,0.724,-4.192,0.71
-2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,JSE Top 40,-4.449,1.921,3.7
+2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,JSE Top 40,-4.449,1.92,3.7
 2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,S&P 500,-2.551,1.612,2.49
 2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,Gold,-1.199,0.042,1.12
 2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,EUR/USD,-1.296,-0.637,2.53
@@ -399,7 +399,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2022-10-21,Japan buys yen again,Central-bank surprises & intervention,JP,GBP/USD,1.192,4.775,2.04
 2022-10-21,Japan buys yen again,Central-bank surprises & intervention,JP,USD/JPY,-1.336,-5.118,2.33
 2022-11-09,US midterms,Elections & referendums,US,Rand,-0.225,3.262,0.22
-2022-11-09,US midterms,Elections & referendums,US,JSE Top 40,2.692,6.597,2.24
+2022-11-09,US midterms,Elections & referendums,US,JSE Top 40,2.693,6.597,2.24
 2022-11-09,US midterms,Elections & referendums,US,S&P 500,3.35,-0.556,3.27
 2022-11-09,US midterms,Elections & referendums,US,Gold,2.197,3.25,2.05
 2022-11-09,US midterms,Elections & referendums,US,EUR/USD,0.009,4.928,0.02
@@ -455,7 +455,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2024-05-30,SA national election (results),Elections & referendums,SA,GBP/USD,-0.219,-0.665,0.37
 2024-05-30,SA national election (results),Elections & referendums,SA,USD/JPY,-0.196,2.379,0.34
 2024-06-10,Macron calls snap election,Elections & referendums,EU,Rand,1.231,3.304,1.21
-2024-06-10,Macron calls snap election,Elections & referendums,EU,JSE Top 40,-0.787,5.522,0.65
+2024-06-10,Macron calls snap election,Elections & referendums,EU,JSE Top 40,-0.787,5.521,0.65
 2024-06-10,Macron calls snap election,Elections & referendums,EU,S&P 500,0.53,3.892,0.52
 2024-06-10,Macron calls snap election,Elections & referendums,EU,Gold,0.069,4.096,0.06
 2024-06-10,Macron calls snap election,Elections & referendums,EU,EUR/USD,-1.195,0.62,2.33
