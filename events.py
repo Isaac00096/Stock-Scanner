@@ -63,12 +63,14 @@ def event_moves(r, ev):
     rows = []
     for e in ev.itertuples():
         i = day_index(r, e.date)
-        if i is None or i < 1 or np.isnan(r.iloc[i]):
+        if i is None or i < 1 or i + 1 >= len(r) or np.isnan(r.iloc[i]):
             continue
+        # reaction = event day + the next day (free FX data is sometimes dated a day late)
+        day0 = ((1 + r.iloc[i] / 100) * (1 + np.nan_to_num(r.iloc[i + 1]) / 100) - 1) * 100
         rec = {"date": e.date.date().isoformat(), "kind": e.kind, "outcome": e.outcome, "name": e.name,
-               "region": e.region, "day0": r.iloc[i]}
+               "region": e.region, "day0": day0}
         for h in HORIZONS:
-            seg = r.iloc[i + 1:i + 1 + h]
+            seg = r.iloc[i + 2:i + 2 + h]
             rec[f"next{h}"] = ((1 + seg / 100).prod() - 1) * 100 if len(seg) == h else np.nan
         rows.append(rec)
     return pd.DataFrame(rows)
@@ -88,10 +90,10 @@ def continuation(df):
 def all_days_baseline(r):
     rows = []
     v = r.dropna()
-    for i in range(1, len(v) - 21):
-        rec = {"day0": v.iloc[i]}
+    for i in range(1, len(v) - 23):
+        rec = {"day0": ((1 + v.iloc[i] / 100) * (1 + v.iloc[i + 1] / 100) - 1) * 100}
         for h in HORIZONS:
-            seg = v.iloc[i + 1:i + 1 + h]
+            seg = v.iloc[i + 2:i + 2 + h]
             rec[f"next{h}"] = ((1 + seg / 100).prod() - 1) * 100
         rows.append(rec)
     return pd.DataFrame(rows)
@@ -118,8 +120,8 @@ def tests_1_3_4(ev):
         sh = mv[mv["kind"] == "Political shock"].copy()
         sh["asset"] = label
         shocks.append(sh)
-        absall = r.abs().mean()
-        wild.append({"asset": label, "kind": "Normal day (all days)", "events": int(r.notna().sum()),
+        absall = base["day0"].abs().mean()      # 2-day move on any day, same window as events
+        wild.append({"asset": label, "kind": "Normal day (all days)", "events": len(base),
                      "avg_size_pct": absall, "times_normal": 1.0})
         for kind, g in mv.groupby("kind"):
             wild.append({"asset": label, "kind": kind, "events": len(g), "avg_size_pct": g["day0"].abs().mean(),
@@ -174,17 +176,24 @@ def test_2(ev):
             hi = np.searchsorted(d, tdf["exit"].to_numpy(), side="left")
             return hi > lo
 
+        tdf.to_csv(os.path.join(OUT, f"trades_{m}.csv.gz"), index=False, compression="gzip")
+        # Longer trades cross more events, and in trend strategies the long trades are the winners.
+        # So compare each trade only with trades of the SAME strategy held for the SAME number of days.
+        tdf["days"] = np.busday_count(tdf["entry"].values.astype("datetime64[D]"), tdf["exit"].values.astype("datetime64[D]"))
+        tdf["win"] = (tdf["ret"] > 0).astype(float)
+        key = [tdf["setup"], tdf["days"]]
+        tdf["ret_vs_peers"] = tdf["ret"] - tdf.groupby(key)["ret"].transform("mean")
+        tdf["win_vs_peers"] = tdf["win"] - tdf.groupby(key)["win"].transform("mean")
         none = ~through(allev)
-        base = tdf.loc[none, "ret"]
         for g, dates in list(groups.items()) + [("Any of these events", allev)]:
             th = through(dates)
-            a = tdf.loc[th, "ret"]
-            rows.append({"market": cfg["label"], "event": g,
-                         "trades_through": len(a), "win_through_pct": (a > 0).mean() * 100 if len(a) else np.nan,
-                         "avg_through_pct": a.mean() if len(a) else np.nan,
-                         "trades_clear": len(base), "win_clear_pct": (base > 0).mean() * 100,
-                         "avg_clear_pct": base.mean(), "diff_pct": (a.mean() - base.mean()) if len(a) else np.nan,
-                         "luck_t": welch_t(a, base)})
+            a, b = tdf[th], tdf[none]
+            rows.append({"market": cfg["label"], "event": g, "trades_through": len(a), "trades_clear": len(b),
+                         "win_through_pct": a["win"].mean() * 100 if len(a) else np.nan,
+                         "win_clear_pct": b["win"].mean() * 100,
+                         "matched_win_diff_pts": (a["win_vs_peers"].mean() - b["win_vs_peers"].mean()) * 100 if len(a) else np.nan,
+                         "matched_avg_diff_pct": (a["ret_vs_peers"].mean() - b["ret_vs_peers"].mean()) if len(a) else np.nan,
+                         "luck_t": welch_t(a["ret_vs_peers"], b["ret_vs_peers"])})
     pd.DataFrame(rows).round(3).to_csv(os.path.join(OUT, "strategies_through_events.csv"), index=False)
 
 
