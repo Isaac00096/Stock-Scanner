@@ -1,0 +1,26 @@
+pair,group,events,avg_2day_pct,times_normal
+EUR/GBP,Normal day,3084,0.46,1.0
+EUR/GBP,EU events,16,0.74,1.61
+EUR/GBP,JP events,21,0.369,0.8
+EUR/GBP,UK events,21,1.337,2.91
+EUR/GBP,US & global events,21,0.57,1.24
+GBP/JPY,Normal day,3085,0.68,1.0
+GBP/JPY,EU events,16,0.798,1.17
+GBP/JPY,JP events,21,1.355,1.99
+GBP/JPY,UK events,21,1.832,2.69
+GBP/JPY,US & global events,21,0.753,1.11
+EUR/JPY,Normal day,3085,0.572,1.0
+EUR/JPY,EU events,16,1.205,2.11
+EUR/JPY,JP events,21,1.177,2.06
+EUR/JPY,UK events,21,0.793,1.39
+EUR/JPY,US & global events,21,0.377,0.66
+AUD/NZD,Normal day,3086,0.388,1.0
+AUD/NZD,EU events,16,0.404,1.04
+AUD/NZD,JP events,21,0.361,0.93
+AUD/NZD,UK events,21,0.344,0.89
+AUD/NZD,US & global events,21,0.341,0.88
+NZD/CAD,Normal day,3084,0.536,1.0
+NZD/CAD,EU events,16,0.472,0.88
+NZD/CAD,JP events,21,0.638,1.19
+NZD/CAD,UK events,21,0.485,0.9
+NZD/CAD,US & global events,21,0.463,0.86

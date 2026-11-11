@@ -1,0 +1,396 @@
+date,country,kind,name,pair,pair_move,pair_next20,currency,ccy_move,went_as_expected
+2015-01-22,EU,Surprise central bank,ECB launches QE,EUR/GBP,-0.853,-2.487,EUR,-0.853,Yes
+2015-01-22,EU,Surprise central bank,ECB launches QE,GBP/JPY,-0.824,2.953,,,
+2015-01-22,EU,Surprise central bank,ECB launches QE,EUR/JPY,-1.669,0.404,EUR,-1.669,Yes
+2015-01-22,EU,Surprise central bank,ECB launches QE,AUD/NZD,0.059,-2.928,,,
+2015-01-22,EU,Surprise central bank,ECB launches QE,NZD/CAD,0.343,1.022,,,
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,EUR/GBP,2.354,2.138,EUR,2.354,Yes
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,GBP/JPY,0.172,-4.484,,,
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,EUR/JPY,2.515,-2.444,EUR,2.515,Yes
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,AUD/NZD,0.059,-3.195,,,
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,NZD/CAD,-0.047,6.745,,,
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,EUR/GBP,-0.719,3.672,,,
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,GBP/JPY,2.431,-8.843,JPY,-2.431,Yes
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,EUR/JPY,1.717,-5.488,JPY,-1.717,Yes
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,AUD/NZD,0.113,-1.035,,,
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,NZD/CAD,-0.229,-1.206,,,
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",EUR/GBP,1.005,3.416,EUR,1.005,No
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",GBP/JPY,0.781,-5.507,,,
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",EUR/JPY,1.777,-2.263,EUR,1.777,No
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",AUD/NZD,1.238,-0.708,,,
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",NZD/CAD,-1.468,-0.072,,,
+2016-06-24,UK,Politics,Brexit vote result,EUR/GBP,7.182,1.79,GBP,-7.182,Yes
+2016-06-24,UK,Politics,Brexit vote result,GBP/JPY,-11.263,1.663,GBP,-11.263,Yes
+2016-06-24,UK,Politics,Brexit vote result,EUR/JPY,-4.869,3.439,,,
+2016-06-24,UK,Politics,Brexit vote result,AUD/NZD,-0.099,1.825,,,
+2016-06-24,UK,Politics,Brexit vote result,NZD/CAD,0.588,-0.309,,,
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,EUR/GBP,-0.582,-0.149,,,
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,GBP/JPY,2.239,0.16,JPY,-2.239,Yes
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,EUR/JPY,1.638,0.024,JPY,-1.638,Yes
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,AUD/NZD,0.618,2.8,,,
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,NZD/CAD,0.947,-0.872,,,
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,EUR/GBP,0.826,-0.527,GBP,-0.826,Yes
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,GBP/JPY,-1.433,3.151,GBP,-1.433,Yes
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,EUR/JPY,-0.606,2.624,,,
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,AUD/NZD,0.904,-2.641,,,
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,NZD/CAD,-1.068,2.134,,,
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,EUR/GBP,0.195,3.994,,,
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,GBP/JPY,-1.486,-2.888,JPY,1.486,No
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,EUR/JPY,-1.318,0.986,JPY,1.318,No
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,AUD/NZD,0.707,2.802,,,
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,NZD/CAD,-0.338,-1.176,,,
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),EUR/GBP,0.767,2.815,GBP,-0.767,Yes
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),GBP/JPY,-0.231,-1.999,GBP,-0.231,Yes
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),EUR/JPY,0.518,0.762,,,
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),AUD/NZD,0.08,0.895,,,
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),NZD/CAD,0.377,0.379,,,
+2016-11-09,US,Politics,Trump wins US presidency,EUR/GBP,-1.348,-3.088,,,
+2016-11-09,US,Politics,Trump wins US presidency,GBP/JPY,1.513,9.241,,,
+2016-11-09,US,Politics,Trump wins US presidency,EUR/JPY,0.153,5.855,,,
+2016-11-09,US,Politics,Trump wins US presidency,AUD/NZD,-0.154,-0.671,,,
+2016-11-09,US,Politics,Trump wins US presidency,NZD/CAD,-0.344,-2.856,,,
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),EUR/GBP,-2.192,-1.755,GBP,2.192,Yes
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),GBP/JPY,1.692,1.93,GBP,1.692,Yes
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),EUR/JPY,-0.536,0.128,,,
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),AUD/NZD,-0.307,2.005,,,
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),NZD/CAD,0.5,-0.26,,,
+2017-04-18,UK,Politics,May calls snap election,EUR/GBP,-1.335,2.827,GBP,1.335,Yes
+2017-04-18,UK,Politics,May calls snap election,GBP/JPY,2.681,4.371,GBP,2.681,Yes
+2017-04-18,UK,Politics,May calls snap election,EUR/JPY,1.306,7.329,,,
+2017-04-18,UK,Politics,May calls snap election,AUD/NZD,-0.748,0.39,,,
+2017-04-18,UK,Politics,May calls snap election,NZD/CAD,0.97,-0.534,,,
+2017-04-24,EU,Politics,Macron tops French first round,EUR/GBP,1.587,1.717,EUR,1.587,Yes
+2017-04-24,EU,Politics,Macron tops French first round,GBP/JPY,0.045,2.872,,,
+2017-04-24,EU,Politics,Macron tops French first round,EUR/JPY,1.641,4.621,EUR,1.641,Yes
+2017-04-24,EU,Politics,Macron tops French first round,AUD/NZD,0.186,-1.037,,,
+2017-04-24,EU,Politics,Macron tops French first round,NZD/CAD,0.856,-0.517,,,
+2017-05-08,EU,Politics,Macron wins French presidency,EUR/GBP,-0.625,3.282,EUR,-0.625,No
+2017-05-08,EU,Politics,Macron wins French presidency,GBP/JPY,0.736,-2.762,,,
+2017-05-08,EU,Politics,Macron wins French presidency,EUR/JPY,0.103,0.436,EUR,0.103,Flat
+2017-05-08,EU,Politics,Macron wins French presidency,AUD/NZD,-0.975,-1.581,,,
+2017-05-08,EU,Politics,Macron wins French presidency,NZD/CAD,0.233,1.396,,,
+2017-06-09,UK,Politics,UK election: hung parliament,EUR/GBP,1.254,0.621,GBP,-1.254,Yes
+2017-06-09,UK,Politics,UK election: hung parliament,GBP/JPY,-1.368,4.592,GBP,-1.368,Yes
+2017-06-09,UK,Politics,UK election: hung parliament,EUR/JPY,-0.133,5.227,,,
+2017-06-09,UK,Politics,UK election: hung parliament,AUD/NZD,-0.414,-0.013,,,
+2017-06-09,UK,Politics,UK election: hung parliament,NZD/CAD,-0.111,-3.354,,,
+2017-10-23,JP,Politics,Abe wins snap election,EUR/GBP,-1.206,-0.444,,,
+2017-10-23,JP,Politics,Abe wins snap election,GBP/JPY,1.008,-0.585,JPY,-1.008,Yes
+2017-10-23,JP,Politics,Abe wins snap election,EUR/JPY,-0.196,-1.04,JPY,0.196,Flat
+2017-10-23,JP,Politics,Abe wins snap election,AUD/NZD,-0.121,-0.979,,,
+2017-10-23,JP,Politics,Abe wins snap election,NZD/CAD,0.589,-0.964,,,
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,EUR/GBP,0.733,-1.753,,,
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,GBP/JPY,-0.732,2.501,,,
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,EUR/JPY,-0.018,0.71,,,
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,AUD/NZD,-0.345,-0.966,,,
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,NZD/CAD,0.768,0.092,,,
+2018-03-05,EU,Politics,Italian election: populists win,EUR/GBP,-0.012,-1.742,EUR,-0.012,Flat
+2018-03-05,EU,Politics,Italian election: populists win,GBP/JPY,0.617,0.99,,,
+2018-03-05,EU,Politics,Italian election: populists win,EUR/JPY,0.611,-0.777,EUR,0.611,No
+2018-03-05,EU,Politics,Italian election: populists win,AUD/NZD,0.441,-1.055,,,
+2018-03-05,EU,Politics,Italian election: populists win,NZD/CAD,0.619,-0.724,,,
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),EUR/GBP,-0.884,1.228,EUR,-0.884,Yes
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),GBP/JPY,-1.534,1.329,,,
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),EUR/JPY,-2.408,2.571,EUR,-2.408,Yes
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),AUD/NZD,-0.547,-0.635,,,
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),NZD/CAD,0.006,1.502,,,
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,EUR/GBP,2.064,1.212,GBP,-2.064,Yes
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,GBP/JPY,-2.129,-0.857,GBP,-2.129,Yes
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,EUR/JPY,-0.088,0.342,,,
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,AUD/NZD,-0.258,-1.116,,,
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,NZD/CAD,0.379,1.861,,,
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),EUR/GBP,-0.719,-0.934,GBP,0.719,Yes
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),GBP/JPY,0.822,1.495,GBP,0.822,Yes
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),EUR/JPY,0.072,0.543,,,
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),AUD/NZD,0.446,-1.712,,,
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),NZD/CAD,-0.887,0.503,,,
+2019-05-06,US,Politics,Trump raises tariffs on China,EUR/GBP,-0.245,3.858,,,
+2019-05-06,US,Politics,Trump raises tariffs on China,GBP/JPY,-0.133,-5.736,,,
+2019-05-06,US,Politics,Trump raises tariffs on China,EUR/JPY,-0.39,-2.117,,,
+2019-05-06,US,Politics,Trump raises tariffs on China,AUD/NZD,0.168,-0.069,,,
+2019-05-06,US,Politics,Trump raises tariffs on China,NZD/CAD,-0.328,-0.342,,,
+2019-08-05,US,Politics,US-China trade war escalates,EUR/GBP,1.205,-1.745,,,
+2019-08-05,US,Politics,US-China trade war escalates,GBP/JPY,-1.438,-0.194,,,
+2019-08-05,US,Politics,US-China trade war escalates,EUR/JPY,-0.249,-1.913,,,
+2019-08-05,US,Politics,US-China trade war escalates,AUD/NZD,-0.579,3.249,,,
+2019-08-05,US,Politics,US-China trade war escalates,NZD/CAD,0.09,-3.005,,,
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,EUR/GBP,-1.267,-2.647,GBP,1.267,Yes
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,GBP/JPY,2.619,4.452,GBP,2.619,Yes
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,EUR/JPY,1.329,1.678,,,
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,AUD/NZD,0.0,1.318,,,
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,NZD/CAD,0.153,-0.06,,,
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),EUR/GBP,-1.225,2.293,GBP,1.225,Yes
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),GBP/JPY,1.954,-2.163,GBP,1.954,Yes
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),EUR/JPY,0.703,0.081,,,
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),AUD/NZD,-0.112,-0.295,,,
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),NZD/CAD,0.309,-0.227,,,
+2020-08-28,JP,Politics,Abe resigns,EUR/GBP,-0.358,2.138,,,
+2020-08-28,JP,Politics,Abe resigns,GBP/JPY,0.738,-4.391,JPY,-0.738,No
+2020-08-28,JP,Politics,Abe resigns,EUR/JPY,0.358,-2.348,JPY,-0.358,No
+2020-08-28,JP,Politics,Abe resigns,AUD/NZD,0.059,-1.659,,,
+2020-08-28,JP,Politics,Abe resigns,NZD/CAD,1.259,-0.638,,,
+2020-11-04,US,Politics,US election (Biden),EUR/GBP,0.459,0.143,,,
+2020-11-04,US,Politics,US election (Biden),GBP/JPY,0.054,3.136,,,
+2020-11-04,US,Politics,US election (Biden),EUR/JPY,0.534,3.275,,,
+2020-11-04,US,Politics,US election (Biden),AUD/NZD,0.766,-2.152,,,
+2020-11-04,US,Politics,US election (Biden),NZD/CAD,0.299,3.867,,,
+2020-12-24,UK,Politics,UK-EU trade deal agreed,EUR/GBP,-1.312,-1.273,GBP,1.312,Yes
+2020-12-24,UK,Politics,UK-EU trade deal agreed,GBP/JPY,1.015,1.408,GBP,1.015,Yes
+2020-12-24,UK,Politics,UK-EU trade deal agreed,EUR/JPY,0.073,-0.257,,,
+2020-12-24,UK,Politics,UK-EU trade deal agreed,AUD/NZD,-0.525,0.95,,,
+2020-12-24,UK,Politics,UK-EU trade deal agreed,NZD/CAD,0.261,0.065,,,
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,EUR/GBP,0.33,-2.571,,,
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,GBP/JPY,0.291,2.089,,,
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,EUR/JPY,0.617,-0.555,,,
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,AUD/NZD,0.07,-1.093,,,
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,NZD/CAD,0.87,-0.244,,,
+2021-09-29,JP,Politics,Kishida wins LDP leadership,EUR/GBP,1.196,-2.222,,,
+2021-09-29,JP,Politics,Kishida wins LDP leadership,GBP/JPY,-1.143,3.954,JPY,1.143,Yes
+2021-09-29,JP,Politics,Kishida wins LDP leadership,EUR/JPY,0.066,1.626,JPY,-0.066,Flat
+2021-09-29,JP,Politics,Kishida wins LDP leadership,AUD/NZD,0.528,0.221,,,
+2021-09-29,JP,Politics,Kishida wins LDP leadership,NZD/CAD,-0.945,1.05,,,
+2022-02-24,Global,Politics,Russia invades Ukraine,EUR/GBP,0.372,-0.292,,,
+2022-02-24,Global,Politics,Russia invades Ukraine,GBP/JPY,-1.194,4.461,,,
+2022-02-24,Global,Politics,Russia invades Ukraine,EUR/JPY,-0.821,4.149,,,
+2022-02-24,Global,Politics,Russia invades Ukraine,AUD/NZD,-0.21,0.819,,,
+2022-02-24,Global,Politics,Russia invades Ukraine,NZD/CAD,-0.465,1.798,,,
+2022-04-25,EU,Politics,Macron re-elected,EUR/GBP,1.096,1.073,EUR,1.096,Yes
+2022-04-25,EU,Politics,Macron re-elected,GBP/JPY,-2.692,-1.285,,,
+2022-04-25,EU,Politics,Macron re-elected,EUR/JPY,-1.624,-0.225,EUR,-1.624,No
+2022-04-25,EU,Politics,Macron re-elected,AUD/NZD,-0.921,1.377,,,
+2022-04-25,EU,Politics,Macron re-elected,NZD/CAD,-0.431,-2.192,,,
+2022-07-07,UK,Politics,Johnson resigns,EUR/GBP,-1.525,-0.29,GBP,1.525,No
+2022-07-07,UK,Politics,Johnson resigns,GBP/JPY,0.952,-1.355,GBP,0.952,No
+2022-07-07,UK,Politics,Johnson resigns,EUR/JPY,-0.591,-1.656,,,
+2022-07-07,UK,Politics,Johnson resigns,AUD/NZD,0.58,-0.262,,,
+2022-07-07,UK,Politics,Johnson resigns,NZD/CAD,-0.306,1.147,,,
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),EUR/GBP,-0.298,-0.5,,,
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),GBP/JPY,-1.925,5.134,JPY,1.925,Yes
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),EUR/JPY,-2.22,4.888,JPY,2.22,Yes
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),AUD/NZD,0.181,-2.596,,,
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),NZD/CAD,-0.127,-0.904,,,
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,EUR/GBP,2.728,-2.565,GBP,-2.728,Yes
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,GBP/JPY,-4.612,8.232,GBP,-4.612,Yes
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,EUR/JPY,-2.024,4.84,,,
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,AUD/NZD,0.317,-2.836,,,
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,NZD/CAD,-0.757,0.862,,,
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,EUR/GBP,0.296,-3.804,GBP,-0.296,No
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,GBP/JPY,0.549,8.705,GBP,0.549,Yes
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,EUR/JPY,0.842,5.201,,,
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,AUD/NZD,-0.37,-2.254,,,
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,NZD/CAD,0.33,1.509,,,
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,EUR/GBP,-0.892,1.039,GBP,0.892,Yes
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,GBP/JPY,2.568,-1.471,GBP,2.568,Yes
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,EUR/JPY,1.618,-0.428,,,
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,AUD/NZD,-0.299,-1.62,,,
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,NZD/CAD,-0.397,4.884,,,
+2022-10-20,UK,Politics,Truss resigns,EUR/GBP,0.199,0.251,GBP,-0.199,Flat
+2022-10-20,UK,Politics,Truss resigns,GBP/JPY,-0.441,-1.179,GBP,-0.441,No
+2022-10-20,UK,Politics,Truss resigns,EUR/JPY,-0.223,-0.927,,,
+2022-10-20,UK,Politics,Truss resigns,AUD/NZD,-0.224,-1.385,,,
+2022-10-20,UK,Politics,Truss resigns,NZD/CAD,-0.129,4.593,,,
+2022-10-21,JP,Intervention,Japan buys yen again,EUR/GBP,-0.236,0.006,,,
+2022-10-21,JP,Intervention,Japan buys yen again,GBP/JPY,-0.16,-0.592,JPY,0.16,Flat
+2022-10-21,JP,Intervention,Japan buys yen again,EUR/JPY,-0.399,-0.576,JPY,0.399,Yes
+2022-10-21,JP,Intervention,Japan buys yen again,AUD/NZD,-0.072,-1.993,,,
+2022-10-21,JP,Intervention,Japan buys yen again,NZD/CAD,0.839,4.895,,,
+2022-11-09,US,Politics,US midterms,EUR/GBP,1.323,-2.335,,,
+2022-11-09,US,Politics,US midterms,GBP/JPY,-1.592,0.221,,,
+2022-11-09,US,Politics,US midterms,EUR/JPY,-0.284,-2.114,,,
+2022-11-09,US,Politics,US midterms,AUD/NZD,0.238,-3.094,,,
+2022-11-09,US,Politics,US midterms,NZD/CAD,-0.704,8.992,,,
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,EUR/GBP,0.122,0.775,,,
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,GBP/JPY,-3.198,-1.993,JPY,3.198,Yes
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,EUR/JPY,-3.055,-1.232,JPY,3.055,Yes
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,AUD/NZD,0.451,3.045,,,
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,NZD/CAD,-1.067,-0.168,,,
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,EUR/GBP,-0.088,0.046,,,
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,GBP/JPY,1.3,0.101,JPY,-1.3,No
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,EUR/JPY,1.208,0.147,JPY,-1.208,No
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,AUD/NZD,0.146,0.877,,,
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,NZD/CAD,-0.424,-0.88,,,
+2024-04-29,JP,Intervention,Japan buys yen,EUR/GBP,-0.52,-0.334,,,
+2024-04-29,JP,Intervention,Japan buys yen,GBP/JPY,0.874,2.033,JPY,-0.874,No
+2024-04-29,JP,Intervention,Japan buys yen,EUR/JPY,0.292,1.763,JPY,-0.292,No
+2024-04-29,JP,Intervention,Japan buys yen,AUD/NZD,0.371,-1.552,,,
+2024-04-29,JP,Intervention,Japan buys yen,NZD/CAD,0.289,2.741,,,
+2024-06-10,EU,Politics,Macron calls snap election,EUR/GBP,-0.664,-0.077,EUR,-0.664,Yes
+2024-06-10,EU,Politics,Macron calls snap election,GBP/JPY,0.341,3.151,,,
+2024-06-10,EU,Politics,Macron calls snap election,EUR/JPY,-0.327,3.072,EUR,-0.327,Yes
+2024-06-10,EU,Politics,Macron calls snap election,AUD/NZD,0.187,2.001,,,
+2024-06-10,EU,Politics,Macron calls snap election,NZD/CAD,-0.433,-0.971,,,
+2024-07-01,EU,Politics,French first round (far right leads),EUR/GBP,0.265,-0.912,EUR,0.265,No
+2024-07-01,EU,Politics,French first round (far right leads),GBP/JPY,0.512,-3.142,,,
+2024-07-01,EU,Politics,French first round (far right leads),EUR/JPY,0.775,-4.031,EUR,0.775,No
+2024-07-01,EU,Politics,French first round (far right leads),AUD/NZD,0.385,1.592,,,
+2024-07-01,EU,Politics,French first round (far right leads),NZD/CAD,-0.042,-2.245,,,
+2024-07-05,UK,Politics,Labour landslide,EUR/GBP,-0.141,0.927,GBP,0.141,Flat
+2024-07-05,UK,Politics,Labour landslide,GBP/JPY,-0.146,-9.501,GBP,-0.146,Flat
+2024-07-05,UK,Politics,Labour landslide,EUR/JPY,-0.282,-8.081,,,
+2024-07-05,UK,Politics,Labour landslide,AUD/NZD,-0.024,-0.553,,,
+2024-07-05,UK,Politics,Labour landslide,NZD/CAD,0.605,-1.437,,,
+2024-07-08,EU,Politics,French second round: hung parliament,EUR/GBP,-0.284,1.324,EUR,-0.284,Yes
+2024-07-08,EU,Politics,French second round: hung parliament,GBP/JPY,0.162,-9.559,,,
+2024-07-08,EU,Politics,French second round: hung parliament,EUR/JPY,-0.124,-9.37,EUR,-0.124,Flat
+2024-07-08,EU,Politics,French second round: hung parliament,AUD/NZD,-0.023,-0.441,,,
+2024-07-08,EU,Politics,French second round: hung parliament,NZD/CAD,0.335,-1.638,,,
+2024-07-11,JP,Intervention,Japan buys yen,EUR/GBP,-0.507,1.766,,,
+2024-07-11,JP,Intervention,Japan buys yen,GBP/JPY,-0.91,-7.935,JPY,0.91,Yes
+2024-07-11,JP,Intervention,Japan buys yen,EUR/JPY,-1.395,-6.288,JPY,1.395,Yes
+2024-07-11,JP,Intervention,Japan buys yen,AUD/NZD,0.938,-1.188,,,
+2024-07-11,JP,Intervention,Japan buys yen,NZD/CAD,-0.547,-0.637,,,
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,EUR/GBP,0.086,0.138,,,
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,GBP/JPY,-2.705,-0.996,JPY,2.705,Yes
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,EUR/JPY,-2.606,-0.871,JPY,2.606,Yes
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,AUD/NZD,-1.324,-1.288,,,
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,NZD/CAD,0.903,2.447,,,
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,EUR/GBP,-0.153,-0.169,,,
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,GBP/JPY,-0.813,3.714,JPY,0.813,Yes
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,EUR/JPY,-0.969,3.539,JPY,0.969,Yes
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,AUD/NZD,0.024,1.359,,,
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,NZD/CAD,1.679,-3.143,,,
+2024-10-28,JP,Politics,LDP loses majority in election,EUR/GBP,-0.062,-0.048,,,
+2024-10-28,JP,Politics,LDP loses majority in election,GBP/JPY,0.929,-2.65,JPY,-0.929,Yes
+2024-10-28,JP,Politics,LDP loses majority in election,EUR/JPY,0.849,-2.694,JPY,-0.849,Yes
+2024-10-28,JP,Politics,LDP loses majority in election,AUD/NZD,-0.444,1.177,,,
+2024-10-28,JP,Politics,LDP loses majority in election,NZD/CAD,-0.061,-1.472,,,
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),EUR/GBP,0.503,-0.569,GBP,-0.503,Yes
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),GBP/JPY,-0.096,-3.358,GBP,-0.096,Flat
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),EUR/JPY,0.416,-3.919,,,
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),AUD/NZD,0.129,0.136,,,
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),NZD/CAD,-0.127,-0.441,,,
+2024-11-06,US,Politics,Trump wins US presidency again,EUR/GBP,-0.755,-0.643,,,
+2024-11-06,US,Politics,Trump wins US presidency again,GBP/JPY,0.781,-3.807,,,
+2024-11-06,US,Politics,Trump wins US presidency again,EUR/JPY,0.021,-4.427,,,
+2024-11-06,US,Politics,Trump wins US presidency again,AUD/NZD,0.327,-0.783,,,
+2024-11-06,US,Politics,Trump wins US presidency again,NZD/CAD,-0.246,-0.49,,,
+2024-12-05,EU,Politics,French government falls (Barnier),EUR/GBP,0.043,-0.045,EUR,0.043,Flat
+2024-12-05,EU,Politics,French government falls (Barnier),GBP/JPY,1.049,2.113,,,
+2024-12-05,EU,Politics,French government falls (Barnier),EUR/JPY,1.089,2.072,EUR,1.089,No
+2024-12-05,EU,Politics,French government falls (Barnier),AUD/NZD,-0.546,1.003,,,
+2024-12-05,EU,Politics,French government falls (Barnier),NZD/CAD,-0.317,-1.67,,,
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,EUR/GBP,-0.102,-1.898,,,
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,GBP/JPY,1.005,-0.169,,,
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,EUR/JPY,0.902,-2.068,,,
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,AUD/NZD,-0.243,0.669,,,
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,NZD/CAD,0.391,-0.3,,,
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",EUR/GBP,-0.736,-0.63,,,
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",GBP/JPY,0.835,-1.761,,,
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",EUR/JPY,0.09,-2.38,,,
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",AUD/NZD,0.211,0.208,,,
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",NZD/CAD,-0.719,0.247,,,
+2025-02-24,EU,Politics,German election: Merz wins,EUR/GBP,0.039,0.826,EUR,0.039,Flat
+2025-02-24,EU,Politics,German election: Merz wins,GBP/JPY,-0.106,3.057,,,
+2025-02-24,EU,Politics,German election: Merz wins,EUR/JPY,-0.073,3.904,EUR,-0.073,Flat
+2025-02-24,EU,Politics,German election: Merz wins,AUD/NZD,-0.355,-0.83,,,
+2025-02-24,EU,Politics,German election: Merz wins,NZD/CAD,0.108,0.277,,,
+2025-03-05,EU,Politics,Germany agrees huge spending package,EUR/GBP,1.437,-0.178,EUR,1.437,Yes
+2025-03-05,EU,Politics,Germany agrees huge spending package,GBP/JPY,1.217,0.506,,,
+2025-03-05,EU,Politics,Germany agrees huge spending package,EUR/JPY,2.675,0.324,EUR,2.675,Yes
+2025-03-05,EU,Politics,Germany agrees huge spending package,AUD/NZD,-0.1,-1.127,,,
+2025-03-05,EU,Politics,Germany agrees huge spending package,NZD/CAD,1.048,-0.883,,,
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,EUR/GBP,1.002,0.871,,,
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,GBP/JPY,-1.123,-0.241,,,
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,EUR/JPY,-0.13,0.631,,,
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,AUD/NZD,-0.728,-0.815,,,
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,NZD/CAD,-0.211,1.113,,,
+2025-04-09,US,Politics,US pauses most tariffs,EUR/GBP,-0.39,-1.03,,,
+2025-04-09,US,Politics,US pauses most tariffs,GBP/JPY,0.452,2.484,,,
+2025-04-09,US,Politics,US pauses most tariffs,EUR/JPY,0.063,1.447,,,
+2025-04-09,US,Politics,US pauses most tariffs,AUD/NZD,0.451,-0.322,,,
+2025-04-09,US,Politics,US pauses most tariffs,NZD/CAD,0.837,3.722,,,
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,EUR/GBP,-0.689,-1.478,,,
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,GBP/JPY,0.855,2.096,,,
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,EUR/JPY,0.156,0.584,,,
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,AUD/NZD,-0.334,1.331,,,
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,NZD/CAD,0.334,-0.112,,,
+2025-05-12,US,Politics,US-China tariff truce,EUR/GBP,-0.713,0.114,,,
+2025-05-12,US,Politics,US-China tariff truce,GBP/JPY,1.123,0.265,,,
+2025-05-12,US,Politics,US-China tariff truce,EUR/JPY,0.409,0.376,,,
+2025-05-12,US,Politics,US-China tariff truce,AUD/NZD,0.317,-0.912,,,
+2025-05-12,US,Politics,US-China tariff truce,NZD/CAD,-0.284,1.199,,,
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,EUR/GBP,0.707,-0.279,GBP,-0.707,Yes
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,GBP/JPY,-0.78,0.978,GBP,-0.78,Yes
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,EUR/JPY,-0.058,0.696,,,
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,AUD/NZD,0.159,0.93,,,
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,NZD/CAD,-0.183,-1.285,,,
+2025-07-22,JP,Politics,LDP loses upper house majority,EUR/GBP,0.145,-0.564,,,
+2025-07-22,JP,Politics,LDP loses upper house majority,GBP/JPY,-0.325,0.386,JPY,0.325,No
+2025-07-22,JP,Politics,LDP loses upper house majority,EUR/JPY,-0.187,-0.181,JPY,0.187,Flat
+2025-07-22,JP,Politics,LDP loses upper house majority,AUD/NZD,-0.077,0.182,,,
+2025-07-22,JP,Politics,LDP loses upper house majority,NZD/CAD,-0.082,0.183,,,
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,EUR/GBP,-0.358,1.168,,,
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,GBP/JPY,-0.089,0.447,,,
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,EUR/JPY,-0.437,1.611,,,
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,AUD/NZD,0.289,1.602,,,
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,NZD/CAD,-0.088,0.016,,,
+2025-09-08,JP,Politics,Ishiba resigns,EUR/GBP,0.152,0.003,,,
+2025-09-08,JP,Politics,Ishiba resigns,GBP/JPY,0.121,1.5,JPY,-0.121,Flat
+2025-09-08,JP,Politics,Ishiba resigns,EUR/JPY,0.275,1.503,JPY,-0.275,Yes
+2025-09-08,JP,Politics,Ishiba resigns,AUD/NZD,-0.433,2.056,,,
+2025-09-08,JP,Politics,Ishiba resigns,NZD/CAD,1.464,-0.671,,,
+2025-09-09,EU,Politics,French government falls (Bayrou),EUR/GBP,-0.293,0.324,EUR,-0.293,Yes
+2025-09-09,EU,Politics,French government falls (Bayrou),GBP/JPY,-0.434,2.395,,,
+2025-09-09,EU,Politics,French government falls (Bayrou),EUR/JPY,-0.734,2.734,EUR,-0.734,Yes
+2025-09-09,EU,Politics,French government falls (Bayrou),AUD/NZD,-0.173,2.15,,,
+2025-09-09,EU,Politics,French government falls (Bayrou),NZD/CAD,0.719,-1.418,,,
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),EUR/GBP,-0.409,0.986,,,
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),GBP/JPY,2.449,-0.081,JPY,-2.449,Yes
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),EUR/JPY,2.033,0.9,JPY,-2.033,Yes
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),AUD/NZD,-0.096,1.149,,,
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),NZD/CAD,0.273,-1.541,,,
+2025-10-07,EU,Politics,French PM Lecornu resigns,EUR/GBP,-0.399,1.578,EUR,-0.399,Yes
+2025-10-07,EU,Politics,French PM Lecornu resigns,GBP/JPY,1.542,-2.028,,,
+2025-10-07,EU,Politics,French PM Lecornu resigns,EUR/JPY,1.133,-0.473,EUR,1.133,No
+2025-10-07,EU,Politics,French PM Lecornu resigns,AUD/NZD,0.27,1.276,,,
+2025-10-07,EU,Politics,French PM Lecornu resigns,NZD/CAD,-0.547,-1.632,,,
+2025-11-26,UK,Politics,UK autumn budget,EUR/GBP,-0.342,-0.414,GBP,0.342,Yes
+2025-11-26,UK,Politics,UK autumn budget,GBP/JPY,0.614,1.89,GBP,0.614,Yes
+2025-11-26,UK,Politics,UK autumn budget,EUR/JPY,0.268,1.469,,,
+2025-11-26,UK,Politics,UK autumn budget,AUD/NZD,-0.721,0.465,,,
+2025-11-26,UK,Politics,UK autumn budget,NZD/CAD,1.106,-0.346,,,
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,EUR/GBP,0.608,0.135,,,
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,GBP/JPY,0.674,-2.275,,,
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,EUR/JPY,1.288,-2.147,,,
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,AUD/NZD,-0.445,1.367,,,
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,NZD/CAD,0.562,2.402,,,
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,EUR/GBP,-0.012,1.255,,,
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,GBP/JPY,0.304,-1.083,,,
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,EUR/JPY,0.29,0.16,,,
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,AUD/NZD,-0.502,2.581,,,
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,NZD/CAD,-0.137,-0.71,,,
+2026-02-09,JP,Politics,Takaichi landslide in snap election,EUR/GBP,-0.125,-0.528,,,
+2026-02-09,JP,Politics,Takaichi landslide in snap election,GBP/JPY,0.756,-0.81,JPY,-0.756,Yes
+2026-02-09,JP,Politics,Takaichi landslide in snap election,EUR/JPY,0.653,-1.348,JPY,-0.653,Yes
+2026-02-09,JP,Politics,Takaichi landslide in snap election,AUD/NZD,0.496,1.906,,,
+2026-02-09,JP,Politics,Takaichi landslide in snap election,NZD/CAD,0.796,-1.889,,,
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,EUR/GBP,-0.302,-0.279,,,
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,GBP/JPY,0.289,-0.156,,,
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,EUR/JPY,-0.013,-0.435,,,
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,AUD/NZD,0.581,0.239,,,
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,NZD/CAD,-0.561,-2.082,,,
+2026-04-08,Global,Politics,US-Iran ceasefire,EUR/GBP,-0.179,-0.713,,,
+2026-04-08,Global,Politics,US-Iran ceasefire,GBP/JPY,0.543,0.104,,,
+2026-04-08,Global,Politics,US-Iran ceasefire,EUR/JPY,0.363,-0.602,,,
+2026-04-08,Global,Politics,US-Iran ceasefire,AUD/NZD,-0.172,0.567,,,
+2026-04-08,Global,Politics,US-Iran ceasefire,NZD/CAD,1.477,0.627,,,
+2026-04-30,JP,Intervention,Japan buys yen (record),EUR/GBP,-0.48,0.479,,,
+2026-04-30,JP,Intervention,Japan buys yen (record),GBP/JPY,-1.039,0.274,JPY,1.039,Yes
+2026-04-30,JP,Intervention,Japan buys yen (record),EUR/JPY,-1.494,0.78,JPY,1.494,Yes
+2026-04-30,JP,Intervention,Japan buys yen (record),AUD/NZD,-0.131,-1.161,,,
+2026-04-30,JP,Intervention,Japan buys yen (record),NZD/CAD,-0.413,2.15,,,
+2026-06-22,UK,Politics,Starmer announces resignation,EUR/GBP,-0.608,-1.482,GBP,0.608,No
+2026-06-22,UK,Politics,Starmer announces resignation,GBP/JPY,0.517,1.962,GBP,0.517,No
+2026-06-22,UK,Politics,Starmer announces resignation,EUR/JPY,-0.104,0.461,,,
+2026-06-22,UK,Politics,Starmer announces resignation,AUD/NZD,0.504,-2.328,,,
+2026-06-22,UK,Politics,Starmer announces resignation,NZD/CAD,-0.635,1.844,,,
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,EUR/GBP,0.11,0.056,,,
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,GBP/JPY,-1.897,2.322,JPY,1.897,Yes
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,EUR/JPY,-1.788,2.374,JPY,1.788,Yes
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,AUD/NZD,-0.246,1.512,,,
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,NZD/CAD,0.133,-0.453,,,
+2026-11-04,US,Politics,US midterms: Democrats win Congress,EUR/GBP,-0.119,,,,
+2026-11-04,US,Politics,US midterms: Democrats win Congress,GBP/JPY,0.786,,,,
+2026-11-04,US,Politics,US midterms: Democrats win Congress,EUR/JPY,0.679,,,,
+2026-11-04,US,Politics,US midterms: Democrats win Congress,AUD/NZD,-0.026,,,,
+2026-11-04,US,Politics,US midterms: Democrats win Congress,NZD/CAD,0.005,,,,
