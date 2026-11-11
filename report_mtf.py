@@ -68,7 +68,9 @@ def stats(h, d, hold, tp=None):
 
 
 def load():
-    h = pd.read_csv(ROWS)
+    import glob
+    files = sorted(glob.glob(ROWS.replace(".csv.gz", "_*.csv.gz"))) or [ROWS]
+    h = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
     return h[h["date"] >= FROM].reset_index(drop=True)
 
 
@@ -104,6 +106,8 @@ def main():
 
     block("All 6 charts agree (Day, 4hr, 1hr, 30min, 15min, 5min)", d6)
     block("At least 5 of the 6 charts agree", d5)
+    # the version that looked best on 3 months: last 1-min candle WITH the charts
+    block("All 6 agree AND last 1-min candle in the same direction", d6.where(h["last_dir"] == d6, 0))
 
     # simpler versions for comparison
     cmp_rows = []
