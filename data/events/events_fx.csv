@@ -1,0 +1,80 @@
+date,country,kind,name,expected
+2015-01-22,EU,Surprise central bank,ECB launches QE,Weaker
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,Stronger
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,Weaker
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",Weaker
+2016-06-24,UK,Politics,Brexit vote result,Weaker
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,Weaker
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,Weaker
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,Weaker
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),Weaker
+2016-11-09,US,Politics,Trump wins US presidency,Stronger
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),Stronger
+2017-04-18,UK,Politics,May calls snap election,Stronger
+2017-04-24,EU,Politics,Macron tops French first round,Stronger
+2017-05-08,EU,Politics,Macron wins French presidency,Stronger
+2017-06-09,UK,Politics,UK election: hung parliament,Weaker
+2017-10-23,JP,Politics,Abe wins snap election,Weaker
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,Stronger
+2018-03-05,EU,Politics,Italian election: populists win,Weaker
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),Weaker
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,Weaker
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),Stronger
+2019-05-06,US,Politics,Trump raises tariffs on China,Stronger
+2019-08-05,US,Politics,US-China trade war escalates,Stronger
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,Stronger
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),Stronger
+2020-08-28,JP,Politics,Abe resigns,Stronger
+2020-11-04,US,Politics,US election (Biden),Weaker
+2020-12-24,UK,Politics,UK-EU trade deal agreed,Stronger
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,Weaker
+2021-09-29,JP,Politics,Kishida wins LDP leadership,Stronger
+2022-02-24,Global,Politics,Russia invades Ukraine,Stronger
+2022-04-25,EU,Politics,Macron re-elected,Stronger
+2022-07-07,UK,Politics,Johnson resigns,Weaker
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),Stronger
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,Weaker
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,Stronger
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,Stronger
+2022-10-20,UK,Politics,Truss resigns,Stronger
+2022-10-21,JP,Intervention,Japan buys yen again,Stronger
+2022-11-09,US,Politics,US midterms,Weaker
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,Stronger
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,Stronger
+2024-04-29,JP,Intervention,Japan buys yen,Stronger
+2024-06-10,EU,Politics,Macron calls snap election,Weaker
+2024-07-01,EU,Politics,French first round (far right leads),Weaker
+2024-07-05,UK,Politics,Labour landslide,Stronger
+2024-07-08,EU,Politics,French second round: hung parliament,Weaker
+2024-07-11,JP,Intervention,Japan buys yen,Stronger
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,Stronger
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,Stronger
+2024-10-28,JP,Politics,LDP loses majority in election,Weaker
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),Weaker
+2024-11-06,US,Politics,Trump wins US presidency again,Stronger
+2024-12-05,EU,Politics,French government falls (Barnier),Weaker
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,Weaker
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",Stronger
+2025-02-24,EU,Politics,German election: Merz wins,Stronger
+2025-03-05,EU,Politics,Germany agrees huge spending package,Stronger
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,Stronger
+2025-04-09,US,Politics,US pauses most tariffs,Stronger
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,Weaker
+2025-05-12,US,Politics,US-China tariff truce,Stronger
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,Weaker
+2025-07-22,JP,Politics,LDP loses upper house majority,Weaker
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,Weaker
+2025-09-08,JP,Politics,Ishiba resigns,Weaker
+2025-09-09,EU,Politics,French government falls (Bayrou),Weaker
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),Weaker
+2025-10-07,EU,Politics,French PM Lecornu resigns,Weaker
+2025-11-26,UK,Politics,UK autumn budget,Stronger
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,Stronger
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,Stronger
+2026-02-09,JP,Politics,Takaichi landslide in snap election,Weaker
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,Stronger
+2026-04-08,Global,Politics,US-Iran ceasefire,Weaker
+2026-04-30,JP,Intervention,Japan buys yen (record),Stronger
+2026-06-22,UK,Politics,Starmer announces resignation,Weaker
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,Stronger
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker
