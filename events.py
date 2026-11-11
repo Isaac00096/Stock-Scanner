@@ -32,7 +32,9 @@ SA_SHOCKS = {"SA finance minister Nene fired", "Pravin Gordhan reappointed finan
              "Zuma resigns as SA president", "Moody's cuts SA to junk", "US says SA supplied arms to Russia",
              "SA unity government formed", "SA budget postponed (VAT row)"}
 ASSETS = {"rand": ("USDZAR=X", -1, "Rand vs US dollar (up = rand stronger)"),
-          "gold": ("GC=F", 1, "Gold (US$)")}
+          "gold": ("GC=F", 1, "Gold (US$)"),
+          "spx": ("^GSPC", 1, "S&P 500"),
+          "jse": ("STX40.JO", 1, "JSE Top 40")}
 HORIZONS = [1, 5, 20]
 
 
@@ -50,6 +52,10 @@ def series():
         for t, df in data.iter_daily([sym], "max"):
             c = df["Close"].dropna()
             c = c[c.index >= "2015-01-01"]
+            nb = (c.shift(1) + c.shift(-1)) / 2      # drop bad ticks that snap straight back
+            bad = ((c / nb - 1).abs() > 0.06) & ((c / c.shift(1) - 1).abs() > 0.06) & ((c / c.shift(-1) - 1).abs() > 0.06)
+            c = c[~bad]
+            c = c[c.pct_change().abs().fillna(0) < 0.25]
             out[key] = sign * c.pct_change() * 100     # daily % move, rand flipped so up = stronger
     return out
 
@@ -201,8 +207,9 @@ def main():
     ev = load_events()
     tests_1_3_4(ev)
     print("tests 1, 3, 4 done")
-    test_2(ev)
-    print("test 2 done")
+    if os.environ.get("SKIP_TEST2") != "1":
+        test_2(ev)
+        print("test 2 done")
 
 
 if __name__ == "__main__":
