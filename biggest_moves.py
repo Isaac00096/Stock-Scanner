@@ -14,6 +14,11 @@ for name, (sym, sign) in MARKETS.items():
     for _, df in data.iter_daily([sym], "max"):
         c = df["Close"].dropna()
         c = c[c.index >= "2015-01-01"]
+        # drop bad ticks: a price far from both neighbours that snaps straight back
+        nb = (c.shift(1) + c.shift(-1)) / 2
+        bad = ((c / nb - 1).abs() > 0.06) & ((c / c.shift(1) - 1).abs() > 0.06) & ((c / c.shift(-1) - 1).abs() > 0.06)
+        c = c[~bad]
+        c = c[c.pct_change().abs().fillna(0) < 0.25]
         r = sign * c.pct_change().dropna() * 100
         sd = r.rolling(250, min_periods=60).std().shift(1)
         z = (r / sd).dropna()
@@ -26,7 +31,7 @@ for name, (sym, sign) in MARKETS.items():
                 break
         for d in picked:
             rows.append({"market": name, "date": d.date().isoformat(), "move_pct": round(r[d], 2),
-                         "times_normal": round(abs(r[d]) / sd.get(d, np.nan), 1) if d in sd.index else np.nan})
+                         "times_normal": round(abs(r[d]) / sd[d], 1) if d in sd.index and sd[d] > 0 else np.nan})
 os.makedirs("data/events", exist_ok=True)
 pd.DataFrame(rows).sort_values(["market", "date"]).to_csv("data/events/biggest_moves.csv", index=False)
 print(pd.DataFrame(rows).to_string())
