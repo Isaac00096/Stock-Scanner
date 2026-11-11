@@ -285,7 +285,7 @@ th{{color:#9098a8;font-size:12px;text-transform:uppercase}} .wrap{{overflow-x:au
 and a better average than both simpler versions. Free 1-minute history only goes back about 30 days, so the
 history grows by one day every weeknight. Not financial advice.</p></main></body></html>"""
     os.makedirs(os.path.dirname(REPORT), exist_ok=True)
-    for path in (REPORT, os.path.join(config.OUTPUT_DIR, config.DASHBOARD_FILE)):   # also the main dashboard
+    for path in (REPORT,):
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(page)
 

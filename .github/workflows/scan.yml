@@ -1,9 +1,8 @@
 name: Daily NYSE Scan
 
 on:
-  # schedule switched off 2026-11-07: daily strategies retired in favour of opening.py
-  # schedule:
-  #    - cron: "0 22 * * 1-5"   # weekdays 22:00 UTC (00:00 SAST), after the US close
+  schedule:
+    - cron: "0 22 * * 1-5"   # weekdays 22:00 UTC (00:00 SAST), after the US close
   workflow_dispatch: {}
 
 permissions:
