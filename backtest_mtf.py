@@ -26,7 +26,7 @@ import data
 
 URL = "https://data.alpaca.markets/v2/stocks/bars"
 NY = "America/New_York"
-OUT = os.path.join("data", "opening", "mtf_rows.csv.gz")
+OUT = os.path.join("data", "opening", os.environ.get("MTF_OUT", "mtf_rows.csv.gz"))
 TFS = {"5m": 5, "15m": 15, "30m": 30, "1h": 60, "4h": 240, "day": 390}
 LEN = 20
 
@@ -151,8 +151,8 @@ def main():
     end_ts = min(pd.Timestamp(end, tz=NY) + pd.Timedelta(hours=23),
                  pd.Timestamp.now(tz=NY) - pd.Timedelta(minutes=20)).tz_convert("UTC").isoformat()
     allrows, t0 = [], time.time()
-    for i in range(0, len(syms), 20):
-        batch = syms[i:i + 20]
+    for i in range(0, len(syms), 5):
+        batch = syms[i:i + 5]
         got = fetch(sess, batch, start_ts, end_ts)
         for sym, rows in got.items():
             try:

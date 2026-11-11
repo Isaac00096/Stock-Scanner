@@ -17,9 +17,9 @@ import sys
 import numpy as np
 import pandas as pd
 
-ROWS = os.path.join("data", "opening", "mtf_rows.csv.gz")
-OUT = os.path.join("docs", "backtest_mtf.html")
-FROM = "2026-08-11"
+ROWS = os.path.join("data", "opening", os.environ.get("MTF_OUT", "mtf_rows.csv.gz"))
+OUT = os.path.join("docs", os.environ.get("MTF_HTML", "backtest_mtf.html"))
+FROM = os.environ.get("MTF_FROM", "2026-08-11")
 SIX = ["day", "4h", "1h", "30m", "15m", "5m"]
 CROSS = {"none": ("No cross needed", None, None),
          "1m": ("1min chart crossed in last 15 min", "age_1m", 14),

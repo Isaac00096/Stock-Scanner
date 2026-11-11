@@ -7,6 +7,10 @@ on:
         description: "First day of 1-minute data (includes ~4 weeks warm-up)"
         default: "2026-07-01"
         required: true
+      out:
+        description: "Output file name"
+        default: "mtf_rows.csv.gz"
+        required: true
 
 permissions:
   contents: write
@@ -14,7 +18,7 @@ permissions:
 jobs:
   backtest:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,12 +29,13 @@ jobs:
         env:
           ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
           ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
+          MTF_OUT: ${{ inputs.out }}
         run: python backtest_mtf.py --start "${{ inputs.start }}"
       - name: Save rows
         run: |
           git config user.name "nyse-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/opening/mtf_rows.csv.gz
+          git add data/opening/*.csv.gz
           git diff --quiet --cached || git commit -m "Multi-timeframe backtest rows"
           git pull --rebase origin main
           git push
