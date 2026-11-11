@@ -29,3 +29,33 @@ date,kind,outcome,name,region,day0,next1,next5,next20,asset
 2025-02-19,Political shock,,SA budget postponed (VAT row),SA,0.241,-0.098,-2.036,2.967,Gold (US$)
 2025-04-03,Political shock,,US 'Liberation Day' tariffs,US/global,-4.131,-2.036,6.892,9.452,Gold (US$)
 2025-04-09,Political shock,,US pauses most tariffs,US/global,6.264,2.112,4.749,5.24,Gold (US$)
+2015-12-10,Political shock,,SA finance minister Nene fired,SA,-1.722,0.476,-0.339,-3.662,S&P 500
+2015-12-14,Political shock,,Pravin Gordhan reappointed finance minister,SA,1.542,1.451,-0.217,-5.949,S&P 500
+2016-06-24,Political shock,,Brexit vote result,US/global,-5.337,1.777,4.399,8.43,S&P 500
+2017-03-31,Political shock,,SA finance minister Gordhan fired,SA,-0.389,0.056,-0.071,1.371,S&P 500
+2017-04-04,Political shock,,S&P cuts SA to junk,SA,-0.25,0.193,-0.341,1.554,S&P 500
+2017-12-18,Political shock,,Ramaphosa elected ANC leader,SA,0.212,-0.083,0.043,4.804,S&P 500
+2018-02-15,Political shock,,Zuma resigns as SA president,SA,1.245,-0.584,1.734,-0.706,S&P 500
+2019-08-05,Political shock,,US-China trade war escalates,US/global,-1.715,0.077,1.546,1.944,S&P 500
+2020-03-30,Political shock,,Moody's cuts SA to junk,SA,1.697,-4.414,2.895,13.732,S&P 500
+2022-02-24,Political shock,,Russia invades Ukraine,US/global,3.766,-0.244,-1.272,3.613,S&P 500
+2023-05-12,Political shock,,US says SA supplied arms to Russia,SA,0.137,-0.638,1.362,5.627,S&P 500
+2024-06-14,Political shock,,SA unity government formed,SA,0.727,0.252,-0.072,2.102,S&P 500
+2025-02-19,Political shock,,SA budget postponed (VAT row),SA,-0.197,-1.706,-4.184,-7.432,S&P 500
+2025-04-03,Political shock,,US 'Liberation Day' tariffs,US/global,-10.525,-0.233,5.701,11.358,S&P 500
+2025-04-09,Political shock,,US pauses most tariffs,US/global,5.725,1.809,0.278,7.438,S&P 500
+2015-12-10,Political shock,,SA finance minister Nene fired,SA,-2.202,-0.33,1.828,-0.92,JSE Top 40
+2015-12-14,Political shock,,Pravin Gordhan reappointed finance minister,SA,0.322,2.784,4.904,-4.235,JSE Top 40
+2016-06-24,Political shock,,Brexit vote result,US/global,-6.966,2.182,4.287,5.429,JSE Top 40
+2017-03-31,Political shock,,SA finance minister Gordhan fired,SA,0.763,0.405,2.008,3.382,JSE Top 40
+2017-04-04,Political shock,,S&P cuts SA to junk,SA,1.417,0.043,1.305,3.117,JSE Top 40
+2017-12-18,Political shock,,Ramaphosa elected ANC leader,SA,0.61,0.005,1.59,5.013,JSE Top 40
+2018-02-15,Political shock,,Zuma resigns as SA president,SA,3.07,-0.755,-0.699,-0.859,JSE Top 40
+2019-08-05,Political shock,,US-China trade war escalates,US/global,-2.408,0.285,-1.521,0.497,JSE Top 40
+2020-03-30,Political shock,,Moody's cuts SA to junk,SA,3.96,-1.27,7.381,11.093,JSE Top 40
+2022-02-24,Political shock,,Russia invades Ukraine,US/global,-0.945,2.792,0.934,0.12,JSE Top 40
+2023-05-12,Political shock,,US says SA supplied arms to Russia,SA,1.776,-0.361,-0.211,-2.652,JSE Top 40
+2024-06-14,Political shock,,SA unity government formed,SA,3.956,1.314,-0.339,1.718,JSE Top 40
+2025-02-19,Political shock,,SA budget postponed (VAT row),SA,0.012,0.159,-1.669,0.932,JSE Top 40
+2025-04-03,Political shock,,US 'Liberation Day' tariffs,US/global,-7.838,-0.723,5.836,12.058,JSE Top 40
+2025-04-09,Political shock,,US pauses most tariffs,US/global,2.781,0.386,3.782,6.973,JSE Top 40

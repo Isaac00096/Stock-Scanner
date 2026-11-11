@@ -1,8 +1,8 @@
 asset,group,outcome,events,cont1_pct,aligned1_avg,cont5_pct,aligned5_avg,cont20_pct,aligned20_avg,day0_avg,next20_avg
-Rand vs US dollar (up = rand stronger),Any normal day (baseline),,3061,49.134,-0.031,49.984,-0.045,47.468,-0.183,,
-Rand vs US dollar (up = rand stronger),US Fed rate decision,all,88,54.545,-0.052,48.864,-0.06,44.828,-0.571,,
+Rand vs US dollar (up = rand stronger),Any normal day (baseline),,3057,49.231,0.004,49.787,-0.047,47.498,-0.148,,
+Rand vs US dollar (up = rand stronger),US Fed rate decision,all,88,54.545,-0.052,47.727,-0.256,45.977,-0.345,,
 Rand vs US dollar (up = rand stronger),US Fed rate decision,hike,20,35.0,-0.511,45.0,-0.465,45.0,-0.72,0.941,-1.174
-Rand vs US dollar (up = rand stronger),US Fed rate decision,cut,11,63.636,0.206,63.636,2.178,45.455,-1.639,-0.285,-2.655
+Rand vs US dollar (up = rand stronger),US Fed rate decision,cut,11,63.636,0.206,54.545,0.615,54.545,0.15,-0.285,-3.01
 Rand vs US dollar (up = rand stronger),US Fed rate decision,hold,57,59.649,0.06,47.368,-0.35,44.643,-0.309,0.497,0.173
 Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,all,66,39.394,-0.198,43.939,-0.299,45.455,-0.095,,
 Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hike,15,40.0,-0.029,40.0,-0.203,40.0,-0.847,0.64,-0.937
@@ -17,3 +17,21 @@ Gold (US$),SA Reserve Bank rate decision,all,66,53.03,0.123,50.0,0.332,46.97,-0.
 Gold (US$),SA Reserve Bank rate decision,hike,15,46.667,0.108,46.667,0.015,46.667,-0.22,0.026,-0.19
 Gold (US$),SA Reserve Bank rate decision,cut,14,57.143,0.238,50.0,0.762,71.429,1.728,0.656,3.3
 Gold (US$),SA Reserve Bank rate decision,hold,37,54.054,0.086,51.351,0.298,37.838,-1.884,-0.662,1.994
+S&P 500,Any normal day (baseline),,2955,49.509,-0.005,50.423,-0.075,53.096,0.06,,
+S&P 500,US Fed rate decision,all,88,53.409,0.041,55.682,0.022,49.425,-0.449,,
+S&P 500,US Fed rate decision,hike,20,55.0,0.176,55.0,-0.258,30.0,-1.41,-0.553,1.276
+S&P 500,US Fed rate decision,cut,11,45.455,0.088,45.455,-1.1,45.455,-2.393,-0.782,0.006
+S&P 500,US Fed rate decision,hold,57,54.386,-0.015,57.895,0.336,57.143,0.276,0.151,1.663
+S&P 500,SA Reserve Bank rate decision,all,66,46.97,-0.039,48.485,-0.167,54.545,-0.468,,
+S&P 500,SA Reserve Bank rate decision,hike,15,66.667,0.064,53.333,0.147,46.667,-0.09,0.666,-0.866
+S&P 500,SA Reserve Bank rate decision,cut,14,42.857,-0.28,35.714,-1.63,57.143,-2.01,-0.232,3.205
+S&P 500,SA Reserve Bank rate decision,hold,37,40.541,0.011,51.351,0.26,56.757,-0.038,0.011,1.453
+JSE Top 40,Any normal day (baseline),,2935,48.586,-0.023,48.45,-0.067,50.324,-0.133,,
+JSE Top 40,US Fed rate decision,all,88,57.955,0.086,56.818,0.091,50.575,-0.625,,
+JSE Top 40,US Fed rate decision,hike,20,45.0,-0.359,60.0,-0.174,45.0,-1.44,-0.412,1.613
+JSE Top 40,US Fed rate decision,cut,11,81.818,0.701,63.636,0.373,36.364,-1.969,-0.235,1.629
+JSE Top 40,US Fed rate decision,hold,57,57.895,0.124,54.386,0.13,55.357,-0.071,0.209,1.357
+JSE Top 40,SA Reserve Bank rate decision,all,66,37.879,-0.224,43.939,-0.133,39.394,-0.374,,
+JSE Top 40,SA Reserve Bank rate decision,hike,15,33.333,-0.3,46.667,-0.262,46.667,0.132,-0.327,-0.907
+JSE Top 40,SA Reserve Bank rate decision,cut,14,35.714,-0.416,42.857,0.443,42.857,-0.051,0.176,3.638
+JSE Top 40,SA Reserve Bank rate decision,hold,37,40.541,-0.121,43.243,-0.299,35.135,-0.702,-0.072,0.807
