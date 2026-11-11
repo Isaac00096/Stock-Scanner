@@ -147,7 +147,9 @@ def main():
     sess.headers.update({"APCA-API-KEY-ID": os.environ["ALPACA_KEY"],
                          "APCA-API-SECRET-KEY": os.environ["ALPACA_SECRET"]})
     start_ts = pd.Timestamp(a.start, tz=NY).tz_convert("UTC").isoformat()
-    end_ts = (pd.Timestamp(end, tz=NY) + pd.Timedelta(hours=23)).tz_convert("UTC").isoformat()
+    # free plan: SIP data from the last 15 minutes is not allowed, so never ask past now - 20 min
+    end_ts = min(pd.Timestamp(end, tz=NY) + pd.Timedelta(hours=23),
+                 pd.Timestamp.now(tz=NY) - pd.Timedelta(minutes=20)).tz_convert("UTC").isoformat()
     allrows, t0 = [], time.time()
     for i in range(0, len(syms), 20):
         batch = syms[i:i + 20]
