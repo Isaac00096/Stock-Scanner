@@ -1,0 +1,36 @@
+time_utc,group,name,pairs
+2024-10-30 12:30,Political,UK budget (Reeves),GBP/USD
+2024-11-06 00:00,Political,US election 2024 results,EUR/USD;GBP/USD;USD/JPY;USD/ZAR
+2024-11-21 13:00,SARB decision,SARB cut,USD/ZAR
+2024-12-18 19:00,US Fed decision,Fed cut,EUR/USD;GBP/USD;USD/JPY
+2025-01-29 19:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2025-01-30 13:00,SARB decision,SARB cut,USD/ZAR
+2025-03-12 12:00,Political,SA budget (VAT hike),USD/ZAR
+2025-03-19 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2025-03-20 13:00,SARB decision,SARB hold,USD/ZAR
+2025-04-02 20:00,Political,US 'Liberation Day' tariffs,EUR/USD;GBP/USD;USD/JPY;USD/ZAR
+2025-05-07 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2025-05-21 12:00,Political,SA budget 3.0,USD/ZAR
+2025-05-29 13:00,SARB decision,SARB cut,USD/ZAR
+2025-06-18 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2025-07-30 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2025-07-31 13:00,SARB decision,SARB cut,USD/ZAR
+2025-09-17 18:00,US Fed decision,Fed cut,EUR/USD;GBP/USD;USD/JPY
+2025-09-18 13:00,SARB decision,SARB hold,USD/ZAR
+2025-10-29 18:00,US Fed decision,Fed cut,EUR/USD;GBP/USD;USD/JPY
+2025-11-20 13:00,SARB decision,SARB cut,USD/ZAR
+2025-11-26 12:30,Political,UK budget 2025,GBP/USD
+2025-12-10 19:00,US Fed decision,Fed cut,EUR/USD;GBP/USD;USD/JPY
+2026-01-28 19:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2026-01-29 13:00,SARB decision,SARB hold,USD/ZAR
+2026-03-18 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2026-03-26 13:00,SARB decision,SARB hold,USD/ZAR
+2026-04-29 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2026-05-28 13:00,SARB decision,SARB hike,USD/ZAR
+2026-06-17 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2026-07-23 13:00,SARB decision,SARB hold,USD/ZAR
+2026-07-29 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2026-09-16 18:00,US Fed decision,Fed hike,EUR/USD;GBP/USD;USD/JPY
+2026-09-23 13:00,SARB decision,SARB hike,USD/ZAR
+2026-10-28 18:00,US Fed decision,Fed hold,EUR/USD;GBP/USD;USD/JPY
+2026-11-04 00:00,Political,US midterms 2026 results,EUR/USD;GBP/USD;USD/JPY;USD/ZAR
