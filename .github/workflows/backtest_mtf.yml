@@ -1,0 +1,36 @@
+name: Multi-timeframe Opening Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First day of 1-minute data (includes ~4 weeks warm-up)"
+        default: "2026-07-01"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt requests
+      - name: Download and build rows
+        env:
+          ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
+        run: python backtest_mtf.py --start "${{ inputs.start }}"
+      - name: Save rows
+        run: |
+          git config user.name "nyse-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/opening/mtf_rows.csv.gz
+          git diff --quiet --cached || git commit -m "Multi-timeframe backtest rows"
+          git pull --rebase origin main
+          git push
