@@ -1,0 +1,192 @@
+date,kind,group,outcome,name
+2015-12-10,Political shock,shock,,SA finance minister Nene fired
+2015-12-14,Political shock,shock,,Pravin Gordhan reappointed finance minister
+2016-01-27,US Fed rate decision,rates,hold,US Fed hold
+2016-01-28,SA Reserve Bank rate decision,rates,hike,SARB hike
+2016-02-24,SA national budget,scheduled,,SA budget speech
+2016-03-16,US Fed rate decision,rates,hold,US Fed hold
+2016-03-17,SA Reserve Bank rate decision,rates,hike,SARB hike
+2016-04-27,US Fed rate decision,rates,hold,US Fed hold
+2016-05-19,SA Reserve Bank rate decision,rates,hold,SARB hold
+2016-06-15,US Fed rate decision,rates,hold,US Fed hold
+2016-06-24,Political shock,shock,,Brexit vote result
+2016-07-21,SA Reserve Bank rate decision,rates,hold,SARB hold
+2016-07-27,US Fed rate decision,rates,hold,US Fed hold
+2016-08-04,Election,scheduled,,SA local elections (results)
+2016-09-21,US Fed rate decision,rates,hold,US Fed hold
+2016-09-22,SA Reserve Bank rate decision,rates,hold,SARB hold
+2016-11-02,US Fed rate decision,rates,hold,US Fed hold
+2016-11-09,Election,scheduled,,US presidential election result
+2016-11-24,SA Reserve Bank rate decision,rates,hold,SARB hold
+2016-12-14,US Fed rate decision,rates,hike,US Fed hike
+2017-01-24,SA Reserve Bank rate decision,rates,hold,SARB hold
+2017-02-01,US Fed rate decision,rates,hold,US Fed hold
+2017-02-22,SA national budget,scheduled,,SA budget speech
+2017-03-15,US Fed rate decision,rates,hike,US Fed hike
+2017-03-30,SA Reserve Bank rate decision,rates,hold,SARB hold
+2017-03-31,Political shock,shock,,SA finance minister Gordhan fired
+2017-04-04,Political shock,shock,,S&P cuts SA to junk
+2017-05-03,US Fed rate decision,rates,hold,US Fed hold
+2017-05-25,SA Reserve Bank rate decision,rates,hold,SARB hold
+2017-06-14,US Fed rate decision,rates,hike,US Fed hike
+2017-07-20,SA Reserve Bank rate decision,rates,cut,SARB cut
+2017-07-26,US Fed rate decision,rates,hold,US Fed hold
+2017-09-20,US Fed rate decision,rates,hold,US Fed hold
+2017-09-21,SA Reserve Bank rate decision,rates,hold,SARB hold
+2017-11-01,US Fed rate decision,rates,hold,US Fed hold
+2017-11-23,SA Reserve Bank rate decision,rates,hold,SARB hold
+2017-12-13,US Fed rate decision,rates,hike,US Fed hike
+2017-12-18,Political shock,shock,,Ramaphosa elected ANC leader
+2018-01-18,SA Reserve Bank rate decision,rates,hold,SARB hold
+2018-01-31,US Fed rate decision,rates,hold,US Fed hold
+2018-02-15,Political shock,shock,,Zuma resigns as SA president
+2018-02-21,SA national budget,scheduled,,SA budget speech
+2018-03-21,US Fed rate decision,rates,hike,US Fed hike
+2018-03-28,SA Reserve Bank rate decision,rates,cut,SARB cut
+2018-05-02,US Fed rate decision,rates,hold,US Fed hold
+2018-05-24,SA Reserve Bank rate decision,rates,hold,SARB hold
+2018-06-13,US Fed rate decision,rates,hike,US Fed hike
+2018-07-19,SA Reserve Bank rate decision,rates,hold,SARB hold
+2018-08-01,US Fed rate decision,rates,hold,US Fed hold
+2018-09-20,SA Reserve Bank rate decision,rates,hold,SARB hold
+2018-09-26,US Fed rate decision,rates,hike,US Fed hike
+2018-11-07,Election,scheduled,,US midterm result
+2018-11-08,US Fed rate decision,rates,hold,US Fed hold
+2018-11-22,SA Reserve Bank rate decision,rates,hike,SARB hike
+2018-12-19,US Fed rate decision,rates,hike,US Fed hike
+2019-01-17,SA Reserve Bank rate decision,rates,hold,SARB hold
+2019-01-30,US Fed rate decision,rates,hold,US Fed hold
+2019-02-20,SA national budget,scheduled,,SA budget speech
+2019-03-20,US Fed rate decision,rates,hold,US Fed hold
+2019-03-28,SA Reserve Bank rate decision,rates,hold,SARB hold
+2019-05-01,US Fed rate decision,rates,hold,US Fed hold
+2019-05-09,Election,scheduled,,SA national election (results)
+2019-05-23,SA Reserve Bank rate decision,rates,hold,SARB hold
+2019-06-19,US Fed rate decision,rates,hold,US Fed hold
+2019-07-18,SA Reserve Bank rate decision,rates,cut,SARB cut
+2019-07-31,US Fed rate decision,rates,cut,US Fed cut
+2019-08-05,Political shock,shock,,US-China trade war escalates
+2019-09-18,US Fed rate decision,rates,cut,US Fed cut
+2019-09-19,SA Reserve Bank rate decision,rates,hold,SARB hold
+2019-10-30,US Fed rate decision,rates,cut,US Fed cut
+2019-11-21,SA Reserve Bank rate decision,rates,hold,SARB hold
+2019-12-11,US Fed rate decision,rates,hold,US Fed hold
+2020-01-16,SA Reserve Bank rate decision,rates,cut,SARB cut
+2020-01-29,US Fed rate decision,rates,hold,US Fed hold
+2020-02-26,SA national budget,scheduled,,SA budget speech
+2020-03-03,US Fed rate decision,rates,cut,US Fed cut
+2020-03-16,US Fed rate decision,rates,cut,US Fed cut
+2020-03-19,SA Reserve Bank rate decision,rates,cut,SARB cut
+2020-03-30,Political shock,shock,,Moody's cuts SA to junk
+2020-04-14,SA Reserve Bank rate decision,rates,cut,SARB cut
+2020-04-29,US Fed rate decision,rates,hold,US Fed hold
+2020-05-21,SA Reserve Bank rate decision,rates,cut,SARB cut
+2020-06-10,US Fed rate decision,rates,hold,US Fed hold
+2020-06-24,SA national budget,scheduled,,SA budget speech
+2020-07-23,SA Reserve Bank rate decision,rates,cut,SARB cut
+2020-07-29,US Fed rate decision,rates,hold,US Fed hold
+2020-09-16,US Fed rate decision,rates,hold,US Fed hold
+2020-09-17,SA Reserve Bank rate decision,rates,hold,SARB hold
+2020-11-04,Election,scheduled,,US presidential election result
+2020-11-05,US Fed rate decision,rates,hold,US Fed hold
+2020-11-19,SA Reserve Bank rate decision,rates,hold,SARB hold
+2020-12-16,US Fed rate decision,rates,hold,US Fed hold
+2021-01-21,SA Reserve Bank rate decision,rates,hold,SARB hold
+2021-01-27,US Fed rate decision,rates,hold,US Fed hold
+2021-02-24,SA national budget,scheduled,,SA budget speech
+2021-03-17,US Fed rate decision,rates,hold,US Fed hold
+2021-03-25,SA Reserve Bank rate decision,rates,hold,SARB hold
+2021-04-28,US Fed rate decision,rates,hold,US Fed hold
+2021-05-20,SA Reserve Bank rate decision,rates,hold,SARB hold
+2021-06-16,US Fed rate decision,rates,hold,US Fed hold
+2021-07-22,SA Reserve Bank rate decision,rates,hold,SARB hold
+2021-07-28,US Fed rate decision,rates,hold,US Fed hold
+2021-09-22,US Fed rate decision,rates,hold,US Fed hold
+2021-09-23,SA Reserve Bank rate decision,rates,hold,SARB hold
+2021-11-02,Election,scheduled,,SA local elections (results)
+2021-11-03,US Fed rate decision,rates,hold,US Fed hold
+2021-11-18,SA Reserve Bank rate decision,rates,hike,SARB hike
+2021-12-15,US Fed rate decision,rates,hold,US Fed hold
+2022-01-26,US Fed rate decision,rates,hold,US Fed hold
+2022-01-27,SA Reserve Bank rate decision,rates,hike,SARB hike
+2022-02-23,SA national budget,scheduled,,SA budget speech
+2022-02-24,Political shock,shock,,Russia invades Ukraine
+2022-03-16,US Fed rate decision,rates,hike,US Fed hike
+2022-03-24,SA Reserve Bank rate decision,rates,hike,SARB hike
+2022-05-04,US Fed rate decision,rates,hike,US Fed hike
+2022-05-19,SA Reserve Bank rate decision,rates,hike,SARB hike
+2022-06-15,US Fed rate decision,rates,hike,US Fed hike
+2022-07-21,SA Reserve Bank rate decision,rates,hike,SARB hike
+2022-07-27,US Fed rate decision,rates,hike,US Fed hike
+2022-09-21,US Fed rate decision,rates,hike,US Fed hike
+2022-09-22,SA Reserve Bank rate decision,rates,hike,SARB hike
+2022-11-02,US Fed rate decision,rates,hike,US Fed hike
+2022-11-09,Election,scheduled,,US midterm result
+2022-11-24,SA Reserve Bank rate decision,rates,hike,SARB hike
+2022-12-14,US Fed rate decision,rates,hike,US Fed hike
+2023-01-26,SA Reserve Bank rate decision,rates,hike,SARB hike
+2023-02-01,US Fed rate decision,rates,hike,US Fed hike
+2023-02-22,SA national budget,scheduled,,SA budget speech
+2023-03-22,US Fed rate decision,rates,hike,US Fed hike
+2023-03-30,SA Reserve Bank rate decision,rates,hike,SARB hike
+2023-05-03,US Fed rate decision,rates,hike,US Fed hike
+2023-05-12,Political shock,shock,,US says SA supplied arms to Russia
+2023-05-25,SA Reserve Bank rate decision,rates,hike,SARB hike
+2023-06-14,US Fed rate decision,rates,hold,US Fed hold
+2023-07-20,SA Reserve Bank rate decision,rates,hold,SARB hold
+2023-07-26,US Fed rate decision,rates,hike,US Fed hike
+2023-09-20,US Fed rate decision,rates,hold,US Fed hold
+2023-09-21,SA Reserve Bank rate decision,rates,hold,SARB hold
+2023-11-01,US Fed rate decision,rates,hold,US Fed hold
+2023-11-23,SA Reserve Bank rate decision,rates,hold,SARB hold
+2023-12-13,US Fed rate decision,rates,hold,US Fed hold
+2024-01-25,SA Reserve Bank rate decision,rates,hold,SARB hold
+2024-01-31,US Fed rate decision,rates,hold,US Fed hold
+2024-02-21,SA national budget,scheduled,,SA budget speech
+2024-03-20,US Fed rate decision,rates,hold,US Fed hold
+2024-03-27,SA Reserve Bank rate decision,rates,hold,SARB hold
+2024-05-01,US Fed rate decision,rates,hold,US Fed hold
+2024-05-30,Election,scheduled,,SA national election (results)
+2024-05-30,SA Reserve Bank rate decision,rates,hold,SARB hold
+2024-06-12,US Fed rate decision,rates,hold,US Fed hold
+2024-06-14,Political shock,shock,,SA unity government formed
+2024-07-18,SA Reserve Bank rate decision,rates,hold,SARB hold
+2024-07-31,US Fed rate decision,rates,hold,US Fed hold
+2024-09-18,US Fed rate decision,rates,cut,US Fed cut
+2024-09-19,SA Reserve Bank rate decision,rates,cut,SARB cut
+2024-11-06,Election,scheduled,,US presidential election result
+2024-11-07,US Fed rate decision,rates,cut,US Fed cut
+2024-11-21,SA Reserve Bank rate decision,rates,cut,SARB cut
+2024-12-18,US Fed rate decision,rates,cut,US Fed cut
+2025-01-29,US Fed rate decision,rates,hold,US Fed hold
+2025-01-30,SA Reserve Bank rate decision,rates,cut,SARB cut
+2025-02-19,Political shock,shock,,SA budget postponed (VAT row)
+2025-03-12,SA national budget,scheduled,,SA budget speech
+2025-03-19,US Fed rate decision,rates,hold,US Fed hold
+2025-03-20,SA Reserve Bank rate decision,rates,hold,SARB hold
+2025-04-03,Political shock,shock,,US 'Liberation Day' tariffs
+2025-04-09,Political shock,shock,,US pauses most tariffs
+2025-05-07,US Fed rate decision,rates,hold,US Fed hold
+2025-05-21,SA national budget,scheduled,,SA budget speech
+2025-05-29,SA Reserve Bank rate decision,rates,cut,SARB cut
+2025-06-18,US Fed rate decision,rates,hold,US Fed hold
+2025-07-30,US Fed rate decision,rates,hold,US Fed hold
+2025-07-31,SA Reserve Bank rate decision,rates,cut,SARB cut
+2025-09-17,US Fed rate decision,rates,cut,US Fed cut
+2025-09-18,SA Reserve Bank rate decision,rates,hold,SARB hold
+2025-10-29,US Fed rate decision,rates,cut,US Fed cut
+2025-11-20,SA Reserve Bank rate decision,rates,cut,SARB cut
+2025-12-10,US Fed rate decision,rates,cut,US Fed cut
+2026-01-28,US Fed rate decision,rates,hold,US Fed hold
+2026-01-29,SA Reserve Bank rate decision,rates,hold,SARB hold
+2026-03-18,US Fed rate decision,rates,hold,US Fed hold
+2026-03-26,SA Reserve Bank rate decision,rates,hold,SARB hold
+2026-04-29,US Fed rate decision,rates,hold,US Fed hold
+2026-05-28,SA Reserve Bank rate decision,rates,hike,SARB hike
+2026-06-17,US Fed rate decision,rates,hold,US Fed hold
+2026-07-23,SA Reserve Bank rate decision,rates,hold,SARB hold
+2026-07-29,US Fed rate decision,rates,hold,US Fed hold
+2026-09-16,US Fed rate decision,rates,hike,US Fed hike
+2026-09-23,SA Reserve Bank rate decision,rates,hike,SARB hike
+2026-10-28,US Fed rate decision,rates,hold,US Fed hold
+2026-11-04,Election,scheduled,,US midterm result

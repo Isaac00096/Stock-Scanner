@@ -111,7 +111,8 @@ def simulate(ind: pd.DataFrame, signal: np.ndarray, setup: Setup, cost_pct: floa
             exit_px, j = c[last], last
 
         ret = (exit_px / entry - 1) * 100 if is_long else (1 - exit_px / entry) * 100
-        trades.append({"date": dates[s], "ret": ret - 2 * cost_pct, "reason": reason})
+        trades.append({"date": dates[s], "ret": ret - 2 * cost_pct, "reason": reason,
+                       "entry_date": dates[e], "exit_date": dates[j]})
         next_free = j + 1
     return trades
 
