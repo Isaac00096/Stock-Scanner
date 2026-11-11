@@ -1,0 +1,21 @@
+market,event,trades_through,win_through_pct,avg_through_pct,trades_clear,win_clear_pct,avg_clear_pct,diff_pct,luck_t
+US shares,US Fed decision,24162,55.786,3.204,96346,54.391,-0.206,3.41,37.686
+US shares,SA Reserve Bank decision,19686,61.755,4.166,96346,54.391,-0.206,4.372,40.894
+US shares,Election or SA budget,7309,57.012,4.488,96346,54.391,-0.206,4.694,24.282
+US shares,Political shock,3067,62.602,3.316,96346,54.391,-0.206,3.521,17.104
+US shares,Any of these events,38444,52.242,1.715,96346,54.391,-0.206,1.921,31.908
+JSE shares,US Fed decision,158,47.468,-1.034,897,61.65,0.513,-1.548,-4.331
+JSE shares,SA Reserve Bank decision,85,54.118,-0.607,897,61.65,0.513,-1.12,-2.622
+JSE shares,Election or SA budget,27,37.037,-2.223,897,61.65,0.513,-2.737,-2.691
+JSE shares,Political shock,25,60.0,1.697,897,61.65,0.513,1.184,1.104
+JSE shares,Any of these events,266,51.128,-0.572,897,61.65,0.513,-1.085,-3.704
+UK shares,US Fed decision,1728,60.706,4.09,4828,29.039,-0.967,5.056,21.361
+UK shares,SA Reserve Bank decision,1478,62.652,4.615,4828,29.039,-0.967,5.582,20.557
+UK shares,Election or SA budget,416,64.663,6.814,4828,29.039,-0.967,7.781,12.975
+UK shares,Political shock,273,66.667,3.262,4828,29.039,-0.967,4.229,6.896
+UK shares,Any of these events,2609,54.35,2.629,4828,29.039,-0.967,3.596,20.014
+European shares,US Fed decision,1717,65.347,6.218,3128,10.71,-2.0,8.218,27.279
+European shares,SA Reserve Bank decision,1441,68.008,7.135,3128,10.71,-2.0,9.135,26.289
+European shares,Election or SA budget,476,71.849,10.614,3128,10.71,-2.0,12.614,16.338
+European shares,Political shock,151,65.563,7.192,3128,10.71,-2.0,9.193,8.049
+European shares,Any of these events,2179,56.494,4.594,3128,10.71,-2.0,6.594,26.322

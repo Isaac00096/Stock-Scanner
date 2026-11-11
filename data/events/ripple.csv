@@ -1,0 +1,19 @@
+asset,group,outcome,events,cont1_pct,aligned1_avg,cont5_pct,aligned5_avg,cont20_pct,aligned20_avg,day0_avg,next20_avg
+Rand vs US dollar (up = rand stronger),Any normal day (baseline),,3063,48.743,-0.029,50.278,-0.028,48.449,-0.123,,
+Rand vs US dollar (up = rand stronger),US Fed rate decision,all,88,46.591,-0.072,48.864,-0.279,54.023,0.066,,
+Rand vs US dollar (up = rand stronger),US Fed rate decision,hike,20,50.0,-0.208,40.0,-0.657,65.0,0.507,0.227,-0.449
+Rand vs US dollar (up = rand stronger),US Fed rate decision,cut,11,36.364,-0.027,63.636,-0.002,45.455,-0.126,0.096,-4.671
+Rand vs US dollar (up = rand stronger),US Fed rate decision,hold,57,47.368,-0.033,49.123,-0.199,51.786,-0.054,0.059,0.64
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,all,66,43.939,0.112,36.364,-0.337,34.848,-0.464,,
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hike,15,46.667,0.29,46.667,-0.328,26.667,-0.729,0.16,-0.006
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,cut,14,64.286,0.453,57.143,0.619,64.286,2.064,-0.21,-1.978
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hold,37,35.135,-0.089,24.324,-0.702,27.027,-1.313,0.086,0.286
+Gold (US$),Any normal day (baseline),,2959,47.854,-0.029,50.051,0.004,48.8,-0.031,,
+Gold (US$),US Fed rate decision,all,88,55.682,-0.02,40.909,-0.737,37.931,-1.456,,
+Gold (US$),US Fed rate decision,hike,20,60.0,0.039,50.0,-0.207,35.0,-1.03,0.227,0.856
+Gold (US$),US Fed rate decision,cut,11,54.545,-0.04,18.182,-1.565,18.182,-4.615,0.225,4.331
+Gold (US$),US Fed rate decision,hold,57,54.386,-0.037,42.105,-0.762,42.857,-0.988,0.1,1.18
+Gold (US$),SA Reserve Bank rate decision,all,66,34.848,-0.31,54.545,0.316,46.97,-0.433,,
+Gold (US$),SA Reserve Bank rate decision,hike,15,53.333,0.018,53.333,0.317,46.667,-0.898,0.2,-0.215
+Gold (US$),SA Reserve Bank rate decision,cut,14,42.857,-0.279,42.857,0.24,50.0,0.684,0.213,3.117
+Gold (US$),SA Reserve Bank rate decision,hold,37,24.324,-0.454,59.459,0.344,45.946,-0.666,-0.461,1.513
