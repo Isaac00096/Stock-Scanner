@@ -1,0 +1,106 @@
+date,country,name,expected,type
+2015-01-22,EU,ECB launches QE,Weaker,Central-bank surprises & intervention
+2015-12-03,EU,ECB disappoints with smaller stimulus,Stronger,Central-bank surprises & intervention
+2015-12-10,SA,SA finance minister Nene fired,Weaker,Leaders & ministers
+2015-12-14,SA,Pravin Gordhan reappointed finance minister,Stronger,Leaders & ministers
+2016-01-29,JP,Bank of Japan adopts negative rates,Weaker,Central-bank surprises & intervention
+2016-02-24,SA,SA budget speech,Mixed,Budgets & fiscal
+2016-03-10,EU,"ECB ""bazooka"" stimulus",Weaker,Central-bank surprises & intervention
+2016-06-24,UK,Brexit vote result,Weaker,Elections & referendums
+2016-07-11,JP,Abe coalition wins upper house; stimulus hopes,Weaker,Elections & referendums
+2016-08-04,UK,Bank of England cuts rates and restarts QE,Weaker,Central-bank surprises & intervention
+2016-09-21,JP,Bank of Japan yield-curve control,Weaker,Central-bank surprises & intervention
+2016-10-03,UK,May signals hard Brexit (Article 50 by March),Weaker,Political crises & negotiations
+2016-11-09,US,Trump wins US presidency,Stronger,Elections & referendums
+2017-01-17,UK,May's Lancaster House Brexit speech (clear plan),Stronger,Political crises & negotiations
+2017-02-22,SA,SA budget speech,Mixed,Budgets & fiscal
+2017-03-31,SA,SA finance minister Gordhan fired,Weaker,Leaders & ministers
+2017-04-04,SA,S&P cuts SA to junk,Weaker,Credit ratings
+2017-04-18,UK,May calls snap election,Stronger,Elections & referendums
+2017-04-24,EU,Macron tops French first round,Stronger,Elections & referendums
+2017-05-08,EU,Macron wins French presidency,Stronger,Elections & referendums
+2017-06-09,UK,UK election: hung parliament,Weaker,Elections & referendums
+2017-10-23,JP,Abe wins snap election,Weaker,Elections & referendums
+2017-12-18,SA,Ramaphosa elected ANC leader,Stronger,Leaders & ministers
+2018-02-15,SA,Zuma resigns as SA president,Stronger,Leaders & ministers
+2018-02-21,SA,SA budget speech,Mixed,Budgets & fiscal
+2018-03-02,US,Trump announces steel and aluminium tariffs,Stronger,Tariffs & trade
+2018-03-05,EU,Italian election: populists win,Weaker,Elections & referendums
+2018-05-29,EU,Italy political crisis (euro-exit fears),Weaker,Political crises & negotiations
+2018-11-07,US,US midterm result,Mixed,Elections & referendums
+2018-11-15,UK,Brexit secretary Raab resigns over deal,Weaker,Leaders & ministers
+2019-01-16,UK,May's Brexit deal defeated (no-deal seen less likely),Stronger,Political crises & negotiations
+2019-02-20,SA,SA budget speech,Mixed,Budgets & fiscal
+2019-05-06,US,Trump raises tariffs on China,Stronger,Tariffs & trade
+2019-05-09,SA,SA national election (results),Mixed,Elections & referendums
+2019-08-05,US,US-China trade war escalates,Stronger,Tariffs & trade
+2019-10-10,UK,Johnson-Varadkar talks open path to a Brexit deal,Stronger,Political crises & negotiations
+2019-12-13,UK,Conservative landslide (Brexit certainty),Stronger,Elections & referendums
+2020-02-26,SA,SA budget speech,Mixed,Budgets & fiscal
+2020-03-30,SA,Moody's cuts SA to junk,Weaker,Credit ratings
+2020-06-24,SA,SA budget speech,Mixed,Budgets & fiscal
+2020-08-28,JP,Abe resigns,Stronger,Leaders & ministers
+2020-11-04,US,US election (Biden),Weaker,Elections & referendums
+2020-12-24,UK,UK-EU trade deal agreed,Stronger,Tariffs & trade
+2021-01-06,US,Democrats win Georgia; Capitol riot,Weaker,Elections & referendums
+2021-02-24,SA,SA budget speech,Mixed,Budgets & fiscal
+2021-09-29,JP,Kishida wins LDP leadership,Stronger,Leaders & ministers
+2021-11-02,SA,SA local elections (results),Mixed,Elections & referendums
+2022-02-23,SA,SA budget speech,Mixed,Budgets & fiscal
+2022-02-24,Global,Russia invades Ukraine,Stronger,War & conflict
+2022-04-25,EU,Macron re-elected,Stronger,Elections & referendums
+2022-07-07,UK,Johnson resigns,Weaker,Leaders & ministers
+2022-09-22,JP,Japan buys yen (first since 1998),Stronger,Central-bank surprises & intervention
+2022-09-23,UK,Truss-Kwarteng mini-budget,Weaker,Budgets & fiscal
+2022-09-28,UK,Bank of England emergency bond buying,Stronger,Central-bank surprises & intervention
+2022-10-14,UK,Chancellor Kwarteng fired,Stronger,Leaders & ministers
+2022-10-20,UK,Truss resigns,Stronger,Leaders & ministers
+2022-10-21,JP,Japan buys yen again,Stronger,Central-bank surprises & intervention
+2022-11-09,US,US midterms,Weaker,Elections & referendums
+2022-12-20,JP,Bank of Japan widens yield band,Stronger,Central-bank surprises & intervention
+2023-02-22,SA,SA budget speech,Mixed,Budgets & fiscal
+2023-05-12,SA,US says SA supplied arms to Russia,Weaker,Political crises & negotiations
+2024-02-21,SA,SA budget speech,Mixed,Budgets & fiscal
+2024-03-19,JP,Bank of Japan ends negative rates,Stronger,Central-bank surprises & intervention
+2024-04-29,JP,Japan buys yen,Stronger,Central-bank surprises & intervention
+2024-05-30,SA,SA national election (results),Weaker,Elections & referendums
+2024-06-10,EU,Macron calls snap election,Weaker,Elections & referendums
+2024-06-14,SA,SA unity government formed,Stronger,Leaders & ministers
+2024-07-01,EU,French first round (far right leads),Weaker,Elections & referendums
+2024-07-05,UK,Labour landslide,Stronger,Elections & referendums
+2024-07-08,EU,French second round: hung parliament,Weaker,Elections & referendums
+2024-07-11,JP,Japan buys yen,Stronger,Central-bank surprises & intervention
+2024-07-31,JP,Bank of Japan raises rates; carry trade unwinds,Stronger,Central-bank surprises & intervention
+2024-09-27,JP,Ishiba wins LDP leadership,Stronger,Leaders & ministers
+2024-10-28,JP,LDP loses majority in election,Weaker,Elections & referendums
+2024-10-30,UK,Reeves first budget (more borrowing),Weaker,Budgets & fiscal
+2024-11-06,US,Trump wins US presidency again,Stronger,Elections & referendums
+2024-12-05,EU,French government falls (Barnier),Weaker,Political crises & negotiations
+2025-01-21,US,Trump inaugurated; no day-one tariffs,Weaker,Tariffs & trade
+2025-02-03,US,"Tariffs on Canada, Mexico, China announced",Stronger,Tariffs & trade
+2025-02-19,SA,SA budget postponed (VAT row),Weaker,Budgets & fiscal
+2025-02-24,EU,German election: Merz wins,Stronger,Elections & referendums
+2025-03-05,EU,Germany agrees huge spending package,Stronger,Budgets & fiscal
+2025-03-12,SA,SA budget speech,Mixed,Budgets & fiscal
+2025-04-03,US,US 'Liberation Day' tariffs,Stronger,Tariffs & trade
+2025-04-09,US,US pauses most tariffs,Stronger,Tariffs & trade
+2025-04-21,US,Trump attacks Fed chair Powell,Weaker,Pressure on central banks
+2025-05-12,US,US-China tariff truce,Stronger,Tariffs & trade
+2025-05-21,SA,SA budget speech,Mixed,Budgets & fiscal
+2025-07-02,UK,Chancellor Reeves seen in tears; doubts over her future,Weaker,Leaders & ministers
+2025-07-22,JP,LDP loses upper house majority,Weaker,Elections & referendums
+2025-08-26,US,Trump moves to fire Fed governor Cook,Weaker,Pressure on central banks
+2025-09-08,JP,Ishiba resigns,Weaker,Leaders & ministers
+2025-09-09,EU,French government falls (Bayrou),Weaker,Political crises & negotiations
+2025-10-06,JP,Takaichi wins LDP leadership (big-spending),Weaker,Leaders & ministers
+2025-10-07,EU,French PM Lecornu resigns,Weaker,Leaders & ministers
+2025-11-26,UK,UK autumn budget,Stronger,Budgets & fiscal
+2026-01-20,US,Trump threatens tariffs over Greenland,Stronger,Tariffs & trade
+2026-01-30,US,Trump nominates Warsh as Fed chair,Stronger,Pressure on central banks
+2026-02-09,JP,Takaichi landslide in snap election,Weaker,Elections & referendums
+2026-03-02,Global,US-Israel strikes on Iran: war begins,Stronger,War & conflict
+2026-04-08,Global,US-Iran ceasefire,Weaker,War & conflict
+2026-04-30,JP,Japan buys yen (record),Stronger,Central-bank surprises & intervention
+2026-06-22,UK,Starmer announces resignation,Weaker,Leaders & ministers
+2026-08-03,JP,Japan and US jointly buy yen,Stronger,Central-bank surprises & intervention
+2026-11-04,US,US midterms: Democrats win Congress,Weaker,Elections & referendums

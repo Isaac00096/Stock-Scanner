@@ -24,6 +24,7 @@ jobs:
       - run: python biggest_moves.py
       - run: python fx_study.py
       - run: python fx_minors.py
+      - run: python playbook.py
       - run: python events.py
         if: ${{ inputs.full != 'no' }}
         env:
