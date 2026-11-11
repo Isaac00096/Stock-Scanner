@@ -144,7 +144,7 @@ Plus RSI(14) 40–60 on the 1-minute chart and the last 1-minute candle on ≥3�
 Each VWMA-cross version is tested to see which chart's cross helps. Enter at the next open, 3% stop from the fill,
 costs 0.05% each way. "Moved right way" is before costs. Where the stop and take-profit were both touched, the stop counts first.</p>
 {''.join(parts)}
-<p class=muted>Only 3 months of data: fewer than ~150 trades or a t below 2 means the result could easily be luck.
+<p class=muted>Fewer than ~150 trades or a t below 2 means the result could easily be luck.
 Shares: today's Trade Nation US list. Data: Alpaca, consolidated US tape. Not financial advice.</p>
 </main></body></html>"""
     with open(OUT, "w") as fh:
