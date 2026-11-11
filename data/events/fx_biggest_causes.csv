@@ -1,0 +1,61 @@
+pair,data_date,news_day,move_pct,direction,times_normal,country,cause,category,political_link,basis
+EUR/USD,2015-01-23,2015-01-22,-2.31,EUR weaker,,EU,ECB launches QE,Central banks & intervention,No,Well-documented history
+EUR/USD,2015-03-09,2015-03-06,-1.69,EUR weaker,,US,Strong US jobs report; ECB QE begins,Economy & data,No,"Likely, not checked"
+EUR/USD,2015-03-19,2015-03-18,2.38,EUR stronger,,US,"Fed drops 'patient', signals slower hikes",Central banks & intervention,No,Well-documented history
+EUR/USD,2015-06-03,2015-06-02,2.08,EUR stronger,2.5,EU,Euro-zone inflation beats forecasts; Draghi accepts bond swings,Economy & data,No,"Likely, not checked"
+EUR/USD,2015-06-30,2015-06-29,2.26,EUR stronger,2.6,EU,"Greek debt crisis: referendum called, banks shut",Politics & geopolitics,Direct,"Likely, not checked"
+EUR/USD,2015-08-27,2015-08-26,-1.83,EUR weaker,2.2,Global,Rebound after China-led 'Black Monday' crash,Market mechanics,No,"Likely, not checked"
+EUR/USD,2015-10-23,2015-10-22,-2.35,EUR weaker,3.0,EU,Draghi signals more ECB stimulus,Central banks & intervention,No,Well-documented history
+EUR/USD,2015-12-04,2015-12-03,2.85,EUR stronger,3.7,EU,ECB stimulus disappoints,Central banks & intervention,No,Well-documented history
+EUR/USD,2016-03-11,2016-03-10,1.72,EUR stronger,2.5,EU,Draghi says no more rate cuts after stimulus,Central banks & intervention,No,Well-documented history
+EUR/USD,2016-06-06,2016-06-03,1.78,EUR stronger,2.8,US,Very weak US jobs report,Economy & data,No,Well-documented history
+EUR/USD,2016-06-27,2016-06-24,-2.54,EUR weaker,4.2,UK,Brexit vote result,Politics & geopolitics,Direct,Well-documented history
+EUR/USD,2016-12-06,2016-12-05,1.66,EUR stronger,3.3,EU,Italy referendum; Renzi resigns (euro rebounds),Politics & geopolitics,Direct,"Likely, not checked"
+EUR/USD,2018-06-15,2018-06-14,-2.04,EUR weaker,4.5,EU,ECB pledges no rate rise until mid-2019,Central banks & intervention,No,Well-documented history
+EUR/USD,2020-03-20,2020-03-19,-2.78,EUR weaker,8.3,Global,COVID-19 dash for dollars,Pandemic,No,Well-documented history
+EUR/USD,2022-03-07,2022-03-04,-1.74,EUR weaker,4.9,Global,Russia's war escalates; energy price shock,Politics & geopolitics,Direct,"Likely, not checked"
+EUR/USD,2022-07-06,2022-07-05,-1.68,EUR weaker,3.8,EU,Euro-zone recession fears as Russia cuts gas,Economy & data,Partly,"Likely, not checked"
+EUR/USD,2022-11-07,2022-11-04,1.84,EUR stronger,3.2,Global,China reopening hopes; dollar slides,Economy & data,Partly,"Likely, not checked"
+EUR/USD,2023-11-15,2023-11-14,1.65,EUR stronger,3.5,US,US inflation cooler than expected,Economy & data,No,Well-documented history
+EUR/USD,2024-11-07,2024-11-06,-1.84,EUR weaker,5.3,US,Trump wins US presidency,Politics & geopolitics,Direct,Well-documented history
+EUR/USD,2025-04-11,2025-04-10,2.79,EUR stronger,6.4,US,'Sell America' after US tariff chaos,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2015-01-05,2015-01-02,-1.89,GBP weaker,,UK,Weak UK data and Greek euro-exit fears,Economy & data,Partly,"Likely, not checked"
+GBP/USD,2016-06-13,2016-06-10,-1.9,GBP weaker,3.7,UK,Polls show Leave ahead before Brexit vote,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2016-06-27,2016-06-24,-7.6,GBP weaker,13.8,UK,Brexit vote result,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2016-07-06,2016-07-05,-2.42,GBP weaker,3.3,UK,"Brexit fallout: property funds freeze, BoE warns",Politics & geopolitics,Direct,"Likely, not checked"
+GBP/USD,2016-07-15,2016-07-14,1.82,GBP stronger,2.4,UK,Bank of England surprises by not cutting,Central banks & intervention,No,Well-documented history
+GBP/USD,2016-10-07,2016-10-06,-2.77,GBP weaker,3.4,UK,Pound flash crash amid hard-Brexit fears,Market mechanics,Partly,Well-documented history
+GBP/USD,2017-01-18,2017-01-17,2.89,GBP stronger,3.5,UK,May's Lancaster House Brexit speech,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2017-04-19,2017-04-18,2.28,GBP stronger,2.7,UK,May calls snap election,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2017-06-09,2017-06-08,-1.84,GBP weaker,2.2,UK,UK election: hung parliament,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2018-11-02,2018-11-01,1.83,GBP stronger,3.8,UK,Reports of a Brexit deal on finance,Politics & geopolitics,Direct,"Likely, not checked"
+GBP/USD,2019-01-03,2019-01-02,-1.82,GBP weaker,3.5,Global,Flash crash in early Asia after Apple warning,Market mechanics,No,Well-documented history
+GBP/USD,2019-03-12,2019-03-11,2.0,GBP stronger,3.8,UK,"May wins Brexit changes, then legal advice disappoints",Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2019-10-11,2019-10-10,1.8,GBP stronger,3.4,UK,Johnson-Varadkar talks open path to a Brexit deal,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2019-12-13,2019-12-12,2.08,GBP stronger,4.1,UK,Conservative landslide,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2020-03-19,2020-03-18,-4.09,GBP weaker,7.9,Global,COVID-19 dash for dollars,Pandemic,No,Well-documented history
+GBP/USD,2020-03-27,2020-03-26,2.95,GBP stronger,4.9,US,Fed dollar swap lines and stimulus ease the squeeze,Central banks & intervention,Partly,Well-documented history
+GBP/USD,2022-05-06,2022-05-05,-2.01,GBP weaker,4.8,UK,Bank of England warns of recession,Central banks & intervention,No,Well-documented history
+GBP/USD,2022-09-26,2022-09-23,-4.14,GBP weaker,7.7,UK,Truss-Kwarteng mini-budget,Politics & geopolitics,Direct,Well-documented history
+GBP/USD,2022-11-11,2022-11-10,2.88,GBP stronger,4.0,US,US inflation cooler than expected,Economy & data,No,Well-documented history
+GBP/USD,2022-12-16,2022-12-15,-1.85,GBP weaker,2.4,UK,Bank of England slows hikes as ECB turns tougher,Central banks & intervention,No,"Likely, not checked"
+USD/JPY,2015-08-25,2015-08-24,-2.34,USD weaker,4.7,Global,China-led 'Black Monday' crash,Economy & data,Partly,Well-documented history
+USD/JPY,2016-02-01,2016-01-29,2.03,USD stronger,4.4,JP,Bank of Japan adopts negative rates,Central banks & intervention,No,Well-documented history
+USD/JPY,2016-04-29,2016-04-28,-3.09,USD weaker,5.5,JP,Bank of Japan holds off on more stimulus,Central banks & intervention,No,Well-documented history
+USD/JPY,2016-06-27,2016-06-24,-2.64,USD weaker,4.3,UK,Brexit vote result (yen as safe haven),Politics & geopolitics,Direct,Well-documented history
+USD/JPY,2016-07-13,2016-07-12,2.18,USD stronger,3.4,JP,Abe's election win and 'helicopter money' talk,Politics & geopolitics,Direct,Well-documented history
+USD/JPY,2016-08-01,2016-07-29,-2.3,USD weaker,3.4,JP,Bank of Japan's modest easing disappoints,Central banks & intervention,No,Well-documented history
+USD/JPY,2019-01-03,2019-01-02,-2.03,USD weaker,4.8,Global,Yen flash crash in early Asia after Apple warning,Market mechanics,No,Well-documented history
+USD/JPY,2020-03-09,2020-03-06,-2.17,USD weaker,5.4,Global,COVID-19 and Saudi-Russia oil price war,Pandemic,Partly,Well-documented history
+USD/JPY,2020-03-20,2020-03-19,2.7,USD stronger,5.7,Global,COVID-19 dash for dollars,Pandemic,No,Well-documented history
+USD/JPY,2022-06-20,2022-06-17,2.16,USD stronger,4.7,JP,Bank of Japan sticks with ultra-easy policy,Central banks & intervention,No,Well-documented history
+USD/JPY,2022-11-11,2022-11-10,-3.06,USD weaker,5.0,US,US inflation cooler than expected,Economy & data,No,Well-documented history
+USD/JPY,2022-12-21,2022-12-20,-3.72,USD weaker,5.3,JP,Bank of Japan widens yield band,Central banks & intervention,No,Well-documented history
+USD/JPY,2023-01-13,2023-01-12,-2.07,USD weaker,2.7,US,Cooler US inflation; Bank of Japan change bets,Economy & data,No,"Likely, not checked"
+USD/JPY,2023-02-06,2023-02-03,2.53,USD stronger,3.3,US,Blowout US jobs report; dovish BoJ governor pick reported,Economy & data,Partly,"Likely, not checked"
+USD/JPY,2024-07-12,2024-07-11,-2.11,USD weaker,4.1,JP,Japan buys yen after cool US inflation,Central banks & intervention,Partly,Well-documented history
+USD/JPY,2024-08-05,2024-08-02,-2.42,USD weaker,4.4,US,Weak US jobs report; yen carry trade unwinds after BoJ hike,Economy & data,No,Well-documented history
+USD/JPY,2025-04-11,2025-04-10,-2.48,USD weaker,3.6,US,'Sell America' after US tariff chaos,Politics & geopolitics,Direct,Well-documented history
+USD/JPY,2025-08-04,2025-08-01,-2.27,USD weaker,3.3,US,Weak US jobs report; Trump fires labour statistics chief,Economy & data,Partly,"Likely, not checked"
+USD/JPY,2026-01-26,2026-01-23,-2.1,USD weaker,3.4,US,New York Fed 'rate checks' spark yen intervention fears,Central banks & intervention,Partly,News reports checked
+USD/JPY,2026-09-04,2026-09-03,-2.05,USD weaker,4.2,JP,Bets on a Bank of Japan rate hike,Central banks & intervention,No,News reports checked
