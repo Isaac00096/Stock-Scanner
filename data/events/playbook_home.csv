@@ -1,0 +1,106 @@
+date,name,type,country,currency,expected,ccy_2d,ccy_next20,as_expected,lasted_20d
+2015-01-22,ECB launches QE,Central-bank surprises & intervention,EU,Euro,Weaker,-1.734,0.176,Yes,Reversed
+2015-12-03,ECB disappoints with smaller stimulus,Central-bank surprises & intervention,EU,Euro,Stronger,2.73,-0.521,Yes,Reversed
+2015-12-10,SA finance minister Nene fired,Leaders & ministers,SA,Rand,Weaker,-5.355,-4.265,Yes,Kept going
+2015-12-14,Pravin Gordhan reappointed finance minister,Leaders & ministers,SA,Rand,Stronger,1.995,-10.741,Yes,Reversed
+2016-01-29,Bank of Japan adopts negative rates,Central-bank surprises & intervention,JP,Yen,Weaker,-2.425,6.329,Yes,Reversed
+2016-02-24,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,-2.71,1.114,,Reversed
+2016-03-10,"ECB ""bazooka"" stimulus",Central-bank surprises & intervention,EU,Euro,Weaker,1.585,1.749,No,Kept going
+2016-06-24,Brexit vote result,Elections & referendums,UK,Pound,Weaker,-9.05,-2.388,Yes,Kept going
+2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,Yen,Weaker,-1.72,0.23,Yes,Reversed
+2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,Pound,Weaker,-1.564,1.11,Yes,Reversed
+2016-09-21,Bank of Japan yield-curve control,Central-bank surprises & intervention,JP,Yen,Weaker,1.427,-2.986,No,Reversed
+2016-10-03,May signals hard Brexit (Article 50 by March),Political crises & negotiations,UK,Pound,Weaker,-0.887,-4.76,Yes,Kept going
+2016-11-09,Trump wins US presidency,Elections & referendums,US,US dollar,Stronger,0.79,2.404,Yes,Kept going
+2017-01-17,May's Lancaster House Brexit speech (clear plan),Political crises & negotiations,UK,Pound,Stronger,2.896,0.665,Yes,Kept going
+2017-02-22,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,0.402,3.3,,Kept going
+2017-03-31,SA finance minister Gordhan fired,Leaders & ministers,SA,Rand,Weaker,-2.449,-0.058,Yes,Kept going
+2017-04-04,S&P cuts SA to junk,Credit ratings,SA,Rand,Weaker,-1.872,1.815,Yes,Reversed
+2017-04-18,May calls snap election,Elections & referendums,UK,Pound,Stronger,2.469,0.563,Yes,Kept going
+2017-04-24,Macron tops French first round,Elections & referendums,EU,Euro,Stronger,1.399,3.442,Yes,Kept going
+2017-05-08,Macron wins French presidency,Elections & referendums,EU,Euro,Stronger,-0.49,3.011,No,Reversed
+2017-06-09,UK election: hung parliament,Elections & referendums,UK,Pound,Weaker,-1.72,1.194,Yes,Reversed
+2017-10-23,Abe wins snap election,Elections & referendums,JP,Yen,Weaker,-0.586,0.881,Yes,Reversed
+2017-12-18,Ramaphosa elected ANC leader,Leaders & ministers,SA,Rand,Stronger,5.792,3.484,Yes,Kept going
+2018-02-15,Zuma resigns as SA president,Leaders & ministers,SA,Rand,Stronger,2.891,-2.414,Yes,Reversed
+2018-02-21,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,0.095,-1.437,,
+2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,US dollar,Stronger,-0.777,-0.346,No,Kept going
+2018-03-05,Italian election: populists win,Elections & referendums,EU,Euro,Weaker,0.535,-0.355,No,Reversed
+2018-05-29,Italy political crisis (euro-exit fears),Political crises & negotiations,EU,Euro,Weaker,-1.28,0.961,Yes,Reversed
+2018-11-07,US midterm result,Elections & referendums,US,US dollar,Mixed,-0.153,1.12,,
+2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,Pound,Weaker,-1.902,-0.873,Yes,Kept going
+2019-01-16,May's Brexit deal defeated (no-deal seen less likely),Political crises & negotiations,UK,Pound,Stronger,0.084,-0.225,Flat,
+2019-02-20,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,0.465,-1.624,,Reversed
+2019-05-06,Trump raises tariffs on China,Tariffs & trade,US,US dollar,Stronger,-0.46,0.086,No,Reversed
+2019-05-09,SA national election (results),Elections & referendums,SA,Rand,Mixed,0.668,-4.096,,Reversed
+2019-08-05,US-China trade war escalates,Tariffs & trade,US,US dollar,Stronger,-1.16,1.256,No,Reversed
+2019-10-10,Johnson-Varadkar talks open path to a Brexit deal,Political crises & negotiations,UK,Pound,Stronger,1.748,2.789,Yes,Kept going
+2019-12-13,Conservative landslide (Brexit certainty),Elections & referendums,UK,Pound,Stronger,1.16,-2.304,Yes,Reversed
+2020-02-26,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,-1.031,-12.172,,Kept going
+2020-03-30,Moody's cuts SA to junk,Credit ratings,SA,Rand,Weaker,-3.585,-5.179,Yes,Kept going
+2020-06-24,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,-0.802,5.374,,Reversed
+2020-08-28,Abe resigns,Leaders & ministers,JP,Yen,Stronger,0.303,-0.037,Yes,Reversed
+2020-11-04,US election (Biden),Elections & referendums,US,US dollar,Weaker,-0.459,-2.117,Yes,Kept going
+2020-12-24,UK-EU trade deal agreed,Tariffs & trade,UK,Pound,Stronger,1.139,1.31,Yes,Kept going
+2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,US dollar,Weaker,-0.408,1.386,Yes,Reversed
+2021-02-24,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,1.239,-3.453,,Reversed
+2021-09-29,Kishida wins LDP leadership,Leaders & ministers,JP,Yen,Stronger,-0.876,-1.644,No,Kept going
+2021-11-02,SA local elections (results),Elections & referendums,SA,Rand,Mixed,-1.458,-3.043,,Kept going
+2022-02-23,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,0.288,2.357,,Kept going
+2022-02-24,Russia invades Ukraine,War & conflict,Global,US dollar,Stronger,1.075,2.936,Yes,Kept going
+2022-04-25,Macron re-elected,Elections & referendums,EU,Euro,Stronger,-1.116,-0.3,No,Kept going
+2022-07-07,Johnson resigns,Leaders & ministers,UK,Pound,Weaker,0.66,1.085,No,Kept going
+2022-09-22,Japan buys yen (first since 1998),Central-bank surprises & intervention,JP,Yen,Stronger,0.921,-5.55,Yes,Reversed
+2022-09-23,Truss-Kwarteng mini-budget,Budgets & fiscal,UK,Pound,Weaker,-4.074,5.069,Yes,Reversed
+2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,Pound,Stronger,0.586,7.403,Yes,Kept going
+2022-10-14,Chancellor Kwarteng fired,Leaders & ministers,UK,Pound,Stronger,1.248,4.936,Yes,Kept going
+2022-10-20,Truss resigns,Leaders & ministers,UK,Pound,Stronger,-1.083,5.692,No,Reversed
+2022-10-21,Japan buys yen again,Central-bank surprises & intervention,JP,Yen,Stronger,1.336,5.118,Yes,Kept going
+2022-11-09,US midterms,Elections & referendums,US,US dollar,Weaker,0.336,-6.359,No,Reversed
+2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,Yen,Stronger,3.51,2.738,Yes,Kept going
+2023-02-22,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,-0.858,-0.177,,Kept going
+2023-05-12,US says SA supplied arms to Russia,Political crises & negotiations,SA,Rand,Weaker,-1.634,2.365,Yes,Reversed
+2024-02-21,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,0.228,1.088,,Kept going
+2024-03-19,Bank of Japan ends negative rates,Central-bank surprises & intervention,JP,Yen,Stronger,-1.396,-2.425,No,Kept going
+2024-04-29,Japan buys yen,Central-bank surprises & intervention,JP,Yen,Stronger,-0.461,-0.34,No,Kept going
+2024-05-30,SA national election (results),Elections & referendums,SA,Rand,Weaker,-2.353,1.344,Yes,Reversed
+2024-06-10,Macron calls snap election,Elections & referendums,EU,Euro,Weaker,-1.195,0.62,Yes,Reversed
+2024-06-14,SA unity government formed,Leaders & ministers,SA,Rand,Stronger,0.12,1.787,Flat,
+2024-07-01,French first round (far right leads),Elections & referendums,EU,Euro,Weaker,0.267,0.767,No,Kept going
+2024-07-05,Labour landslide,Elections & referendums,UK,Pound,Stronger,0.461,-0.145,Yes,Reversed
+2024-07-08,French second round: hung parliament,Elections & referendums,EU,Euro,Weaker,0.187,1.108,Flat,
+2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,Yen,Stronger,1.94,6.657,Yes,Kept going
+2024-07-31,Bank of Japan raises rates; carry trade unwinds,Central-bank surprises & intervention,JP,Yen,Stronger,2.658,3.547,Yes,Kept going
+2024-09-27,Ishiba wins LDP leadership,Leaders & ministers,JP,Yen,Stronger,1.313,-7.122,Yes,Reversed
+2024-10-28,LDP loses majority in election,Elections & referendums,JP,Yen,Weaker,-0.92,-0.783,Yes,Kept going
+2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,Pound,Weaker,-0.117,-2.175,Flat,
+2024-11-06,Trump wins US presidency again,Elections & referendums,US,US dollar,Stronger,1.063,0.34,Yes,Kept going
+2024-12-05,French government falls (Barnier),Political crises & negotiations,EU,Euro,Weaker,0.711,-2.647,No,Reversed
+2025-01-21,Trump inaugurated; no day-one tariffs,Tariffs & trade,US,US dollar,Weaker,-0.981,-1.743,Yes,Kept going
+2025-02-03,"Tariffs on Canada, Mexico, China announced",Tariffs & trade,US,US dollar,Stronger,0.458,-2.514,Yes,Reversed
+2025-02-19,SA budget postponed (VAT row),Budgets & fiscal,SA,Rand,Weaker,-0.566,2.193,Yes,Reversed
+2025-02-24,German election: Merz wins,Elections & referendums,EU,Euro,Stronger,-0.373,3.271,No,Reversed
+2025-03-05,Germany agrees huge spending package,Budgets & fiscal,EU,Euro,Stronger,2.956,1.054,Yes,Kept going
+2025-03-12,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,-0.04,-5.794,,
+2025-04-03,US 'Liberation Day' tariffs,Tariffs & trade,US,US dollar,Stronger,-1.983,-1.921,No,Kept going
+2025-04-09,US pauses most tariffs,Tariffs & trade,US,US dollar,Stronger,-0.437,-2.409,No,Kept going
+2025-04-21,Trump attacks Fed chair Powell,Pressure on central banks,US,US dollar,Weaker,0.213,0.256,No,Kept going
+2025-05-12,US-China tariff truce,Tariffs & trade,US,US dollar,Stronger,1.051,-2.805,Yes,Reversed
+2025-05-21,SA budget speech,Budgets & fiscal,SA,Rand,Mixed,0.54,-0.338,,Reversed
+2025-07-02,Chancellor Reeves seen in tears; doubts over her future,Leaders & ministers,UK,Pound,Weaker,-0.587,-2.874,Yes,Kept going
+2025-07-22,LDP loses upper house majority,Elections & referendums,JP,Yen,Weaker,1.109,-0.644,No,Reversed
+2025-08-26,Trump moves to fire Fed governor Cook,Pressure on central banks,US,US dollar,Weaker,0.336,-0.58,No,Reversed
+2025-09-08,Ishiba resigns,Leaders & ministers,JP,Yen,Weaker,0.681,-2.013,No,Reversed
+2025-09-09,French government falls (Bayrou),Political crises & negotiations,EU,Euro,Weaker,-0.089,-0.411,Flat,
+2025-10-06,Takaichi wins LDP leadership (big-spending),Leaders & ministers,JP,Yen,Weaker,-2.162,-2.576,Yes,Kept going
+2025-10-07,French PM Lecornu resigns,Leaders & ministers,EU,Euro,Weaker,-0.494,-1.451,Yes,Kept going
+2025-11-26,UK autumn budget,Budgets & fiscal,UK,Pound,Stronger,1.059,1.993,Yes,Kept going
+2026-01-20,Trump threatens tariffs over Greenland,Tariffs & trade,US,US dollar,Stronger,-0.253,-1.715,No,Kept going
+2026-01-30,Trump nominates Warsh as Fed chair,Pressure on central banks,US,US dollar,Stronger,1.169,1.224,Yes,Kept going
+2026-02-09,Takaichi landslide in snap election,Elections & referendums,JP,Yen,Weaker,0.416,-1.099,No,Reversed
+2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,US dollar,Stronger,0.797,1.815,Yes,Kept going
+2026-04-08,US-Iran ceasefire,War & conflict,Global,US dollar,Weaker,-0.961,-1.192,Yes,Kept going
+2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,Yen,Stronger,1.613,-1.46,Yes,Reversed
+2026-06-22,Starmer announces resignation,Leaders & ministers,UK,Pound,Weaker,0.342,1.393,No,Kept going
+2026-08-03,Japan and US jointly buy yen,Central-bank surprises & intervention,JP,Yen,Stronger,1.657,-1.408,Yes,Reversed
+2026-11-04,US midterms: Democrats win Congress,Elections & referendums,US,US dollar,Weaker,-0.202,,Yes,
