@@ -1,0 +1,122 @@
+date,country,kind,name,expected,pair,currency,pair_move,ccy_move,ccy_next5,ccy_next20,went_as_expected
+2015-01-22,EU,Surprise central bank,ECB launches QE,Weaker EUR,EUR/USD,EUR,-1.734,-1.734,-0.099,0.176,Yes
+2015-12-03,EU,Surprise central bank,ECB disappoints with smaller stimulus,Stronger EUR,EUR/USD,EUR,2.73,2.73,0.295,-0.521,Yes
+2016-01-29,JP,Surprise central bank,Bank of Japan adopts negative rates,Weaker JPY,USD/JPY,JPY,2.425,-2.425,3.618,6.329,Yes
+2016-03-10,EU,Surprise central bank,"ECB ""bazooka"" stimulus",Weaker EUR,EUR/USD,EUR,1.585,1.585,1.248,1.749,No
+2016-06-24,UK,Politics,Brexit vote result,Weaker GBP,GBP/USD,GBP,-9.05,-9.05,-1.197,-2.388,Yes
+2016-07-11,JP,Politics,Abe coalition wins upper house; stimulus hopes,Weaker JPY,USD/JPY,JPY,1.72,-1.72,-3.533,0.23,Yes
+2016-08-04,UK,Surprise central bank,Bank of England cuts rates and restarts QE,Weaker GBP,GBP/USD,GBP,-1.564,-1.564,-1.328,1.11,Yes
+2016-09-21,JP,Surprise central bank,Bank of Japan yield-curve control,Weaker JPY,USD/JPY,JPY,-1.427,1.427,-0.54,-2.986,No
+2016-10-03,UK,Politics,May signals hard Brexit (Article 50 by March),Weaker GBP,GBP/USD,GBP,-0.887,-0.887,-3.949,-4.76,Yes
+2016-11-09,US,Politics,Trump wins US presidency,Stronger USD,EUR/USD,USD,-1.19,1.19,1.959,1.453,Yes
+2016-11-09,US,Politics,Trump wins US presidency,Stronger USD,GBP/USD,USD,0.174,-0.174,-0.174,-1.667,Flat
+2016-11-09,US,Politics,Trump wins US presidency,Stronger USD,USD/JPY,USD,1.355,1.355,2.77,7.425,Yes
+2017-01-17,UK,Politics,May's Lancaster House Brexit speech (clear plan),Stronger GBP,GBP/USD,GBP,2.896,2.896,1.171,0.665,Yes
+2017-04-18,UK,Politics,May calls snap election,Stronger GBP,GBP/USD,GBP,2.469,2.469,-0.095,0.563,Yes
+2017-04-24,EU,Politics,Macron tops French first round,Stronger EUR,EUR/USD,EUR,1.399,1.399,0.406,3.442,Yes
+2017-05-08,EU,Politics,Macron wins French presidency,Stronger EUR,EUR/USD,EUR,-0.49,-0.49,0.494,3.011,No
+2017-06-09,UK,Politics,UK election: hung parliament,Weaker GBP,GBP/USD,GBP,-1.72,-1.72,0.317,1.194,Yes
+2017-10-23,JP,Politics,Abe wins snap election,Weaker JPY,USD/JPY,JPY,0.586,-0.586,0.304,0.881,Yes
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,Stronger USD,EUR/USD,USD,1.018,-1.018,0.054,0.01,No
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,Stronger USD,GBP/USD,USD,0.297,-0.297,-0.438,-1.763,No
+2018-03-02,US,Politics,Trump announces steel and aluminium tariffs,Stronger USD,USD/JPY,USD,-1.017,-1.017,1.265,0.716,No
+2018-03-05,EU,Politics,Italian election: populists win,Weaker EUR,EUR/USD,EUR,0.535,0.535,0.025,-0.355,No
+2018-05-29,EU,Politics,Italy political crisis (euro-exit fears),Weaker EUR,EUR/USD,EUR,-1.28,-1.28,1.619,0.961,Yes
+2018-11-15,UK,Politics,Brexit secretary Raab resigns over deal,Weaker GBP,GBP/USD,GBP,-1.902,-1.902,0.858,-0.873,Yes
+2019-01-16,UK,Politics,May's Brexit deal defeated (no-deal seen less likely),Stronger GBP,GBP/USD,GBP,0.084,0.084,1.524,-0.225,Flat
+2019-05-06,US,Politics,Trump raises tariffs on China,Stronger USD,EUR/USD,USD,0.253,-0.253,-0.274,-0.466,No
+2019-05-06,US,Politics,Trump raises tariffs on China,Stronger USD,GBP/USD,USD,0.507,-0.507,1.04,3.027,No
+2019-05-06,US,Politics,Trump raises tariffs on China,Stronger USD,USD/JPY,USD,-0.619,-0.619,-1.49,-2.302,No
+2019-08-05,US,Politics,US-China trade war escalates,Stronger USD,EUR/USD,USD,1.489,-1.489,0.227,2.448,No
+2019-08-05,US,Politics,US-China trade war escalates,Stronger USD,GBP/USD,USD,0.28,-0.28,0.653,0.753,No
+2019-08-05,US,Politics,US-China trade war escalates,Stronger USD,USD/JPY,USD,-1.711,-1.711,-0.223,0.568,No
+2019-10-10,UK,Politics,Johnson-Varadkar talks open path to a Brexit deal,Stronger GBP,GBP/USD,GBP,1.748,1.748,3.502,2.789,Yes
+2019-12-13,UK,Politics,Conservative landslide (Brexit certainty),Stronger GBP,GBP/USD,GBP,1.16,1.16,-2.605,-2.304,Yes
+2020-08-28,JP,Politics,Abe resigns,Stronger JPY,USD/JPY,JPY,-0.303,0.303,-0.735,-0.037,Yes
+2020-11-04,US,Politics,US election (Biden),Weaker USD,EUR/USD,USD,0.772,-0.772,-0.406,-3.255,Yes
+2020-11-04,US,Politics,US election (Biden),Weaker USD,GBP/USD,USD,0.332,-0.332,-1.985,-3.115,Yes
+2020-11-04,US,Politics,US election (Biden),Weaker USD,USD/JPY,USD,-0.274,-0.274,0.935,0.019,Yes
+2020-12-24,UK,Politics,UK-EU trade deal agreed,Stronger GBP,GBP/USD,GBP,1.139,1.139,0.893,1.31,Yes
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,Weaker USD,EUR/USD,USD,0.731,-0.731,1.447,2.421,Yes
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,Weaker USD,GBP/USD,USD,0.396,-0.396,-0.176,-0.175,Yes
+2021-01-06,US,Politics,Democrats win Georgia; Capitol riot,Weaker USD,USD/JPY,USD,-0.098,-0.098,0.789,1.913,Flat
+2021-09-29,JP,Politics,Kishida wins LDP leadership,Stronger JPY,USD/JPY,JPY,0.876,-0.876,0.467,-1.644,No
+2022-02-24,Global,Politics,Russia invades Ukraine,Stronger USD,EUR/USD,USD,-1.222,1.222,1.107,1.618,Yes
+2022-02-24,Global,Politics,Russia invades Ukraine,Stronger USD,GBP/USD,USD,-1.59,1.59,0.167,1.327,Yes
+2022-02-24,Global,Politics,Russia invades Ukraine,Stronger USD,USD/JPY,USD,0.413,0.413,-0.084,5.862,Yes
+2022-04-25,EU,Politics,Macron re-elected,Stronger EUR,EUR/USD,EUR,-1.116,-1.116,-1.915,-0.3,No
+2022-07-07,UK,Politics,Johnson resigns,Weaker GBP,GBP/USD,GBP,0.66,0.66,-1.566,1.085,No
+2022-09-22,JP,Intervention,Japan buys yen (first since 1998),Stronger JPY,USD/JPY,JPY,-0.921,0.921,-1.512,-5.55,Yes
+2022-09-23,UK,Politics,Truss-Kwarteng mini-budget,Weaker GBP,GBP/USD,GBP,-4.074,-4.074,3.178,5.069,Yes
+2022-09-28,UK,Surprise central bank,Bank of England emergency bond buying,Stronger GBP,GBP/USD,GBP,0.586,0.586,4.793,7.403,Yes
+2022-10-14,UK,Politics,Chancellor Kwarteng fired,Stronger GBP,GBP/USD,GBP,1.248,1.248,0.894,4.936,Yes
+2022-10-20,UK,Politics,Truss resigns,Stronger GBP,GBP/USD,GBP,-1.083,-1.083,3.071,5.692,No
+2022-10-21,JP,Intervention,Japan buys yen again,Stronger JPY,USD/JPY,JPY,-1.336,1.336,0.005,5.118,Yes
+2022-11-09,US,Politics,US midterms,Weaker USD,EUR/USD,USD,0.009,-0.009,-3.747,-4.928,Flat
+2022-11-09,US,Politics,US midterms,Weaker USD,GBP/USD,USD,-1.301,1.301,-4.813,-7.426,No
+2022-11-09,US,Politics,US midterms,Weaker USD,USD/JPY,USD,-0.283,-0.283,-4.71,-6.722,Yes
+2022-12-20,JP,Surprise central bank,Bank of Japan widens yield band,Stronger JPY,USD/JPY,JPY,-3.51,3.51,-1.209,2.738,Yes
+2024-03-19,JP,Surprise central bank,Bank of Japan ends negative rates,Stronger JPY,USD/JPY,JPY,1.396,-1.396,-0.328,-2.425,No
+2024-04-29,JP,Intervention,Japan buys yen,Stronger JPY,USD/JPY,JPY,0.461,-0.461,1.329,-0.34,No
+2024-06-10,EU,Politics,Macron calls snap election,Weaker EUR,EUR/USD,EUR,-1.195,-1.195,-0.219,0.62,Yes
+2024-07-01,EU,Politics,French first round (far right leads),Weaker EUR,EUR/USD,EUR,0.267,0.267,0.874,0.767,No
+2024-07-05,UK,Politics,Labour landslide,Stronger GBP,GBP/USD,GBP,0.461,0.461,1.252,-0.145,Yes
+2024-07-08,EU,Politics,French second round: hung parliament,Weaker EUR,EUR/USD,EUR,0.187,0.187,0.652,1.108,Flat
+2024-07-11,JP,Intervention,Japan buys yen,Stronger JPY,USD/JPY,JPY,-1.94,1.94,0.664,6.657,Yes
+2024-07-31,JP,Surprise central bank,Bank of Japan raises rates; carry trade unwinds,Stronger JPY,USD/JPY,JPY,-2.658,2.658,2.417,3.547,Yes
+2024-09-27,JP,Politics,Ishiba wins LDP leadership,Stronger JPY,USD/JPY,JPY,-1.313,1.313,-4.228,-7.122,Yes
+2024-10-28,JP,Politics,LDP loses majority in election,Weaker JPY,USD/JPY,JPY,0.92,-0.92,0.59,-0.783,Yes
+2024-10-30,UK,Politics,Reeves first budget (more borrowing),Weaker GBP,GBP/USD,GBP,-0.117,-0.117,-0.589,-2.175,Flat
+2024-11-06,US,Politics,Trump wins US presidency again,Stronger USD,EUR/USD,USD,-1.297,1.297,1.574,2.04,Yes
+2024-11-06,US,Politics,Trump wins US presidency again,Stronger USD,GBP/USD,USD,-0.55,0.55,1.37,1.414,Yes
+2024-11-06,US,Politics,Trump wins US presidency again,Stronger USD,USD/JPY,USD,1.342,1.342,0.719,-2.432,Yes
+2024-12-05,EU,Politics,French government falls (Barnier),Weaker EUR,EUR/USD,EUR,0.711,0.711,-1.054,-2.647,No
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,Weaker USD,EUR/USD,USD,1.251,-1.251,-0.222,-0.407,Yes
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,Weaker USD,GBP/USD,USD,1.351,-1.351,-0.862,-2.354,Yes
+2025-01-21,US,Politics,Trump inaugurated; no day-one tariffs,Weaker USD,USD/JPY,USD,-0.34,-0.34,-0.138,-2.467,Yes
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",Stronger USD,EUR/USD,USD,-0.672,0.672,0.25,-1.527,Yes
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",Stronger USD,GBP/USD,USD,0.063,-0.063,0.572,-2.169,Flat
+2025-02-03,US,Politics,"Tariffs on Canada, Mexico, China announced",Stronger USD,USD/JPY,USD,0.766,0.766,-2.266,-3.846,Yes
+2025-02-24,EU,Politics,German election: Merz wins,Stronger EUR,EUR/USD,EUR,-0.373,-0.373,0.226,3.271,No
+2025-03-05,EU,Politics,Germany agrees huge spending package,Stronger EUR,EUR/USD,EUR,2.956,2.956,0.846,1.054,Yes
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,Stronger USD,EUR/USD,USD,2.295,-2.295,-1.939,-2.441,No
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,Stronger USD,GBP/USD,USD,1.281,-1.281,0.738,-1.558,No
+2025-04-03,US,Politics,US 'Liberation Day' tariffs,Stronger USD,USD/JPY,USD,-2.371,-2.371,-1.699,-1.762,No
+2025-04-09,US,Politics,US pauses most tariffs,Stronger USD,EUR/USD,USD,0.336,-0.336,-4.061,-2.535,No
+2025-04-09,US,Politics,US pauses most tariffs,Stronger USD,GBP/USD,USD,0.711,-0.711,-3.185,-3.615,No
+2025-04-09,US,Politics,US pauses most tariffs,Stronger USD,USD/JPY,USD,-0.264,-0.264,-3.712,-1.077,No
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,Weaker USD,EUR/USD,USD,-0.4,0.4,-0.335,0.558,No
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,Weaker USD,GBP/USD,USD,0.296,-0.296,-1.037,-0.939,Yes
+2025-04-21,US,Politics,Trump attacks Fed chair Powell,Weaker USD,USD/JPY,USD,0.535,0.535,-0.273,1.149,No
+2025-05-12,US,Politics,US-China tariff truce,Stronger USD,EUR/USD,USD,-1.146,1.146,-1.242,-2.996,Yes
+2025-05-12,US,Politics,US-China tariff truce,Stronger USD,GBP/USD,USD,-0.435,0.435,-1.383,-2.875,Yes
+2025-05-12,US,Politics,US-China tariff truce,Stronger USD,USD/JPY,USD,1.572,1.572,-2.249,-2.542,Yes
+2025-07-02,UK,Politics,Chancellor Reeves seen in tears; doubts over her future,Weaker GBP,GBP/USD,GBP,-0.587,-0.587,-0.417,-2.874,Yes
+2025-07-22,JP,Politics,LDP loses upper house majority,Weaker JPY,USD/JPY,JPY,-1.109,1.109,-1.129,-0.644,No
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,Weaker USD,EUR/USD,USD,-0.599,0.599,0.029,-1.504,No
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,Weaker USD,GBP/USD,USD,-0.24,0.24,0.707,-0.339,No
+2025-08-26,US,Politics,Trump moves to fire Fed governor Cook,Weaker USD,USD/JPY,USD,0.168,0.168,0.736,0.102,Flat
+2025-09-08,JP,Politics,Ishiba resigns,Weaker JPY,USD/JPY,JPY,-0.681,0.681,-0.028,-2.013,No
+2025-09-09,EU,Politics,French government falls (Bayrou),Weaker EUR,EUR/USD,EUR,-0.089,-0.089,1.441,-0.411,Flat
+2025-10-06,JP,Politics,Takaichi wins LDP leadership (big-spending),Weaker JPY,USD/JPY,JPY,2.162,-2.162,-1.399,-2.576,Yes
+2025-10-07,EU,Politics,French PM Lecornu resigns,Weaker EUR,EUR/USD,EUR,-0.494,-0.494,-0.449,-1.451,Yes
+2025-11-26,UK,Politics,UK autumn budget,Stronger GBP,GBP/USD,GBP,1.059,1.059,0.784,1.993,Yes
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,Stronger USD,EUR/USD,USD,0.885,-0.885,-2.471,-1.057,No
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,Stronger USD,GBP/USD,USD,0.273,-0.273,-2.853,-0.92,No
+2026-01-20,US,Politics,Trump threatens tariffs over Greenland,Stronger USD,USD/JPY,USD,0.398,0.398,-3.61,-3.17,Yes
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,Stronger USD,EUR/USD,USD,-1.074,1.074,0.197,0.757,Yes
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,Stronger USD,GBP/USD,USD,-1.057,1.057,0.513,1.992,Yes
+2026-01-30,US,Politics,Trump nominates Warsh as Fed chair,Stronger USD,USD/JPY,USD,1.376,1.376,1.316,0.922,Yes
+2026-02-09,JP,Politics,Takaichi landslide in snap election,Weaker JPY,USD/JPY,JPY,-0.416,0.416,1.616,-1.099,No
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,Stronger USD,EUR/USD,USD,-0.896,0.896,0.684,2.028,Yes
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,Stronger USD,GBP/USD,USD,-0.599,0.599,-0.107,1.773,Yes
+2026-03-02,Global,Politics,US-Israel strikes on Iran: war begins,Stronger USD,USD/JPY,USD,0.897,0.897,0.376,1.643,Yes
+2026-04-08,Global,Politics,US-Iran ceasefire,Weaker USD,EUR/USD,USD,1.024,-1.024,-1.285,-0.755,Yes
+2026-04-08,Global,Politics,US-Iran ceasefire,Weaker USD,GBP/USD,USD,1.208,-1.208,-1.341,-1.476,Yes
+2026-04-08,Global,Politics,US-Iran ceasefire,Weaker USD,USD/JPY,USD,-0.652,-0.652,0.105,-1.345,Yes
+2026-04-30,JP,Intervention,Japan buys yen (record),Stronger JPY,USD/JPY,JPY,-1.613,1.613,0.095,-1.46,Yes
+2026-06-22,UK,Politics,Starmer announces resignation,Weaker GBP,GBP/USD,GBP,0.342,0.342,0.052,1.393,No
+2026-08-03,JP,Intervention,Japan and US jointly buy yen,Stronger JPY,USD/JPY,JPY,-1.657,1.657,-1.033,-1.408,Yes
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,EUR/USD,USD,0.383,-0.383,,,Yes
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,GBP/USD,USD,0.501,-0.501,,,Yes
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,USD/JPY,USD,0.28,0.28,,,No

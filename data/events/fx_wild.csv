@@ -1,0 +1,17 @@
+pair,group,events,times_normal
+EUR/USD,Normal day,3084,1.0
+EUR/USD,EU: Politics,13,1.66
+EUR/USD,EU: Surprise central bank,3,3.93
+EUR/USD,Global: Politics,3,2.04
+EUR/USD,US: Politics,18,1.71
+GBP/USD,Normal day,3084,1.0
+GBP/USD,Global: Politics,3,1.94
+GBP/USD,UK: Politics,19,2.95
+GBP/USD,UK: Surprise central bank,2,1.84
+GBP/USD,US: Politics,18,0.96
+USD/JPY,Normal day,3084,1.0
+USD/JPY,Global: Politics,3,1.14
+USD/JPY,JP: Intervention,6,2.31
+USD/JPY,JP: Politics,10,1.76
+USD/JPY,JP: Surprise central bank,5,3.99
+USD/JPY,US: Politics,18,1.43
