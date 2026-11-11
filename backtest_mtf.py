@@ -143,6 +143,8 @@ def main():
     end = a.end or str(pd.Timestamp.now(tz=NY).date())
     inst = data.instruments()
     syms = sorted({y.replace("-", ".") for y in inst.loc[inst["market"] == "us", "yahoo"]})
+    shard, shards = int(os.environ.get("SHARD", 0)), int(os.environ.get("SHARDS", 1))
+    syms = syms[shard::shards]
     sess = requests.Session()
     sess.headers.update({"APCA-API-KEY-ID": os.environ["ALPACA_KEY"],
                          "APCA-API-SECRET-KEY": os.environ["ALPACA_SECRET"]})
@@ -161,10 +163,16 @@ def main():
                     allrows.append(r)
             except Exception as exc:
                 print("  failed", sym, exc)
+        if (i // 5) % 8 == 7:          # save as we go, so a stopped run keeps what it has
+            save(allrows)
         print(f"{i + len(batch)}/{len(syms)} shares, {len(allrows)} rows, {time.time() - t0:.0f}s", flush=True)
+    save(allrows)
+    print("saved", OUT)
+
+
+def save(allrows):
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     pd.DataFrame(allrows).round(4).to_csv(OUT, index=False, compression="gzip")
-    print("saved", OUT)
 
 
 if __name__ == "__main__":

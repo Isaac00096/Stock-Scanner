@@ -8,8 +8,8 @@ on:
         default: "2026-07-01"
         required: true
       out:
-        description: "Output file name"
-        default: "mtf_rows.csv.gz"
+        description: "Output file name stem"
+        default: "mtf_rows"
         required: true
 
 permissions:
@@ -19,6 +19,10 @@ jobs:
   backtest:
     runs-on: ubuntu-latest
     timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,13 +33,15 @@ jobs:
         env:
           ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
           ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
-          MTF_OUT: ${{ inputs.out }}
+          MTF_OUT: ${{ inputs.out }}_${{ matrix.shard }}.csv.gz
+          SHARD: ${{ matrix.shard }}
+          SHARDS: 2
         run: python backtest_mtf.py --start "${{ inputs.start }}"
       - name: Save rows
+        if: always()
         run: |
           git config user.name "nyse-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/opening/*.csv.gz
-          git diff --quiet --cached || git commit -m "Multi-timeframe backtest rows"
-          git pull --rebase origin main
-          git push
+          git add data/opening/*.csv.gz || true
+          git diff --quiet --cached || git commit -m "Multi-timeframe backtest rows (part ${{ matrix.shard }})"
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 20 + 5)); done
