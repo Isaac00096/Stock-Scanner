@@ -1,19 +1,19 @@
 asset,group,outcome,events,cont1_pct,aligned1_avg,cont5_pct,aligned5_avg,cont20_pct,aligned20_avg,day0_avg,next20_avg
-Rand vs US dollar (up = rand stronger),Any normal day (baseline),,3063,48.743,-0.029,50.278,-0.028,48.449,-0.123,,
-Rand vs US dollar (up = rand stronger),US Fed rate decision,all,88,46.591,-0.072,48.864,-0.279,54.023,0.066,,
-Rand vs US dollar (up = rand stronger),US Fed rate decision,hike,20,50.0,-0.208,40.0,-0.657,65.0,0.507,0.227,-0.449
-Rand vs US dollar (up = rand stronger),US Fed rate decision,cut,11,36.364,-0.027,63.636,-0.002,45.455,-0.126,0.096,-4.671
-Rand vs US dollar (up = rand stronger),US Fed rate decision,hold,57,47.368,-0.033,49.123,-0.199,51.786,-0.054,0.059,0.64
-Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,all,66,43.939,0.112,36.364,-0.337,34.848,-0.464,,
-Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hike,15,46.667,0.29,46.667,-0.328,26.667,-0.729,0.16,-0.006
-Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,cut,14,64.286,0.453,57.143,0.619,64.286,2.064,-0.21,-1.978
-Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hold,37,35.135,-0.089,24.324,-0.702,27.027,-1.313,0.086,0.286
-Gold (US$),Any normal day (baseline),,2959,47.854,-0.029,50.051,0.004,48.8,-0.031,,
-Gold (US$),US Fed rate decision,all,88,55.682,-0.02,40.909,-0.737,37.931,-1.456,,
-Gold (US$),US Fed rate decision,hike,20,60.0,0.039,50.0,-0.207,35.0,-1.03,0.227,0.856
-Gold (US$),US Fed rate decision,cut,11,54.545,-0.04,18.182,-1.565,18.182,-4.615,0.225,4.331
-Gold (US$),US Fed rate decision,hold,57,54.386,-0.037,42.105,-0.762,42.857,-0.988,0.1,1.18
-Gold (US$),SA Reserve Bank rate decision,all,66,34.848,-0.31,54.545,0.316,46.97,-0.433,,
-Gold (US$),SA Reserve Bank rate decision,hike,15,53.333,0.018,53.333,0.317,46.667,-0.898,0.2,-0.215
-Gold (US$),SA Reserve Bank rate decision,cut,14,42.857,-0.279,42.857,0.24,50.0,0.684,0.213,3.117
-Gold (US$),SA Reserve Bank rate decision,hold,37,24.324,-0.454,59.459,0.344,45.946,-0.666,-0.461,1.513
+Rand vs US dollar (up = rand stronger),Any normal day (baseline),,3061,49.134,-0.031,49.984,-0.045,47.468,-0.183,,
+Rand vs US dollar (up = rand stronger),US Fed rate decision,all,88,54.545,-0.052,48.864,-0.06,44.828,-0.571,,
+Rand vs US dollar (up = rand stronger),US Fed rate decision,hike,20,35.0,-0.511,45.0,-0.465,45.0,-0.72,0.941,-1.174
+Rand vs US dollar (up = rand stronger),US Fed rate decision,cut,11,63.636,0.206,63.636,2.178,45.455,-1.639,-0.285,-2.655
+Rand vs US dollar (up = rand stronger),US Fed rate decision,hold,57,59.649,0.06,47.368,-0.35,44.643,-0.309,0.497,0.173
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,all,66,39.394,-0.198,43.939,-0.299,45.455,-0.095,,
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hike,15,40.0,-0.029,40.0,-0.203,40.0,-0.847,0.64,-0.937
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,cut,14,57.143,0.039,50.0,0.209,64.286,0.721,-0.417,-2.032
+Rand vs US dollar (up = rand stronger),SA Reserve Bank rate decision,hold,37,32.432,-0.357,43.243,-0.53,40.541,-0.098,-0.087,0.188
+Gold (US$),Any normal day (baseline),,2957,47.853,-0.009,49.104,0.001,49.138,-0.028,,
+Gold (US$),US Fed rate decision,all,88,36.364,-0.469,42.045,-0.354,40.23,-0.891,,
+Gold (US$),US Fed rate decision,hike,20,30.0,-0.641,30.0,-0.851,35.0,-2.045,0.432,0.679
+Gold (US$),US Fed rate decision,cut,11,27.273,-0.735,36.364,-0.424,45.455,-0.661,0.469,4.765
+Gold (US$),US Fed rate decision,hold,57,40.351,-0.357,47.368,-0.166,41.071,-0.524,0.137,1.101
+Gold (US$),SA Reserve Bank rate decision,all,66,53.03,0.123,50.0,0.332,46.97,-0.74,,
+Gold (US$),SA Reserve Bank rate decision,hike,15,46.667,0.108,46.667,0.015,46.667,-0.22,0.026,-0.19
+Gold (US$),SA Reserve Bank rate decision,cut,14,57.143,0.238,50.0,0.762,71.429,1.728,0.656,3.3
+Gold (US$),SA Reserve Bank rate decision,hold,37,54.054,0.086,51.351,0.298,37.838,-1.884,-0.662,1.994
