@@ -1,7 +1,12 @@
 name: Political Events Study
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Run the full event study too (yes/no)"
+        default: "yes"
+        required: true
 
 permissions:
   contents: write
@@ -16,7 +21,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
+      - run: python biggest_moves.py
       - run: python events.py
+        if: ${{ inputs.full != 'no' }}
       - name: Save results
         if: always()
         run: |
