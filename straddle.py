@@ -13,6 +13,8 @@ SYMS = {"EUR/USD": "EURUSD=X", "GBP/USD": "GBPUSD=X", "USD/JPY": "JPY=X", "USD/Z
 SPREAD_PCT = {"EUR/USD": 0.02, "GBP/USD": 0.025, "USD/JPY": 0.02, "USD/ZAR": 0.15}   # wide, news-time spreads
 KS = [0.10, 0.25, 0.50]          # stop as a share of the typical daily range; 0.25 is Isaac's "1/4"
 TP_MULT = 3                       # target = 3 x stop (his "3/4" with a "1/4" stop)
+GRID_KS = [0.25, 0.5, 0.75, 1.0]
+GRID_TPS = [1.0, 1.5, 2.0, 3.0]
 MAX_HOURS = 24
 
 
@@ -63,19 +65,35 @@ def main():
             base_usd = entry if pair in ("EUR/USD", "GBP/USD") else 1.0
             notional_zar = 1000 * base_usd * usdzar          # size 0.01 = 1,000 units of the first currency
             sp = SPREAD_PCT[pair]
-            for k in KS:
-                stop, target = k * day_range, k * day_range * TP_MULT
+            combos = [(k, TP_MULT) for k in KS] + ([(k, m) for k in GRID_KS for m in GRID_TPS] if e.group != "SARB decision" else [])
+            for k, m in combos:
+                stop, target = k * day_range, k * day_range * m
                 b_pnl, b_out = leg(bars, entry, 1, stop, target, sp)
                 s_pnl, s_out = leg(bars, entry, -1, stop, target, sp)
                 net = b_pnl + s_pnl
                 kind = ("Both stopped (whipsaw)" if b_out == s_out == "stop" else
                         "One hit target" if "target" in (b_out, s_out) else "Neither target (closed at 24h)")
-                rows.append({"time_utc": e.time_utc, "group": e.group, "name": e.name, "pair": pair, "stop_k": k,
+                rows.append({"time_utc": e.time_utc, "group": e.group, "name": e.name, "pair": pair, "stop_k": k, "tp_mult": m,
                              "day_range_pct": round(day_range, 3), "stop_pct": round(stop, 3), "target_pct": round(target, 3),
                              "buy": b_out, "sell": s_out, "outcome": kind, "net_pct": round(net, 4),
                              "net_r": round(net / stop, 3), "net_zar_001": round(net / 100 * notional_zar, 2)})
-    tr = pd.DataFrame(rows)
+    tr = pd.DataFrame(rows).drop_duplicates(["time_utc", "pair", "stop_k", "tp_mult"])
     tr.to_csv(os.path.join(OUT, "straddle_trades.csv"), index=False)
+    g = tr[tr.group != "SARB decision"]
+    grid = []
+    for (k, m), d in g.groupby(["stop_k", "tp_mult"]):
+        if k not in GRID_KS or m not in GRID_TPS:
+            continue
+        ev = d.groupby("time_utc").net_zar_001.sum()
+        grid.append({"stop_k": k, "tp_mult": m, "straddles": len(d), "events": len(ev),
+                     "whipsaw_pct": round((d.outcome == "Both stopped (whipsaw)").mean() * 100, 1),
+                     "target_pct": round((d.outcome == "One hit target").mean() * 100, 1),
+                     "avg_zar_001": round(d.net_zar_001.mean(), 2), "total_zar_001": round(d.net_zar_001.sum(), 2),
+                     "worst_event_zar": round(ev.min(), 2),
+                     "luck_t": round(ev.mean() / ev.std(ddof=1) * np.sqrt(len(ev)), 2) if len(ev) > 2 else np.nan})
+    pd.DataFrame(grid).to_csv(os.path.join(OUT, "straddle_grid.csv"), index=False)
+    print(pd.DataFrame(grid).to_string())
+    tr = tr[tr.tp_mult == TP_MULT]
     summ = []
     for (k, g), d in tr.groupby(["stop_k", "group"]):
         summ.append({"stop_k": k, "group": g, "straddles": len(d),
