@@ -21,6 +21,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
+      - run: python recent_shocks.py
       - run: python biggest_moves.py
       - run: python fx_study.py
       - run: python fx_minors.py
