@@ -48,7 +48,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2016-03-10,"ECB ""bazooka"" stimulus",Central-bank surprises & intervention,EU,EUR/USD,1.585,1.749,3.09
 2016-03-10,"ECB ""bazooka"" stimulus",Central-bank surprises & intervention,EU,GBP/USD,0.557,-1.608,0.95
 2016-03-10,"ECB ""bazooka"" stimulus",Central-bank surprises & intervention,EU,USD/JPY,0.178,-3.928,0.31
-2016-06-24,Brexit vote result,Elections & referendums,UK,Rand,-4.376,6.151,4.3
+2016-06-24,Brexit vote result,Elections & referendums,UK,Rand,-4.376,6.151,4.31
 2016-06-24,Brexit vote result,Elections & referendums,UK,JSE Top 40,-6.966,5.429,5.8
 2016-06-24,Brexit vote result,Elections & referendums,UK,S&P 500,-5.337,8.43,5.22
 2016-06-24,Brexit vote result,Elections & referendums,UK,Gold,4.86,-0.136,4.53
@@ -56,14 +56,14 @@ date,name,type,country,market,move_2d,next20,times_normal
 2016-06-24,Brexit vote result,Elections & referendums,UK,GBP/USD,-9.05,-2.388,15.5
 2016-06-24,Brexit vote result,Elections & referendums,UK,USD/JPY,-2.411,4.112,4.21
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,Rand,2.205,6.15,2.17
-2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,JSE Top 40,2.522,-1.622,2.1
+2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,JSE Top 40,2.523,-1.622,2.1
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,S&P 500,1.044,1.375,1.02
-2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,Gold,-1.659,0.367,1.55
+2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,Gold,-1.659,0.367,1.54
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,EUR/USD,-0.07,0.232,0.14
 2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,GBP/USD,0.506,0.395,0.87
-2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,USD/JPY,1.72,-0.23,3.0
+2016-07-11,Abe coalition wins upper house; stimulus hopes,Elections & referendums,JP,USD/JPY,1.72,-0.23,3.01
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,Rand,2.275,-6.29,2.24
-2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,JSE Top 40,-0.384,3.93,0.32
+2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,JSE Top 40,-0.384,3.929,0.32
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,S&P 500,0.882,-0.132,0.86
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,Gold,-1.453,-1.07,1.35
 2016-08-04,Bank of England cuts rates and restarts QE,Central-bank surprises & intervention,UK,EUR/USD,-0.752,0.593,1.46
@@ -149,7 +149,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2017-10-23,Abe wins snap election,Elections & referendums,JP,Rand,-1.356,-2.168,1.33
 2017-10-23,Abe wins snap election,Elections & referendums,JP,JSE Top 40,-0.007,6.714,0.01
 2017-10-23,Abe wins snap election,Elections & referendums,JP,S&P 500,-0.236,1.164,0.23
-2017-10-23,Abe wins snap election,Elections & referendums,JP,Gold,-0.188,0.478,0.18
+2017-10-23,Abe wins snap election,Elections & referendums,JP,Gold,-0.188,0.478,0.17
 2017-10-23,Abe wins snap election,Elections & referendums,JP,EUR/USD,-0.75,-0.187,1.46
 2017-10-23,Abe wins snap election,Elections & referendums,JP,GBP/USD,0.425,0.295,0.73
 2017-10-23,Abe wins snap election,Elections & referendums,JP,USD/JPY,0.586,-0.881,1.02
@@ -178,7 +178,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,JSE Top 40,0.02,-2.828,0.02
 2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,S&P 500,1.616,-3.914,1.58
 2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,Gold,1.167,1.115,1.09
-2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,EUR/USD,1.018,-0.01,1.98
+2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,EUR/USD,1.018,-0.01,1.99
 2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,GBP/USD,0.297,1.763,0.51
 2018-03-02,Trump announces steel and aluminium tariffs,Tariffs & trade,US,USD/JPY,-1.017,0.716,1.78
 2018-03-05,Italian election: populists win,Elections & referendums,EU,Rand,0.108,-0.252,0.11
@@ -202,10 +202,10 @@ date,name,type,country,market,move_2d,next20,times_normal
 2018-11-07,US midterm result,Elections & referendums,US,EUR/USD,0.185,-0.743,0.36
 2018-11-07,US midterm result,Elections & referendums,US,GBP/USD,0.54,-3.053,0.92
 2018-11-07,US midterm result,Elections & referendums,US,USD/JPY,0.266,-0.437,0.46
-2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,Rand,1.621,-0.055,1.59
+2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,Rand,1.621,-0.055,1.6
 2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,JSE Top 40,0.098,-0.535,0.08
 2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,S&P 500,1.284,-6.948,1.26
-2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,Gold,1.068,2.326,1.0
+2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,Gold,1.068,2.326,0.99
 2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,EUR/USD,0.121,0.342,0.24
 2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,GBP/USD,-1.902,-0.873,3.26
 2018-11-15,Brexit secretary Raab resigns over deal,Leaders & ministers,UK,USD/JPY,-0.206,0.004,0.36
@@ -287,9 +287,9 @@ date,name,type,country,market,move_2d,next20,times_normal
 2020-08-28,Abe resigns,Leaders & ministers,JP,GBP/USD,1.034,-4.415,1.77
 2020-08-28,Abe resigns,Leaders & ministers,JP,USD/JPY,-0.303,0.037,0.53
 2020-11-04,US election (Biden),Elections & referendums,US,Rand,1.945,3.696,1.91
-2020-11-04,US election (Biden),Elections & referendums,US,JSE Top 40,3.901,6.806,3.25
+2020-11-04,US election (Biden),Elections & referendums,US,JSE Top 40,3.901,6.807,3.25
 2020-11-04,US election (Biden),Elections & referendums,US,S&P 500,4.194,5.375,4.1
-2020-11-04,US election (Biden),Elections & referendums,US,Gold,1.905,-5.486,1.78
+2020-11-04,US election (Biden),Elections & referendums,US,Gold,1.905,-5.486,1.77
 2020-11-04,US election (Biden),Elections & referendums,US,EUR/USD,0.772,3.255,1.5
 2020-11-04,US election (Biden),Elections & referendums,US,GBP/USD,0.332,3.115,0.57
 2020-11-04,US election (Biden),Elections & referendums,US,USD/JPY,-0.274,0.019,0.48
@@ -303,7 +303,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,Rand,-2.402,0.692,2.36
 2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,JSE Top 40,3.615,0.695,3.01
 2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,S&P 500,2.064,2.183,2.02
-2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,Gold,-2.088,-5.257,1.95
+2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,Gold,-2.088,-5.257,1.94
 2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,EUR/USD,0.731,-2.421,1.42
 2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,GBP/USD,0.396,0.175,0.68
 2021-01-06,Democrats win Georgia; Capitol riot,Elections & referendums,US,USD/JPY,-0.098,1.913,0.17
@@ -322,9 +322,9 @@ date,name,type,country,market,move_2d,next20,times_normal
 2021-09-29,Kishida wins LDP leadership,Leaders & ministers,JP,GBP/USD,-2.009,2.282,3.44
 2021-09-29,Kishida wins LDP leadership,Leaders & ministers,JP,USD/JPY,0.876,1.644,1.53
 2021-11-02,SA local elections (results),Elections & referendums,SA,Rand,-1.458,-3.043,1.43
-2021-11-02,SA local elections (results),Elections & referendums,SA,JSE Top 40,1.752,4.735,1.46
+2021-11-02,SA local elections (results),Elections & referendums,SA,JSE Top 40,1.752,4.734,1.46
 2021-11-02,SA local elections (results),Elections & referendums,SA,S&P 500,1.017,-1.791,0.99
-2021-11-02,SA local elections (results),Elections & referendums,SA,Gold,-1.776,-0.068,1.66
+2021-11-02,SA local elections (results),Elections & referendums,SA,Gold,-1.776,-0.068,1.65
 2021-11-02,SA local elections (results),Elections & referendums,SA,EUR/USD,0.197,-2.152,0.38
 2021-11-02,SA local elections (results),Elections & referendums,SA,GBP/USD,-0.481,-2.361,0.82
 2021-11-02,SA local elections (results),Elections & referendums,SA,USD/JPY,-0.24,-0.582,0.42
@@ -373,7 +373,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,Rand,1.155,-0.511,1.14
 2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,JSE Top 40,-0.996,4.461,0.83
 2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,S&P 500,-0.187,4.583,0.18
-2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,Gold,1.98,-0.18,1.85
+2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,Gold,1.98,-0.18,1.84
 2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,EUR/USD,0.878,3.953,1.71
 2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,GBP/USD,0.586,7.403,1.0
 2022-09-28,Bank of England emergency bond buying,Central-bank surprises & intervention,UK,USD/JPY,-0.042,1.202,0.07
@@ -408,7 +408,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,Rand,1.509,1.357,1.48
 2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,JSE Top 40,0.652,9.032,0.54
 2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,S&P 500,1.592,3.645,1.56
-2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,Gold,1.541,5.654,1.44
+2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,Gold,1.541,5.654,1.43
 2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,EUR/USD,0.396,1.565,0.77
 2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,GBP/USD,0.238,0.784,0.41
 2022-12-20,Bank of Japan widens yield band,Central-bank surprises & intervention,JP,USD/JPY,-3.51,-2.738,6.13
@@ -418,7 +418,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2023-02-22,SA budget speech,Budgets & fiscal,SA,Gold,-0.852,9.257,0.79
 2023-02-22,SA budget speech,Budgets & fiscal,SA,EUR/USD,-0.719,2.495,1.4
 2023-02-22,SA budget speech,Budgets & fiscal,SA,GBP/USD,0.089,1.907,0.15
-2023-02-22,SA budget speech,Budgets & fiscal,SA,USD/JPY,0.444,-2.781,0.77
+2023-02-22,SA budget speech,Budgets & fiscal,SA,USD/JPY,0.444,-2.781,0.78
 2023-05-12,US says SA supplied arms to Russia,Political crises & negotiations,SA,Rand,-1.634,2.365,1.61
 2023-05-12,US says SA supplied arms to Russia,Political crises & negotiations,SA,JSE Top 40,1.776,-2.652,1.48
 2023-05-12,US says SA supplied arms to Russia,Political crises & negotiations,SA,S&P 500,0.137,5.627,0.13
@@ -447,15 +447,15 @@ date,name,type,country,market,move_2d,next20,times_normal
 2024-04-29,Japan buys yen,Central-bank surprises & intervention,JP,EUR/USD,-0.13,1.364,0.25
 2024-04-29,Japan buys yen,Central-bank surprises & intervention,JP,GBP/USD,0.406,1.692,0.69
 2024-04-29,Japan buys yen,Central-bank surprises & intervention,JP,USD/JPY,0.461,0.34,0.8
-2024-05-30,SA national election (results),Elections & referendums,SA,Rand,-2.353,1.344,2.31
+2024-05-30,SA national election (results),Elections & referendums,SA,Rand,-2.353,1.344,2.32
 2024-05-30,SA national election (results),Elections & referendums,SA,JSE Top 40,-2.296,3.635,1.91
 2024-05-30,SA national election (results),Elections & referendums,SA,S&P 500,0.2,3.744,0.2
 2024-05-30,SA national election (results),Elections & referendums,SA,Gold,-0.782,0.689,0.73
 2024-05-30,SA national election (results),Elections & referendums,SA,EUR/USD,-0.152,-1.172,0.3
-2024-05-30,SA national election (results),Elections & referendums,SA,GBP/USD,-0.219,-0.665,0.37
+2024-05-30,SA national election (results),Elections & referendums,SA,GBP/USD,-0.219,-0.665,0.38
 2024-05-30,SA national election (results),Elections & referendums,SA,USD/JPY,-0.196,2.379,0.34
 2024-06-10,Macron calls snap election,Elections & referendums,EU,Rand,1.231,3.304,1.21
-2024-06-10,Macron calls snap election,Elections & referendums,EU,JSE Top 40,-0.787,5.521,0.65
+2024-06-10,Macron calls snap election,Elections & referendums,EU,JSE Top 40,-0.787,5.522,0.65
 2024-06-10,Macron calls snap election,Elections & referendums,EU,S&P 500,0.53,3.892,0.52
 2024-06-10,Macron calls snap election,Elections & referendums,EU,Gold,0.069,4.096,0.06
 2024-06-10,Macron calls snap election,Elections & referendums,EU,EUR/USD,-1.195,0.62,2.33
@@ -492,7 +492,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,Rand,0.904,-2.047,0.89
 2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,JSE Top 40,1.53,-2.302,1.27
 2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,S&P 500,-0.329,-4.829,0.32
-2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,Gold,1.723,2.177,1.61
+2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,Gold,1.723,2.177,1.6
 2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,EUR/USD,0.536,0.395,1.04
 2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,GBP/USD,1.064,-1.364,1.82
 2024-07-11,Japan buys yen,Central-bank surprises & intervention,JP,USD/JPY,-1.94,-6.657,3.39
@@ -520,7 +520,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,Rand,0.264,-2.607,0.26
 2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,JSE Top 40,-2.253,-1.043,1.87
 2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,S&P 500,-2.185,5.73,2.14
-2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,Gold,-1.143,-3.357,1.07
+2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,Gold,-1.143,-3.357,1.06
 2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,EUR/USD,0.392,-2.733,0.76
 2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,GBP/USD,-0.117,-2.175,0.2
 2024-10-30,Reeves first budget (more borrowing),Budgets & fiscal,UK,USD/JPY,0.016,-1.219,0.03
@@ -562,7 +562,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2025-02-24,German election: Merz wins,Elections & referendums,EU,Rand,-0.232,0.582,0.23
 2025-02-24,German election: Merz wins,Elections & referendums,EU,JSE Top 40,-1.274,3.002,1.06
 2025-02-24,German election: Merz wins,Elections & referendums,EU,S&P 500,-0.963,-2.999,0.94
-2025-02-24,German election: Merz wins,Elections & referendums,EU,Gold,-1.165,3.669,1.09
+2025-02-24,German election: Merz wins,Elections & referendums,EU,Gold,-1.165,3.669,1.08
 2025-02-24,German election: Merz wins,Elections & referendums,EU,EUR/USD,-0.373,3.271,0.73
 2025-02-24,German election: Merz wins,Elections & referendums,EU,GBP/USD,-0.415,2.428,0.71
 2025-02-24,German election: Merz wins,Elections & referendums,EU,USD/JPY,0.305,0.607,0.53
@@ -576,7 +576,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2025-03-12,SA budget speech,Budgets & fiscal,SA,Rand,-0.04,-5.794,0.04
 2025-03-12,SA budget speech,Budgets & fiscal,SA,JSE Top 40,0.389,0.537,0.32
 2025-03-12,SA budget speech,Budgets & fiscal,SA,S&P 500,-0.907,-4.591,0.89
-2025-03-12,SA budget speech,Budgets & fiscal,SA,Gold,2.41,6.225,2.25
+2025-03-12,SA budget speech,Budgets & fiscal,SA,Gold,2.41,6.225,2.24
 2025-03-12,SA budget speech,Budgets & fiscal,SA,EUR/USD,0.432,0.605,0.84
 2025-03-12,SA budget speech,Budgets & fiscal,SA,GBP/USD,0.69,-1.071,1.18
 2025-03-12,SA budget speech,Budgets & fiscal,SA,USD/JPY,0.823,-0.593,1.44
@@ -590,7 +590,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2025-04-09,US pauses most tariffs,Tariffs & trade,US,Rand,0.708,6.532,0.7
 2025-04-09,US pauses most tariffs,Tariffs & trade,US,JSE Top 40,2.781,6.973,2.31
 2025-04-09,US pauses most tariffs,Tariffs & trade,US,S&P 500,5.725,7.438,5.6
-2025-04-09,US pauses most tariffs,Tariffs & trade,US,Gold,6.264,5.24,5.84
+2025-04-09,US pauses most tariffs,Tariffs & trade,US,Gold,6.264,5.24,5.83
 2025-04-09,US pauses most tariffs,Tariffs & trade,US,EUR/USD,0.336,2.535,0.66
 2025-04-09,US pauses most tariffs,Tariffs & trade,US,GBP/USD,0.711,3.615,1.22
 2025-04-09,US pauses most tariffs,Tariffs & trade,US,USD/JPY,-0.264,-1.077,0.46
@@ -611,7 +611,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2025-05-21,SA budget speech,Budgets & fiscal,SA,Rand,0.54,-0.338,0.53
 2025-05-21,SA budget speech,Budgets & fiscal,SA,JSE Top 40,0.081,2.184,0.07
 2025-05-21,SA budget speech,Budgets & fiscal,SA,S&P 500,-1.657,3.135,1.62
-2025-05-21,SA budget speech,Budgets & fiscal,SA,Gold,0.317,3.035,0.3
+2025-05-21,SA budget speech,Budgets & fiscal,SA,Gold,0.317,3.035,0.29
 2025-05-21,SA budget speech,Budgets & fiscal,SA,EUR/USD,0.87,1.291,1.7
 2025-05-21,SA budget speech,Budgets & fiscal,SA,GBP/USD,0.441,-0.019,0.76
 2025-05-21,SA budget speech,Budgets & fiscal,SA,USD/JPY,-0.842,0.835,1.47
@@ -664,10 +664,10 @@ date,name,type,country,market,move_2d,next20,times_normal
 2025-10-07,French PM Lecornu resigns,Leaders & ministers,EU,EUR/USD,-0.494,-1.451,0.96
 2025-10-07,French PM Lecornu resigns,Leaders & ministers,EU,GBP/USD,-0.095,-2.975,0.16
 2025-10-07,French PM Lecornu resigns,Leaders & ministers,EU,USD/JPY,1.634,0.99,2.85
-2025-11-26,UK autumn budget,Budgets & fiscal,UK,Rand,0.93,3.011,0.91
+2025-11-26,UK autumn budget,Budgets & fiscal,UK,Rand,0.93,3.011,0.92
 2025-11-26,UK autumn budget,Budgets & fiscal,UK,JSE Top 40,0.3,5.928,0.25
 2025-11-26,UK autumn budget,Budgets & fiscal,UK,S&P 500,1.23,0.827,1.2
-2025-11-26,UK autumn budget,Budgets & fiscal,UK,Gold,2.775,2.085,2.59
+2025-11-26,UK autumn budget,Budgets & fiscal,UK,Gold,2.775,2.085,2.58
 2025-11-26,UK autumn budget,Budgets & fiscal,UK,EUR/USD,0.712,1.579,1.39
 2025-11-26,UK autumn budget,Budgets & fiscal,UK,GBP/USD,1.059,1.993,1.81
 2025-11-26,UK autumn budget,Budgets & fiscal,UK,USD/JPY,-0.446,-0.095,0.78
@@ -695,7 +695,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,Rand,-0.987,-6.845,0.97
 2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,JSE Top 40,-5.099,-5.943,4.24
 2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,S&P 500,-0.905,-4.227,0.88
-2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,Gold,-2.367,-9.292,2.21
+2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,Gold,-2.367,-9.292,2.2
 2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,EUR/USD,-0.896,-2.028,1.75
 2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,GBP/USD,-0.599,-1.773,1.03
 2026-03-02,US-Israel strikes on Iran: war begins,War & conflict,Global,USD/JPY,0.897,1.643,1.57
@@ -703,13 +703,13 @@ date,name,type,country,market,move_2d,next20,times_normal
 2026-04-08,US-Iran ceasefire,War & conflict,Global,JSE Top 40,3.351,0.089,2.79
 2026-04-08,US-Iran ceasefire,War & conflict,Global,S&P 500,3.141,7.509,3.07
 2026-04-08,US-Iran ceasefire,War & conflict,Global,Gold,2.845,-2.223,2.65
-2026-04-08,US-Iran ceasefire,War & conflict,Global,EUR/USD,1.024,0.755,1.99
+2026-04-08,US-Iran ceasefire,War & conflict,Global,EUR/USD,1.024,0.755,2.0
 2026-04-08,US-Iran ceasefire,War & conflict,Global,GBP/USD,1.208,1.476,2.07
 2026-04-08,US-Iran ceasefire,War & conflict,Global,USD/JPY,-0.652,-1.345,1.14
 2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,Rand,-0.866,2.631,0.85
 2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,JSE Top 40,0.955,-2.067,0.79
 2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,S&P 500,1.32,5.115,1.29
-2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,Gold,1.82,-2.976,1.7
+2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,Gold,1.82,-2.976,1.69
 2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,EUR/USD,0.096,-0.65,0.19
 2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,GBP/USD,0.578,-1.163,0.99
 2026-04-30,Japan buys yen (record),Central-bank surprises & intervention,JP,USD/JPY,-1.613,1.46,2.82
