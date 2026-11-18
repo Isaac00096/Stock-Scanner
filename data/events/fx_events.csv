@@ -117,6 +117,6 @@ date,country,kind,name,expected,pair,currency,pair_move,ccy_move,ccy_next5,ccy_n
 2026-04-30,JP,Intervention,Japan buys yen (record),Stronger JPY,USD/JPY,JPY,-1.613,1.613,0.095,-1.46,Yes
 2026-06-22,UK,Politics,Starmer announces resignation,Weaker GBP,GBP/USD,GBP,0.342,0.342,0.052,1.393,No
 2026-08-03,JP,Intervention,Japan and US jointly buy yen,Stronger JPY,USD/JPY,JPY,-1.657,1.657,-1.033,-1.408,Yes
-2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,EUR/USD,USD,0.383,-0.383,,,Yes
-2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,GBP/USD,USD,0.501,-0.501,,,Yes
-2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,USD/JPY,USD,0.28,0.28,,,No
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,EUR/USD,USD,0.383,-0.383,1.244,,Yes
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,GBP/USD,USD,0.501,-0.501,1.487,,Yes
+2026-11-04,US,Politics,US midterms: Democrats win Congress,Weaker USD,USD/JPY,USD,0.28,0.28,0.87,,No
