@@ -1,0 +1,76 @@
+pair,news_day,move_pct,times_normal,cause,type,political,basis
+AUD/CAD,2015-01-09,1.49,,Oil price slump weighs on Canadian dollar,Market mechanics / commodities,No,Not traced
+AUD/CAD,2015-02-03,-1.59,,Australian central bank surprise rate cut,Central bank,No,Well-documented
+AUD/CAD,2015-07-03,-1.46,2.5,Greek referendum and China stock crash,Politics & geopolitics,Partly,"Likely, not checked"
+AUD/CAD,2015-08-04,1.61,2.7,"Australian central bank holds, drops easing hint",Central bank,No,"Likely, not checked"
+AUD/CAD,2015-10-13,-1.61,2.7,Weak China trade data,Economic data,No,"Likely, not checked"
+AUD/CAD,2015-10-28,-1.84,3.1,Soft Australian inflation; hawkish US Fed,Economic data,No,"Likely, not checked"
+AUD/CAD,2016-02-26,-1.51,2.6,Oil rebound lifts Canadian dollar,Market mechanics / commodities,No,"Likely, not checked"
+AUD/CAD,2016-04-27,-2.07,3.6,Australian inflation far below forecast,Economic data,No,Well-documented
+AUD/CAD,2019-01-02,-1.89,4.6,Flash crash in thin Asian trading (Apple warning),Market mechanics / commodities,No,Well-documented
+AUD/CAD,2020-03-13,-2.6,6.4,COVID-19 crash,Pandemic,No,Well-documented
+AUD/CAD,2020-03-25,-2.67,5.6,COVID-19 market swings,Pandemic,No,"Likely, not checked"
+AUD/CAD,2022-08-02,-1.56,3.7,Australian central bank signals slower hikes; US-China Taiwan tension,Central bank,Partly,"Likely, not checked"
+AUD/CAD,2023-02-03,-1.57,3.0,Very strong Canadian (and US) jobs reports,Economic data,No,"Likely, not checked"
+AUD/CAD,2025-04-04,-4.25,11.4,China retaliates against US tariffs,Politics & geopolitics,Direct,Well-documented
+AUD/CAD,2026-04-07,1.8,4.4,"US-Iran ceasefire: risk rally, oil falls",Politics & geopolitics,Direct,News checked
+AUD/NZD,2015-01-28,1.37,,NZ central bank drops its hiking bias,Central bank,No,"Likely, not checked"
+AUD/NZD,2015-05-05,1.7,3.1,Australian central bank cuts but signals no more,Central bank,No,Well-documented
+AUD/NZD,2015-06-10,2.0,3.6,NZ central bank surprise rate cut,Central bank,No,Well-documented
+AUD/NZD,2015-07-03,-1.4,2.4,Greek referendum and China stock crash,Politics & geopolitics,Partly,Not traced
+AUD/NZD,2015-07-16,1.34,2.3,Weak NZ inflation data,Economic data,No,"Likely, not checked"
+AUD/NZD,2015-08-04,1.8,3.0,Australian central bank holds; weak NZ jobs,Central bank,No,"Likely, not checked"
+AUD/NZD,2015-08-24,1.38,2.3,China-led 'Black Monday' crash,Economic data,Partly,Well-documented
+AUD/NZD,2015-11-03,1.86,3.1,Australian central bank holds; weak NZ jobs,Central bank,No,"Likely, not checked"
+AUD/NZD,2016-01-27,1.44,2.4,NZ central bank signals more cuts,Central bank,No,"Likely, not checked"
+AUD/NZD,2016-03-09,2.08,3.5,NZ central bank surprise rate cut,Central bank,No,Well-documented
+AUD/NZD,2016-04-27,-2.36,4.0,Australian inflation far below forecast,Economic data,No,Well-documented
+AUD/NZD,2016-06-08,-1.87,3.2,NZ central bank holds when a cut was expected,Central bank,No,Well-documented
+AUD/NZD,2016-07-07,-1.71,3.0,S&P puts Australia's AAA rating on negative outlook (after a hung election),Politics & geopolitics,Partly,"Likely, not checked"
+AUD/NZD,2017-10-19,2.2,5.4,NZ First chooses Labour: Ardern government,Politics & geopolitics,Direct,Well-documented
+AUD/NZD,2026-05-27,-1.37,5.4,"NZ central bank 'hawkish hold' (3-3 split, governor's casting vote)",Central bank,No,News checked
+AUD/USD,2015-03-18,2.04,,"US Fed drops 'patient', signals slower hikes",Central bank,No,Well-documented
+AUD/USD,2016-05-03,-2.14,2.8,Australian central bank surprise rate cut,Central bank,No,Well-documented
+AUD/USD,2020-03-12,-3.17,7.6,COVID-19 crash,Pandemic,No,Well-documented
+AUD/USD,2020-03-26,2.89,5.2,US Fed and stimulus ease the dollar squeeze,Central bank,Partly,Well-documented
+AUD/USD,2020-04-06,2.05,3.4,Signs COVID-19 infections were peaking,Pandemic,No,Well-documented
+AUD/USD,2022-05-04,2.1,3.8,US Fed rules out 0.75% hikes,Central bank,No,Well-documented
+AUD/USD,2022-09-13,-2.19,3.2,US inflation hotter than expected,Economic data,No,Well-documented
+AUD/USD,2022-11-10,2.68,3.5,US inflation cooler than expected,Economic data,No,Well-documented
+AUD/USD,2022-12-15,-2.21,2.7,Hawkish US Fed and ECB,Central bank,No,"Likely, not checked"
+AUD/USD,2023-01-06,2.05,2.5,US wage growth slows,Economic data,No,"Likely, not checked"
+AUD/USD,2023-02-03,-2.18,2.6,Blowout US jobs report,Economic data,No,Well-documented
+AUD/USD,2023-03-07,-2.11,2.5,Hawkish Powell testimony; dovish Australian central bank,Central bank,No,Well-documented
+AUD/USD,2024-12-18,-2.13,4.0,US Fed 'hawkish cut',Central bank,No,Well-documented
+AUD/USD,2025-04-04,-5.31,9.7,China retaliates against US tariffs,Politics & geopolitics,Direct,Well-documented
+AUD/USD,2026-04-07,2.31,4.4,US-Iran ceasefire,Politics & geopolitics,Direct,News checked
+NZD/CAD,2015-01-15,1.77,,Oil slump weighs on Canadian dollar,Market mechanics / commodities,No,Not traced
+NZD/CAD,2015-06-10,-1.94,3.1,NZ central bank surprise rate cut,Central bank,No,Well-documented
+NZD/CAD,2015-08-31,-2.43,3.8,Oil price surge lifts Canadian dollar,Market mechanics / commodities,No,"Likely, not checked"
+NZD/CAD,2015-10-28,-1.91,2.9,NZ central bank signals more cuts,Central bank,No,"Likely, not checked"
+NZD/CAD,2016-01-22,-2.03,3.1,Oil rebound lifts Canadian dollar,Market mechanics / commodities,No,"Likely, not checked"
+NZD/CAD,2016-02-12,-1.7,2.5,Oil rebound lifts Canadian dollar,Market mechanics / commodities,No,"Likely, not checked"
+NZD/CAD,2016-02-26,-2.31,3.4,Oil rebound lifts Canadian dollar,Market mechanics / commodities,No,"Likely, not checked"
+NZD/CAD,2016-03-09,-2.8,4.1,NZ central bank surprise rate cut,Central bank,No,Well-documented
+NZD/CAD,2016-06-08,1.96,2.9,NZ central bank holds when a cut was expected,Central bank,No,Well-documented
+NZD/CAD,2016-07-14,-1.9,2.7,NZ central bank hints at more cuts,Central bank,No,Not traced
+NZD/CAD,2017-09-06,-1.85,3.5,Bank of Canada surprise rate hike,Central bank,No,Well-documented
+NZD/CAD,2020-03-06,1.98,4.7,Saudi-Russia oil price war crashes Canadian dollar,Market mechanics / commodities,Partly,Well-documented
+NZD/CAD,2020-03-18,-2.28,4.9,COVID-19 crash,Pandemic,No,Well-documented
+NZD/CAD,2022-06-16,1.71,3.9,Global rate-hike shock week,Central bank,No,Not traced
+NZD/CAD,2025-04-04,-3.16,7.7,China retaliates against US tariffs,Politics & geopolitics,Direct,Well-documented
+NZD/USD,2015-03-18,2.6,,"US Fed drops 'patient', signals slower hikes",Central bank,No,Well-documented
+NZD/USD,2015-08-24,-2.51,3.2,China-led 'Black Monday' crash,Economic data,Partly,Well-documented
+NZD/USD,2015-10-14,2.33,2.9,Weak US data delays Fed hike; dairy prices jump,Economic data,No,"Likely, not checked"
+NZD/USD,2016-02-26,-2.33,2.9,Global markets turmoil,Market mechanics / commodities,No,Not traced
+NZD/USD,2016-06-08,2.53,3.2,NZ central bank holds when a cut was expected,Central bank,No,Well-documented
+NZD/USD,2020-03-18,-3.67,7.7,COVID-19 dash for dollars,Pandemic,No,Well-documented
+NZD/USD,2020-03-26,2.87,5.1,US Fed and stimulus ease the dollar squeeze,Central bank,Partly,Well-documented
+NZD/USD,2022-09-13,-2.3,3.6,US inflation hotter than expected,Economic data,No,Well-documented
+NZD/USD,2022-09-30,-2.15,3.2,Global sell-off after UK mini-budget crisis,Politics & geopolitics,Partly,"Likely, not checked"
+NZD/USD,2022-11-10,2.23,3.0,US inflation cooler than expected,Economic data,No,Well-documented
+NZD/USD,2023-02-03,-2.31,2.8,Blowout US jobs report,Economic data,No,Well-documented
+NZD/USD,2023-05-24,-2.31,2.8,NZ central bank signals end of hikes,Central bank,No,Well-documented
+NZD/USD,2023-11-14,2.07,3.0,US inflation cooler than expected,Economic data,No,Well-documented
+NZD/USD,2024-12-18,-2.45,4.5,US Fed 'hawkish cut',Central bank,No,Well-documented
+NZD/USD,2025-04-04,-4.24,7.3,China retaliates against US tariffs,Politics & geopolitics,Direct,Well-documented
