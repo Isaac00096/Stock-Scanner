@@ -26,7 +26,9 @@ def last_close_and_range(sym):
 
 
 def main():
-    now = datetime.now(timezone.utc)
+    fake = os.environ.get("FAKE_NOW", "")                 # test mode: pretend it's this UTC time; writes *_test files
+    now = datetime.fromisoformat(fake).replace(tzinfo=timezone.utc) if fake else datetime.now(timezone.utc)
+    sfx = "_test" if fake else ""
     cal = pd.read_csv("data/alerts/calendar.csv")
     cal["t"] = pd.to_datetime(cal["time_utc"], utc=True)
     usdzar, _ = last_close_and_range("USDZAR=X")
@@ -63,7 +65,7 @@ def main():
     out = {"generated_utc": now.strftime("%Y-%m-%d %H:%M"), "alerts": alerts,
            "next_events": [f"{r.event}: {r.t.tz_convert(SA).strftime('%a %d %b %Y %H:%M')} SA time ({r.pair})" for r in upcoming.itertuples()],
            "calendar_ends": cal["t"].max().tz_convert(SA).strftime("%d %b %Y")}
-    with open("data/alerts/next.json", "w") as fh:
+    with open(f"data/alerts/next{sfx}.json", "w") as fh:
         json.dump(out, fh, indent=1)
     lines = []
     for a in alerts:
@@ -73,7 +75,7 @@ def main():
                   f"At today's price {a['price_now']}: buy stop {a['buy_stop_at']} / target {a['buy_target_at']}; sell stop {a['sell_stop_at']} / target {a['sell_target_at']}. Re-set from your actual fill.",
                   f"Risk about R{a['risk_zar_per_side_001']} per side, R{a['worst_case_zar_001']} if both stop out; about +R{a['win_zar_if_target_001']} if one hits target.",
                   f"Evidence: {a['evidence']}. Practise on demo first.", ""]
-    with open("data/alerts/next.md", "w") as fh:
+    with open(f"data/alerts/next{sfx}.md", "w") as fh:
         fh.write("\n".join(lines) if lines else "No entry alerts in the next 26 hours.\n")
     print(json.dumps(out, indent=1))
 

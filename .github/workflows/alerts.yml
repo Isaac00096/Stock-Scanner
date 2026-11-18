@@ -3,7 +3,12 @@ name: Entry Alerts
 on:
   schedule:
     - cron: "15 10 * * *"     # 12:15 SA time daily, before the 14:41 phone check
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      fake_now:
+        description: "Test only: pretend it's this UTC time (YYYY-MM-DD HH:MM)"
+        default: ""
+        required: false
 
 permissions:
   contents: write
@@ -19,6 +24,8 @@ jobs:
           python-version: "3.11"
       - run: pip install -r requirements.txt
       - run: python alerts.py
+        env:
+          FAKE_NOW: ${{ inputs.fake_now }}
       - name: Save
         run: |
           git config user.name "nyse-scanner-bot"
