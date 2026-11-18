@@ -287,7 +287,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2020-08-28,Abe resigns,Leaders & ministers,JP,GBP/USD,1.034,-4.415,1.77
 2020-08-28,Abe resigns,Leaders & ministers,JP,USD/JPY,-0.303,0.037,0.53
 2020-11-04,US election (Biden),Elections & referendums,US,Rand,1.945,3.696,1.91
-2020-11-04,US election (Biden),Elections & referendums,US,JSE Top 40,3.901,6.806,3.25
+2020-11-04,US election (Biden),Elections & referendums,US,JSE Top 40,3.901,6.807,3.25
 2020-11-04,US election (Biden),Elections & referendums,US,S&P 500,4.194,5.375,4.1
 2020-11-04,US election (Biden),Elections & referendums,US,Gold,1.905,-5.486,1.77
 2020-11-04,US election (Biden),Elections & referendums,US,EUR/USD,0.772,3.255,1.5
@@ -455,7 +455,7 @@ date,name,type,country,market,move_2d,next20,times_normal
 2024-05-30,SA national election (results),Elections & referendums,SA,GBP/USD,-0.219,-0.665,0.37
 2024-05-30,SA national election (results),Elections & referendums,SA,USD/JPY,-0.196,2.379,0.34
 2024-06-10,Macron calls snap election,Elections & referendums,EU,Rand,1.231,3.304,1.21
-2024-06-10,Macron calls snap election,Elections & referendums,EU,JSE Top 40,-0.787,5.522,0.65
+2024-06-10,Macron calls snap election,Elections & referendums,EU,JSE Top 40,-0.787,5.521,0.65
 2024-06-10,Macron calls snap election,Elections & referendums,EU,S&P 500,0.53,3.892,0.52
 2024-06-10,Macron calls snap election,Elections & referendums,EU,Gold,0.069,4.096,0.06
 2024-06-10,Macron calls snap election,Elections & referendums,EU,EUR/USD,-1.195,0.62,2.33

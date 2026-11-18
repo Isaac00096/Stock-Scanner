@@ -1871,22 +1871,22 @@ time_utc,event,pair,stop_k,tp_mult,day_range_pct,stop_pips,outcome,net_pct,net_z
 2026-05-27 02:00,NZ central bank (RBNZ),NZD/USD,1.0,1.5,0.633,,Neither target (closed at 24h),-0.0734,-6.85
 2026-05-27 02:00,NZ central bank (RBNZ),NZD/USD,1.0,2.0,0.633,,Neither target (closed at 24h),-0.0734,-6.85
 2026-05-27 02:00,NZ central bank (RBNZ),NZD/USD,1.0,3.0,0.633,,Neither target (closed at 24h),-0.0734,-6.85
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,1.0,0.672,,One hit target,-0.18,-16.79
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,1.5,0.672,,Both stopped (whipsaw),-0.5758,-53.71
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,2.0,0.672,,Both stopped (whipsaw),-0.5758,-53.71
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,3.0,0.672,,Both stopped (whipsaw),-0.5758,-53.71
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,1.0,0.672,,One hit target,-0.18,-16.79
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,1.5,0.672,,Both stopped (whipsaw),-0.9116,-85.04
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,2.0,0.672,,Both stopped (whipsaw),-0.9116,-85.04
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,3.0,0.672,,Both stopped (whipsaw),-0.9116,-85.04
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,1.0,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,1.5,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,2.0,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,3.0,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,1.0,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,1.5,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,2.0,0.672,,Neither target (closed at 24h),-0.12,-11.19
-2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,3.0,0.672,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,1.0,0.67,,One hit target,-0.18,-16.79
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,1.5,0.67,,Both stopped (whipsaw),-0.5752,-53.66
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,2.0,0.67,,Both stopped (whipsaw),-0.5752,-53.66
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.25,3.0,0.67,,Both stopped (whipsaw),-0.5752,-53.66
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,1.0,0.67,,One hit target,-0.18,-16.79
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,1.5,0.67,,Both stopped (whipsaw),-0.9103,-84.92
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,2.0,0.67,,Both stopped (whipsaw),-0.9103,-84.92
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.5,3.0,0.67,,Both stopped (whipsaw),-0.9103,-84.92
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,1.0,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,1.5,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,2.0,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,0.75,3.0,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,1.0,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,1.5,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,2.0,0.67,,Neither target (closed at 24h),-0.12,-11.19
+2026-06-10 13:45,Bank of Canada,NZD/CAD,1.0,3.0,0.67,,Neither target (closed at 24h),-0.12,-11.19
 2026-06-10 13:45,Bank of Canada,AUD/CAD,0.25,1.0,0.58,,One hit target,-0.12,-13.71
 2026-06-10 13:45,Bank of Canada,AUD/CAD,0.25,1.5,0.58,,Both stopped (whipsaw),-0.4498,-51.39
 2026-06-10 13:45,Bank of Canada,AUD/CAD,0.25,2.0,0.58,,Both stopped (whipsaw),-0.4498,-51.39
@@ -2031,22 +2031,22 @@ time_utc,event,pair,stop_k,tp_mult,day_range_pct,stop_pips,outcome,net_pct,net_z
 2026-07-08 02:00,NZ central bank (RBNZ),NZD/USD,1.0,1.5,0.553,,Neither target (closed at 24h),-0.157,-14.65
 2026-07-08 02:00,NZ central bank (RBNZ),NZD/USD,1.0,2.0,0.553,,Neither target (closed at 24h),-0.157,-14.65
 2026-07-08 02:00,NZ central bank (RBNZ),NZD/USD,1.0,3.0,0.553,,Neither target (closed at 24h),-0.157,-14.65
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,1.0,0.533,,One hit target,-0.18,-16.79
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,1.5,0.533,,One hit target,-0.1133,-10.57
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,2.0,0.533,,One hit target,-0.0466,-4.35
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,3.0,0.533,,Neither target (closed at 24h),-0.256,-23.88
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,1.0,0.533,,One hit target,-0.18,-16.79
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,1.5,0.533,,Neither target (closed at 24h),-0.3893,-36.32
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,2.0,0.533,,Neither target (closed at 24h),-0.3893,-36.32
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,3.0,0.533,,Neither target (closed at 24h),-0.3893,-36.32
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,1.0,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,1.5,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,2.0,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,3.0,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,1.0,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,1.5,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,2.0,0.533,,Neither target (closed at 24h),-0.12,-11.19
-2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,3.0,0.533,,Neither target (closed at 24h),-0.12,-11.19
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,1.0,0.508,,One hit target,-0.18,-16.79
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,1.5,0.508,,One hit target,-0.1165,-10.87
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,2.0,0.508,,One hit target,-0.0531,-4.95
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.25,3.0,0.508,,One hit target,0.0739,6.89
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,1.0,0.508,,One hit target,-0.18,-16.79
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,1.5,0.508,,One hit target,-0.0531,-4.95
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,2.0,0.508,,Neither target (closed at 24h),-0.3765,-35.13
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.5,3.0,0.508,,Neither target (closed at 24h),-0.3765,-35.13
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,1.0,0.508,,One hit target,-0.18,-16.79
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,1.5,0.508,,Neither target (closed at 24h),-0.5035,-46.97
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,2.0,0.508,,Neither target (closed at 24h),-0.5035,-46.97
+2026-07-15 13:45,Bank of Canada,NZD/CAD,0.75,3.0,0.508,,Neither target (closed at 24h),-0.5035,-46.97
+2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,1.0,0.508,,Neither target (closed at 24h),-0.12,-11.19
+2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,1.5,0.508,,Neither target (closed at 24h),-0.12,-11.19
+2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,2.0,0.508,,Neither target (closed at 24h),-0.12,-11.19
+2026-07-15 13:45,Bank of Canada,NZD/CAD,1.0,3.0,0.508,,Neither target (closed at 24h),-0.12,-11.19
 2026-07-15 13:45,Bank of Canada,AUD/CAD,0.25,1.0,0.484,,One hit target,-0.12,-13.71
 2026-07-15 13:45,Bank of Canada,AUD/CAD,0.25,1.5,0.484,,Both stopped (whipsaw),-0.4019,-45.92
 2026-07-15 13:45,Bank of Canada,AUD/CAD,0.25,2.0,0.484,,Both stopped (whipsaw),-0.4019,-45.92
@@ -2063,22 +2063,22 @@ time_utc,event,pair,stop_k,tp_mult,day_range_pct,stop_pips,outcome,net_pct,net_z
 2026-07-15 13:45,Bank of Canada,AUD/CAD,1.0,1.5,0.484,,Neither target (closed at 24h),-0.08,-9.14
 2026-07-15 13:45,Bank of Canada,AUD/CAD,1.0,2.0,0.484,,Neither target (closed at 24h),-0.08,-9.14
 2026-07-15 13:45,Bank of Canada,AUD/CAD,1.0,3.0,0.484,,Neither target (closed at 24h),-0.08,-9.14
-2026-07-29 18:00,US Fed,NZD/USD,0.25,1.0,0.578,,Both stopped (whipsaw),-0.4088,-38.14
-2026-07-29 18:00,US Fed,NZD/USD,0.25,1.5,0.578,,Both stopped (whipsaw),-0.4088,-38.14
-2026-07-29 18:00,US Fed,NZD/USD,0.25,2.0,0.578,,Both stopped (whipsaw),-0.4088,-38.14
-2026-07-29 18:00,US Fed,NZD/USD,0.25,3.0,0.578,,Both stopped (whipsaw),-0.4088,-38.14
-2026-07-29 18:00,US Fed,NZD/USD,0.5,1.0,0.578,,One hit target,-0.09,-8.4
-2026-07-29 18:00,US Fed,NZD/USD,0.5,1.5,0.578,,One hit target,0.0544,5.08
-2026-07-29 18:00,US Fed,NZD/USD,0.5,2.0,0.578,,One hit target,0.1988,18.55
-2026-07-29 18:00,US Fed,NZD/USD,0.5,3.0,0.578,,One hit target,0.4876,45.49
-2026-07-29 18:00,US Fed,NZD/USD,0.75,1.0,0.578,,One hit target,-0.09,-8.4
-2026-07-29 18:00,US Fed,NZD/USD,0.75,1.5,0.578,,One hit target,0.1266,11.81
-2026-07-29 18:00,US Fed,NZD/USD,0.75,2.0,0.578,,One hit target,0.3432,32.02
-2026-07-29 18:00,US Fed,NZD/USD,0.75,3.0,0.578,,One hit target,0.7764,72.44
-2026-07-29 18:00,US Fed,NZD/USD,1.0,1.0,0.578,,One hit target,-0.09,-8.4
-2026-07-29 18:00,US Fed,NZD/USD,1.0,1.5,0.578,,One hit target,0.1988,18.55
-2026-07-29 18:00,US Fed,NZD/USD,1.0,2.0,0.578,,One hit target,0.4876,45.49
-2026-07-29 18:00,US Fed,NZD/USD,1.0,3.0,0.578,,Neither target (closed at 24h),0.7441,69.42
+2026-07-29 18:00,US Fed,NZD/USD,0.25,1.0,0.557,,Both stopped (whipsaw),-0.3985,-37.17
+2026-07-29 18:00,US Fed,NZD/USD,0.25,1.5,0.557,,Both stopped (whipsaw),-0.3985,-37.17
+2026-07-29 18:00,US Fed,NZD/USD,0.25,2.0,0.557,,Both stopped (whipsaw),-0.3985,-37.17
+2026-07-29 18:00,US Fed,NZD/USD,0.25,3.0,0.557,,Both stopped (whipsaw),-0.3985,-37.17
+2026-07-29 18:00,US Fed,NZD/USD,0.5,1.0,0.557,,One hit target,-0.09,-8.4
+2026-07-29 18:00,US Fed,NZD/USD,0.5,1.5,0.557,,One hit target,0.0492,4.59
+2026-07-29 18:00,US Fed,NZD/USD,0.5,2.0,0.557,,One hit target,0.1885,17.58
+2026-07-29 18:00,US Fed,NZD/USD,0.5,3.0,0.557,,One hit target,0.4669,43.56
+2026-07-29 18:00,US Fed,NZD/USD,0.75,1.0,0.557,,One hit target,-0.09,-8.4
+2026-07-29 18:00,US Fed,NZD/USD,0.75,1.5,0.557,,One hit target,0.1188,11.09
+2026-07-29 18:00,US Fed,NZD/USD,0.75,2.0,0.557,,One hit target,0.3277,30.57
+2026-07-29 18:00,US Fed,NZD/USD,0.75,3.0,0.557,,One hit target,0.7454,69.54
+2026-07-29 18:00,US Fed,NZD/USD,1.0,1.0,0.557,,One hit target,-0.09,-8.4
+2026-07-29 18:00,US Fed,NZD/USD,1.0,1.5,0.557,,One hit target,0.1885,17.58
+2026-07-29 18:00,US Fed,NZD/USD,1.0,2.0,0.557,,One hit target,0.4669,43.56
+2026-07-29 18:00,US Fed,NZD/USD,1.0,3.0,0.557,,Neither target (closed at 24h),0.7648,71.35
 2026-07-29 18:00,US Fed,AUD/USD,0.25,1.0,0.472,,Both stopped (whipsaw),-0.3358,-38.37
 2026-07-29 18:00,US Fed,AUD/USD,0.25,1.5,0.472,,Both stopped (whipsaw),-0.3358,-38.37
 2026-07-29 18:00,US Fed,AUD/USD,0.25,2.0,0.472,,Both stopped (whipsaw),-0.3358,-38.37
