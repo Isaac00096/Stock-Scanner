@@ -1,32 +1,32 @@
 {
- "generated_utc": "2026-12-08 12:41",
+ "generated_utc": "2026-12-09 12:41",
  "alerts": [
   {
-   "event": "NZ central bank (RBNZ) rate decision",
-   "decision_sa": "Wed 09 Dec 2026 03:00",
-   "pair": "NZD/USD",
-   "open_both_sa": "Tue 08 Dec 22:00",
-   "close_by_sa": "Thu 10 Dec 03:00",
-   "price_now": 0.5501,
-   "normal_day_pips": 32,
-   "stop_pips": 32,
-   "target_pips": 64,
-   "buy_stop_at": 0.5469,
-   "buy_target_at": 0.5565,
-   "sell_stop_at": 0.5533,
-   "sell_target_at": 0.5437,
-   "risk_zar_per_side_001": 54,
-   "worst_case_zar_001": 109,
-   "win_zar_if_target_001": 54,
-   "evidence": "best tested: 14 NZ decisions, avg about +R26 per straddle, worst -R53, luck test 2.8",
-   "alternative": "AUD/NZD: open at the announcement, stop 0.75 day, target 3x stop"
+   "event": "US Fed rate decision",
+   "decision_sa": "Wed 09 Dec 2026 21:00",
+   "pair": "AUD/USD",
+   "open_both_sa": "Wed 09 Dec 20:55",
+   "close_by_sa": "Thu 10 Dec 21:00",
+   "price_now": 0.67373,
+   "normal_day_pips": 40,
+   "stop_pips": 30,
+   "target_pips": 60,
+   "buy_stop_at": 0.67073,
+   "buy_target_at": 0.67973,
+   "sell_stop_at": 0.67673,
+   "sell_target_at": 0.66773,
+   "risk_zar_per_side_001": 51,
+   "worst_case_zar_001": 102,
+   "win_zar_if_target_001": 51,
+   "evidence": "weaker evidence: 16 Fed decisions, avg about +R10 per straddle, worst -R57, luck test 1.2",
+   "alternative": "NZD/USD: stop 0.75 day, target 3x stop"
   }
  ],
  "next_events": [
-  "NZ central bank (RBNZ) rate decision: Wed 09 Dec 2026 03:00 SA time (NZD/USD)",
   "US Fed rate decision: Wed 09 Dec 2026 21:00 SA time (AUD/USD)",
   "US Fed rate decision: Wed 27 Jan 2027 21:00 SA time (AUD/USD)",
-  "NZ central bank (RBNZ) rate decision: Wed 10 Feb 2027 03:00 SA time (NZD/USD)"
+  "NZ central bank (RBNZ) rate decision: Wed 10 Feb 2027 03:00 SA time (NZD/USD)",
+  "NZ central bank (RBNZ) rate decision: Wed 17 Mar 2027 03:00 SA time (NZD/USD)"
  ],
  "calendar_ends": "08 Dec 2027"
 }
