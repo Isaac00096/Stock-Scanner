@@ -24,6 +24,9 @@ jobs:
       - run: python fx_afford.py
       - run: python pair_shocks.py
       - run: python straddle_small.py
+      - run: python straddle_small.py
+        env:
+          ENTRY_OFFSET_H: "-5"
       - run: python recent_shocks.py
       - run: python biggest_moves.py
       - run: python fx_study.py

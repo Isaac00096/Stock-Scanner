@@ -15,12 +15,16 @@ KS, TPS = [0.25, 0.5, 0.75, 1.0], [1.0, 1.5, 2.0, 3.0]
 
 
 def main():
+    off = int(os.environ.get("ENTRY_OFFSET_H", "0"))       # e.g. -5 = open the straddle 5 hours before the decision
+    tag = "" if off == 0 else f"_off{off}"
     ev = pd.read_csv(os.path.join(OUT, "small_pair_events.csv"))
+    if off:
+        ev = ev[ev.event.str.contains("RBNZ")]
     data = {p: hourly(s) for p, s in SYMS.items()}
     size, trades = [], []
     for e in ev.itertuples():
         t = pd.Timestamp(e.time_utc, tz="UTC")
-        start = t.floor("h")
+        start = t.floor("h") + pd.Timedelta(hours=off)
         for pair in e.pairs.split(";"):
             df = data[pair]
             after = df[df.index >= start]
@@ -48,7 +52,7 @@ def main():
                          "move_24h_pct": round((c24 / entry - 1) * 100, 3)})
             daily = df[df.index < start].resample("D").agg({"High": "max", "Low": "min", "Close": "last"}).dropna().tail(20)
             day_range = float(((daily["High"] - daily["Low"]) / daily["Close"]).median() * 100)
-            bars = after.iloc[:24]
+            bars = after.iloc[:24 - off]
             notional = POS_ZAR[pair[:3]]
             for k in KS:
                 for m in TPS:
@@ -61,9 +65,9 @@ def main():
                                    "day_range_pct": round(day_range, 3), "stop_pips": None, "outcome": kind,
                                    "net_pct": round(b + s, 4), "net_zar_001": round((b + s) / 100 * notional, 2)})
     sz = pd.DataFrame(size)
-    sz.to_csv(os.path.join(OUT, "small_event_size.csv"), index=False)
+    sz.to_csv(os.path.join(OUT, f"small_event_size{tag}.csv"), index=False)
     tr = pd.DataFrame(trades)
-    tr.to_csv(os.path.join(OUT, "small_straddle_trades.csv"), index=False)
+    tr.to_csv(os.path.join(OUT, f"small_straddle_trades{tag}.csv"), index=False)
     grid = []
     for (pair, event, k, m), d in tr.groupby(["pair", "event", "stop_k", "tp_mult"]):
         grid.append({"pair": pair, "event": event, "stop_k": k, "tp_mult": m, "straddles": len(d),
@@ -73,7 +77,7 @@ def main():
                      "worst_zar_001": round(d.net_zar_001.min(), 1),
                      "luck_t": round(d.net_zar_001.mean() / d.net_zar_001.std(ddof=1) * np.sqrt(len(d)), 2) if len(d) > 2 and d.net_zar_001.std() > 0 else np.nan})
     g = pd.DataFrame(grid)
-    g.to_csv(os.path.join(OUT, "small_straddle_grid.csv"), index=False)
+    g.to_csv(os.path.join(OUT, f"small_straddle_grid{tag}.csv"), index=False)
     pd.set_option("display.width", 250)
     print(sz.groupby(["event", "pair"]).times_normal.agg(["count", "median", "mean"]).round(2))
     print(g.sort_values("avg_zar_001", ascending=False).head(25).to_string())
